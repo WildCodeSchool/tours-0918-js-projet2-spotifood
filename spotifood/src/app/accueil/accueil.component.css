@@ -4,5 +4,19 @@
   background: url('https://imagizer.imageshack.com/v2/xq90/922/Am6AzI.jpg') no-repeat center fixed;
   /* pour anciens Chrome et Safari */
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
+}
+
+h1,
+p {
+  font-family: 'Cookie', cursive;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  border-radius: 12px;
+  font-size: 0.9rem;
 }

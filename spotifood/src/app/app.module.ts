@@ -8,6 +8,7 @@ import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './navbar/navbar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     NavbarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

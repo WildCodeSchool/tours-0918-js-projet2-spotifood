@@ -10,4 +10,7 @@ export class AppComponent {
 
 }
 
+export class NgbdDropdownManual {
+}
+
 

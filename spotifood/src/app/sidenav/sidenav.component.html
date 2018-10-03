@@ -1,0 +1,125 @@
+
+<nav class="sidebar bg-light col-2 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+  <a class="navbar-brand" href="index.html">Filtrer</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+
+      <div class="row">
+        <div class="col my-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Catégories</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item">Légume</button>
+              <button class="dropdown-item">Fruit</button>
+              <button class="dropdown-item">Produit laitier</button>
+              <button class="dropdown-item">Boisson</button>
+              <button class="dropdown-item">Viande</button>
+              <button class="dropdown-item">Conserve</button>
+              <button class="dropdown-item">Poisson</button>
+              <button class="dropdown-item">Sans Gluten</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col my-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Marque</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item">Panzani</button>
+              <button class="dropdown-item">Ferrero</button>
+              <button class="dropdown-item">Barilla</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
+      <div class="row">
+        <div class="col my-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Conditionnement</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item">Conserve</button>
+              <button class="dropdown-item">Sous vide</button>
+              <button class="dropdown-item">Bouteille</button>
+              <button class="dropdown-item">Verre</button>
+              <button class="dropdown-item">Plastique</button>
+              <button class="dropdown-item">Carton</button>
+              <button class="dropdown-item">Papier alimentaire</button>
+              <button class="dropdown-item">Vrac</button>
+
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="col my-3">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Allergènes</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item">Gluten</button>
+              <button class="dropdown-item">Lactose</button>
+              <button class="dropdown-item">Sulfites</button>
+              <button class="dropdown-item">Soja</button>
+              <button class="dropdown-item">Arachide</button>
+
+
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
+      <form class="my-5 m-2">
+        <fieldset>
+          <legend>Nutri-Score</legend>
+
+          <div class="m-2">
+            <input type="radio" id="A" 
+            name="drone" value="A" />
+            <label for="A">A &nbsp;</label>
+            <input type="radio" id="B" 
+            name="drone" value="B" />
+            <label for="B">B &nbsp;</label>
+            <input type="radio" id="C" 
+            name="drone" value="C" />
+            <label for="C">C &nbsp;</label>
+          </div>
+
+          <div class="m-2">
+            <input type="radio" id="D" 
+            name="drone" value="D" />
+            <label for="D">D &nbsp;</label>
+
+            <input type="radio" id="E" 
+            name="drone" value="E" />
+            <label for="E">E </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <button class="my-5 m-4" (click)= "valider()">Valider</button>
+
+    </div>
+  </div>
+</nav>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

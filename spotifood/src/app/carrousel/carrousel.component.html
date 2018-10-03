@@ -1,16 +1,23 @@
-<div class="carousel-wrapper container" *ngIf="visible">
+<div class="carousel-wrapper" *ngIf="visible">
   <ngb-carousel #carousel="ngbCarousel">
     <ng-template d-bock w-100 ngbSlide *ngFor="let product of products">
       <div class="image-replacement"></div>
-      <div class="carousel-caption">
-        <img src="https://static.openfoodfacts.org/images/products/{{product.id}}.200.jpg">
+
+      <div class="container-fluid inner-container">
+        <div class="row">
+
+          <div class="col-6 text-center">
+            <img src="https://static.openfoodfacts.org/images/products/{{product.id}}.200.jpg">
+          </div>
+
+          <div class="col-6 pt-4 pl-5">
+            <div class="caption">{{product.name}}</div>
+            <button class="mt-4 btn btn-light">Voir détails produit</button>
+          </div>
+
+        </div>
       </div>
-      <div class="carousel-caption">
-        <h3>{{product.name}}</h3>
-        <p>
-          <button class="btn btn-light">Voir détails produit</button>
-        </p>
-      </div>
+
     </ng-template>
   </ngb-carousel>
 </div>

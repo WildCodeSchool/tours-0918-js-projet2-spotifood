@@ -4,6 +4,8 @@
   -webkit-background-size: cover;
           background-size: cover;
   height: 450px;
+  width: 90%;
+  margin: 0 auto;
   position: relative;
 }
 

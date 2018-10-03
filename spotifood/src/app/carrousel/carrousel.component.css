@@ -1,9 +1,10 @@
 .carousel-wrapper {
-  background: url('https://imagizer.imageshack.com/v2/xq90/922/XEwgHR.jpg') no-repeat top;
+  background: url('https://imagizer.imageshack.com/v2/xq90/921/HwKhlv.jpg') no-repeat top;
   /* pour anciens Chrome et Safari */
   -webkit-background-size: cover;
           background-size: cover;
   height: 450px;
+  position: relative;
 }
 
 .image-replacement {
@@ -15,5 +16,17 @@
   max-height:450px;
   overflow:hidden;
   display:block;
-  border:1px solid red;
+}
+
+.inner-container {
+  position: absolute;
+  bottom: 10px;
+}
+
+[class*=col-] {
+  height: 200px;
+}
+
+.caption {
+  font-size: 3rem;
 }

@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carrousel.component.css']
 })
 export class CarrouselComponent implements OnInit {
+  visible: boolean;
 
   constructor() { }
 
+  show() {
+    this.visible = !this.visible;
+  }
+
   ngOnInit() {
+    this.visible = true;
   }
 
 }

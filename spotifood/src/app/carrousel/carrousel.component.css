@@ -1,0 +1,7 @@
+.carousel-wrapper {
+  background: url('https://imagizer.imageshack.com/v2/xq90/922/XEwgHR.jpg') no-repeat top;
+  /* pour anciens Chrome et Safari */
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 450px;
+}

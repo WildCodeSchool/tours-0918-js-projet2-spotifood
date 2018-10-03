@@ -1,0 +1,27 @@
+.text-secondary{
+    margin-left: 40px;
+}
+
+nav{
+    background-color: #fdfff0;
+}
+
+.navbar{
+    justify-content: center;
+}
+
+
+.mobile{
+    margin-top: 65px;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar{
+        display: none;
+    }
+
+    .mobile{
+    margin-top: 0px;
+}
+
+}

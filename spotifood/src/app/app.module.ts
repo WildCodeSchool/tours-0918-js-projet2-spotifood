@@ -11,13 +11,11 @@ import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ComparateurComponent } from './comparateur/comparateur.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ComparateurComponent,
   ],
   imports: [
     BrowserModule,

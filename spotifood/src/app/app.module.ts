@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { ModalProduitComponent } from './modal-produit/modal-produit.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
+import { FormsModule } from '@angular/forms';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -13,13 +18,17 @@ import { PaginationComponent } from './pagination/pagination.component';
     ListProduitComponent,
     ModalProduitComponent,
     PaginationComponent
+    CarrouselComponent
+    SidenavComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
-
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

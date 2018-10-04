@@ -582,7 +582,7 @@ export class ListProduitComponent implements OnInit {
       'last_image_t': 1538211948
     },
 /*produit2*/
-    {
+   /* {
       '_id': '9004145003316',
       'sortkey': 538210249,
       'codes_tags': [
@@ -726,7 +726,7 @@ export class ListProduitComponent implements OnInit {
         'en:photos-to-be-validated',
         'en:photos-uploaded'
       ]
-    },
+    },*/
 /*produit3*/
     {
       '_id': '9066000293805',

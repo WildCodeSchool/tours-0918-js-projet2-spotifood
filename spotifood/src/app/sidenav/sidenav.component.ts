@@ -6,16 +6,16 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-	bool: boolean;
+	filterDisplayed: boolean;
 
 
 	constructor() { 
 	}
 	showFilter(){
-		this.bool = !this.bool;
+		this.filterDisplayed = !this.filterDisplayed;
 	}
 	ngOnInit() {
-		this.bool = false;
+		this.filterDisplayed = false;
 	} 
 }
 

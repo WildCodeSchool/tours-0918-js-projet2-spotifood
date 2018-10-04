@@ -1,27 +1,27 @@
 footer {
-  height: 80px;
+  min-height: 80px;
   background-color: #262626;
 }
 
 .logo-f {
-  width: auto;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: block;
   background: url('../../assets/images/f-logo.png') no-repeat center center;
   background-size: contain;
 }
 
 .logo-t {
-  width: auto;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: block;
   background: url('../../assets/images/t-logo.png') no-repeat center center;
   background-size: contain;
 }
 
 .logo-i {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: block;
   background: url('../../assets/images/insta-white.png') no-repeat center center;
   background-size: 75%;
@@ -30,8 +30,8 @@ footer {
 
 .logo-yt {
   width: auto;
-  height: 45px;
+  height: 35px;
   display: block;
   background: url('../../assets/images/yt-logo.png') no-repeat center center;
-  background-size: 60%;
+  background-size: 110px;
 }

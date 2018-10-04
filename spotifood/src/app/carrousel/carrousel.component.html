@@ -1,5 +1,5 @@
 <div class="carousel-wrapper d-none d-lg-block" *ngIf="visible">
-  <ngb-carousel #carousel="ngbCarousel">
+  <ngb-carousel #carousel="ngbCarousel" [showNavigationIndicators]=false>
     <ng-template d-bock w-100 ngbSlide *ngFor="let product of products">
       <div class="image-replacement"></div>
 

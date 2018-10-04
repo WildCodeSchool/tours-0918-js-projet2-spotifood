@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,11 +15,12 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
 import { FormsModule } from '@angular/forms';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AccueilComponent,
     NavbarComponent,
     ListProduitComponent,
     ModalProduitComponent,

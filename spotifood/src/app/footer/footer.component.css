@@ -1,0 +1,37 @@
+footer {
+  min-height: 80px;
+  background-color: #262626;
+}
+
+.logo-f {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background: url('../../assets/images/f-logo.png') no-repeat center center;
+  background-size: contain;
+}
+
+.logo-t {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background: url('../../assets/images/t-logo.png') no-repeat center center;
+  background-size: contain;
+}
+
+.logo-i {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background: url('../../assets/images/insta-white.png') no-repeat center center;
+  background-size: 75%;
+  background-color: #d93175;
+}
+
+.logo-yt {
+  width: auto;
+  height: 35px;
+  display: block;
+  background: url('../../assets/images/yt-logo.png') no-repeat center center;
+  background-size: 110px;
+}

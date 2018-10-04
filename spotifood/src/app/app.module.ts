@@ -6,11 +6,13 @@ import  {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,

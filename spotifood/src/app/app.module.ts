@@ -24,10 +24,10 @@ import { AccueilComponent } from './accueil/accueil.component';
     NavbarComponent,
     ListProduitComponent,
     ModalProduitComponent,
-    PaginationComponent
-    CarrouselComponent
-    SidenavComponent
-    FooterComponent
+    PaginationComponent,
+    CarrouselComponent,
+    SidenavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

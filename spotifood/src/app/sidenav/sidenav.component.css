@@ -1,19 +1,25 @@
 .sidebar {
-    height: 100%;
-    min-width: 215px;
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
+    height: 40rem;
+    width: 225px;
+    position: sticky;
+    z-index: 1;
+    top: 89px;
     left: 0;
-    background-color: #111; 
-    overflow-x: hidden; 
+    overflow-x: hidden;
     padding-top: 20px;
 }
 
+legend {
+  font-size: 1.2rem;
+}
+
+.navbar-nav {
+  height: 70vh;
+}
 
 .sidebar button {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     color: #818181;
     display: block;
 }
@@ -25,7 +31,7 @@
 
 
 a {
-    font-size: 200%;
+    font-size: 1.5rem;
     margin-left: 30%;
     color: #059e05;
 }
@@ -49,6 +55,7 @@ a {
 }
 
 .transBtn {
+    z-index: 1000;
     transform: translateX(225px) !important;
     transition: transform 0.6s ease-in-out;
 }
@@ -56,4 +63,71 @@ a {
 .btnStartPos {
     transform: translateX(2px);
     transition: transform 0.6s ease-in-out;
+}
+
+
+ /* Customize the label (the container) */
+.containerRadio {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadio input:checked~.checkmark {
+  background-color: #28a745;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadio input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadio .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }

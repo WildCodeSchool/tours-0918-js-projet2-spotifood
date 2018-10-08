@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -24,17 +23,16 @@ import { AccueilComponent } from './accueil/accueil.component';
     NavbarComponent,
     ListProduitComponent,
     ModalProduitComponent,
-    PaginationComponent
-    CarrouselComponent
-    SidenavComponent
-    FooterComponent
+    PaginationComponent,
+    CarrouselComponent,
+    SidenavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
-    ScrollDispatchModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

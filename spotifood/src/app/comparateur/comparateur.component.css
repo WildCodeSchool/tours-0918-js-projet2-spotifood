@@ -1,9 +1,16 @@
 h1{
-	margin-top: 120px;
+    margin-top: 120px;
+    margin-bottom: 5%;
+    text-decoration: underline
+}
+
+.card{
+    background-color: #e6ffcc;
 }
 
 img{
-	width: 30%;
+    width: 60%;
+    margin-top: 7%;
 }
 
 input[type=text] {
@@ -22,6 +29,10 @@ input[type=text] {
 
 input[type=text]:focus {
     width: 100%;
+}
+
+p, h5{
+    font-size: 100%;
 }
 
 

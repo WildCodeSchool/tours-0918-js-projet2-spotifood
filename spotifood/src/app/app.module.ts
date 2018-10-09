@@ -9,7 +9,7 @@ import { ComparateurComponent } from './comparateur/comparateur.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ComparateurComponent
+    ComparateurComponent,
   ],
   imports: [
     BrowserModule,

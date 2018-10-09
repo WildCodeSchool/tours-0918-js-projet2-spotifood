@@ -4,12 +4,12 @@
 	<div class="row col-md-12 col-sm-12 col-lg-12 col-none">
 		<div class="col-md-5 col-5">
 			<form>
-  				<input type="text" name="search" placeholder="Search..">
+					<input class="fas fa-search" type="text" name="search" placeholder="Search.." >
 			</form>
 		</div>
 		<div class="col-md-5 col-5 offset-2">
 			<form>
-  				<input type="text" name="search" placeholder="Search..">
+				<input class="fas fa-search" type="text" name="search" placeholder="Search..">
 			</form>
 		</div>
 	</div>
@@ -22,19 +22,20 @@
 		<div class="card col-md-5 col-6">
 		  <img class="card-img-top offset-2" src="https://i.goopics.net/85Gmp.png" alt="Card image cap">
 		  <div class="card-body text-center">
-		    <h5 class="card-title">Jus de pomme</h5>
-		    <p class="card-text">Quantité : 500L</p>
-		    <p class="card-text">Ingrédients : Pomme, Concentré de pomme, Acid citric...</p>
-		    <p class="card-text">Origine : France</p>
-		    <p class="card-text">Labels, certifications, récompenses: Point-vert, Eco-emballages, Garantie qualité OR</p>
-				<p class="card-text">Nutri-score: A - B - C - D - E</p>
-				<p class="card-text">Quantité : 500L</p>
-		    <p class="card-text">Ingrédients : Pomme, Concentré de pomme, Acid citric...</p>
-		    <p class="card-text">Origine : France</p>
-		    <p class="card-text">Labels, certifications, récompenses: Point-vert, Eco-emballages, Garantie qualité OR</p>
-		    <p class="card-text">Nutri-score: A - B - C - D - E</p>
+					<h3 class="card-title">Jus de fruit</h3>
+					<p class="card-text"><strong>Quantité :</strong><br> 500L</p>
+					<p class="card-text"><strong>Ingrédients :</strong><br> Pomme, Concentré de pomme, Acid citric...</p>
+					<p class="card-text"><strong>Origine :</strong><br> France</p>
+					<p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> Point-vert, Eco-emballages, Garantie qualité OR</p>
+					<p class="card-text"><strong>Nutri-score:</strong><br>A - B - C - D - E</p>
+					<p class="card-text"><strong>Quantité :</strong><br> 500L</p>
+					<p class="card-text"><strong>Ingrédients :</strong><br> Pomme, Concentré de pomme, Acid citric...</p>
+					<p class="card-text"><strong>Origine :</strong><br> France</p>
+					<p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> Point-vert, Eco-emballages, Garantie qualité OR</p>
+					<p class="card-text"><strong>Nutri-score:</strong><br> A - B - C - D - E</p>
+					<ngb-rating [(rate)]="currentRate"></ngb-rating>
 		    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-		  </div>
+			</div>
 		</div>
 		
 
@@ -43,19 +44,29 @@
 		<div class="card col-md-5 col-6">
 		  <img class="card-img-top offset-2" src="https://i.goopics.net/85Gmp.png" alt="Card image cap">
 		  <div class="card-body text-center">
-		    <h5 class="card-title">Jus de fruit</h5>
-		    <p class="card-text">Quantité : 500L</p>
-		    <p class="card-text">Ingrédients : Pomme, Concentré de pomme, Acid citric...</p>
-		    <p class="card-text">Origine : France</p>
-		    <p class="card-text">Labels, certifications, récompenses: Point-vert, Eco-emballages, Garantie qualité OR</p>
-				<p class="card-text">Nutri-score: A - B - C - D - E</p>
-				<p class="card-text">Quantité : 500L</p>
-		    <p class="card-text">Ingrédients : Pomme, Concentré de pomme, Acid citric...</p>
-		    <p class="card-text">Origine : France</p>
-		    <p class="card-text">Labels, certifications, récompenses: Point-vert, Eco-emballages, Garantie qualité OR</p>
-		    <p class="card-text">Nutri-score: A - B - C - D - E</p>
+		    <h3 class="card-title">Jus de fruit</h3>
+		    <p class="card-text"><strong>Quantité :</strong><br> 500L</p>
+		    <p class="card-text"><strong>Ingrédients :</strong><br> Pomme, Concentré de pomme, Acid citric...</p>
+		    <p class="card-text"><strong>Origine :</strong><br> France</p>
+		    <p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> Point-vert, Eco-emballages, Garantie qualité OR</p>
+				<p class="card-text"><strong>Nutri-score:</strong><br>A - B - C - D - E</p>
+				<p class="card-text"><strong>Quantité :</strong><br> 500L</p>
+		    <p class="card-text"><strong>Ingrédients :</strong><br> Pomme, Concentré de pomme, Acid citric...</p>
+		    <p class="card-text"><strong>Origine :</strong><br> France</p>
+		    <p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> Point-vert, Eco-emballages, Garantie qualité OR</p>
+				<p class="card-text"><strong>Nutri-score:</strong><br> A - B - C - D - E</p>
+				<ngb-rating [(rate)]="currentRate"></ngb-rating>
 		    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		  </div>
 		</div>
 	</div>
-</div>		
+</div>
+
+
+<div class="container-fluid">
+	<div class="row col-12">
+			<ngb-pagination class="col-md-3 col-lg-3 col-1 pagi" [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+			<ngb-pagination class="col-md-3 col-lg-3 col-1 pagin" [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+	</div>
+</div>
+

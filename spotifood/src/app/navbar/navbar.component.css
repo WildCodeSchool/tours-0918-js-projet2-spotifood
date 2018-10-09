@@ -2,8 +2,15 @@
 .navbar-brand{
     margin-top: 5px;
     margin-left: 30px;
+    font-size: 1.5rem;
 }
 
 nav{
-    background-color: #fffbf2;
+    background-color: #c5c3c3;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
 }

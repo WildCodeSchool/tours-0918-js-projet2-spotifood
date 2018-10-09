@@ -6,6 +6,7 @@ import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
@@ -16,6 +17,8 @@ import { FormsModule } from '@angular/forms';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { ROUTES } from './app.routes';
+import { ProduitsComponent } from './produits/produits.component';
 
 @NgModule({
   declarations: [
@@ -24,17 +27,19 @@ import { AccueilComponent } from './accueil/accueil.component';
     NavbarComponent,
     ListProduitComponent,
     ModalProduitComponent,
-    PaginationComponent
-    CarrouselComponent
-    SidenavComponent
-    FooterComponent
+    PaginationComponent,
+    CarrouselComponent,
+    SidenavComponent,
+    FooterComponent,
+    ProduitsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
     ScrollDispatchModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

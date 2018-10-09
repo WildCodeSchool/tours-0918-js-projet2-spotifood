@@ -1,15 +1,15 @@
-<nav class="sidebar bg-light  d-none d-md-block pl-2" id="nav1" >
+<nav class="sidebar bg-light  d-none d-lg-block pl-2" id="nav1" >
 	<a class="navbar-brand" href="index.html">Filtrer</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
-	</button>
+	</button> -->
 	<div class="" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
 
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Catégories</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Catégories</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Légume</button>
 							<button class="dropdown-item">Fruit</button>
@@ -25,9 +25,9 @@
 			</div>
 
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Marque</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Marque</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Panzani</button>
 							<button class="dropdown-item">Ferrero</button>
@@ -35,13 +35,13 @@
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 
 
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Conditionnement</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Conditionnement</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Conserve</button>
 							<button class="dropdown-item">Sous vide</button>
@@ -55,11 +55,11 @@
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Allergènes</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Allergènes</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Gluten</button>
 							<button class="dropdown-item">Lactose</button>
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 
 
 			<form class="my-5 m-2">
@@ -79,34 +79,41 @@
 					<legend>Nutri-Score</legend>
 
 					<div class="m-2">
-						<input type="radio" id="A" 
-						name="drone" value="A" />
-						<label for="A">A &nbsp;</label>
-						<input type="radio" id="B" 
-						name="drone" value="B" />
-						<label for="B">B &nbsp;</label>
-						<input type="radio" id="C" 
-						name="drone" value="C" />
-						<label for="C">C &nbsp;</label>
-					</div>
+            <label class="containerRadio">
+              <input type="radio" name="drone" value="A" />
+              <span class="checkmark"></span>
+              A &nbsp;
+            </label>
 
-					<div class="m-2">
-						<input type="radio" id="D" 
-						name="drone" value="D" />
-						<label for="D">D &nbsp;</label>
-
-						<input type="radio" id="E" 
-						name="drone" value="E" />
-						<label for="E">E </label>
+<label class="containerRadio">
+  <input type="radio" name="drone" value="B" />
+  <span class="checkmark"></span>
+  B &nbsp;
+</label>
+<label class="containerRadio">
+  <input type="radio" name="drone" value="C" />
+  <span class="checkmark"></span>
+  C &nbsp;
+</label>
+<label class="containerRadio">
+  <input type="radio" name="drone" value="D" />
+  <span class="checkmark"></span>
+  D &nbsp;
+</label>
+<label class="containerRadio">
+  <input type="radio" name="drone" value="E" />
+  <span class="checkmark"></span>
+  E &nbsp;
+</label>
 					</div>
 				</fieldset>
 			</form>
 
-			<button class="my-5 m-4" (click)= "valider()">Valider</button>
+			<button class="mx-4 btn btn-success text-white" (click)= "valider()">Valider</button>
 
 		</div>
 	</div>
-</nav>   
+</nav>
 
 
 
@@ -119,18 +126,18 @@
 
 
 
-<nav class="sidebar bg-light pl-2 d-md-none hidden" id="nav1" [ngClass]="{'trans': filterDisplayed}">
+<nav class="sidebar bg-light pl-2 d-lg-none hidden" id="nav1" [ngClass]="{'trans': filterDisplayed}">
 	<a class="navbar-brand" href="index.html" >Filtrer</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
-	</button>
+	</button> -->
 	<div class="" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
 
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Catégories</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Catégories</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Légume</button>
 							<button class="dropdown-item">Fruit</button>
@@ -146,9 +153,9 @@
 			</div>
 
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Marque</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Marque</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Panzani</button>
 							<button class="dropdown-item">Ferrero</button>
@@ -156,13 +163,13 @@
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 
 
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Conditionnement</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Conditionnement</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Conserve</button>
 							<button class="dropdown-item">Sous vide</button>
@@ -176,11 +183,11 @@
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 			<div class="row">
-				<div class="col my-3">
+				<div class="col my-2">
 					<div ngbDropdown class="d-inline-block">
-						<button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Allergènes</button>
+						<button class="btn btn-sm btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>Allergènes</button>
 						<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
 							<button class="dropdown-item">Gluten</button>
 							<button class="dropdown-item">Lactose</button>
@@ -192,7 +199,7 @@
 						</div>
 					</div>
 				</div>
-			</div> 
+			</div>
 
 
 			<form class="my-5 m-2">
@@ -200,35 +207,35 @@
 					<legend>Nutri-Score</legend>
 
 					<div class="m-2">
-						<input type="radio" id="A" 
+						<input type="radio"
 						name="drone" value="A" />
-						<label for="A">A &nbsp;</label>
-						<input type="radio" id="B" 
+						<label>A &nbsp;</label>
+						<input type="radio" id="B"
 						name="drone" value="B" />
 						<label for="B">B &nbsp;</label>
-						<input type="radio" id="C" 
+						<input type="radio" id="C"
 						name="drone" value="C" />
 						<label for="C">C &nbsp;</label>
 					</div>
 
 					<div class="m-2">
-						<input type="radio" id="D" 
+						<input type="radio" id="D"
 						name="drone" value="D" />
 						<label for="D">D &nbsp;</label>
 
-						<input type="radio" id="E" 
+						<input type="radio" id="E"
 						name="drone" value="E" />
 						<label for="E">E </label>
 					</div>
 				</fieldset>
 			</form>
 
-			<button class="my-5 m-4" (click)= "valider()">Valider</button>
+			<button class="mb-5 mx-4" (click)= "valider()">Valider</button>
 
 		</div>
 	</div>
-</nav>   
-<button (click)="showFilter()" id="boutonfiltre" class="d-md-none btnStartPos" [ngClass]="{'transBtn': filterDisplayed}">⟩ Filtre</button>
+</nav>
+<button class="btn btn-success text-white" (click)="showFilter()" id="boutonfiltre" class="d-lg-none btnStartPos" [ngClass]="{'transBtn': filterDisplayed}">⟩ Filtre</button>
 
 
 

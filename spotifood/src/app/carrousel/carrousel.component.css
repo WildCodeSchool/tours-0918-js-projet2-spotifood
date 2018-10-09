@@ -31,3 +31,8 @@
 .caption {
   font-size: 3rem;
 }
+
+.btn-dark {
+  width: 225px;
+  z-index: 50;
+}

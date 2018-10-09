@@ -1,8 +1,7 @@
 <!--My product list-->
-<div class=" row d-flex justify-content-center">
-  <div class="col-6">
-    <h3 class="pb-3 mb-4 font-italic border-bottom">Liste Produits </h3>
-    <div class="card flex-md-row shadow p-2 mb-4 bg-white rounded" *ngFor="let product of products">
+<div class="d-flex justify-content-center">
+<div class="row">
+<div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products">
       <div *ngIf="product.images;then picture else pictureError"></div>
       <ng-template #picture>
         <img class="card-img-right img-responsive center" alt="img" src="https://static.openfoodfacts.org/images/products/{{product._id}}/1.400.jpg">

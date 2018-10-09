@@ -46,30 +46,7 @@ p, h5{
     font-size: 100%;
 }
 
-.pagi{
-    margin-left: 15%;
-    margin-top: 5%;
-}
 
-.pagin{
-    margin-left: 20%;
-    margin-top: 5%;
-}
-
-@media screen and (max-width: 856px) {
-    .pagi{
-        display: none;
-    }
-    
-    .pagin{
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 400px){
-
-}
 
 
 

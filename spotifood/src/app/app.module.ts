@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -37,7 +36,6 @@ import { ProduitsComponent } from './produits/produits.component';
     BrowserModule,
     NgbModule,
     FormsModule,
-    ScrollDispatchModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES)
   ],

@@ -1,6 +1,12 @@
+
+<a [routerLink]="ModalProduitComponent">Done</a>
+
+<main>
 <app-navbar></app-navbar>
-<app-accueil></app-accueil>
 <app-carrousel></app-carrousel>
 <app-list-produit></app-list-produit>
-<app-sidenav></app-sidenav>
+<app-sidenav><router-outlet></router-outlet></app-sidenav>
 <app-footer></app-footer>
+</main>
+
+

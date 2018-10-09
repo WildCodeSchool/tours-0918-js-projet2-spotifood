@@ -16,7 +16,3 @@ export class ComparateurComponent implements OnInit {
   ngOnInit() {
   }
 }
-
-const style = document.getElementById('Comparateur');
-
-style.className = 'test';

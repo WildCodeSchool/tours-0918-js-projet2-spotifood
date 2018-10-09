@@ -1,8 +1,24 @@
+
 .navbar-brand{
     margin-top: 5px;
     margin-left: 30px;
+    font-size: 1.5rem;
 }
 
 nav{
-   background-color: #000000;
+    background-color: #c5c3c3;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+#visiteur{
+	font-size: 60%;
+}
+
+#produit{
+	font-size: 110%;
 }

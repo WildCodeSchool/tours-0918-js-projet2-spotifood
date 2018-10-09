@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProduitsComponent } from './produits/produits.component';
     SidenavComponent,
     FooterComponent,
     ProduitsComponent,
+    NavbarAdminComponent,
   ],
   imports: [
     BrowserModule,

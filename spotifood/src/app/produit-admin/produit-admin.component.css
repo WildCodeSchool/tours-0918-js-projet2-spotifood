@@ -1,5 +1,6 @@
 .produit {
-  margin-top: 10%;
+  margin-top: 7%;
+  justify-content: center;
 }
 
 .ajouter {
@@ -27,6 +28,7 @@ img {
 }
 
 .card {
-  min-width: 200px;
+  min-width: 150px;
   max-width: 220px;
 }
+

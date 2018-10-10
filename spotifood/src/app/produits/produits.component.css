@@ -10,9 +10,9 @@
   transform: translateY(-600px);
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
   .listProduits {
-    margin-left: 200px;
+    margin-left: 300px;
   }
 }
 

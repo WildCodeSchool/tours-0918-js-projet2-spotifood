@@ -10,7 +10,10 @@ const ROUTES: Route[] = [
   {
     path: 'produits',
     component: ProduitsComponent
-  }
+  },
+  { path: '',
+    redirectTo: '/accueil',
+    pathMatch: 'full' },
 ];
 
 export { ROUTES };

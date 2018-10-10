@@ -11,6 +11,7 @@ import {
 })
 export class ListProduitComponent implements OnInit {
    products: any;
+   page = 1;
 
   // A service to open modal windows.
   constructor(private service: NgbModal) {

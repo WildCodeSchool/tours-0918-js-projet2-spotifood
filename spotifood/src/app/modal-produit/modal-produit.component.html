@@ -1,18 +1,30 @@
 <!--My modal-->
     <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title">{{productModal.product_name}}</h5>
+          <h4 class="modal-title">{{productModal.product_name}}</h4>
             <button type="button" class="close"  (click)="modalInput.dismiss()" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-          <p>Nom du produit: {{productModal.product_name}}</p>
-          <p>Quantité: {{productModal.quantity}}</p>
-          <p>Emballage:</p>
+          <h5>Caractéristiques du produit</h5>
+              <p>Quantité: {{productModal.quantity}}</p>
+              <p>Marques : {{productModal.brands}}</p>
+              <p>Conditionnement: {{ productModal.packaging}}</p>
+              <p>Catégories : {{ productModal.categories}}</p>
+              <p>Pays de vente : {{productModal.countries}}</p>
+              <p>Labels, certifications, récompenses : {{productModal.labels}}</p>
+          <h5>Ingrédients</h5>
+              <p>Liste des ingrédients : {{productModal.ingredients_text}}</p>
+              <p>produits provoquant des allergies ou intolérances : {{productModal.allergens_from_ingredients}}</p>
+          <h5>Informations nutritionnelles</h5>
+              <p>NutriScore : {{productModal.nutrition_grades}} </p>
+              <p>Matières grasses / Lipides : {{productModal.nutriments.fat}}</p>
+              <p>Acides gras saturés : {{productModal.nutriments['saturated-fat']}}</p>
+              <p>Sucres : {{productModal.nutriments.sugars}}</p>
+              <p>Sel : {{productModal.nutriments.salt_value}}</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="modalInput.close()">Close</button>
-          <!--<button type="button" class="btn btn-primary" (click)="modalInput.close()">Save changes</button>-->
+              <button type="button" class="btn btn-danger" (click)="modalInput.close()">Close</button>
         </div>
     </div>

@@ -6,11 +6,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { ModalProduitComponent } from './modal-produit/modal-produit.component';
-import { PaginationComponent } from './pagination/pagination.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
 import { FormsModule } from '@angular/forms';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -26,7 +26,6 @@ import { ProduitsComponent } from './produits/produits.component';
     NavbarComponent,
     ListProduitComponent,
     ModalProduitComponent,
-    PaginationComponent,
     CarrouselComponent,
     SidenavComponent,
     FooterComponent,
@@ -36,9 +35,11 @@ import { ProduitsComponent } from './produits/produits.component';
     BrowserModule,
     NgbModule,
     FormsModule,
-    // ScrollDispatchModule,
+   //  ScrollDispatchModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    NgbCollapseModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

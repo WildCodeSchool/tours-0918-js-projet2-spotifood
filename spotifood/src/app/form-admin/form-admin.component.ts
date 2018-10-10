@@ -11,7 +11,9 @@ export class FormAdminComponent implements OnInit {
   // liste des services à afficher
   products: any[];
   // produit à créer
-  product: any = {};
+  product: any = {
+    nutriments: {}
+  };
 
   constructor(private FormService: FormService) { }
 

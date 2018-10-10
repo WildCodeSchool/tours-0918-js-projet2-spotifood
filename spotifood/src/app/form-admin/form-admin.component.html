@@ -5,66 +5,41 @@
     <legend class="form-legend">Ajouter / modifier un produit</legend>
 
     <div class="form-element form-input">
-      <input id="field-name" class="form-element-field" name="product" [(ngModel)]="product['product_name_fr']" placeholder="Saisissez le nom du produit"
-        type="input" required />
+      <input id="field-name" class="form-element-field" [(ngModel)]="product['product_name_fr']" placeholder="Saisissez le nom du produit" type="input" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-name">Nom</label>
       <small class="form-element-hint">(champ obligatoire)</small>
     </div>
 
-    <div class="form-input row">
-      <div class="col-6">
-        <input id="field-quantity" class="form-element-field" name="product" [(ngModel)]="product.quantity" placeholder="Saisissez un chiffre" type="number"
-          required/>
-        <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-quantity">Quantité</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
-      </div>
-      <div class="form-select col-6">
-        <select id="field-quantity-unit" class="form-element-field">
-            <option disabled selected value="" class="form-select-placeholder"></option>
-            <option value="g">g</option>
-            <option value="kg">kg</option>
-            <option value="ml">ml</option>
-            <option value="cl">cl</option>
-            <option value="l">l</option>
-        </select>
-        <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-quantity-unit">unité</label>
-      </div>
+    <div class="form-element form-input">
+      <input id="field-quantity" class="form-element-field" [(ngModel)]="product.quantity" placeholder="Saisissez un chiffre et une unité" type="text" required/>
+      <div class="form-element-bar"></div>
+      <label class="form-element-label" for="field-quantity">Quantité (+ unité)</label>
+      <small class="form-element-hint">(champ obligatoire)</small>
     </div>
 
     <div class="form-element form-input">
-      <input id="field-brand" class="form-element-field" name="product" [(ngModel)]="product.brands" placeholder="Précisez la marque" type="text"
-        required />
+      <input id="field-brand" class="form-element-field" [(ngModel)]="product.brands" placeholder="Précisez la marque" type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-brand">Marque</label>
       <small class="form-element-hint">(champ obligatoire)</small>
     </div>
 
     <div class="form-element form-input">
-      <input id="field-link" class="form-element-field" placeholder="Saisissez une URL" type="url" />
-      <div class="form-element-bar"></div>
-      <label class="form-element-label" for="field-link">Liens vers la page produit</label>
-    </div>
-
-    <div class="form-element form-input">
-      <input id="field-labels" class="form-element-field" name="product" [(ngModel)]="product.labels" placeholder="" type="text" />
+      <input id="field-labels" class="form-element-field" [(ngModel)]="product.labels" placeholder="" type="text" />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-labels">Labels, certifications, récompenses</label>
     </div>
 
     <div class="form-element form-input">
-      <input id="field-categories" class="form-element-field" name="product" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text"
-        required />
+      <input id="field-categories" class="form-element-field" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-categories">Catégories</label>
       <small class="form-element-hint">(champ obligatoire)</small>
     </div>
 
     <div class="form-element form-input">
-      <input id="field-packaging" class="form-element-field" name="product" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text"
-        required />
+      <input id="field-packaging" class="form-element-field" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-packaging">Conditionnement</label>
       <small class="form-element-hint">(champ obligatoire)</small>
@@ -77,16 +52,14 @@
     </div>
 
     <div class="form-element form-input">
-      <input id="field-ingredients" class="form-element-field" name="product" [(ngModel)]="product['ingredients_text']" placeholder="Listez les ingrédients" type="text"
-        required />
+      <input id="field-ingredients" class="form-element-field" [(ngModel)]="product['ingredients_text']" placeholder="Listez les ingrédients" type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-ingredients">Ingrédients</label>
       <small class="form-element-hint">(champ obligatoire)</small>
     </div>
 
     <div class="form-element form-input">
-      <input id="field-allergens" class="form-element-field" name="product" [(ngModel)]="product['allergens_from_ingredients']" placeholder="" type="text"
-        required />
+      <input id="field-allergens" class="form-element-field" [(ngModel)]="product['allergens_from_ingredients']" placeholder="" type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-allergens">Allergènes</label>
       <small class="form-element-hint">(champ obligatoire)</small>
@@ -94,63 +67,34 @@
 <!-- buttons to choose nutriscore -->
     <div class="form-radio form-radio-block">
       <div class="form-sublegend">NutriScore</div>
-      <label class="form-radio-label">
-        <input name="nutriscore" class="form-radio-field" type="radio" value="A" />
-        <i class="form-radio-button"></i>
-        <span>A</span>
-      </label>
-      <label class="form-radio-label">
-        <input name="nutriscore" class="form-radio-field" type="radio" value="B" />
-        <i class="form-radio-button"></i>
-        <span>B</span>
-      </label>
-      <label class="form-radio-label">
-        <input name="nutriscore" class="form-radio-field" type="radio" value="C" />
-        <i class="form-radio-button"></i>
-        <span>C</span>
-      </label>
-      <label class="form-radio-label">
-        <input name="nutriscore" class="form-radio-field" type="radio" value="D" />
-        <i class="form-radio-button"></i>
-        <span>D</span>
-      </label>
-      <label class="form-radio-label">
-        <input name="nutriscore" class="form-radio-field" type="radio" value="E" />
-        <i class="form-radio-button"></i>
-        <span>E</span>
-      </label>
+      <div class="pt-3 d-flex flex-wrap">
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="A" /> <i class="form-radio-button"></i> <span>A</span>
+        </label>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="B" /> <i class="form-radio-button"></i> <span>B</span>
+        </label>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="C" /> <i class="form-radio-button"></i> <span>C</span>
+        </label>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="D" /> <i class="form-radio-button"></i> <span>D</span>
+        </label>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="E" /> <i class="form-radio-button"></i> <span>E</span>
+        </label>
+      </div>
     </div>
 
 <!-- Nutritional values -->
     <div class="form-radio form-radio-block">
       <div class="form-sublegend">Repères nutritionnels pour 100g</div>
-
-      <div class="form-element form-input">
-        <input id="field-lipids" class="form-element-field" name="product" [(ngModel)]="product.nutriments.fat" placeholder="Valeur en g" type="number"
-          required />
-        <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
+      {{product.nutriments.fat}}
+      <div class="form-element form-input"> <input id="field-lipids" class="form-element-field" [(ngModel)]="product.nutriments.fat" placeholder="Valeur en g" type="number" required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
       </div>
 
-      <div class="form-element form-input">
-        <input id="field-saturated" class="form-element-field" name="product" [(ngModel)]="product.nutriments['saturated-fat']" placeholder="Valeur en g" type="number"
-          required />
-        <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
+      <div class="form-element form-input"> <input id="field-saturated" class="form-element-field" [(ngModel)]="product.nutriments['saturated-fat']" placeholder="Valeur en g" type="number"   required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
       </div>
 
-      <div class="form-element form-input">
-        <input id="field-sugars" class="form-element-field" name="product" [(ngModel)]="product.nutriments.sugars" placeholder="Valeur en g" type="number"
-          required />
-        <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-sugars">Sucres</label>
+      <div class="form-element form-input"> <input id="field-sugars" class="form-element-field" [(ngModel)]="product.nutriments.sugars" placeholder="Valeur en g" type="number"   required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-sugars">Sucres</label>
       </div>
 
-      <div class="form-element form-input">
-        <input id="field-salt" class="form-element-field" name="product" [(ngModel)]="product.nutriments['salt_100g']" placeholder="Valeur en g" type="number"
-          required />
-        <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-salt">Sel</label>
+      <div class="form-element form-input"> <input id="field-salt" class="form-element-field" [(ngModel)]="product.nutriments['salt_100g']" placeholder="Valeur en g" type="number"   required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-salt">Sel</label>
       </div>
 
 

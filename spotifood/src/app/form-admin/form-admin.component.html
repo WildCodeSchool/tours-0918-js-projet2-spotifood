@@ -5,7 +5,7 @@
     <legend class="form-legend">Ajouter / modifier un produit</legend>
 
     <div class="form-element form-input">
-      <input id="field-name" class="form-element-field" placeholder="Saisissez le nom du produit"
+      <input id="field-name" class="form-element-field" name="product" [(ngModel)]="product['product_name_fr']" placeholder="Saisissez le nom du produit"
         type="input" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-name">Nom</label>
@@ -14,7 +14,7 @@
 
     <div class="form-input row">
       <div class="col-6">
-        <input id="field-quantity" class="form-element-field" placeholder="Saisissez un chiffre" type="number"
+        <input id="field-quantity" class="form-element-field" name="product" [(ngModel)]="product.quantity" placeholder="Saisissez un chiffre" type="number"
           required/>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-quantity">Quantité</label>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="form-element form-input">
-      <input id="field-brand" class="form-element-field" placeholder="Précisez la marque" type="text"
+      <input id="field-brand" class="form-element-field" name="product" [(ngModel)]="product.brands" placeholder="Précisez la marque" type="text"
         required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-brand">Marque</label>
@@ -49,13 +49,13 @@
     </div>
 
     <div class="form-element form-input">
-      <input id="field-labels" class="form-element-field" placeholder="" type="text" />
+      <input id="field-labels" class="form-element-field" name="product" [(ngModel)]="product.labels" placeholder="" type="text" />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-labels">Labels, certifications, récompenses</label>
     </div>
 
     <div class="form-element form-input">
-      <input id="field-categories" class="form-element-field" placeholder="Indiquez la/les catégories du produit" type="text"
+      <input id="field-categories" class="form-element-field" name="product" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text"
         required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-categories">Catégories</label>
@@ -63,7 +63,7 @@
     </div>
 
     <div class="form-element form-input">
-      <input id="field-packaging" class="form-element-field" placeholder="ex: carton, bouteille en plastique, etc." type="text"
+      <input id="field-packaging" class="form-element-field" name="product" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text"
         required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-packaging">Conditionnement</label>
@@ -77,7 +77,7 @@
     </div>
 
     <div class="form-element form-input">
-      <input id="field-ingredients" class="form-element-field" placeholder="Listez les ingrédients" type="text"
+      <input id="field-ingredients" class="form-element-field" name="product" [(ngModel)]="product['ingredients_text']" placeholder="Listez les ingrédients" type="text"
         required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-ingredients">Ingrédients</label>
@@ -85,7 +85,7 @@
     </div>
 
     <div class="form-element form-input">
-      <input id="field-allergens" class="form-element-field" placeholder="" type="text"
+      <input id="field-allergens" class="form-element-field" name="product" [(ngModel)]="product['allergens_from_ingredients']" placeholder="" type="text"
         required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-allergens">Allergènes</label>
@@ -126,28 +126,28 @@
       <div class="form-sublegend">Repères nutritionnels pour 100g</div>
 
       <div class="form-element form-input">
-        <input id="field-lipids" class="form-element-field" placeholder="Valeur en g" type="number"
+        <input id="field-lipids" class="form-element-field" name="product" [(ngModel)]="product.nutriments.fat" placeholder="Valeur en g" type="number"
           required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
       </div>
 
       <div class="form-element form-input">
-        <input id="field-saturated" class="form-element-field" placeholder="Valeur en g" type="number"
+        <input id="field-saturated" class="form-element-field" name="product" [(ngModel)]="product.nutriments['saturated-fat']" placeholder="Valeur en g" type="number"
           required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
       </div>
 
       <div class="form-element form-input">
-        <input id="field-sugar" class="form-element-field" placeholder="Valeur en g" type="number"
+        <input id="field-sugars" class="form-element-field" name="product" [(ngModel)]="product.nutriments.sugars" placeholder="Valeur en g" type="number"
           required />
         <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-sugar">Sucres</label>
+        <label class="form-element-label" for="field-sugars">Sucres</label>
       </div>
 
       <div class="form-element form-input">
-        <input id="field-salt" class="form-element-field" placeholder="Valeur en g" type="number"
+        <input id="field-salt" class="form-element-field" name="product" [(ngModel)]="product.nutriments['salt_100g']" placeholder="Valeur en g" type="number"
           required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-salt">Sel</label>
@@ -155,13 +155,13 @@
 
 
     </div>
- 
-    
-    
+
+
+
   </fieldset>
 
   <div class="form-actions">
     <button class="btn btn-outline-danger rounded-0" type="reset">Annuler</button>
-    <button class="btn btn-success rounded-0" type="submit">Confirmer</button>
+    <button class="btn btn-success rounded-0" type="submit" (click)="add()">Confirmer</button>
   </div>
 </form>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormService } from '../common/form.service';
 
 @Component({
   selector: 'app-form-admin',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormAdminComponent implements OnInit {
 
-  constructor() { }
+  // liste des services à afficher
+  products: any[];
+  // produit à créer
+  product: any = {};
+
+  constructor(private FormService: FormService) { }
 
   ngOnInit() {
+  }
+
+  add() {
+    this.FormService.add(this.product);
+    this.product = {};
   }
 
 }

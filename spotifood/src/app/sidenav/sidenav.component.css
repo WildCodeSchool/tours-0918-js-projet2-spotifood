@@ -131,3 +131,8 @@ a {
   border-radius: 50%;
   background: white;
 }
+
+select {
+  background-color: #28a745;
+  border-color: #28a745
+}

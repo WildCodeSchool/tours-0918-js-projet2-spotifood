@@ -20,6 +20,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminAddComponent } from './form-admin-add/form-admin-add.component';
+import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FormAdminAddComponent } from './form-admin-add/form-admin-add.component
     FooterComponent,
     ProduitsComponent,
     FormAdminAddComponent,
+    FormAdminEditComponent,
   ],
   imports: [
     BrowserModule,

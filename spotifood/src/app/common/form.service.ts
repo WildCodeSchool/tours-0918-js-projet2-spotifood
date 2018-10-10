@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Product } from '../models/products';
+ 
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +19,17 @@ export class FormService {
     this.saveToLocalStorage(this.products);
   }
 
+  update(element) {
+    this.products.push(element);
+    this.saveToLocalStorage(this.products);
+  }
+
   saveToLocalStorage(products) {
     const data = JSON.stringify(products);
     localStorage.setItem('products', data);
+  }
+
+  getProduct(id: number) {
+    return of(this.products.find(product => product.id === id));
   }
 }

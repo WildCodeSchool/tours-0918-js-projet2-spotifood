@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from '../common/form.service';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-form-admin-add',
@@ -11,9 +12,7 @@ export class FormAdminAddComponent implements OnInit {
   // liste des services à afficher
   products: any[];
   // produit à créer
-  product: any = {
-    nutriments: {}
-  };
+  product: Product = new Product();
 
   constructor(private FormService: FormService) { }
 
@@ -22,7 +21,7 @@ export class FormAdminAddComponent implements OnInit {
 
   add() {
     this.FormService.add(this.product);
-    this.product = {};
+    this.product = new Product();
   }
 
 }

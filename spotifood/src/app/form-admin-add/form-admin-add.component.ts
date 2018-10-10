@@ -12,8 +12,9 @@ export class FormAdminAddComponent implements OnInit {
   // liste des services à afficher
   products: any[];
   // produit à créer
-  product: Product = new Product();
-
+  product: any = {
+    nutriments: {}
+  };
   constructor(private FormService: FormService) { }
 
   ngOnInit() {

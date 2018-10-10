@@ -30,6 +30,6 @@ export class FormService {
   }
 
   getProduct(id: number) {
-    return of(this.products.find(product => product.id === id));
+    return of(this.products.find(product => product.id == id));
   }
 }

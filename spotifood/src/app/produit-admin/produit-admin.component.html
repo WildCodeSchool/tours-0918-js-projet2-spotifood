@@ -19,16 +19,17 @@
         <div class="row icons">
           <a class="btn btn-inline-primary btn-sm mt-4" role="button" href="#" (click)="modifier()">🖌</a>
 
+          <a href="suppr">
+           <img class="trash" src="http://image.noelshack.com/fichiers/2018/41/3/1539183063-flat-1298035-640-fotor.png">
+         </a>
+       </div>
 
-          <img class="trash" src="http://image.noelshack.com/fichiers/2018/41/3/1539183063-flat-1298035-640-fotor.png">
-        </div>
-
-      </div>
-      <ng-template #content let-modal>
-        <app-modal-produit [productModal]="product" [modalInput]="modal"></app-modal-produit>
-      </ng-template>
-    </div>
+     </div>
+     <ng-template #content let-modal>
+      <app-modal-produit [productModal]="product" [modalInput]="modal"></app-modal-produit>
+    </ng-template>
   </div>
+</div>
 </div>
 
 

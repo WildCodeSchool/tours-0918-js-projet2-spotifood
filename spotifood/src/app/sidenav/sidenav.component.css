@@ -25,7 +25,7 @@ legend {
 }
 
 /* Survol souris changement de couleur */
-.sidebar button:hover {
+.sidebar option:hover {
     color: #000000;
 }
 

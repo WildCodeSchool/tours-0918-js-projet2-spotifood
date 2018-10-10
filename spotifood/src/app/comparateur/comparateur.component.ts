@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CommonService } from '../common/common.service';
 
 
 
@@ -8,11 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comparateur.component.css']
 })
 export class ComparateurComponent implements OnInit {
-  page = 4;
 
+  products: any;
 
-  constructor() { }
+  constructor(private service: CommonService) { }
 
   ngOnInit() {
+    this.products = this.service.get();
   }
 }

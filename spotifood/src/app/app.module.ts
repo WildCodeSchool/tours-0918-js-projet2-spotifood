@@ -19,7 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
-import { FormAdminComponent } from './form-admin/form-admin.component';
+import { FormAdminAddComponent } from './form-admin-add/form-admin-add.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { FormAdminComponent } from './form-admin/form-admin.component';
     SidenavComponent,
     FooterComponent,
     ProduitsComponent,
-    FormAdminComponent,
+    FormAdminAddComponent,
   ],
   imports: [
     BrowserModule,

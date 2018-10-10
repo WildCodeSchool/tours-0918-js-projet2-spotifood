@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ProduitsComponent } from './produits/produits.component';
-import { FormAdminComponent } from './form-admin/form-admin.component';
+import { FormAdminAddComponent } from './form-admin-add/form-admin-add.component';
 
 const ROUTES: Route[] = [
   {
@@ -13,8 +13,8 @@ const ROUTES: Route[] = [
     component: ProduitsComponent
   },
   {
-    path: 'edit',
-    component: FormAdminComponent
+    path: 'add',
+    component: FormAdminAddComponent
   }
 ];
 

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormService } from '../common/form.service';
 
 @Component({
-  selector: 'app-form-admin',
-  templateUrl: './form-admin.component.html',
-  styleUrls: ['./form-admin.component.css']
+  selector: 'app-form-admin-add',
+  templateUrl: './form-admin-add.component.html',
+  styleUrls: ['./form-admin-add.component.css']
 })
-export class FormAdminComponent implements OnInit {
+export class FormAdminAddComponent implements OnInit {
 
   // liste des services à afficher
   products: any[];

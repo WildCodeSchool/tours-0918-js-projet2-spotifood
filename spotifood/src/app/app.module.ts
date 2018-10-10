@@ -6,7 +6,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { ModalProduitComponent } from './modal-produit/modal-produit.component';

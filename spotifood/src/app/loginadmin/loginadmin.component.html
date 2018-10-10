@@ -5,11 +5,29 @@
   </h1>
 
   <div class="form-element form-input">
-    <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" placeholder="Please fill in your full email" type="input" required/>
+    <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" [(ngModel)]="champ" class="form-element-field" placeholder="Please fill in your full email" type="input" required/>
     <div class="form-element-bar"></div>
     <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Email</label>
 </div>
 
-<a class="btn btn-light btn-lg" routerLink="/produits">Connexion</a>
+<a class="btn btn-light btn-lg" (click)="verify(content)" routerLink="/produits">Connexion</a>
 
+<ng-template #content let-modal>
+  <div class="modalbox">
+    <div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Erreur dans la saisie.</h4>
+  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <h5>Erreur, l'email saisie n'est pas correcte!<br> veuillez reessayer.</h5>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark modalbtn" (click)="modal.close('Save click')">Ok</button>
+</div>
+</div>
+</ng-template>
 </div>

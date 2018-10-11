@@ -12,10 +12,10 @@ export class FormService {
   constructor() {
     if (!localStorage.products) {
       // Initialisation du local storage et du tableau products
-      this.products = products.map((x) => {
+      this.products = products.map((x, i) => {
 
         const product = new Product();
-
+        console.log(i);
         product.id = x['_id'];
         product.name = x['product_name_fr'] ? x['product_name_fr'] : x['product_name'];
         product.quantity = x.quantity;
@@ -31,10 +31,16 @@ export class FormService {
         product.nutrients = new Nutrients();
 
         if (x.nutriments) {
-          product.nutrients.lipids = +x.nutriments['fat_100g'];
-          product.nutrients.sugars = +x.nutriments['sugars_100g'];
-          product.nutrients.saturated = +x.nutriments['saturated-fat_100g'];
-          product.nutrients.salt = +x.nutriments['salt_100g'];
+          product.nutrients.lipids = x.nutriments['fat_100g'] ? +x.nutriments['fat_100g'] : -1;
+          product.nutrients.sugars = x.nutriments['sugars_100g'] ? +x.nutriments['sugars_100g'] : -1;
+          product.nutrients.saturated = x.nutriments['saturated-fat_100g'] ? +x.nutriments['saturated-fat_100g'] : -1;
+          product.nutrients.salt = x.nutriments['salt_100g'] ? +x.nutriments['salt_100g'] : -1;
+        } else {
+          console.log('something');
+          product.nutrients.lipids = -1;
+          product.nutrients.sugars = -1;
+          product.nutrients.saturated = -1;
+          product.nutrients.salt = -1;
         }
 
         return product;
@@ -56,7 +62,9 @@ export class FormService {
   }
 
   update(element) {
-    this.products.push(element);
+    const index = this.products.indexOf(element);
+    console.log(index);
+    this.products[index] = element;
     this.saveToLocalStorage(this.products);
   }
 

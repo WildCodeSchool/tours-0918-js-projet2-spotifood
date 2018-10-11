@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormService } from '../common/form.service';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { Location } from '@angular/common';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Product } from '../models/product';
-
+import { Nutrients } from '../models/nutriments';
 
 @Component({
   selector: 'app-form-admin-edit',
@@ -14,21 +13,31 @@ export class FormAdminEditComponent implements OnInit {
 
   // produit à créer
   product: Product = new Product();
+  addForm: boolean;
 
-  constructor(private formService: FormService, private route: ActivatedRoute, private router: Router,
-  private location: Location) { }
+  constructor(private formService: FormService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.getProduct(id);
+    if (this.route.snapshot.paramMap.get('id')) {
+      const id = this.route.snapshot.paramMap.get('id');
+      this.getProduct(id);
+      this.addForm = false;
+    } else {
+      this.addForm = true;
+      this.product = new Product();
+      this.product.nutrients = new Nutrients();
+    }
   }
 
   add() {
     this.formService.add(this.product);
+    this.product = new Product();
+    this.product.nutrients = new Nutrients();
   }
 
   update() {
     this.formService.update(this.product);
+    this.product = new Product();
   }
 
   getProduct(id): void {

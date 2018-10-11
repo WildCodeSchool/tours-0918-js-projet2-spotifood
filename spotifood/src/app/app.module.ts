@@ -19,7 +19,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
-import { FormAdminAddComponent } from './form-admin-add/form-admin-add.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 
 @NgModule({
@@ -34,7 +33,6 @@ import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.compon
     SidenavComponent,
     FooterComponent,
     ProduitsComponent,
-    FormAdminAddComponent,
     FormAdminEditComponent,
   ],
   imports: [

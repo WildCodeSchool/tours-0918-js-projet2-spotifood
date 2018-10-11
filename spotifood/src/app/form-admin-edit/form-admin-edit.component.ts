@@ -3,6 +3,7 @@ import { FormService } from '../common/form.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
+import { Alert } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-form-admin-edit',
@@ -37,8 +38,7 @@ export class FormAdminEditComponent implements OnInit {
 
   update() {
     this.formService.update(this.product);
-    this.product = new Product();
-    this.product.nutrients = new Nutrients();
+    alert('La fiche a bien été modifiée');
   }
 
   getProduct(id): void {

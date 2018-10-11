@@ -38,6 +38,7 @@ export class FormAdminEditComponent implements OnInit {
   update() {
     this.formService.update(this.product);
     this.product = new Product();
+    this.product.nutrients = new Nutrients();
   }
 
   getProduct(id): void {

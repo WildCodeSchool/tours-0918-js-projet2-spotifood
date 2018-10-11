@@ -63,7 +63,6 @@ export class FormService {
 
   update(element) {
     const index = this.products.indexOf(element);
-    console.log(index);
     this.products[index] = element;
     this.saveToLocalStorage(this.products);
   }

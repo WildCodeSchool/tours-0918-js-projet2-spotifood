@@ -6,27 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./produit-admin.component.css']
 })
 export class ProduitAdminComponent implements OnInit {
-products: any;
+  products: any;
 
   ngOnInit() {
-  
+    
+
     this.products = [
     {
       "_id": 638097545939,
       "additives_n": 0,
       "ingredients_hierarchy": [
-        "fr:thé vert.petales de tournesol.petales de bleuets.arome nature"
+      "fr:thé vert.petales de tournesol.petales de bleuets.arome nature"
       ],
       "categories": "Boissons,Boissons chaudes",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_text_with_allergens_fr": "thé vert.petales de tournesol.petales de bleuets.arome nature",
       "additives": " [ the-vert-petales-de-tournesol-petales-de-bleuets-arome-nature -> fr:the-vert-petales-de-tournesol-petales-de-bleuets-arome-nature  ]  [ the-vert-petales-de-tournesol-petales-de-bleuets-arome -> fr:the-vert-petales-de-tournesol-petales-de-bleuets-arome  ]  [ the-vert-petales-de-tournesol-petales-de-bleuets -> fr:the-vert-petales-de-tournesol-petales-de-bleuets  ]  [ the-vert-petales-de-tournesol-petales-de -> fr:the-vert-petales-de-tournesol-petales-de  ]  [ the-vert-petales-de-tournesol-petales -> fr:the-vert-petales-de-tournesol-petales  ]  [ the-vert-petales-de-tournesol -> fr:the-vert-petales-de-tournesol  ]  [ the-vert-petales-de -> fr:the-vert-petales-de  ]  [ the-vert-petales -> fr:the-vert-petales  ]  [ the-vert -> fr:the-vert  ]  [ the -> fr:the  ] ",
       "labels_prev_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "max_imgid": "1",
       "ingredients_text_fr": "thé vert.petales de tournesol.petales de bleuets.arome nature",
@@ -35,7 +36,7 @@ products: any;
       "product_quantity": 100,
       "ingredients_n": 1,
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "packaging_debug_tags": [],
       "lang_debug_tags": [],
@@ -105,20 +106,20 @@ products: any;
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "traces_from_user": "(fr)",
       "_keywords": [
-        "grey",
-        "ab",
-        "agriculture",
-        "europeen",
-        "bio",
-        "boisson",
-        "detox",
-        "biologique",
-        "the",
-        "vert",
-        "chaude",
-        "france",
-        "terra",
-        "darwin"
+      "grey",
+      "ab",
+      "agriculture",
+      "europeen",
+      "bio",
+      "boisson",
+      "detox",
+      "biologique",
+      "the",
+      "vert",
+      "chaude",
+      "france",
+      "terra",
+      "darwin"
       ],
       "generic_name": "",
       "emb_codes_tags": [],
@@ -127,57 +128,57 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_n": 0,
       "ingredients_text_with_allergens": "thé vert.petales de tournesol.petales de bleuets.arome nature",
       "brands_tags": [
-        "terra-darwin"
+      "terra-darwin"
       ],
       "categories_hierarchy": [
-        "en:beverages",
-        "en:hot-beverages"
+      "en:beverages",
+      "en:hot-beverages"
       ],
       "misc_tags": [
-        "en:nutriscore-not-computed",
-        "en:nutrition-not-enough-data-to-compute-nutrition-score",
-        "en:nutrition-no-saturated-fat"
+      "en:nutriscore-not-computed",
+      "en:nutrition-not-enough-data-to-compute-nutrition-score",
+      "en:nutrition-no-saturated-fat"
       ],
       "allergens_hierarchy": [],
       "unknown_nutrients_tags": [],
       "ingredients_tags": [
-        "fr:the-vert-petales-de-tournesol-petales-de-bleuets-arome-nature"
+      "fr:the-vert-petales-de-tournesol-petales-de-bleuets-arome-nature"
       ],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "last_editor": "sebleouf",
       "ingredients_ids_debug": [
-        "the-vert-petales-de-tournesol-petales-de-bleuets-arome-nature"
+      "the-vert-petales-de-tournesol-petales-de-bleuets-arome-nature"
       ],
       "ingredients_n_tags": [
-        "1",
-        "1-10"
+      "1",
+      "1-10"
       ],
       "manufacturing_places": "",
       "traces_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "stores_debug_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "last_image_dates_tags": [
-        "2018-09-14",
-        "2018-09",
-        "2018"
+      "2018-09-14",
+      "2018-09",
+      "2018"
       ],
       "amino_acids_tags": [],
       "vitamins_prev_tags": [],
@@ -189,26 +190,26 @@ products: any;
       "lang": "fr",
       "packaging": "poche papier",
       "origins_tags": [
-        "france"
+      "france"
       ],
       "origins": "France",
       "traces": "",
       "pnns_groups_2": "unknown",
       "product_name_fr_debug_tags": [],
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-100-percent-unknown",
-        "ingredients-ingredient-tag-length-greater-than-50"
+      "ingredients-unknown-score-above-0",
+      "ingredients-100-percent-unknown",
+      "ingredients-ingredient-tag-length-greater-than-50"
       ],
       "purchase_places_tags": [
-        "france"
+      "france"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "nova_groups_tags": [
-        "en:1-unprocessed-or-minimally-processed-foods"
+      "en:1-unprocessed-or-minimally-processed-foods"
       ],
       "nucleotides_prev_tags": [],
       "serving_size_debug_tags": [],
@@ -216,21 +217,21 @@ products: any;
       "labels_debug_tags": [],
       "nutrition_data": "on",
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "ingredients_debug": [
-        "thé vert.petales de tournesol.petales de bleuets.arome nature"
+      "thé vert.petales de tournesol.petales de bleuets.arome nature"
       ],
       "additives_old_tags": [],
       "minerals_prev_tags": [],
       "generic_name_fr": "",
       "amino_acids_prev_tags": [],
       "categories_prev_tags": [
-        "en:beverages",
-        "en:hot-beverages"
+      "en:beverages",
+      "en:hot-beverages"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "sortkey": 537028604,
       "id": "80585459",
@@ -238,14 +239,14 @@ products: any;
       "allergens_from_user": "(fr)",
       "manufacturing_places_tags": [],
       "categories_tags": [
-        "en:beverages",
-        "en:hot-beverages",
-        "en:non-alcoholic-beverages"
+      "en:beverages",
+      "en:hot-beverages",
+      "en:non-alcoholic-beverages"
       ],
       "brands": "terra Darwin",
       "countries_debug_tags": [],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "nutrition_data_prepared": "",
       "labels": "Bio,Bio européen,AB Agriculture Biologique",
@@ -257,40 +258,40 @@ products: any;
       "allergens_tags": [],
       "complete": 0,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "ingredients_original_tags": [
-        "fr:thé vert.petales de tournesol.petales de bleuets.arome nature"
+      "fr:thé vert.petales de tournesol.petales de bleuets.arome nature"
       ],
       "no_nutrition_data": "",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "labels_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "last_edit_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
@@ -301,7 +302,7 @@ products: any;
       "additives_prev_original_tags": [],
       "product_name_fr": "the vert Grey detox",
       "packaging_tags": [
-        "poche-papier"
+      "poche-papier"
       ],
       "vitamins_tags": [],
       "allergens_from_ingredients": "",
@@ -315,9 +316,9 @@ products: any;
       "unknown_ingredients_n": 1,
       "creator": "openfoodfacts-contributors",
       "entry_dates_tags": [
-        "2018-09-14",
-        "2018-09",
-        "2018"
+      "2018-09-14",
+      "2018-09",
+      "2018"
       ],
       "nova_group": 1,
       "nutrition_data_per": "100g",
@@ -333,34 +334,34 @@ products: any;
       "interface_version_created": "20120622",
       "emb_codes_orig": "",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "labels_prev_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "categories_prev_hierarchy": [
-        "en:beverages",
-        "en:hot-beverages"
+      "en:beverages",
+      "en:hot-beverages"
       ],
       "stores_tags": [
-        "biocoop"
+      "biocoop"
       ],
       "checkers_tags": [],
       "expiration_date_debug_tags": [],
       "nucleotides_tags": [],
       "labels_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "nutrition_data_prepared_per": "100g",
       "nutrition_grades_tags": [
-        "unknown"
+      "unknown"
       ],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "generic_name_fr_debug_tags": [],
       "serving_size": "",
@@ -375,36 +376,36 @@ products: any;
       "additives_debug_tags": [],
       "traces_hierarchy": [],
       "ingredients": [
-        {
-          "text": "thé vert.petales de tournesol.petales de bleuets.arome nature",
-          "id": "fr:thé vert.petales de tournesol.petales de bleuets.arome nature",
-          "rank": 1
-        }
+      {
+        "text": "thé vert.petales de tournesol.petales de bleuets.arome nature",
+        "id": "fr:thé vert.petales de tournesol.petales de bleuets.arome nature",
+        "rank": 1
+      }
       ],
       "nova_groups": 1,
       "nutrient_levels": {},
       "additives_old_n": 0,
       "codes_tags": [
-        "code-13",
-        638097545939,
-        "063809754593x",
-        "06380975459xx",
-        "0638097545xxx",
-        "063809754xxxx",
-        "06380975xxxxx",
-        "0638097xxxxxx",
-        "063809xxxxxxx",
-        "06380xxxxxxxx",
-        "0638xxxxxxxxx",
-        "063xxxxxxxxxx",
-        "06xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      638097545939,
+      "063809754593x",
+      "06380975459xx",
+      "0638097545xxx",
+      "063809754xxxx",
+      "06380975xxxxx",
+      "0638097xxxxxx",
+      "063809xxxxxxx",
+      "06380xxxxxxxx",
+      "0638xxxxxxxxx",
+      "063xxxxxxxxxx",
+      "06xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ]
     },
     {
       "_id": 762111949622,
       "photographers_tags": [
-        "stephane"
+      "stephane"
       ],
       "allergens_debug_tags": [],
       "purchase_places_debug_tags": [],
@@ -424,44 +425,44 @@ products: any;
       "unknown_nutrients_tags": [],
       "last_image_t": 1441263666,
       "editors_tags": [
-        "aleene",
-        "sebleouf",
-        "stephane"
+      "aleene",
+      "sebleouf",
+      "stephane"
       ],
       "nucleotides_tags": [],
       "countries_debug_tags": [],
       "allergens_tags": [],
       "created_t": 1441263664,
       "debug_param_sorted_langs": [
-        "en"
+      "en"
       ],
       "additives_debug_tags": [],
       "ingredients_text_with_allergens_en": "",
       "labels": "",
       "nucleotides_prev_tags": [],
       "brands_tags": [
-        "starbucks"
+      "starbucks"
       ],
       "ingredients_text_en": "",
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "ingredients_original_tags": [],
       "ingredients": [],
       "purchase_places_tags": [
-        "new-york"
+      "new-york"
       ],
       "stores_debug_tags": [],
       "link_debug_tags": [],
@@ -473,7 +474,7 @@ products: any;
       "origins": "",
       "stores": "",
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "purchase_places": "New York",
       "images": {
@@ -556,28 +557,28 @@ products: any;
       "nutrition_data_prepared_per": "100g",
       "last_editor": "sebleouf",
       "languages_hierarchy": [
-        "en:english"
+      "en:english"
       ],
       "max_imgid": "1",
       "countries": "États-Unis",
       "entry_dates_tags": [
-        "2015-09-03",
-        "2015-09",
-        "2015"
+      "2015-09-03",
+      "2015-09",
+      "2015"
       ],
       "manufacturing_places": "",
       "last_edit_dates_tags": [
-        "2018-09-18",
-        "2018-09",
-        "2018"
+      "2018-09-18",
+      "2018-09",
+      "2018"
       ],
       "nutrition_data_prepared_per_debug_tags": [],
       "labels_hierarchy": [],
       "serving_quantity": 0,
       "labels_debug_tags": [],
       "editors": [
-        "aleene",
-        "stephane"
+      "aleene",
+      "stephane"
       ],
       "lang": "en",
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
@@ -585,7 +586,7 @@ products: any;
       "emb_codes_debug_tags": [],
       "no_nutrition_data": "",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "categories": "",
       "traces_tags": [],
@@ -594,17 +595,17 @@ products: any;
       "brands_debug_tags": [],
       "link": "",
       "correctors_tags": [
-        "aleene",
-        "sebleouf"
+      "aleene",
+      "sebleouf"
       ],
       "allergens_hierarchy": [],
       "allergens": "",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "expiration_date": "",
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "ingredients_ids_debug": [],
       "emb_codes_tags": [],
@@ -617,8 +618,8 @@ products: any;
         "en": 3
       },
       "languages_tags": [
-        "en:english",
-        "en:1"
+      "en:english",
+      "en:1"
       ],
       "interface_version_modified": "20120622",
       "nutrition_data_prepared": "",
@@ -628,7 +629,7 @@ products: any;
       "ingredients_text_debug": "",
       "serving_size": "",
       "countries_hierarchy": [
-        "en:united-states"
+      "en:united-states"
       ],
       "manufacturing_places_tags": [],
       "labels_tags": [],
@@ -637,8 +638,8 @@ products: any;
       "product_name_en": "Coffee",
       "packaging": "",
       "_keywords": [
-        "starbuck",
-        "coffee"
+      "starbuck",
+      "coffee"
       ],
       "additives_tags_n": null,
       "languages": {
@@ -650,10 +651,10 @@ products: any;
       "minerals_tags": [],
       "ingredients_text_with_allergens": "",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "generic_name_en": "coffee",
       "ingredients_debug": [],
@@ -664,62 +665,62 @@ products: any;
       "labels_prev_tags": [],
       "generic_name_en_debug_tags": [],
       "countries_tags": [
-        "en:united-states"
+      "en:united-states"
       ],
       "checkers_tags": [],
       "allergens_from_user": "(fr)",
       "emb_codes": "",
       "last_image_dates_tags": [
-        "2015-09-03",
-        "2015-09",
-        "2015"
+      "2015-09-03",
+      "2015-09",
+      "2015"
       ],
       "additives_tags": [],
       "brands": "Starbucks",
       "minerals_prev_tags": [],
       "packaging_tags": [],
       "codes_tags": [
-        "code-13",
-        762111949622,
-        "076211194962x",
-        "07621119496xx",
-        "0762111949xxx",
-        "076211194xxxx",
-        "07621119xxxxx",
-        "0762111xxxxxx",
-        "076211xxxxxxx",
-        "07621xxxxxxxx",
-        "0762xxxxxxxxx",
-        "076xxxxxxxxxx",
-        "07xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      762111949622,
+      "076211194962x",
+      "07621119496xx",
+      "0762111949xxx",
+      "076211194xxxx",
+      "07621119xxxxx",
+      "0762111xxxxxx",
+      "076211xxxxxxx",
+      "07621xxxxxxxx",
+      "0762xxxxxxxxx",
+      "076xxxxxxxxxx",
+      "07xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "rev": 6,
       "nova_group_debug": "no nova group when the product does not have ingredients",
       "update_key": "20180706-categories",
       "traces_debug_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "labels_prev_hierarchy": [],
       "nutrition_data": "on",
       "amino_acids_tags": [],
       "origins_debug_tags": [],
       "informers_tags": [
-        "stephane",
-        "aleene"
+      "stephane",
+      "aleene"
       ],
       "unknown_ingredients_n": 0,
       "categories_hierarchy": [],
@@ -736,72 +737,72 @@ products: any;
     {
       "_id": 3350033435445,
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "drunkenbison",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "drunkenbison",
+      "sebleouf"
       ],
       "unknown_nutrients_tags": [],
       "ingredients_tags": [
-        "fr:crevette",
-        "fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam",
-        "fr:sel-vinaigre-d-alcool-acidifiant",
-        "fr:citrate-de-sodium"
+      "fr:crevette",
+      "fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam",
+      "fr:sel-vinaigre-d-alcool-acidifiant",
+      "fr:citrate-de-sodium"
       ],
       "allergens_hierarchy": [
-        "en:crustaceans"
+      "en:crustaceans"
       ],
       "categories_hierarchy": [
-        "en:seafood",
-        "en:crustaceans",
-        "en:shrimps"
+      "en:seafood",
+      "en:crustaceans",
+      "en:shrimps"
       ],
       "brands_tags": [
-        "monoprix-bio"
+      "monoprix-bio"
       ],
       "misc_tags": [
-        "en:nutrition-no-fiber",
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fiber",
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "manufacturing_places": "",
       "ingredients_n_tags": [
-        "4",
-        "1-10"
+      "4",
+      "1-10"
       ],
       "ingredients_ids_debug": [
-        "crevettes-98",
-        "penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre-d-alcool",
-        "acidifiant",
-        "citrates-de-sodium"
+      "crevettes-98",
+      "penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre-d-alcool",
+      "acidifiant",
+      "citrates-de-sodium"
       ],
       "last_editor": "sebleouf",
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "stores_debug_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "traces_tags": [],
       "vitamins_prev_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "last_image_dates_tags": [
-        "2018-09-02",
-        "2018-09",
-        "2018"
+      "2018-09-02",
+      "2018-09",
+      "2018"
       ],
       "amino_acids_tags": [],
       "languages_codes": {
@@ -814,57 +815,57 @@ products: any;
       "serving_size_debug_tags": [],
       "emb_codes": "",
       "purchase_places_tags": [
-        "france"
+      "france"
       ],
       "nova_groups_tags": [
-        "en:1-unprocessed-or-minimally-processed-foods"
+      "en:1-unprocessed-or-minimally-processed-foods"
       ],
       "editors_tags": [
-        "kiliweb",
-        "sebleouf",
-        "openfoodfacts-contributors",
-        "drunkenbison"
+      "kiliweb",
+      "sebleouf",
+      "openfoodfacts-contributors",
+      "drunkenbison"
       ],
       "product_name_fr_debug_tags": [],
       "pnns_groups_2": "Fish and seafood",
       "traces": "",
       "quality_tags": [
-        "ingredients-50-percent-unknown",
-        "ingredients-ingredient-tag-length-greater-than-50"
+      "ingredients-50-percent-unknown",
+      "ingredients-ingredient-tag-length-greater-than-50"
       ],
       "packaging": "Plastique,Barquette,Réfrigéré",
       "origins": "Equateur,Vietnam",
       "origins_tags": [
-        "equateur",
-        "vietnam"
+      "equateur",
+      "vietnam"
       ],
       "additives_old_tags": [
-        "en:e331"
+      "en:e331"
       ],
       "minerals_prev_tags": [],
       "generic_name_fr": "",
       "ingredients_debug": [
-        "crevettes* 98% ",
-        "(",
-        "(",
-        null,
-        null,
-        "Penaeus vannamei élevées en Equateur ou au Vietnam)- sel vinaigre d'alcool",
-        " - ",
-        " - ",
-        " - ",
-        null,
-        "acidifiant ",
-        ":",
-        ":",
-        null,
-        null,
-        " citrates de sodium."
+      "crevettes* 98% ",
+      "(",
+      "(",
+      null,
+      null,
+      "Penaeus vannamei élevées en Equateur ou au Vietnam)- sel vinaigre d'alcool",
+      " - ",
+      " - ",
+      " - ",
+      null,
+      "acidifiant ",
+      ":",
+      ":",
+      null,
+      null,
+      " citrates de sodium."
       ],
       "nutrition_data": "on",
       "labels_debug_tags": [],
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "manufacturing_places_tags": [],
       "stores": "Monoprix",
@@ -872,41 +873,41 @@ products: any;
       "allergens_from_user": "(fr)Crustacés",
       "sortkey": 537179784,
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "amino_acids_prev_tags": [],
       "categories_prev_tags": [
-        "en:seafood",
-        "en:crustaceans",
-        "en:shrimps"
+      "en:seafood",
+      "en:crustaceans",
+      "en:shrimps"
       ],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "categories": "Produits de la mer,Crustacés,Crevettes",
       "nutrition_grade_fr": "b",
       "ingredients_hierarchy": [
-        "fr:crevette",
-        "fr:Penaeus vannamei élevées en Equateur ou au Vietnam",
-        "fr:sel vinaigre d'alcool -acidifiant",
-        "fr:citrate-de-sodium"
+      "fr:crevette",
+      "fr:Penaeus vannamei élevées en Equateur ou au Vietnam",
+      "fr:sel vinaigre d'alcool -acidifiant",
+      "fr:citrate-de-sodium"
       ],
       "additives_n": 1,
       "max_imgid": "2",
       "ingredients_text_fr": "crevettes* 98% (Penaeus vannamei élevées en Equateur ou au Vietnam)- sel vinaigre d'alcool -acidifiant:citrates de sodium.",
       "additives_prev_n": 1,
       "labels_prev_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "additives": " [ crevettes-98 -> fr:crevettes-98  ]  [ crevettes -> fr:crevettes  ]  [ penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre-d-alcool -> fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre-d-alcool  ]  [ penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre-d -> fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre-d  ]  [ penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre -> fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel-vinaigre  ]  [ penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel -> fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam-sel  ]  [ penaeus-vannamei-elevees-en-equateur-ou-au-vietnam -> fr:penaeus-vannamei-elevees-en-equateur-ou-au-vietnam  ]  [ penaeus-vannamei-elevees-en-equateur-ou-au -> fr:penaeus-vannamei-elevees-en-equateur-ou-au  ]  [ penaeus-vannamei-elevees-en-equateur-ou -> fr:penaeus-vannamei-elevees-en-equateur-ou  ]  [ penaeus-vannamei-elevees-en-equateur -> fr:penaeus-vannamei-elevees-en-equateur  ]  [ penaeus-vannamei-elevees-en -> fr:penaeus-vannamei-elevees-en  ]  [ penaeus-vannamei-elevees -> fr:penaeus-vannamei-elevees  ]  [ penaeus-vannamei -> fr:penaeus-vannamei  ]  [ penaeus -> fr:penaeus  ]  [ acidifiant -> fr:acidifiant  ]  [ citrates-de-sodium -> en:e331  -> exists  -- ok  ] ",
       "ingredients_text_with_allergens_fr": "<span class=\"allergen\">crevettes*</span> 98% (Penaeus vannamei élevées en Equateur ou au Vietnam)- sel vinaigre d'alcool -acidifiant:citrates de sodium.",
       "packaging_debug_tags": [],
       "ingredients_n": 4,
       "informers_tags": [
-        "kiliweb",
-        "drunkenbison"
+      "kiliweb",
+      "drunkenbison"
       ],
       "product_name": "Crevettes tropicales cuites décortiquées",
       "product_quantity": 100,
@@ -1013,7 +1014,7 @@ products: any;
         }
       },
       "additives_tags": [
-        "en:e331"
+      "en:e331"
       ],
       "brands_debug_tags": [],
       "nutrition_data_per_debug_tags": [],
@@ -1031,31 +1032,31 @@ products: any;
       "traces_debug_tags": [],
       "emb_codes_tags": [],
       "_keywords": [
-        "monoprix",
-        "biologique",
-        "de",
-        "bio",
-        "crevette",
-        "agriculture",
-        "mer",
-        "cuite",
-        "produit",
-        "la",
-        "vietnam",
-        "equateur",
-        "tropicale",
-        "decortiquee",
-        "crustace",
-        "europeen",
-        "ab"
+      "monoprix",
+      "biologique",
+      "de",
+      "bio",
+      "crevette",
+      "agriculture",
+      "mer",
+      "cuite",
+      "produit",
+      "la",
+      "vietnam",
+      "equateur",
+      "tropicale",
+      "decortiquee",
+      "crustace",
+      "europeen",
+      "ab"
       ],
       "traces_from_user": "(fr)",
       "generic_name": "",
       "creator": "kiliweb",
       "entry_dates_tags": [
-        "2018-09-02",
-        "2018-09",
-        "2018"
+      "2018-09-02",
+      "2018-09",
+      "2018"
       ],
       "unknown_ingredients_n": 2,
       "product_name_debug_tags": [],
@@ -1109,7 +1110,7 @@ products: any;
         "proteins": 20
       },
       "additives_prev_tags": [
-        "en:e331"
+      "en:e331"
       ],
       "nutrition_grades": "b",
       "quantity_debug_tags": [],
@@ -1123,42 +1124,42 @@ products: any;
       "nova_group": 1,
       "nutrition_data_per": "100g",
       "pnns_groups_1_tags": [
-        "fish-meat-eggs"
+      "fish-meat-eggs"
       ],
       "emb_codes_orig": "",
       "last_modified_by": "sebleouf",
       "interface_version_created": "20150316.jqm2",
       "expiration_date_debug_tags": [],
       "stores_tags": [
-        "monoprix"
+      "monoprix"
       ],
       "checkers_tags": [],
       "categories_prev_hierarchy": [
-        "en:seafood",
-        "en:crustaceans",
-        "en:shrimps"
+      "en:seafood",
+      "en:crustaceans",
+      "en:shrimps"
       ],
       "labels_prev_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "generic_name_fr_debug_tags": [],
       "serving_size": "",
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "quantity": "100 g",
       "pnns_groups_2_tags": [
-        "fish-and-seafood"
+      "fish-and-seafood"
       ],
       "nutrition_grades_tags": [
-        "b"
+      "b"
       ],
       "nutrition_data_prepared_per": "100g",
       "nucleotides_tags": [],
       "labels_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "traces_from_ingredients": "",
       "code": "3350033435445",
@@ -1176,127 +1177,127 @@ products: any;
       },
       "additives_old_n": 1,
       "ingredients": [
-        {
-          "rank": 1,
-          "id": "fr:crevette",
-          "percent": "98",
-          "text": "crevettes"
-        },
-        {
-          "text": "Penaeus vannamei élevées en Equateur ou au Vietnam",
-          "rank": 2,
-          "id": "fr:Penaeus vannamei élevées en Equateur ou au Vietnam"
-        },
-        {
-          "rank": 3,
-          "id": "fr:sel vinaigre d'alcool -acidifiant",
-          "text": "sel vinaigre d'alcool -acidifiant"
-        },
-        {
-          "rank": 4,
-          "id": "fr:citrate-de-sodium",
-          "text": "citrates de sodium"
-        }
+      {
+        "rank": 1,
+        "id": "fr:crevette",
+        "percent": "98",
+        "text": "crevettes"
+      },
+      {
+        "text": "Penaeus vannamei élevées en Equateur ou au Vietnam",
+        "rank": 2,
+        "id": "fr:Penaeus vannamei élevées en Equateur ou au Vietnam"
+      },
+      {
+        "rank": 3,
+        "id": "fr:sel vinaigre d'alcool -acidifiant",
+        "text": "sel vinaigre d'alcool -acidifiant"
+      },
+      {
+        "rank": 4,
+        "id": "fr:citrate-de-sodium",
+        "text": "citrates de sodium"
+      }
       ],
       "nova_groups": 1,
       "traces_hierarchy": [],
       "codes_tags": [
-        "code-13",
-        3350033435445,
-        "335003343544x",
-        "33500334354xx",
-        "3350033435xxx",
-        "335003343xxxx",
-        "33500334xxxxx",
-        "3350033xxxxxx",
-        "335003xxxxxxx",
-        "33500xxxxxxxx",
-        "3350xxxxxxxxx",
-        "335xxxxxxxxxx",
-        "33xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3350033435445,
+      "335003343544x",
+      "33500334354xx",
+      "3350033435xxx",
+      "335003343xxxx",
+      "33500334xxxxx",
+      "3350033xxxxxx",
+      "335003xxxxxxx",
+      "33500xxxxxxxx",
+      "3350xxxxxxxxx",
+      "335xxxxxxxxxx",
+      "33xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "categories_tags": [
-        "en:seafood",
-        "en:crustaceans",
-        "en:shrimps"
+      "en:seafood",
+      "en:crustaceans",
+      "en:shrimps"
       ],
       "labels": "Bio,Bio européen,AB Agriculture Biologique",
       "nutrition_data_prepared": "",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "countries_debug_tags": [],
       "brands": "Monoprix bio",
       "interface_version_modified": "20120622",
       "allergens_debug_tags": [],
       "additives_original_tags": [
-        "en:e331"
+      "en:e331"
       ],
       "lc": "fr",
       "complete": 0,
       "allergens_tags": [
-        "en:crustaceans"
+      "en:crustaceans"
       ],
       "nutrition_score_warning_no_fruits_vegetables_nuts": 1,
       "link": "",
       "labels_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "no_nutrition_data": "",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "ingredients_original_tags": [
-        "fr:crevette",
-        "fr:Penaeus vannamei élevées en Equateur ou au Vietnam",
-        "fr:sel vinaigre d'alcool -acidifiant",
-        "fr:citrate-de-sodium"
+      "fr:crevette",
+      "fr:Penaeus vannamei élevées en Equateur ou au Vietnam",
+      "fr:sel vinaigre d'alcool -acidifiant",
+      "fr:citrate-de-sodium"
       ],
       "serving_quantity": 0,
       "categories_debug_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nutrient_levels_tags": [
-        "en:fat-in-low-quantity",
-        "en:saturated-fat-in-low-quantity",
-        "en:sugars-in-low-quantity",
-        "en:salt-in-moderate-quantity"
+      "en:fat-in-low-quantity",
+      "en:saturated-fat-in-low-quantity",
+      "en:sugars-in-low-quantity",
+      "en:salt-in-moderate-quantity"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "last_edit_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "packaging_tags": [
-        "plastique",
-        "barquette",
-        "refrigere"
+      "plastique",
+      "barquette",
+      "refrigere"
       ],
       "nutrition_data_prepared_per_debug_tags": [],
       "manufacturing_places_debug_tags": [],
       "additives_prev_original_tags": [
-        "en:e331"
+      "en:e331"
       ],
       "product_name_fr": "Crevettes tropicales cuites décortiquées",
       "ingredients_text_debug": "crevettes* 98% (Penaeus vannamei élevées en Equateur ou au Vietnam)- sel vinaigre d'alcool - acidifiant : citrates de sodium.",
@@ -1316,23 +1317,23 @@ products: any;
       "labels": "IGP",
       "nutrition_data_prepared": "",
       "photographers_tags": [
-        "andre"
+      "andre"
       ],
       "countries_debug_tags": [],
       "categories_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:wines",
-        "en:wines-from-france",
-        "en:white-wines",
-        "fr:cotes-catalanes",
-        "fr:roussillon"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:wines",
+      "en:wines-from-france",
+      "en:white-wines",
+      "fr:cotes-catalanes",
+      "fr:roussillon"
       ],
       "ingredients_text_debug": "Raisins blancs, Cépage : Muscat sec",
       "allergens_from_ingredients": "",
       "vitamins_tags": [],
       "packaging_tags": [
-        "bouteille-verre"
+      "bouteille-verre"
       ],
       "product_name_fr": "Baron d'Albénas 2010",
       "nutrition_data_prepared_per_debug_tags": [],
@@ -1341,59 +1342,59 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "last_edit_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "categories_debug_tags": [],
       "serving_quantity": 0,
       "states_hierarchy": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "on",
       "ingredients_original_tags": [
-        "fr:raisin-blanc",
-        "fr:cepages",
-        "fr:Muscat sec"
+      "fr:raisin-blanc",
+      "fr:cepages",
+      "fr:Muscat sec"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "labels_hierarchy": [
-        "en:pgi"
+      "en:pgi"
       ],
       "categories_prev_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:wines",
-        "en:wines-from-france",
-        "en:white-wines",
-        "fr:cotes-catalanes",
-        "fr:Roussillon"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:wines",
+      "en:wines-from-france",
+      "en:white-wines",
+      "fr:cotes-catalanes",
+      "fr:Roussillon"
       ],
       "labels_prev_tags": [
-        "en:pgi"
+      "en:pgi"
       ],
       "expiration_date_debug_tags": [],
       "stores_tags": [
-        "auchan"
+      "auchan"
       ],
       "checkers_tags": [],
       "emb_codes_orig": "",
@@ -1422,48 +1423,48 @@ products: any;
       },
       "new_additives_n": 0,
       "entry_dates_tags": [
-        "2013-04-08",
-        "2013-04",
-        "2013"
+      "2013-04-08",
+      "2013-04",
+      "2013"
       ],
       "creator": "andre",
       "unknown_ingredients_n": 1,
       "codes_tags": [
-        "code-13",
-        3436290002047,
-        "343629000204x",
-        "34362900020xx",
-        "3436290002xxx",
-        "343629000xxxx",
-        "34362900xxxxx",
-        "3436290xxxxxx",
-        "343629xxxxxxx",
-        "34362xxxxxxxx",
-        "3436xxxxxxxxx",
-        "343xxxxxxxxxx",
-        "34xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3436290002047,
+      "343629000204x",
+      "34362900020xx",
+      "3436290002xxx",
+      "343629000xxxx",
+      "34362900xxxxx",
+      "3436290xxxxxx",
+      "343629xxxxxxx",
+      "34362xxxxxxxx",
+      "3436xxxxxxxxx",
+      "343xxxxxxxxxx",
+      "34xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "nova_groups": 3,
       "ingredients": [
-        {
-          "id": "fr:raisin-blanc",
-          "rank": 1,
-          "text": "Raisins blancs"
-        },
-        {
-          "rank": 2,
-          "id": "fr:cepages",
-          "text": "Cépage"
-        },
-        {
-          "rank": 3,
-          "id": "fr:Muscat sec",
-          "text": "Muscat sec"
-        }
+      {
+        "id": "fr:raisin-blanc",
+        "rank": 1,
+        "text": "Raisins blancs"
+      },
+      {
+        "rank": 2,
+        "id": "fr:cepages",
+        "text": "Cépage"
+      },
+      {
+        "rank": 3,
+        "id": "fr:Muscat sec",
+        "text": "Muscat sec"
+      }
       ],
       "traces_hierarchy": [
-        "en:sulphur-dioxide-and-sulphites"
+      "en:sulphur-dioxide-and-sulphites"
       ],
       "additives_old_n": 0,
       "nutrient_levels": {},
@@ -1475,11 +1476,11 @@ products: any;
       "traces_from_ingredients": "",
       "code": "3436290002047",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nutrition_data_prepared_per": "100g",
       "labels_tags": [
-        "en:pgi"
+      "en:pgi"
       ],
       "nucleotides_tags": [],
       "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
@@ -1487,13 +1488,13 @@ products: any;
       "generic_name_fr_debug_tags": [],
       "serving_size": "",
       "pnns_groups_2_tags": [
-        "alcoholic-beverages"
+      "alcoholic-beverages"
       ],
       "rev": 14,
       "editors": [
-        "segundo",
-        "teolemon",
-        "andre"
+      "segundo",
+      "teolemon",
+      "andre"
       ],
       "lang_debug_tags": [],
       "origins_debug_tags": [],
@@ -1503,8 +1504,8 @@ products: any;
       "completed_t": 1366319175,
       "packaging_debug_tags": [],
       "informers_tags": [
-        "andre",
-        "segundo"
+      "andre",
+      "segundo"
       ],
       "ingredients_n": 3,
       "ingredients_text_with_allergens_fr": "Raisins blancs, Cépage : Muscat sec",
@@ -1513,16 +1514,16 @@ products: any;
       "additives_prev_n": 0,
       "max_imgid": "3",
       "labels_prev_hierarchy": [
-        "en:pgi"
+      "en:pgi"
       ],
       "ingredients_hierarchy": [
-        "fr:raisin-blanc",
-        "fr:cepages",
-        "fr:Muscat sec"
+      "fr:raisin-blanc",
+      "fr:cepages",
+      "fr:Muscat sec"
       ],
       "additives_n": 0,
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "categories": "Boissons,Boissons alcoolisées,Vins,Vins français,Vins blancs,Côtes Catalanes,Roussillon",
       "update_key": "additives20180816d",
@@ -1531,23 +1532,23 @@ products: any;
       "generic_name": "Vin de Pays des Cotes Catalanes",
       "traces_from_user": "(fr)Anhydride sulfureux et sulfites",
       "_keywords": [
-        "france",
-        "roussillon",
-        "francai",
-        "briu",
-        "pay",
-        "boisson",
-        "vin",
-        "alcoolisee",
-        "2010",
-        "cote",
-        "blanc",
-        "catalane",
-        "igp",
-        "de",
-        "albena",
-        "baron",
-        "mjg"
+      "france",
+      "roussillon",
+      "francai",
+      "briu",
+      "pay",
+      "boisson",
+      "vin",
+      "alcoolisee",
+      "2010",
+      "cote",
+      "blanc",
+      "catalane",
+      "igp",
+      "de",
+      "albena",
+      "baron",
+      "mjg"
       ],
       "ingredients_text_with_allergens": "Raisins blancs, Cépage : Muscat sec",
       "ingredients_that_may_be_from_palm_oil_n": 0,
@@ -1721,95 +1722,95 @@ products: any;
       },
       "vitamins_prev_tags": [],
       "last_image_dates_tags": [
-        "2013-04-08",
-        "2013-04",
-        "2013"
+      "2013-04-08",
+      "2013-04",
+      "2013"
       ],
       "amino_acids_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "stores_debug_tags": [],
       "states_tags": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "traces_tags": [
-        "en:sulphur-dioxide-and-sulphites"
+      "en:sulphur-dioxide-and-sulphites"
       ],
       "ingredients_ids_debug": [
-        "raisins-blancs",
-        "cepage",
-        "muscat-sec"
+      "raisins-blancs",
+      "cepage",
+      "muscat-sec"
       ],
       "last_editor": "sebleouf",
       "manufacturing_places": "MAS VEZIAN,66350,TOULOUGES",
       "ingredients_n_tags": [
-        "3",
-        "1-10"
+      "3",
+      "1-10"
       ],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "categories_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:wines",
-        "en:wines-from-france",
-        "en:white-wines",
-        "fr:cotes-catalanes",
-        "fr:Roussillon"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:wines",
+      "en:wines-from-france",
+      "en:white-wines",
+      "fr:cotes-catalanes",
+      "fr:Roussillon"
       ],
       "brands_tags": [
-        "mjg-briu"
+      "mjg-briu"
       ],
       "correctors_tags": [
-        "andre",
-        "teolemon",
-        "segundo",
-        "sebleouf"
+      "andre",
+      "teolemon",
+      "segundo",
+      "sebleouf"
       ],
       "ingredients_tags": [
-        "fr:raisin-blanc",
-        "fr:cepages",
-        "fr:muscat-sec"
+      "fr:raisin-blanc",
+      "fr:cepages",
+      "fr:muscat-sec"
       ],
       "unknown_nutrients_tags": [],
       "allergens_hierarchy": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "sortkey": 1537173682,
       "categories_prev_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:wines",
-        "en:wines-from-france",
-        "en:white-wines",
-        "fr:cotes-catalanes",
-        "fr:roussillon"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:wines",
+      "en:wines-from-france",
+      "en:white-wines",
+      "fr:cotes-catalanes",
+      "fr:roussillon"
       ],
       "amino_acids_prev_tags": [],
       "manufacturing_places_tags": [
-        "mas-vezian",
-        "66350",
-        "toulouges"
+      "mas-vezian",
+      "66350",
+      "toulouges"
       ],
       "allergens_from_user": "(fr)",
       "id": "12459522",
       "stores": "Auchan",
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "nutrition_data": "on",
       "labels_debug_tags": [],
@@ -1817,27 +1818,27 @@ products: any;
       "generic_name_fr": "Vin de Pays des Cotes Catalanes",
       "additives_old_tags": [],
       "ingredients_debug": [
-        "Raisins blancs",
-        ",",
-        null,
-        null,
-        null,
-        " Cépage ",
-        ":",
-        ":",
-        null,
-        null,
-        " Muscat sec"
+      "Raisins blancs",
+      ",",
+      null,
+      null,
+      null,
+      " Cépage ",
+      ":",
+      ":",
+      null,
+      null,
+      " Muscat sec"
       ],
       "quality_tags": [
-        "no-nutrition-data"
+      "no-nutrition-data"
       ],
       "pnns_groups_2": "Alcoholic beverages",
       "traces": "en:sulphur-dioxide-and-sulphites",
       "product_name_fr_debug_tags": [],
       "origins_tags": [
-        "france",
-        "roussillon"
+      "france",
+      "roussillon"
       ],
       "origins": "France,Roussillon",
       "packaging": "Bouteille verre",
@@ -1845,16 +1846,16 @@ products: any;
       "emb_codes": "",
       "nucleotides_prev_tags": [],
       "nova_groups_tags": [
-        "en:3-processed-foods"
+      "en:3-processed-foods"
       ],
       "editors_tags": [
-        "segundo",
-        "teolemon",
-        "sebleouf",
-        "andre"
+      "segundo",
+      "teolemon",
+      "sebleouf",
+      "andre"
       ],
       "purchase_places_tags": [
-        "perpignan"
+      "perpignan"
       ],
       "last_image_t": 1365419341,
       "nutrition_score_debug": "no nutriscore for category en:alcoholic-beverages",
@@ -1975,8 +1976,8 @@ products: any;
       "generic_name": "",
       "traces_from_user": "(fr)",
       "_keywords": [
-        "sucree",
-        "arachide"
+      "sucree",
+      "arachide"
       ],
       "traces_debug_tags": [],
       "update_key": "additives20180816d",
@@ -1985,7 +1986,7 @@ products: any;
       "ingredients_hierarchy": [],
       "categories": "",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_text_with_allergens_fr": "",
       "labels_prev_hierarchy": [],
@@ -1993,7 +1994,7 @@ products: any;
       "max_imgid": "2",
       "product_name": "Arachides sucrees",
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "packaging_debug_tags": [],
       "rev": 8,
@@ -2010,15 +2011,15 @@ products: any;
       "origins_tags": [],
       "packaging": "",
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "pnns_groups_2": "unknown",
       "product_name_fr_debug_tags": [],
       "traces": "",
       "editors_tags": [
-        "kiliweb",
-        "sebleouf",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "sebleouf",
+      "openfoodfacts-contributors"
       ],
       "purchase_places_tags": [],
       "emb_codes": "",
@@ -2026,7 +2027,7 @@ products: any;
       "nucleotides_prev_tags": [],
       "nutrition_data": "on",
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "labels_debug_tags": [],
       "ingredients_debug": [],
@@ -2036,7 +2037,7 @@ products: any;
       "categories_prev_tags": [],
       "amino_acids_prev_tags": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "sortkey": 537180124,
       "allergens_from_user": "(fr)",
@@ -2044,15 +2045,15 @@ products: any;
       "id": "8333363346563",
       "manufacturing_places_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "categories_hierarchy": [],
       "brands_tags": [],
       "allergens_hierarchy": [],
       "ingredients_tags": [],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "unknown_nutrients_tags": [],
       "last_editor": "sebleouf",
@@ -2062,60 +2063,60 @@ products: any;
       "stores_debug_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "last_image_dates_tags": [
-        "2018-08-13",
-        "2018-08",
-        "2018"
+      "2018-08-13",
+      "2018-08",
+      "2018"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "vitamins_prev_tags": [],
       "ingredients_original_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "",
       "labels_hierarchy": [],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "last_edit_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "serving_quantity": 0,
@@ -2131,7 +2132,7 @@ products: any;
       "categories_tags": [],
       "brands": "",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "countries_debug_tags": [],
       "nutrition_data_prepared": "",
@@ -2146,11 +2147,11 @@ products: any;
       "labels_tags": [],
       "nucleotides_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nutrition_data_prepared_per": "100g",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "quantity": "",
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
@@ -2167,29 +2168,29 @@ products: any;
       "ingredients": [],
       "nutrient_levels": {},
       "codes_tags": [
-        "code-13",
-        3480580000121,
-        "348058000012x",
-        "34805800001xx",
-        "3480580000xxx",
-        "348058000xxxx",
-        "34805800xxxxx",
-        "3480580xxxxxx",
-        "348058xxxxxxx",
-        "34805xxxxxxxx",
-        "3480xxxxxxxxx",
-        "348xxxxxxxxxx",
-        "34xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3480580000121,
+      "348058000012x",
+      "34805800001xx",
+      "3480580000xxx",
+      "348058000xxxx",
+      "34805800xxxxx",
+      "3480580xxxxxx",
+      "348058xxxxxxx",
+      "34805xxxxxxxx",
+      "3480xxxxxxxxx",
+      "348xxxxxxxxxx",
+      "34xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "additives_prev_tags": [],
       "nutriments": {},
       "product_name_debug_tags": [],
       "unknown_ingredients_n": 0,
       "entry_dates_tags": [
-        "2018-08-13",
-        "2018-08",
-        "2018"
+      "2018-08-13",
+      "2018-08",
+      "2018"
       ],
       "creator": "kiliweb",
       "nutrition_data_per": "100g",
@@ -2205,7 +2206,7 @@ products: any;
       "last_modified_by": "sebleouf",
       "emb_codes_orig": "",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "labels_prev_tags": [],
       "categories_prev_hierarchy": [],
@@ -2218,7 +2219,7 @@ products: any;
       "categories_tags": [],
       "brands": "",
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "countries_debug_tags": [],
       "labels": "",
@@ -2232,34 +2233,34 @@ products: any;
       "allergens_tags": [],
       "ingredients_original_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "",
       "labels_hierarchy": [],
       "last_edit_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "serving_quantity": 0,
@@ -2276,9 +2277,9 @@ products: any;
       "nutriments": {},
       "unknown_ingredients_n": 0,
       "entry_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "creator": "openfoodfacts-contributors",
       "nutrition_data_per": "100g",
@@ -2294,7 +2295,7 @@ products: any;
       "last_modified_by": "teolemon",
       "emb_codes_orig": "",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "categories_prev_hierarchy": [],
       "labels_prev_tags": [],
@@ -2304,11 +2305,11 @@ products: any;
       "labels_tags": [],
       "nucleotides_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nutrition_data_prepared_per": "100g",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "quantity": "",
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
@@ -2325,25 +2326,25 @@ products: any;
       "ingredients": [],
       "nutrient_levels": {},
       "codes_tags": [
-        "code-13",
-        3596701440535,
-        "359670144053x",
-        "35967014405xx",
-        "3596701440xxx",
-        "359670144xxxx",
-        "35967014xxxxx",
-        "3596701xxxxxx",
-        "359670xxxxxxx",
-        "35967xxxxxxxx",
-        "3596xxxxxxxxx",
-        "359xxxxxxxxxx",
-        "35xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3596701440535,
+      "359670144053x",
+      "35967014405xx",
+      "3596701440xxx",
+      "359670144xxxx",
+      "35967014xxxxx",
+      "3596701xxxxxx",
+      "359670xxxxxxx",
+      "35967xxxxxxxx",
+      "3596xxxxxxxxx",
+      "359xxxxxxxxxx",
+      "35xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "ingredients_hierarchy": [],
       "categories": "",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_text_with_allergens_fr": "",
       "labels_prev_hierarchy": [],
@@ -2351,7 +2352,7 @@ products: any;
       "max_imgid": "1",
       "product_name": "blanc de dinde",
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "packaging_debug_tags": [],
       "rev": 6,
@@ -2420,15 +2421,15 @@ products: any;
       "generic_name": "",
       "traces_from_user": "(en)",
       "_keywords": [
-        "blanc",
-        "de",
-        "dinde"
+      "blanc",
+      "de",
+      "dinde"
       ],
       "emb_codes_tags": [],
       "traces_debug_tags": [],
       "ingredients_text_with_allergens": "",
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "categories_hierarchy": [],
       "brands_tags": [],
@@ -2436,8 +2437,8 @@ products: any;
       "unknown_nutrients_tags": [],
       "ingredients_tags": [],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "teolemon"
+      "openfoodfacts-contributors",
+      "teolemon"
       ],
       "last_editor": "teolemon",
       "ingredients_ids_debug": [],
@@ -2446,28 +2447,28 @@ products: any;
       "ingredients_text_fr_debug_tags": [],
       "stores_debug_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_image_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "amino_acids_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "vitamins_prev_tags": [],
       "nutrition_score_debug": "no score when the product does not have a category",
@@ -2480,21 +2481,21 @@ products: any;
       "origins_tags": [],
       "packaging": "",
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "product_name_fr_debug_tags": [],
       "pnns_groups_2": "unknown",
       "traces": "",
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "teolemon"
+      "openfoodfacts-contributors",
+      "teolemon"
       ],
       "purchase_places_tags": [],
       "emb_codes": "",
       "serving_size_debug_tags": [],
       "nucleotides_prev_tags": [],
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "nutrition_data": "on",
       "labels_debug_tags": [],
@@ -2506,7 +2507,7 @@ products: any;
       "amino_acids_prev_tags": [],
       "sortkey": 537045183,
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "allergens_from_user": "(en)",
       "id": "03406069",
@@ -2517,73 +2518,73 @@ products: any;
       "_id": 3700446410957,
       "vitamins_prev_tags": [],
       "last_image_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "amino_acids_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "stores_debug_tags": [],
       "states_tags": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "traces_tags": [],
       "ingredients_ids_debug": [
-        "ingredients-pour-un-comprime-de-620mg-poudre-de-en-m-1-cp-jus-de-myrtille-bio-ccinium-myrtilus",
-        "acacia-fibre-bio-240-1200-rop-de-glucose",
-        "sucre-bio-fournesol-huile-bio-uiti",
-        "agpjomer-ant",
-        "dioxyde-de-ci-faiue-de-riz-bio-ssus-de-l-aericu-ture-bi-m-agriculture-biologique-1188-de-agriculture-biologique-ce-l-a-comprimes-200-it-issu-de-l-agiculture"
+      "ingredients-pour-un-comprime-de-620mg-poudre-de-en-m-1-cp-jus-de-myrtille-bio-ccinium-myrtilus",
+      "acacia-fibre-bio-240-1200-rop-de-glucose",
+      "sucre-bio-fournesol-huile-bio-uiti",
+      "agpjomer-ant",
+      "dioxyde-de-ci-faiue-de-riz-bio-ssus-de-l-aericu-ture-bi-m-agriculture-biologique-1188-de-agriculture-biologique-ce-l-a-comprimes-200-it-issu-de-l-agiculture"
       ],
       "last_editor": "sebleouf",
       "manufacturing_places": "",
       "ingredients_n_tags": [
-        "5",
-        "1-10"
+      "5",
+      "1-10"
       ],
       "misc_tags": [
-        "en:nutriscore-not-computed",
-        "en:nutrition-not-enough-data-to-compute-nutrition-score",
-        "en:nutrition-no-saturated-fat"
+      "en:nutriscore-not-computed",
+      "en:nutrition-not-enough-data-to-compute-nutrition-score",
+      "en:nutrition-no-saturated-fat"
       ],
       "categories_hierarchy": [
-        "en:dietary-supplements"
+      "en:dietary-supplements"
       ],
       "brands_tags": [
-        "belle-et-bio"
+      "belle-et-bio"
       ],
       "ingredients_tags": [
-        "fr:ingredients-pour-un-comprime-de-620mg-poudre-de-en-m-1-cp-jus-de-myrtille-bio-ccinium-myrtilus",
-        "fr:acacia-fibre-bio-240-1200-rop-de-glucose",
-        "en:sugar",
-        "fr:bio-fournesol-huile-bio-uiti-agpjomer-ant",
-        "fr:dioxyde-de-ci-faiue-de-riz-bio-ssus-de-l-aericu-ture-bi-m-agriculture-biologique-1188-de-agriculture-biologique-ce-l-a-comprimes-200-it-issu-de-l-agiculture"
+      "fr:ingredients-pour-un-comprime-de-620mg-poudre-de-en-m-1-cp-jus-de-myrtille-bio-ccinium-myrtilus",
+      "fr:acacia-fibre-bio-240-1200-rop-de-glucose",
+      "en:sugar",
+      "fr:bio-fournesol-huile-bio-uiti-agpjomer-ant",
+      "fr:dioxyde-de-ci-faiue-de-riz-bio-ssus-de-l-aericu-ture-bi-m-agriculture-biologique-1188-de-agriculture-biologique-ce-l-a-comprimes-200-it-issu-de-l-agiculture"
       ],
       "unknown_nutrients_tags": [],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "allergens_hierarchy": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "sortkey": 1537174585,
       "categories_prev_tags": [
-        "en:dietary-supplements"
+      "en:dietary-supplements"
       ],
       "amino_acids_prev_tags": [],
       "manufacturing_places_tags": [],
@@ -2591,7 +2592,7 @@ products: any;
       "id": "02454113",
       "stores": "",
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "nutrition_data": "on",
       "labels_debug_tags": [],
@@ -2599,34 +2600,34 @@ products: any;
       "generic_name_fr": "",
       "additives_old_tags": [],
       "ingredients_debug": [
-        "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus..",
-        ". ",
-        null,
-        null,
-        null,
-        "Acacia fibre Bio 240 1200 rop de glucose ",
-        "(",
-        "(",
-        null,
-        null,
-        "sucre) Bio Fournesol huile Bio uiti",
-        " - ",
-        " - ",
-        " - ",
-        null,
-        "agpjomér ant",
-        ":",
-        ":",
-        null,
-        null,
-        " dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
+      "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus..",
+      ". ",
+      null,
+      null,
+      null,
+      "Acacia fibre Bio 240 1200 rop de glucose ",
+      "(",
+      "(",
+      null,
+      null,
+      "sucre) Bio Fournesol huile Bio uiti",
+      " - ",
+      " - ",
+      " - ",
+      null,
+      "agpjomér ant",
+      ":",
+      ":",
+      null,
+      null,
+      " dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
       ],
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-80-percent-unknown",
-        "ingredients-ingredient-tag-length-greater-than-50",
-        "ingredients-ingredient-tag-length-greater-than-100",
-        "no-nutrition-data"
+      "ingredients-unknown-score-above-0",
+      "ingredients-80-percent-unknown",
+      "ingredients-ingredient-tag-length-greater-than-50",
+      "ingredients-ingredient-tag-length-greater-than-100",
+      "no-nutrition-data"
       ],
       "pnns_groups_2": "unknown",
       "traces": "",
@@ -2638,11 +2639,11 @@ products: any;
       "emb_codes": "",
       "nucleotides_prev_tags": [],
       "nova_groups_tags": [
-        "en:3-processed-foods"
+      "en:3-processed-foods"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "purchase_places_tags": [],
       "last_image_t": 1537012818,
@@ -2660,7 +2661,7 @@ products: any;
       "completed_t": 1537012927,
       "packaging_debug_tags": [],
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "ingredients_n": 5,
       "ingredients_text_with_allergens_fr": "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus... Acacia fibre Bio 240 1200 rop de glucose (sucre) Bio Fournesol huile Bio uiti -agpjomér ant: dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture",
@@ -2669,36 +2670,36 @@ products: any;
       "additives_prev_n": 0,
       "max_imgid": "3",
       "labels_prev_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "ingredients_hierarchy": [
-        "fr:Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus",
-        "fr:Acacia fibre Bio 240 1200 rop de glucose",
-        "en:sugar",
-        "fr:Bio Fournesol huile Bio uiti -agpjomér ant",
-        "fr:dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
+      "fr:Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus",
+      "fr:Acacia fibre Bio 240 1200 rop de glucose",
+      "en:sugar",
+      "fr:Bio Fournesol huile Bio uiti -agpjomér ant",
+      "fr:dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
       ],
       "additives_n": 0,
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "categories": "Compléments alimentaires",
       "emb_codes_tags": [],
       "traces_debug_tags": [],
       "generic_name": "",
       "_keywords": [
-        "ab",
-        "agriculture",
-        "europeen",
-        "belle",
-        "bio",
-        "myrtille",
-        "alimentaire",
-        "et",
-        "biologique",
-        "complement"
+      "ab",
+      "agriculture",
+      "europeen",
+      "belle",
+      "bio",
+      "myrtille",
+      "alimentaire",
+      "et",
+      "biologique",
+      "complement"
       ],
       "traces_from_user": "(fr)",
       "ingredients_text_with_allergens": "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus... Acacia fibre Bio 240 1200 rop de glucose (sucre) Bio Fournesol huile Bio uiti -agpjomér ant: dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture",
@@ -2832,12 +2833,12 @@ products: any;
         }
       },
       "labels_prev_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "categories_prev_hierarchy": [
-        "en:dietary-supplements"
+      "en:dietary-supplements"
       ],
       "expiration_date_debug_tags": [],
       "checkers_tags": [],
@@ -2846,7 +2847,7 @@ products: any;
       "last_modified_by": "sebleouf",
       "interface_version_created": "20120622",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "last_modified_t": 1537174585,
       "nutrition_data_per": "100g",
@@ -2865,55 +2866,55 @@ products: any;
         "nova-group_100g": 3
       },
       "entry_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "creator": "openfoodfacts-contributors",
       "unknown_ingredients_n": 4,
       "codes_tags": [
-        "code-13",
-        3700446410957,
-        "370044641095x",
-        "37004464109xx",
-        "3700446410xxx",
-        "370044641xxxx",
-        "37004464xxxxx",
-        "3700446xxxxxx",
-        "370044xxxxxxx",
-        "37004xxxxxxxx",
-        "3700xxxxxxxxx",
-        "370xxxxxxxxxx",
-        "37xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3700446410957,
+      "370044641095x",
+      "37004464109xx",
+      "3700446410xxx",
+      "370044641xxxx",
+      "37004464xxxxx",
+      "3700446xxxxxx",
+      "370044xxxxxxx",
+      "37004xxxxxxxx",
+      "3700xxxxxxxxx",
+      "370xxxxxxxxxx",
+      "37xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "nova_groups": 3,
       "ingredients": [
-        {
-          "text": "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus",
-          "rank": 1,
-          "id": "fr:Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus"
-        },
-        {
-          "text": "Acacia fibre Bio 240 1200 rop de glucose",
-          "rank": 2,
-          "id": "fr:Acacia fibre Bio 240 1200 rop de glucose"
-        },
-        {
-          "text": "sucre",
-          "rank": 3,
-          "id": "en:sugar"
-        },
-        {
-          "rank": 4,
-          "id": "fr:Bio Fournesol huile Bio uiti -agpjomér ant",
-          "text": "Bio Fournesol huile Bio uiti -agpjomér ant"
-        },
-        {
-          "text": "dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture",
-          "rank": 5,
-          "id": "fr:dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
-        }
+      {
+        "text": "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus",
+        "rank": 1,
+        "id": "fr:Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus"
+      },
+      {
+        "text": "Acacia fibre Bio 240 1200 rop de glucose",
+        "rank": 2,
+        "id": "fr:Acacia fibre Bio 240 1200 rop de glucose"
+      },
+      {
+        "text": "sucre",
+        "rank": 3,
+        "id": "en:sugar"
+      },
+      {
+        "rank": 4,
+        "id": "fr:Bio Fournesol huile Bio uiti -agpjomér ant",
+        "text": "Bio Fournesol huile Bio uiti -agpjomér ant"
+      },
+      {
+        "text": "dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture",
+        "rank": 5,
+        "id": "fr:dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
+      }
       ],
       "traces_hierarchy": [],
       "additives_old_n": 0,
@@ -2927,12 +2928,12 @@ products: any;
       "code": "3700446410957",
       "nutrition_data_prepared_per": "100g",
       "nutrition_grades_tags": [
-        "unknown"
+      "unknown"
       ],
       "labels_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ],
       "nucleotides_tags": [],
       "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
@@ -2940,7 +2941,7 @@ products: any;
       "serving_size": "",
       "generic_name_fr_debug_tags": [],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "link": "",
       "complete": 1,
@@ -2953,17 +2954,17 @@ products: any;
       "labels": "Bio,Bio européen,AB Agriculture Biologique",
       "nutrition_data_prepared": "",
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "countries_debug_tags": [],
       "categories_tags": [
-        "en:dietary-supplements"
+      "en:dietary-supplements"
       ],
       "ingredients_text_debug": "Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus... Acacia fibre Bio 240 1200 rop de glucose (sucre) Bio Fournesol huile Bio uiti - agpjomér ant: dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture",
       "allergens_from_ingredients": "",
       "vitamins_tags": [],
       "packaging_tags": [
-        "boite-plastique-dur"
+      "boite-plastique-dur"
       ],
       "product_name_fr": "myrtille bio",
       "additives_prev_original_tags": [],
@@ -2972,60 +2973,60 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "last_edit_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "categories_debug_tags": [],
       "serving_quantity": 0,
       "states_hierarchy": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "on",
       "ingredients_original_tags": [
-        "fr:Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus",
-        "fr:Acacia fibre Bio 240 1200 rop de glucose",
-        "en:sugar",
-        "fr:Bio Fournesol huile Bio uiti -agpjomér ant",
-        "fr:dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
+      "fr:Ingrédients pour un comprimé de 620mg Poudre de en m 1 cp jus de myrtille Bio ccinium myrtilus",
+      "fr:Acacia fibre Bio 240 1200 rop de glucose",
+      "en:sugar",
+      "fr:Bio Fournesol huile Bio uiti -agpjomér ant",
+      "fr:dioxyde de CI Faiue de riz Bio ssus de l'Aericu ture Bi m agriculture biologique 1188 de Agriculture Biologique Ce l'a comprimés 200 it issu de l'agiculture"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "labels_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "fr:ab-agriculture-biologique"
+      "en:organic",
+      "en:eu-organic",
+      "fr:ab-agriculture-biologique"
       ]
     },
     {
       "_id": 3760031905053,
       "categories_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:artisan-products",
-        "en:ciders",
-        "en:artisanal-ciders",
-        "en:artisanal-spirits",
-        "en:pink-ciders",
-        "en:sweet-ciders"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:artisan-products",
+      "en:ciders",
+      "en:artisanal-ciders",
+      "en:artisanal-spirits",
+      "en:pink-ciders",
+      "en:sweet-ciders"
       ],
       "serving_size_debug_tags": [],
       "additives_prev_n": 0,
@@ -3039,123 +3040,123 @@ products: any;
       "unknown_ingredients_n": 2,
       "product_name_fr": "Cidre Rosé (3%)",
       "categories_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:artisan-products",
-        "en:ciders",
-        "en:artisanal-ciders",
-        "en:artisanal-spirits",
-        "en:pink-ciders",
-        "en:sweet-ciders"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:artisan-products",
+      "en:ciders",
+      "en:artisanal-ciders",
+      "en:artisanal-spirits",
+      "en:pink-ciders",
+      "en:sweet-ciders"
       ],
       "origins_tags": [],
       "origins_debug_tags": [],
       "amino_acids_tags": [],
       "informers_tags": [
-        "nouky20"
+      "nouky20"
       ],
       "labels_prev_hierarchy": [
-        "en:green-dot",
-        "en:not-advised-for-pregnant-women",
-        "en:pure-juice",
-        "fr:Déconseillé à certaines catégories de personnes"
+      "en:green-dot",
+      "en:not-advised-for-pregnant-women",
+      "en:pure-juice",
+      "fr:Déconseillé à certaines catégories de personnes"
       ],
       "nutrition_data": "on",
       "codes_tags": [
-        "code-13",
-        3760031905053,
-        "376003190505x",
-        "37600319050xx",
-        "3760031905xxx",
-        "376003190xxxx",
-        "37600319xxxxx",
-        "3760031xxxxxx",
-        "376003xxxxxxx",
-        "37600xxxxxxxx",
-        "3760xxxxxxxxx",
-        "376xxxxxxxxxx",
-        "37xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3760031905053,
+      "376003190505x",
+      "37600319050xx",
+      "3760031905xxx",
+      "376003190xxxx",
+      "37600319xxxxx",
+      "3760031xxxxxx",
+      "376003xxxxxxx",
+      "37600xxxxxxxx",
+      "3760xxxxxxxxx",
+      "376xxxxxxxxxx",
+      "37xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "nova_group_debug": " -- categories/en:ciders : 3 -- ingredients/en:colour : 4",
       "update_key": "additives20180816d",
       "rev": 11,
       "traces_debug_tags": [],
       "states_hierarchy": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "brands": "Château de Lezergué",
       "additives_tags": [],
       "minerals_prev_tags": [],
       "packaging_tags": [
-        "bouteille",
-        "verre",
-        "bouchon",
-        "liege"
+      "bouteille",
+      "verre",
+      "bouchon",
+      "liege"
       ],
       "last_image_dates_tags": [
-        "2018-04-07",
-        "2018-04",
-        "2018"
+      "2018-04-07",
+      "2018-04",
+      "2018"
       ],
       "allergens_from_user": "(fr)Anhydride sulfureux et sulfites",
       "emb_codes": "",
       "labels_prev_tags": [
-        "en:green-dot",
-        "en:not-advised-for-pregnant-women",
-        "en:pure-juice",
-        "fr:deconseille-a-certaines-categories-de-personnes"
+      "en:green-dot",
+      "en:not-advised-for-pregnant-women",
+      "en:pure-juice",
+      "fr:deconseille-a-certaines-categories-de-personnes"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "checkers_tags": [],
       "categories_prev_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:artisan-products",
-        "en:ciders",
-        "en:artisanal-ciders",
-        "en:artisanal-spirits",
-        "en:pink-ciders",
-        "en:sweet-ciders"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:artisan-products",
+      "en:ciders",
+      "en:artisanal-ciders",
+      "en:artisanal-spirits",
+      "en:pink-ciders",
+      "en:sweet-ciders"
       ],
       "traces_from_ingredients": "",
       "expiration_date_debug_tags": [],
       "nutrition_data_per": "100g",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_debug": [
-        "Pur jus de pommes à cidre",
-        ",",
-        null,
-        null,
-        null,
-        " colorant ",
-        ":",
-        ":",
-        null,
-        null,
-        " ",
-        ". ",
-        null,
-        null,
-        null,
-        "Contient des _sulfites_."
+      "Pur jus de pommes à cidre",
+      ",",
+      null,
+      null,
+      null,
+      " colorant ",
+      ":",
+      ":",
+      null,
+      null,
+      " ",
+      ". ",
+      null,
+      null,
+      null,
+      "Contient des _sulfites_."
       ],
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "minerals_tags": [],
@@ -3179,58 +3180,58 @@ products: any;
       "additives_n": 0,
       "packaging": "Bouteille,verre,bouchon,liège",
       "_keywords": [
-        "artisanaux",
-        "boisson",
-        "enceinte",
-        "rose",
-        "pur",
-        "vert",
-        "femme",
-        "categorie",
-        "ju",
-        "alcoolisee",
-        "chateau",
-        "de",
-        "produit",
-        "lezergue",
-        "cidre",
-        "point",
-        "personne",
-        "doux",
-        "certaine",
-        "alcool",
-        "deconseille",
-        "aux"
+      "artisanaux",
+      "boisson",
+      "enceinte",
+      "rose",
+      "pur",
+      "vert",
+      "femme",
+      "categorie",
+      "ju",
+      "alcoolisee",
+      "chateau",
+      "de",
+      "produit",
+      "lezergue",
+      "cidre",
+      "point",
+      "personne",
+      "doux",
+      "certaine",
+      "alcool",
+      "deconseille",
+      "aux"
       ],
       "additives": " [ pur-jus-de-pommes-a-cidre -> fr:pur-jus-de-pommes-a-cidre  ]  [ pur-jus-de-pommes-a -> fr:pur-jus-de-pommes-a  ]  [ pur-jus-de-pommes -> fr:pur-jus-de-pommes  ]  [ pur-jus-de -> fr:pur-jus-de  ]  [ pur-jus -> fr:pur-jus  ]  [ pur -> fr:pur  ]  [ colorant -> fr:colorant  ]  [ contient-des-sulfites -> fr:contient-des-sulfites  ]  [ contient-des -> fr:contient-des  ]  [ contient -> fr:contient  ] ",
       "traces": "",
       "manufacturing_places_tags": [
-        "cidrerie-de-lezergue",
-        "1-route-de-plas-an-dans",
-        "29500-ergue-gaberic",
-        "finistere",
-        "bretagne",
-        "france"
+      "cidrerie-de-lezergue",
+      "1-route-de-plas-an-dans",
+      "29500-ergue-gaberic",
+      "finistere",
+      "bretagne",
+      "france"
       ],
       "labels_tags": [
-        "en:not-advised-for-specific-people",
-        "en:green-dot",
-        "en:not-advised-for-pregnant-women",
-        "en:pure-juice"
+      "en:not-advised-for-specific-people",
+      "en:green-dot",
+      "en:not-advised-for-pregnant-women",
+      "en:pure-juice"
       ],
       "categories_debug_tags": [],
       "ingredients_text_debug": "Pur jus de pommes à cidre, colorant : . Contient des _sulfites_.",
       "serving_size": "",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "lang_debug_tags": [],
       "languages_codes": {
         "fr": 5
       },
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "interface_version_modified": "20120622",
       "traces_hierarchy": [],
@@ -3242,27 +3243,27 @@ products: any;
       "emb_codes_tags": [],
       "expiration_date": "",
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "ingredients_ids_debug": [
-        "pur-jus-de-pommes-a-cidre",
-        "colorant",
-        "contient-des-sulfites"
+      "pur-jus-de-pommes-a-cidre",
+      "colorant",
+      "contient-des-sulfites"
       ],
       "nova_groups_tags": [
-        "en:4-ultra-processed-food-and-drink-products"
+      "en:4-ultra-processed-food-and-drink-products"
       ],
       "allergens_hierarchy": [
-        "en:sulphur-dioxide-and-sulphites"
+      "en:sulphur-dioxide-and-sulphites"
       ],
       "pnns_groups_2_tags": [
-        "alcoholic-beverages"
+      "alcoholic-beverages"
       ],
       "allergens": "en:sulphur-dioxide-and-sulphites",
       "link": "",
       "correctors_tags": [
-        "nouky20",
-        "sebleouf"
+      "nouky20",
+      "sebleouf"
       ],
       "generic_name": "",
       "brands_debug_tags": [],
@@ -3278,33 +3279,33 @@ products: any;
       "ingredients_text_with_allergens_fr": "Pur jus de pommes à cidre, colorant. Contient des <span class=\"allergen\">sulfites</span>.",
       "additives_prev": " [ pur-jus-de-pommes-a-cidre -> fr:pur-jus-de-pommes-a-cidre  ]  [ pur-jus-de-pommes-a -> fr:pur-jus-de-pommes-a  ]  [ pur-jus-de-pommes -> fr:pur-jus-de-pommes  ]  [ pur-jus-de -> fr:pur-jus-de  ]  [ pur-jus -> fr:pur-jus  ]  [ pur -> fr:pur  ]  [ colorant -> fr:colorant  ]  [ contient-des-sulfites -> fr:contient-des-sulfites  ]  [ contient-des -> fr:contient-des  ]  [ contient -> fr:contient  ] ",
       "labels_debug_tags": [
-        "added-en-not-advised-for-specific-people",
-        "removed-fr-deconseille-a-certaines-categories-de-personnes"
+      "added-en-not-advised-for-specific-people",
+      "removed-fr-deconseille-a-certaines-categories-de-personnes"
       ],
       "serving_quantity": 0,
       "labels_hierarchy": [
-        "en:not-advised-for-specific-people",
-        "en:green-dot",
-        "en:not-advised-for-pregnant-women",
-        "en:pure-juice"
+      "en:not-advised-for-specific-people",
+      "en:green-dot",
+      "en:not-advised-for-pregnant-women",
+      "en:pure-juice"
       ],
       "nutrition_data_prepared_per_debug_tags": [],
       "manufacturing_places": "Cidrerie de Lezergué,1 Route de Plas an Dans,29500 Ergué-Gabéric,Finistère,Bretagne,France",
       "entry_dates_tags": [
-        "2018-04-07",
-        "2018-04",
-        "2018"
+      "2018-04-07",
+      "2018-04",
+      "2018"
       ],
       "last_edit_dates_tags": [
-        "2018-09-18",
-        "2018-09",
-        "2018"
+      "2018-09-18",
+      "2018-09",
+      "2018"
       ],
       "max_imgid": "3",
       "countries": "France",
       "ingredients_from_palm_oil_n": 0,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "last_editor": "sebleouf",
       "nutrition_data_prepared_per": "100g",
@@ -3312,8 +3313,8 @@ products: any;
       "nutrient_levels_tags": [],
       "lc": "fr",
       "stores_tags": [
-        "e-leclerc",
-        "leclerc"
+      "e-leclerc",
+      "leclerc"
       ],
       "ingredients_n": 3,
       "packaging_debug_tags": [],
@@ -3469,14 +3470,14 @@ products: any;
         }
       },
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-60-percent-unknown"
+      "ingredients-unknown-score-above-0",
+      "ingredients-60-percent-unknown"
       ],
       "stores": "E.Leclerc,Leclerc",
       "ingredients_tags": [
-        "fr:pur-jus-de-pommes-a-cidre",
-        "en:colour",
-        "fr:contient-des-sulfites"
+      "fr:pur-jus-de-pommes-a-cidre",
+      "en:colour",
+      "fr:contient-des-sulfites"
       ],
       "additives_prev_tags": [],
       "origins": "",
@@ -3486,64 +3487,64 @@ products: any;
       "creator": "nouky20",
       "complete": 1,
       "ingredients": [
-        {
-          "id": "fr:Pur jus de pommes à cidre",
-          "rank": 1,
-          "text": "Pur jus de pommes à cidre"
-        },
-        {
-          "rank": 2,
-          "id": "en:colour",
-          "text": "colorant"
-        },
-        {
-          "rank": 3,
-          "id": "fr:Contient des _sulfites_",
-          "text": "Contient des _sulfites_"
-        }
+      {
+        "id": "fr:Pur jus de pommes à cidre",
+        "rank": 1,
+        "text": "Pur jus de pommes à cidre"
+      },
+      {
+        "rank": 2,
+        "id": "en:colour",
+        "text": "colorant"
+      },
+      {
+        "rank": 3,
+        "id": "fr:Contient des _sulfites_",
+        "text": "Contient des _sulfites_"
+      }
       ],
       "purchase_places_tags": [],
       "brands_tags": [
-        "chateau-de-lezergue"
+      "chateau-de-lezergue"
       ],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "ingredients_original_tags": [
-        "fr:Pur jus de pommes à cidre",
-        "en:colour",
-        "fr:Contient des _sulfites_"
+      "fr:Pur jus de pommes à cidre",
+      "en:colour",
+      "fr:Contient des _sulfites_"
       ],
       "additives_debug_tags": [],
       "product_name_fr_debug_tags": [],
       "labels": "Déconseillé à certaines catégories de personnes,Point Vert,Déconseillé aux femmes enceintes,Pur jus",
       "created_t": 1523120409,
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "last_image_t": 1523120671,
       "editors_tags": [
-        "nouky20",
-        "sebleouf"
+      "nouky20",
+      "sebleouf"
       ],
       "nucleotides_tags": [],
       "countries_debug_tags": [],
       "allergens_tags": [
-        "en:sulphur-dioxide-and-sulphites"
+      "en:sulphur-dioxide-and-sulphites"
       ],
       "product_quantity": 750,
       "unknown_nutrients_tags": [],
@@ -3552,28 +3553,28 @@ products: any;
       "quantity_debug_tags": [],
       "nutrition_score_debug": "no nutriscore for category en:alcoholic-beverages",
       "categories_prev_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:artisan-products",
-        "en:ciders",
-        "en:artisanal-ciders",
-        "en:artisanal-spirits",
-        "en:pink-ciders",
-        "en:sweet-ciders"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:artisan-products",
+      "en:ciders",
+      "en:artisanal-ciders",
+      "en:artisanal-spirits",
+      "en:pink-ciders",
+      "en:sweet-ciders"
       ],
       "emb_codes_orig": "",
       "pnns_groups_2": "Alcoholic beverages",
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "interface_version_created": "20120622",
       "ingredients_n_tags": [
-        "3",
-        "1-10"
+      "3",
+      "1-10"
       ],
       "ingredients_text": "Pur jus de pommes à cidre, colorant. Contient des _sulfites_.",
       "ingredients_hierarchy": [
-        "fr:Pur jus de pommes à cidre",
-        "en:colour",
-        "fr:Contient des _sulfites_"
+      "fr:Pur jus de pommes à cidre",
+      "en:colour",
+      "fr:Contient des _sulfites_"
       ],
       "generic_name_fr_debug_tags": [],
       "generic_name_fr": "",
@@ -3582,7 +3583,7 @@ products: any;
       "purchase_places_debug_tags": [],
       "vitamins_tags": [],
       "photographers_tags": [
-        "nouky20"
+      "nouky20"
       ]
     },
     {
@@ -3596,7 +3597,7 @@ products: any;
       "additives_original_tags": [],
       "countries_debug_tags": [],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
 
       "nutrition_data_prepared": "",
@@ -3614,35 +3615,35 @@ products: any;
       "categories_debug_tags": [],
       "serving_quantity": 0,
       "last_edit_dates_tags": [
-        "2018-09-16",
-        "2018-09",
-        "2018"
+      "2018-09-16",
+      "2018-09",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "labels_hierarchy": [],
       "ingredients_original_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "",
       "checkers_tags": [],
@@ -3651,7 +3652,7 @@ products: any;
       "categories_prev_hierarchy": [],
       "labels_prev_tags": [],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "last_modified_by": "sebleouf",
       "interface_version_created": "20120622",
@@ -3667,28 +3668,28 @@ products: any;
       "last_modified_t": 1537112132,
       "unknown_ingredients_n": 0,
       "entry_dates_tags": [
-        "2018-09-16",
-        "2018-09",
-        "2018"
+      "2018-09-16",
+      "2018-09",
+      "2018"
       ],
       "creator": "openfoodfacts-contributors",
       "additives_prev_tags": [],
       "nutriments": {},
       "codes_tags": [
-        "code-13",
-        3760117211988,
-        "376011721198x",
-        "37601172119xx",
-        "3760117211xxx",
-        "376011721xxxx",
-        "37601172xxxxx",
-        "3760117xxxxxx",
-        "376011xxxxxxx",
-        "37601xxxxxxxx",
-        "3760xxxxxxxxx",
-        "376xxxxxxxxxx",
-        "37xxxxxxxxxxx",
-        "3xxxxxxxxxxxx"
+      "code-13",
+      3760117211988,
+      "376011721198x",
+      "37601172119xx",
+      "3760117211xxx",
+      "376011721xxxx",
+      "37601172xxxxx",
+      "3760117xxxxxx",
+      "376011xxxxxxx",
+      "37601xxxxxxxx",
+      "3760xxxxxxxxx",
+      "376xxxxxxxxxx",
+      "37xxxxxxxxxxx",
+      "3xxxxxxxxxxxx"
       ],
       "nutrient_levels": {},
       "traces_hierarchy": [],
@@ -3701,7 +3702,7 @@ products: any;
       "cities_tags": [],
       "purchase_places_debug_tags": [],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "quantity": "",
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-to-be-completed, en:photos-to-be-validated, en:photos-uploaded",
@@ -3711,15 +3712,15 @@ products: any;
       "nucleotides_tags": [],
       "nutrition_data_prepared_per": "100g",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "purchase_places": "",
       "origins_debug_tags": [],
       "rev": 5,
       "lang_debug_tags": [],
       "informers_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "packaging_debug_tags": [],
       "product_name": "",
@@ -3729,7 +3730,7 @@ products: any;
       "ingredients_text_with_allergens_fr": "",
       "categories": "",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_hierarchy": [],
       "ingredients_text_with_allergens": "",
@@ -3816,32 +3817,32 @@ products: any;
       },
       "additives_tags": [],
       "last_image_dates_tags": [
-        "2018-09-16",
-        "2018-09",
-        "2018"
+      "2018-09-16",
+      "2018-09",
+      "2018"
       ],
       "amino_acids_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "vitamins_prev_tags": [],
       "traces_tags": [],
       "stores_debug_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "manufacturing_places": "",
       "last_editor": "sebleouf",
@@ -3849,11 +3850,11 @@ products: any;
       "allergens_hierarchy": [],
       "unknown_nutrients_tags": [],
       "correctors_tags": [
-        "sebleouf"
+      "sebleouf"
       ],
       "ingredients_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "brands_tags": [],
       "categories_hierarchy": [],
@@ -3864,7 +3865,7 @@ products: any;
       "categories_prev_tags": [],
       "amino_acids_prev_tags": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "sortkey": 537112132,
       "ingredients_debug": [],
@@ -3873,12 +3874,12 @@ products: any;
       "additives_old_tags": [],
       "nutrition_data": "on",
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "labels_debug_tags": [],
       "editors_tags": [
-        "sebleouf",
-        "openfoodfacts-contributors"
+      "sebleouf",
+      "openfoodfacts-contributors"
       ],
       "purchase_places_tags": [],
       "emb_codes": "",
@@ -3888,7 +3889,7 @@ products: any;
       "origins": "",
       "packaging": "",
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "product_name_fr_debug_tags": [],
       "pnns_groups_2": "unknown",
@@ -3904,11 +3905,11 @@ products: any;
       "_id": 4300175485890,
       "traces_hierarchy": [],
       "ingredients": [
-        {
-          "id": "de:Bio Weizenmehl Type 1050",
-          "rank": 1,
-          "text": "Bio Weizenmehl Type 1050"
-        }
+      {
+        "id": "de:Bio Weizenmehl Type 1050",
+        "rank": 1,
+        "text": "Bio Weizenmehl Type 1050"
+      }
       ],
       "nova_groups": 1,
       "nutrient_levels": {
@@ -3919,35 +3920,35 @@ products: any;
       },
       "additives_old_n": 0,
       "codes_tags": [
-        "code-13",
-        4300175485890,
-        "430017548589x",
-        "43001754858xx",
-        "4300175485xxx",
-        "430017548xxxx",
-        "43001754xxxxx",
-        "4300175xxxxxx",
-        "430017xxxxxxx",
-        "43001xxxxxxxx",
-        "4300xxxxxxxxx",
-        "430xxxxxxxxxx",
-        "43xxxxxxxxxxx",
-        "4xxxxxxxxxxxx"
+      "code-13",
+      4300175485890,
+      "430017548589x",
+      "43001754858xx",
+      "4300175485xxx",
+      "430017548xxxx",
+      "43001754xxxxx",
+      "4300175xxxxxx",
+      "430017xxxxxxx",
+      "43001xxxxxxxx",
+      "4300xxxxxxxxx",
+      "430xxxxxxxxxx",
+      "43xxxxxxxxxxx",
+      "4xxxxxxxxxxxx"
       ],
       "nucleotides_tags": [],
       "labels_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "en:de-oko-005",
-        "fr:deutsche-landwirtschaft",
-        "fr:eg-oko-verordnung"
+      "en:organic",
+      "en:eu-organic",
+      "en:de-oko-005",
+      "fr:deutsche-landwirtschaft",
+      "fr:eg-oko-verordnung"
       ],
       "nutrition_data_prepared_per": "100g",
       "nutrition_grades_tags": [
-        "a"
+      "a"
       ],
       "pnns_groups_2_tags": [
-        "cereals"
+      "cereals"
       ],
       "serving_size": "",
       "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
@@ -3963,27 +3964,27 @@ products: any;
       "last_modified_by": "sebleouf",
       "emb_codes_orig": "",
       "pnns_groups_1_tags": [
-        "cereals-and-potatoes"
+      "cereals-and-potatoes"
       ],
       "categories_prev_hierarchy": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:cereals-and-potatoes",
-        "en:cereals-and-their-products",
-        "en:flours",
-        "en:cereal-flours",
-        "en:wheat-flours",
-        "fr:farines-de-ble-type-t110"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:cereals-and-potatoes",
+      "en:cereals-and-their-products",
+      "en:flours",
+      "en:cereal-flours",
+      "en:wheat-flours",
+      "fr:farines-de-ble-type-t110"
       ],
       "labels_prev_tags": [
-        "en:organic",
-        "en:eu-organic",
-        "en:de-oko-005",
-        "fr:deutsche-landwirtschaft",
-        "fr:eg-oko-verordnung"
+      "en:organic",
+      "en:eu-organic",
+      "en:de-oko-005",
+      "fr:deutsche-landwirtschaft",
+      "fr:eg-oko-verordnung"
       ],
       "stores_tags": [
-        "kaufland"
+      "kaufland"
       ],
       "checkers_tags": [],
       "expiration_date_debug_tags": [],
@@ -4048,9 +4049,9 @@ products: any;
       "unknown_ingredients_n": 1,
       "creator": "twoflower",
       "entry_dates_tags": [
-        "2016-01-29",
-        "2016-01",
-        "2016"
+      "2016-01-29",
+      "2016-01",
+      "2016"
       ],
       "nova_group": 1,
       "nutrition_data_per": "100g",
@@ -4067,55 +4068,55 @@ products: any;
       "manufacturing_places_debug_tags": [],
       "additives_prev_original_tags": [],
       "packaging_tags": [
-        "22-pap"
+      "22-pap"
       ],
       "vitamins_tags": [],
       "allergens_from_ingredients": "",
       "ingredients_text_debug": "Bio Weizenmehl Type 1050",
       "languages_hierarchy": [
-        "en:german"
+      "en:german"
       ],
       "ingredients_original_tags": [
-        "de:Bio Weizenmehl Type 1050"
+      "de:Bio Weizenmehl Type 1050"
       ],
       "no_nutrition_data": "",
       "states_hierarchy": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "labels_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "en:de-oko-005",
-        "fr:Deutsche Landwirtschaft",
-        "fr:EG-Öko-Verordnung"
+      "en:organic",
+      "en:eu-organic",
+      "en:de-oko-005",
+      "fr:Deutsche Landwirtschaft",
+      "fr:EG-Öko-Verordnung"
       ],
       "last_edit_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "languages_tags": [
-        "en:german",
-        "en:1"
+      "en:german",
+      "en:1"
       ],
       "nutrient_levels_tags": [
-        "en:fat-in-low-quantity",
-        "en:saturated-fat-in-low-quantity",
-        "en:sugars-in-low-quantity",
-        "en:salt-in-low-quantity"
+      "en:fat-in-low-quantity",
+      "en:saturated-fat-in-low-quantity",
+      "en:sugars-in-low-quantity",
+      "en:salt-in-low-quantity"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "categories_debug_tags": [],
@@ -4130,18 +4131,18 @@ products: any;
       "allergens_tags": [],
       "complete": 1,
       "categories_tags": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:cereals-and-potatoes",
-        "en:cereals-and-their-products",
-        "en:flours",
-        "en:cereal-flours",
-        "en:wheat-flours",
-        "fr:farines-de-ble-type-t110"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:cereals-and-potatoes",
+      "en:cereals-and-their-products",
+      "en:flours",
+      "en:cereal-flours",
+      "en:wheat-flours",
+      "fr:farines-de-ble-type-t110"
       ],
       "brands": "K-Bio",
       "photographers_tags": [
-        "twoflower"
+      "twoflower"
       ],
       "countries_debug_tags": [],
       "labels": "Bio,Bio européen,EG-Öko-Verordnung,DE-ÖKO-005,Deutsche Landwirtschaft",
@@ -4149,31 +4150,31 @@ products: any;
       "generic_name_de": "Bio Weizenmehl Type 1050",
       "fruits-vegetables-nuts_100g_estimate": 0,
       "debug_param_sorted_langs": [
-        "de"
+      "de"
       ],
       "nutrition_data": "on",
       "labels_debug_tags": [],
       "ingredients_debug": [
-        "Bio Weizenmehl Type 1050"
+      "Bio Weizenmehl Type 1050"
       ],
       "additives_old_tags": [],
       "ingredients_text_with_allergens_de": "Bio Weizenmehl Type 1050",
       "minerals_prev_tags": [],
       "amino_acids_prev_tags": [],
       "categories_prev_tags": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:cereals-and-potatoes",
-        "en:cereals-and-their-products",
-        "en:flours",
-        "en:cereal-flours",
-        "en:wheat-flours",
-        "fr:farines-de-ble-type-t110"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:cereals-and-potatoes",
+      "en:cereals-and-their-products",
+      "en:flours",
+      "en:cereal-flours",
+      "en:wheat-flours",
+      "fr:farines-de-ble-type-t110"
       ],
       "sortkey": 1537185906,
       "generic_name_de_debug_tags": [],
       "countries_tags": [
-        "en:germany"
+      "en:germany"
       ],
       "id": "8300775485890",
       "stores": "Kaufland",
@@ -4188,86 +4189,86 @@ products: any;
       "packaging": "22 PAP",
       "origins": "Deutschland",
       "origins_tags": [
-        "deutschland"
+      "deutschland"
       ],
       "traces": "",
       "pnns_groups_2": "Cereals",
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-100-percent-unknown"
+      "ingredients-unknown-score-above-0",
+      "ingredients-100-percent-unknown"
       ],
       "purchase_places_tags": [
-        "stuttgart"
+      "stuttgart"
       ],
       "editors_tags": [
-        "sebleouf",
-        "twoflower"
+      "sebleouf",
+      "twoflower"
       ],
       "nova_groups_tags": [
-        "en:1-unprocessed-or-minimally-processed-foods"
+      "en:1-unprocessed-or-minimally-processed-foods"
       ],
       "nucleotides_prev_tags": [],
       "emb_codes": "",
       "serving_size_debug_tags": [],
       "traces_tags": [],
       "states_tags": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "stores_debug_tags": [],
       "last_image_dates_tags": [
-        "2016-01-29",
-        "2016-01",
-        "2016"
+      "2016-01-29",
+      "2016-01",
+      "2016"
       ],
       "amino_acids_tags": [],
       "vitamins_prev_tags": [],
       "categories_hierarchy": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:cereals-and-potatoes",
-        "en:cereals-and-their-products",
-        "en:flours",
-        "en:cereal-flours",
-        "en:wheat-flours",
-        "fr:farines-de-ble-type-t110"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:cereals-and-potatoes",
+      "en:cereals-and-their-products",
+      "en:flours",
+      "en:cereal-flours",
+      "en:wheat-flours",
+      "fr:farines-de-ble-type-t110"
       ],
       "brands_tags": [
-        "k-bio"
+      "k-bio"
       ],
       "misc_tags": [
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "allergens_hierarchy": [],
       "correctors_tags": [
-        "twoflower",
-        "sebleouf"
+      "twoflower",
+      "sebleouf"
       ],
       "unknown_nutrients_tags": [],
       "ingredients_tags": [
-        "de:bio-weizenmehl-type-1050"
+      "de:bio-weizenmehl-type-1050"
       ],
       "last_editor": "sebleouf",
       "ingredients_ids_debug": [
-        "bio-weizenmehl-type-1050"
+      "bio-weizenmehl-type-1050"
       ],
       "ingredients_n_tags": [
-        "1",
-        "1-10"
+      "1",
+      "1-10"
       ],
       "manufacturing_places": "",
       "created_t": 1454064172,
@@ -4278,32 +4279,32 @@ products: any;
       "emb_codes_20141016": "",
       "traces_from_user": "(fr)",
       "_keywords": [
-        "pomme",
-        "vegetaux",
-        "landwirtschaft",
-        "terre",
-        "derive",
-        "ble",
-        "eg-oko-verordnung",
-        "aliment",
-        "de",
-        "origine",
-        "deutsche",
-        "type",
-        "cereale",
-        "base",
-        "bio",
-        "1050",
-        "k-bio",
-        "de-oko-005",
-        "et",
-        "weizenmehl",
-        "vegetale",
-        "farine",
-        "deutschland",
-        "t110",
-        "europeen",
-        "boisson"
+      "pomme",
+      "vegetaux",
+      "landwirtschaft",
+      "terre",
+      "derive",
+      "ble",
+      "eg-oko-verordnung",
+      "aliment",
+      "de",
+      "origine",
+      "deutsche",
+      "type",
+      "cereale",
+      "base",
+      "bio",
+      "1050",
+      "k-bio",
+      "de-oko-005",
+      "et",
+      "weizenmehl",
+      "vegetale",
+      "farine",
+      "deutschland",
+      "t110",
+      "europeen",
+      "boisson"
       ],
       "generic_name": "Bio Weizenmehl Type 1050",
       "traces_debug_tags": [],
@@ -4549,7 +4550,7 @@ products: any;
       "product_quantity": 1000,
       "ingredients_n": 1,
       "informers_tags": [
-        "twoflower"
+      "twoflower"
       ],
       "packaging_debug_tags": [],
       "completed_t": 1454064390,
@@ -4559,20 +4560,20 @@ products: any;
       "origins_debug_tags": [],
       "additives_n": 0,
       "ingredients_hierarchy": [
-        "de:Bio Weizenmehl Type 1050"
+      "de:Bio Weizenmehl Type 1050"
       ],
       "categories": "Aliments et boissons à base de végétaux,Aliments d'origine végétale,Céréales et pommes de terre,Céréales et dérivés,Farines,Farines de céréales,Farines de blé,Farines de blé type T110",
       "nutrition_grade_fr": "a",
       "countries_hierarchy": [
-        "en:germany"
+      "en:germany"
       ],
       "additives": " [ bio-weizenmehl-type-1050 -> de:bio-weizenmehl-type-1050  ] ",
       "labels_prev_hierarchy": [
-        "en:organic",
-        "en:eu-organic",
-        "en:de-oko-005",
-        "fr:Deutsche Landwirtschaft",
-        "fr:EG-Öko-Verordnung"
+      "en:organic",
+      "en:eu-organic",
+      "en:de-oko-005",
+      "fr:Deutsche Landwirtschaft",
+      "fr:EG-Öko-Verordnung"
       ],
       "max_imgid": "4",
       "additives_prev_n": 0
@@ -4586,22 +4587,22 @@ products: any;
       "expiration_date": "",
       "traces_from_ingredients": "",
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "labels_prev_hierarchy": [],
       "manufacturing_places": "",
@@ -4617,14 +4618,14 @@ products: any;
       },
       "product_name_fr": "",
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "countries_debug_tags": [],
       "purchase_places_debug_tags": [],
       "manufacturing_places_debug_tags": [],
       "nutrition_data_per": "100g",
       "correctors_tags": [
-        "sebleouf"
+      "sebleouf"
       ],
       "serving_quantity": 0,
       "stores_debug_tags": [],
@@ -4635,43 +4636,43 @@ products: any;
       "unknown_ingredients_n": 0,
       "categories_hierarchy": [],
       "last_edit_dates_tags": [
-        "2018-10-10",
-        "2018-10",
-        "2018"
+      "2018-10-10",
+      "2018-10",
+      "2018"
       ],
       "ingredients_original_tags": [],
       "interface_version_modified": "20120622",
       "nutrition_data_prepared_per": "100g",
       "codes_tags": [
-        "code-13",
-        4545350039646,
-        "454535003964x",
-        "45453500396xx",
-        "4545350039xxx",
-        "454535003xxxx",
-        "45453500xxxxx",
-        "4545350xxxxxx",
-        "454535xxxxxxx",
-        "45453xxxxxxxx",
-        "4545xxxxxxxxx",
-        "454xxxxxxxxxx",
-        "45xxxxxxxxxxx",
-        "4xxxxxxxxxxxx"
+      "code-13",
+      4545350039646,
+      "454535003964x",
+      "45453500396xx",
+      "4545350039xxx",
+      "454535003xxxx",
+      "45453500xxxxx",
+      "4545350xxxxxx",
+      "454535xxxxxxx",
+      "45453xxxxxxxx",
+      "4545xxxxxxxxx",
+      "454xxxxxxxxxx",
+      "45xxxxxxxxxxx",
+      "4xxxxxxxxxxxx"
       ],
       "nutriments": {},
       "lc": "fr",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_text": "",
       "quantity": "",
       "additives_original_tags": [],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "emb_codes_orig": "",
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_text_with_allergens": "",
       "additives_tags": [],
@@ -4752,7 +4753,7 @@ products: any;
       "nutrition_score_debug": "no score when the product does not have a category",
       "purchase_places": "",
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "created_t": 1537793126,
       "emb_codes_debug_tags": [],
@@ -4766,8 +4767,8 @@ products: any;
       "countries": "France",
       "serving_size_debug_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "lang": "fr",
       "packaging_tags": [],
@@ -4775,15 +4776,15 @@ products: any;
       "ingredients_hierarchy": [],
       "categories_prev_hierarchy": [],
       "informers_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "nutrient_levels_tags": [],
       "cities_tags": [],
       "entry_dates_tags": [
-        "2018-09-24",
-        "2018-09",
-        "2018"
+      "2018-09-24",
+      "2018-09",
+      "2018"
       ],
       "code": "4545350039646",
       "nutrition_data": "on",
@@ -4792,7 +4793,7 @@ products: any;
       "brands_tags": [],
       "generic_name_fr": "",
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "allergens_from_user": "(fr)",
       "stores_tags": [],
@@ -4808,16 +4809,16 @@ products: any;
       "quantity_debug_tags": [],
       "ingredients_text_with_allergens_fr": "",
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "emb_codes_tags": [],
       "generic_name": "",
       "editors_tags": [
-        "sebleouf",
-        "openfoodfacts-contributors"
+      "sebleouf",
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [],
       "additives_debug_tags": [],
@@ -4832,28 +4833,28 @@ products: any;
       "brands_debug_tags": [],
       "additives_prev_original_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_image_dates_tags": [
-        "2018-09-24",
-        "2018-09",
-        "2018"
+      "2018-09-24",
+      "2018-09",
+      "2018"
       ],
       "labels_debug_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "labels": "",
       "packaging": "",
@@ -4868,7 +4869,7 @@ products: any;
       "id": "200560357",
       "lang_debug_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients": [],
       "creator": "openfoodfacts-contributors"
@@ -4878,7 +4879,7 @@ products: any;
       "categories_prev_tags": [],
       "amino_acids_prev_tags": [],
       "countries_tags": [
-        "en:united-kingdom"
+      "en:united-kingdom"
       ],
       "sortkey": 537032259,
       "allergens_from_user": "(fr)Gluten,Lait",
@@ -4889,257 +4890,257 @@ products: any;
       "nutrition_data": "on",
       "labels_debug_tags": [],
       "debug_param_sorted_langs": [
-        "en"
+      "en"
       ],
       "ingredients_debug": [
-        "Meat Sauce ",
-        "(",
-        "(",
-        null,
-        null,
-        "59%) ",
-        "(",
-        "(",
-        null,
-        null,
-        "Water",
-        ",",
-        null,
-        null,
-        null,
-        " Minced Beef ",
-        "(",
-        "(",
-        null,
-        null,
-        "17%)",
-        ",",
-        null,
-        null,
-        null,
-        " Tomato",
-        ",",
-        null,
-        null,
-        null,
-        " Onions",
-        ",",
-        null,
-        null,
-        null,
-        " Tomato Purée",
-        ",",
-        null,
-        null,
-        null,
-        " Modified Maize Starch",
-        ",",
-        null,
-        null,
-        null,
-        " Wheat Flour ",
-        "(",
-        "(",
-        null,
-        null,
-        "_Wheat_ Flour",
-        ",",
-        null,
-        null,
-        null,
-        " Calcium Carbonate",
-        ",",
-        null,
-        null,
-        null,
-        " Iron",
-        ",",
-        null,
-        null,
-        null,
-        " Niacin and Thiamin)",
-        ",",
-        null,
-        null,
-        null,
-        " Flavouring ",
-        "(",
-        "(",
-        null,
-        null,
-        "Starch",
-        ",",
-        null,
-        null,
-        null,
-        " Flavouring",
-        ",",
-        null,
-        null,
-        null,
-        " Colour ",
-        "(",
-        "(",
-        null,
-        null,
-        "Paprika Extract)",
-        ",",
-        null,
-        null,
-        null,
-        " Salt",
-        ",",
-        null,
-        null,
-        null,
-        " White Sugar",
-        ",",
-        null,
-        null,
-        null,
-        " Maltodextrin",
-        ",",
-        null,
-        null,
-        null,
-        " Sunflower Oil",
-        ",",
-        null,
-        null,
-        null,
-        " Modified Maize Starch)",
-        ",",
-        null,
-        null,
-        null,
-        " Salt",
-        ",",
-        null,
-        null,
-        null,
-        " White Sugar",
-        ",",
-        null,
-        null,
-        null,
-        " Garlic Purée",
-        ",",
-        null,
-        null,
-        null,
-        " Yeast Extract",
-        ",",
-        null,
-        null,
-        null,
-        " Basil",
-        ",",
-        null,
-        null,
-        null,
-        " Thyme",
-        ",",
-        null,
-        null,
-        null,
-        " Oregano",
-        ",",
-        null,
-        null,
-        null,
-        " Onion Powder",
-        ",",
-        null,
-        null,
-        null,
-        " Black Pepper)",
-        ",",
-        null,
-        null,
-        null,
-        " White Sauce ",
-        "(",
-        "(",
-        null,
-        null,
-        "23%) ",
-        "(",
-        "(",
-        null,
-        null,
-        "Water",
-        ",",
-        null,
-        null,
-        null,
-        " _Milk_",
-        ",",
-        null,
-        null,
-        null,
-        " Half Cream ",
-        "(",
-        "(",
-        null,
-        null,
-        "_Milk_)",
-        ",",
-        null,
-        null,
-        null,
-        " Modified Maize Starch)",
-        ",",
-        null,
-        null,
-        null,
-        " Cooked Pasta ",
-        "(",
-        "(",
-        null,
-        null,
-        "15%) ",
-        "(",
-        "(",
-        null,
-        null,
-        "Durum _Wheat_ Semolina",
-        ",",
-        null,
-        null,
-        null,
-        " Water)",
-        ",",
-        null,
-        null,
-        null,
-        " Cheddar Cheese ",
-        "(",
-        "(",
-        null,
-        null,
-        "_Milk_) ",
-        "(",
-        "(",
-        null,
-        null,
-        "2.7%) ",
-        "(",
-        "(",
-        null,
-        null,
-        "Contains Colour",
-        ":",
-        ":",
-        null,
-        null,
-        " Annatto)"
+      "Meat Sauce ",
+      "(",
+      "(",
+      null,
+      null,
+      "59%) ",
+      "(",
+      "(",
+      null,
+      null,
+      "Water",
+      ",",
+      null,
+      null,
+      null,
+      " Minced Beef ",
+      "(",
+      "(",
+      null,
+      null,
+      "17%)",
+      ",",
+      null,
+      null,
+      null,
+      " Tomato",
+      ",",
+      null,
+      null,
+      null,
+      " Onions",
+      ",",
+      null,
+      null,
+      null,
+      " Tomato Purée",
+      ",",
+      null,
+      null,
+      null,
+      " Modified Maize Starch",
+      ",",
+      null,
+      null,
+      null,
+      " Wheat Flour ",
+      "(",
+      "(",
+      null,
+      null,
+      "_Wheat_ Flour",
+      ",",
+      null,
+      null,
+      null,
+      " Calcium Carbonate",
+      ",",
+      null,
+      null,
+      null,
+      " Iron",
+      ",",
+      null,
+      null,
+      null,
+      " Niacin and Thiamin)",
+      ",",
+      null,
+      null,
+      null,
+      " Flavouring ",
+      "(",
+      "(",
+      null,
+      null,
+      "Starch",
+      ",",
+      null,
+      null,
+      null,
+      " Flavouring",
+      ",",
+      null,
+      null,
+      null,
+      " Colour ",
+      "(",
+      "(",
+      null,
+      null,
+      "Paprika Extract)",
+      ",",
+      null,
+      null,
+      null,
+      " Salt",
+      ",",
+      null,
+      null,
+      null,
+      " White Sugar",
+      ",",
+      null,
+      null,
+      null,
+      " Maltodextrin",
+      ",",
+      null,
+      null,
+      null,
+      " Sunflower Oil",
+      ",",
+      null,
+      null,
+      null,
+      " Modified Maize Starch)",
+      ",",
+      null,
+      null,
+      null,
+      " Salt",
+      ",",
+      null,
+      null,
+      null,
+      " White Sugar",
+      ",",
+      null,
+      null,
+      null,
+      " Garlic Purée",
+      ",",
+      null,
+      null,
+      null,
+      " Yeast Extract",
+      ",",
+      null,
+      null,
+      null,
+      " Basil",
+      ",",
+      null,
+      null,
+      null,
+      " Thyme",
+      ",",
+      null,
+      null,
+      null,
+      " Oregano",
+      ",",
+      null,
+      null,
+      null,
+      " Onion Powder",
+      ",",
+      null,
+      null,
+      null,
+      " Black Pepper)",
+      ",",
+      null,
+      null,
+      null,
+      " White Sauce ",
+      "(",
+      "(",
+      null,
+      null,
+      "23%) ",
+      "(",
+      "(",
+      null,
+      null,
+      "Water",
+      ",",
+      null,
+      null,
+      null,
+      " _Milk_",
+      ",",
+      null,
+      null,
+      null,
+      " Half Cream ",
+      "(",
+      "(",
+      null,
+      null,
+      "_Milk_)",
+      ",",
+      null,
+      null,
+      null,
+      " Modified Maize Starch)",
+      ",",
+      null,
+      null,
+      null,
+      " Cooked Pasta ",
+      "(",
+      "(",
+      null,
+      null,
+      "15%) ",
+      "(",
+      "(",
+      null,
+      null,
+      "Durum _Wheat_ Semolina",
+      ",",
+      null,
+      null,
+      null,
+      " Water)",
+      ",",
+      null,
+      null,
+      null,
+      " Cheddar Cheese ",
+      "(",
+      "(",
+      null,
+      null,
+      "_Milk_) ",
+      "(",
+      "(",
+      null,
+      null,
+      "2.7%) ",
+      "(",
+      "(",
+      null,
+      null,
+      "Contains Colour",
+      ":",
+      ":",
+      null,
+      null,
+      " Annatto)"
       ],
       "minerals_prev_tags": [
-        "en:iron"
+      "en:iron"
       ],
       "additives_old_tags": [
-        "en:e160c",
-        "en:e160b"
+      "en:e160c",
+      "en:e160b"
       ],
       "ingredients_text_with_allergens_en": "Meat Sauce (59%) (Water, Minced Beef (17%), Tomato, Onions, Tomato Purée, Modified Maize Starch, <span class=\"allergen\">Wheat Flour</span> (<span class=\"allergen\">Wheat</span> Flour, Calcium Carbonate, Iron, Niacin and Thiamin), Flavouring (Starch, Flavouring, Colour (Paprika Extract), Salt, White Sugar, Maltodextrin, Sunflower Oil, Modified Maize Starch), Salt, White Sugar, Garlic Purée, Yeast Extract, Basil, Thyme, Oregano, Onion Powder, Black Pepper), White Sauce (23%) (Water, <span class=\"allergen\">Milk</span>, Half Cream (<span class=\"allergen\">Milk</span>), Modified Maize Starch), Cooked Pasta (15%) (Durum <span class=\"allergen\">Wheat</span> Semolina, Water), Cheddar Cheese (<span class=\"allergen\">Milk</span>) (2.7%) (Contains Colour: Annatto)",
       "origins_tags": [],
@@ -5149,9 +5150,9 @@ products: any;
       "pnns_groups_2": "unknown",
       "traces": "",
       "editors_tags": [
-        "charlyisidore",
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "charlyisidore",
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "purchase_places_tags": [],
       "emb_codes": "",
@@ -5165,173 +5166,173 @@ products: any;
       },
       "amino_acids_tags": [],
       "last_image_dates_tags": [
-        "2018-01-19",
-        "2018-01",
-        "2018"
+      "2018-01-19",
+      "2018-01",
+      "2018"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "vitamins_prev_tags": [
-        "en:thiamin"
+      "en:thiamin"
       ],
       "generic_name_en_debug_tags": [],
       "traces_tags": [],
       "stores_debug_tags": [],
       "product_name_en_debug_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_editor": "sebleouf",
       "ingredients_ids_debug": [
-        "meat-sauce",
-        "59",
-        "water",
-        "minced-beef",
-        "17",
-        "tomato",
-        "onions",
-        "tomato-puree",
-        "modified-maize-starch",
-        "wheat-flour",
-        "wheat-flour",
-        "calcium-carbonate",
-        "iron",
-        "niacin-and-thiamin",
-        "flavouring",
-        "starch",
-        "flavouring",
-        "colour",
-        "paprika-extract",
-        "salt",
-        "white-sugar",
-        "maltodextrin",
-        "sunflower-oil",
-        "modified-maize-starch",
-        "salt",
-        "white-sugar",
-        "garlic-puree",
-        "yeast-extract",
-        "basil",
-        "thyme",
-        "oregano",
-        "onion-powder",
-        "black-pepper",
-        "white-sauce",
-        "23",
-        "water",
-        "milk",
-        "half-cream",
-        "milk",
-        "modified-maize-starch",
-        "cooked-pasta",
-        "15",
-        "durum-wheat-semolina",
-        "water",
-        "cheddar-cheese",
-        "milk",
-        "2-7",
-        "contains-colour",
-        "annatto"
+      "meat-sauce",
+      "59",
+      "water",
+      "minced-beef",
+      "17",
+      "tomato",
+      "onions",
+      "tomato-puree",
+      "modified-maize-starch",
+      "wheat-flour",
+      "wheat-flour",
+      "calcium-carbonate",
+      "iron",
+      "niacin-and-thiamin",
+      "flavouring",
+      "starch",
+      "flavouring",
+      "colour",
+      "paprika-extract",
+      "salt",
+      "white-sugar",
+      "maltodextrin",
+      "sunflower-oil",
+      "modified-maize-starch",
+      "salt",
+      "white-sugar",
+      "garlic-puree",
+      "yeast-extract",
+      "basil",
+      "thyme",
+      "oregano",
+      "onion-powder",
+      "black-pepper",
+      "white-sauce",
+      "23",
+      "water",
+      "milk",
+      "half-cream",
+      "milk",
+      "modified-maize-starch",
+      "cooked-pasta",
+      "15",
+      "durum-wheat-semolina",
+      "water",
+      "cheddar-cheese",
+      "milk",
+      "2-7",
+      "contains-colour",
+      "annatto"
       ],
       "ingredients_n_tags": [
-        "44",
-        "41-50"
+      "44",
+      "41-50"
       ],
       "manufacturing_places": "",
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "brands_tags": [
-        "bisto"
+      "bisto"
       ],
       "categories_hierarchy": [],
       "allergens_hierarchy": [
-        "en:gluten",
-        "en:milk"
+      "en:gluten",
+      "en:milk"
       ],
       "correctors_tags": [
-        "charlyisidore",
-        "sebleouf"
+      "charlyisidore",
+      "sebleouf"
       ],
       "ingredients_tags": [
-        "en:meat-sauce",
-        "en:tomato",
-        "en:onions",
-        "en:tomato-puree",
-        "en:modified-corn-starch",
-        "en:corn-starch",
-        "en:modified-starch",
-        "en:starch",
-        "en:wheat-flour",
-        "en:flavour",
-        "en:salt",
-        "en:white-sugar",
-        "en:sugar",
-        "en:maltodextrin",
-        "en:sunflower-oil",
-        "en:sunflower",
-        "en:modified-corn-starch",
-        "en:corn-starch",
-        "en:modified-starch",
-        "en:starch",
-        "en:salt",
-        "en:white-sugar",
-        "en:sugar",
-        "en:garlic-puree",
-        "en:yeast-extract",
-        "en:basil",
-        "en:thyme",
-        "en:oregano",
-        "en:onion-powder",
-        "en:black-pepper",
-        "en:pepper",
-        "en:white-sauce",
-        "en:modified-corn-starch",
-        "en:corn-starch",
-        "en:modified-starch",
-        "en:starch",
-        "en:cooked-pasta",
-        "en:cheddar-cheese",
-        "en:milk",
-        "en:water",
-        "en:minced-beef",
-        "en:wheat-flour",
-        "en:calcium-carbonate",
-        "en:iron",
-        "en:niacin-and-thiamin",
-        "en:starch",
-        "en:flavour",
-        "en:colour",
-        "en:paprika-extract",
-        "en:water",
-        "en:milk",
-        "en:half-cream",
-        "en:milk",
-        "en:durum-wheat-semolina",
-        "en:water",
-        "en:contains-colour",
-        "en:annatto"
+      "en:meat-sauce",
+      "en:tomato",
+      "en:onions",
+      "en:tomato-puree",
+      "en:modified-corn-starch",
+      "en:corn-starch",
+      "en:modified-starch",
+      "en:starch",
+      "en:wheat-flour",
+      "en:flavour",
+      "en:salt",
+      "en:white-sugar",
+      "en:sugar",
+      "en:maltodextrin",
+      "en:sunflower-oil",
+      "en:sunflower",
+      "en:modified-corn-starch",
+      "en:corn-starch",
+      "en:modified-starch",
+      "en:starch",
+      "en:salt",
+      "en:white-sugar",
+      "en:sugar",
+      "en:garlic-puree",
+      "en:yeast-extract",
+      "en:basil",
+      "en:thyme",
+      "en:oregano",
+      "en:onion-powder",
+      "en:black-pepper",
+      "en:pepper",
+      "en:white-sauce",
+      "en:modified-corn-starch",
+      "en:corn-starch",
+      "en:modified-starch",
+      "en:starch",
+      "en:cooked-pasta",
+      "en:cheddar-cheese",
+      "en:milk",
+      "en:water",
+      "en:minced-beef",
+      "en:wheat-flour",
+      "en:calcium-carbonate",
+      "en:iron",
+      "en:niacin-and-thiamin",
+      "en:starch",
+      "en:flavour",
+      "en:colour",
+      "en:paprika-extract",
+      "en:water",
+      "en:milk",
+      "en:half-cream",
+      "en:milk",
+      "en:durum-wheat-semolina",
+      "en:water",
+      "en:contains-colour",
+      "en:annatto"
       ],
       "unknown_nutrients_tags": [],
       "generic_name": "",
       "_keywords": [
-        "lasagne",
-        "beef",
-        "classic",
-        "bisto"
+      "lasagne",
+      "beef",
+      "classic",
+      "bisto"
       ],
       "traces_from_user": "(fr)",
       "update_key": "20180706-categories",
@@ -5341,8 +5342,8 @@ products: any;
       "additives_prev": " [ meat-sauce -> en:meat-sauce  ]  [ sauce -> en:sauce  ]  [ 59 -> en:59  ]  [ water -> en:water  ]  [ minced-beef -> en:minced-beef  ]  [ beef -> en:beef  ]  [ 17 -> en:17  ]  [ tomato -> en:tomato  ]  [ onions -> en:onions  ]  [ tomato-puree -> en:tomato-puree  ]  [ puree -> en:puree  ]  [ modified-maize-starch -> en:modified-maize-starch  ]  [ maize-starch -> en:maize-starch  ]  [ starch -> en:starch  ]  [ wheat-flour -> en:wheat-flour  ]  [ flour -> en:flour  ]  [ wheat-flour -> en:wheat-flour  ]  [ flour -> en:flour  ]  [ calcium-carbonate -> en:e170  -> exists  -- ok  ]  [ iron -> en:iron  -> exists as a mineral en:iron  ]  [ niacin-and-thiamin -> en:niacin-and-thiamin  ]  [ and-thiamin -> en:and-thiamin  ]  [ thiamin -> en:thiamin  -> exists as a vitamin en:thiamin and current class is en:minerals  ]  [ flavouring -> en:flavouring  ]  [ starch -> en:starch  ]  [ flavouring -> en:flavouring  ]  [ colour -> en:fd-c  ]  [ paprika-extract -> en:e160c  -> exists  -- ok  ]  [ salt -> en:salt  ]  [ white-sugar -> en:white-sugar  ]  [ sugar -> en:sugar  ]  [ maltodextrin -> en:maltodextrin  ]  [ sunflower-oil -> en:sunflower-oil  ]  [ oil -> en:oil  ]  [ modified-maize-starch -> en:modified-maize-starch  ]  [ maize-starch -> en:maize-starch  ]  [ starch -> en:starch  ]  [ salt -> en:salt  ]  [ white-sugar -> en:white-sugar  ]  [ sugar -> en:sugar  ]  [ garlic-puree -> en:garlic-puree  ]  [ puree -> en:puree  ]  [ yeast-extract -> en:yeast-extract  ]  [ extract -> en:extract  ]  [ basil -> en:basil  ]  [ thyme -> en:thyme  ]  [ oregano -> en:oregano  ]  [ onion-powder -> en:onion-powder  ]  [ powder -> en:powder  ]  [ black-pepper -> en:black-pepper  ]  [ pepper -> en:pepper  ]  [ white-sauce -> en:white-sauce  ]  [ sauce -> en:sauce  ]  [ 23 -> en:23  ]  [ water -> en:water  ]  [ milk -> en:milk  ]  [ half-cream -> en:half-cream  ]  [ cream -> en:cream  ]  [ milk -> en:milk  ]  [ modified-maize-starch -> en:modified-maize-starch  ]  [ maize-starch -> en:maize-starch  ]  [ starch -> en:starch  ]  [ cooked-pasta -> en:cooked-pasta  ]  [ pasta -> en:pasta  ]  [ 15 -> en:15  ]  [ durum-wheat-semolina -> en:durum-wheat-semolina  ]  [ wheat-semolina -> en:wheat-semolina  ]  [ semolina -> en:semolina  ]  [ water -> en:water  ]  [ cheddar-cheese -> en:cheddar-cheese  ]  [ cheese -> en:cheese  ]  [ milk -> en:milk  ]  [ 2-7 -> en:2-7  ]  [ 7 -> en:fd-c  ]  [ contains-colour -> en:contains-colour  ]  [ colour -> en:fd-c  ]  [ annatto -> en:e160b  -> exists  -- ok  ] ",
       "ingredients_text_with_allergens": "Meat Sauce (59%) (Water, Minced Beef (17%), Tomato, Onions, Tomato Purée, Modified Maize Starch, <span class=\"allergen\">Wheat Flour</span> (<span class=\"allergen\">Wheat</span> Flour, Calcium Carbonate, Iron, Niacin and Thiamin), Flavouring (Starch, Flavouring, Colour (Paprika Extract), Salt, White Sugar, Maltodextrin, Sunflower Oil, Modified Maize Starch), Salt, White Sugar, Garlic Purée, Yeast Extract, Basil, Thyme, Oregano, Onion Powder, Black Pepper), White Sauce (23%) (Water, <span class=\"allergen\">Milk</span>, Half Cream (<span class=\"allergen\">Milk</span>), Modified Maize Starch), Cooked Pasta (15%) (Durum <span class=\"allergen\">Wheat</span> Semolina, Water), Cheddar Cheese (<span class=\"allergen\">Milk</span>) (2.7%) (Contains Colour: Annatto)",
       "minerals_tags": [
-        "en:calcium-carbonate",
-        "en:iron"
+      "en:calcium-carbonate",
+      "en:iron"
       ],
       "pnns_groups_1": "unknown",
       "created_t": 1516393333,
@@ -5355,8 +5356,8 @@ products: any;
       "nutrition_data_per_debug_tags": [],
       "brands_debug_tags": [],
       "additives_tags": [
-        "en:e160b",
-        "en:e160c"
+      "en:e160b",
+      "en:e160c"
       ],
       "images": {
         "1": {
@@ -5415,8 +5416,8 @@ products: any;
       "product_quantity": 375,
       "product_name": "Beef Lasagne Classic",
       "informers_tags": [
-        "charlyisidore",
-        "openfoodfacts-contributors"
+      "charlyisidore",
+      "openfoodfacts-contributors"
       ],
       "ingredients_n": 44,
       "packaging_debug_tags": [],
@@ -5426,292 +5427,292 @@ products: any;
       "max_imgid": "1",
       "additives_n": 2,
       "ingredients_hierarchy": [
-        "en:Meat Sauce",
-        "en:tomato",
-        "en:onions",
-        "en:Tomato Purée",
-        "en:modified-corn-starch",
-        "en:corn-starch",
-        "en:modified-starch",
-        "en:starch",
-        "en:wheat-flour",
-        "en:flavour",
-        "en:salt",
-        "en:white-sugar",
-        "en:sugar",
-        "en:maltodextrin",
-        "en:sunflower-oil",
-        "en:sunflower",
-        "en:modified-corn-starch",
-        "en:corn-starch",
-        "en:modified-starch",
-        "en:starch",
-        "en:salt",
-        "en:white-sugar",
-        "en:sugar",
-        "en:garlic-puree",
-        "en:Yeast Extract",
-        "en:Basil",
-        "en:thyme",
-        "en:Oregano",
-        "en:Onion Powder",
-        "en:black-pepper",
-        "en:pepper",
-        "en:White Sauce",
-        "en:modified-corn-starch",
-        "en:corn-starch",
-        "en:modified-starch",
-        "en:starch",
-        "en:Cooked Pasta",
-        "en:Cheddar Cheese",
-        "en:milk",
-        "en:water",
-        "en:Minced Beef",
-        "en:wheat-flour",
-        "en:calcium-carbonate",
-        "en:iron",
-        "en:Niacin and Thiamin",
-        "en:starch",
-        "en:flavour",
-        "en:colour",
-        "en:paprika-extract",
-        "en:water",
-        "en:milk",
-        "en:Half Cream",
-        "en:milk",
-        "en:Durum _Wheat_ Semolina",
-        "en:water",
-        "en:Contains Colour",
-        "en:Annatto"
+      "en:Meat Sauce",
+      "en:tomato",
+      "en:onions",
+      "en:Tomato Purée",
+      "en:modified-corn-starch",
+      "en:corn-starch",
+      "en:modified-starch",
+      "en:starch",
+      "en:wheat-flour",
+      "en:flavour",
+      "en:salt",
+      "en:white-sugar",
+      "en:sugar",
+      "en:maltodextrin",
+      "en:sunflower-oil",
+      "en:sunflower",
+      "en:modified-corn-starch",
+      "en:corn-starch",
+      "en:modified-starch",
+      "en:starch",
+      "en:salt",
+      "en:white-sugar",
+      "en:sugar",
+      "en:garlic-puree",
+      "en:Yeast Extract",
+      "en:Basil",
+      "en:thyme",
+      "en:Oregano",
+      "en:Onion Powder",
+      "en:black-pepper",
+      "en:pepper",
+      "en:White Sauce",
+      "en:modified-corn-starch",
+      "en:corn-starch",
+      "en:modified-starch",
+      "en:starch",
+      "en:Cooked Pasta",
+      "en:Cheddar Cheese",
+      "en:milk",
+      "en:water",
+      "en:Minced Beef",
+      "en:wheat-flour",
+      "en:calcium-carbonate",
+      "en:iron",
+      "en:Niacin and Thiamin",
+      "en:starch",
+      "en:flavour",
+      "en:colour",
+      "en:paprika-extract",
+      "en:water",
+      "en:milk",
+      "en:Half Cream",
+      "en:milk",
+      "en:Durum _Wheat_ Semolina",
+      "en:water",
+      "en:Contains Colour",
+      "en:Annatto"
       ],
       "categories": "",
       "countries_hierarchy": [
-        "en:united-kingdom"
+      "en:united-kingdom"
       ],
       "codes_tags": [
-        "code-13",
-        5000187140044,
-        "500018714004x",
-        "50001871400xx",
-        "5000187140xxx",
-        "500018714xxxx",
-        "50001871xxxxx",
-        "5000187xxxxxx",
-        "500018xxxxxxx",
-        "50001xxxxxxxx",
-        "5000xxxxxxxxx",
-        "500xxxxxxxxxx",
-        "50xxxxxxxxxxx",
-        "5xxxxxxxxxxxx"
+      "code-13",
+      5000187140044,
+      "500018714004x",
+      "50001871400xx",
+      "5000187140xxx",
+      "500018714xxxx",
+      "50001871xxxxx",
+      "5000187xxxxxx",
+      "500018xxxxxxx",
+      "50001xxxxxxxx",
+      "5000xxxxxxxxx",
+      "500xxxxxxxxxx",
+      "50xxxxxxxxxxx",
+      "5xxxxxxxxxxxx"
       ],
       "traces_hierarchy": [],
       "ingredients": [
-        {
-          "id": "en:Meat Sauce",
-          "rank": 1,
-          "percent": "59",
-          "text": "Meat Sauce"
-        },
-        {
-          "id": "en:tomato",
-          "rank": 2,
-          "text": "Tomato"
-        },
-        {
-          "text": "Onions",
-          "rank": 3,
-          "id": "en:onions"
-        },
-        {
-          "id": "en:Tomato Purée",
-          "rank": 4,
-          "text": "Tomato Purée"
-        },
-        {
-          "text": "Modified Maize Starch",
-          "rank": 5,
-          "id": "en:modified-corn-starch"
-        },
-        {
-          "text": "Wheat Flour",
-          "rank": 6,
-          "id": "en:wheat-flour"
-        },
-        {
-          "rank": 7,
-          "id": "en:flavour",
-          "text": "Flavouring"
-        },
-        {
-          "id": "en:salt",
-          "rank": 8,
-          "text": "Salt"
-        },
-        {
-          "text": "White Sugar",
-          "id": "en:white-sugar",
-          "rank": 9
-        },
-        {
-          "id": "en:maltodextrin",
-          "rank": 10,
-          "text": "Maltodextrin"
-        },
-        {
-          "text": "Sunflower Oil",
-          "rank": 11,
-          "id": "en:sunflower-oil"
-        },
-        {
-          "text": "Modified Maize Starch",
-          "id": "en:modified-corn-starch",
-          "rank": 12
-        },
-        {
-          "text": "Salt",
-          "id": "en:salt",
-          "rank": 13
-        },
-        {
-          "text": "White Sugar",
-          "id": "en:white-sugar",
-          "rank": 14
-        },
-        {
-          "text": "Garlic Purée",
-          "rank": 15,
-          "id": "en:garlic-puree"
-        },
-        {
-          "text": "Yeast Extract",
-          "id": "en:Yeast Extract",
-          "rank": 16
-        },
-        {
-          "text": "Basil",
-          "rank": 17,
-          "id": "en:Basil"
-        },
-        {
-          "text": "Thyme",
-          "rank": 18,
-          "id": "en:thyme"
-        },
-        {
-          "text": "Oregano",
-          "id": "en:Oregano",
-          "rank": 19
-        },
-        {
-          "text": "Onion Powder",
-          "rank": 20,
-          "id": "en:Onion Powder"
-        },
-        {
-          "text": "Black Pepper",
-          "id": "en:black-pepper",
-          "rank": 21
-        },
-        {
-          "id": "en:White Sauce",
-          "rank": 22,
-          "text": "White Sauce",
-          "percent": "23"
-        },
-        {
-          "text": "Modified Maize Starch",
-          "rank": 23,
-          "id": "en:modified-corn-starch"
-        },
-        {
-          "percent": "15",
-          "text": "Cooked Pasta",
-          "id": "en:Cooked Pasta",
-          "rank": 24
-        },
-        {
-          "text": "Cheddar Cheese",
-          "id": "en:Cheddar Cheese",
-          "rank": 25
-        },
-        {
-          "text": "_Milk_",
-          "id": "en:milk",
-          "rank": 26
-        },
-        {
-          "id": "en:water",
-          "text": "Water"
-        },
-        {
-          "id": "en:Minced Beef",
-          "text": "Minced Beef",
-          "percent": "17"
-        },
-        {
-          "text": "_Wheat_ Flour",
-          "id": "en:wheat-flour"
-        },
-        {
-          "id": "en:calcium-carbonate",
-          "text": "Calcium Carbonate"
-        },
-        {
-          "id": "en:iron",
-          "text": "Iron"
-        },
-        {
-          "text": "Niacin and Thiamin",
-          "id": "en:Niacin and Thiamin"
-        },
-        {
-          "id": "en:starch",
-          "text": "Starch"
-        },
-        {
-          "text": "Flavouring",
-          "id": "en:flavour"
-        },
-        {
-          "id": "en:colour",
-          "text": "Colour"
-        },
-        {
-          "id": "en:paprika-extract",
-          "text": "Paprika Extract"
-        },
-        {
-          "id": "en:water",
-          "text": "Water"
-        },
-        {
-          "id": "en:milk",
-          "text": "_Milk_"
-        },
-        {
-          "id": "en:Half Cream",
-          "text": "Half Cream"
-        },
-        {
-          "text": "_Milk_",
-          "id": "en:milk"
-        },
-        {
-          "text": "Durum _Wheat_ Semolina",
-          "id": "en:Durum _Wheat_ Semolina"
-        },
-        {
-          "id": "en:water",
-          "text": "Water"
-        },
-        {
-          "id": "en:Contains Colour",
-          "text": "Contains Colour"
-        },
-        {
-          "id": "en:Annatto",
-          "text": "Annatto"
-        }
+      {
+        "id": "en:Meat Sauce",
+        "rank": 1,
+        "percent": "59",
+        "text": "Meat Sauce"
+      },
+      {
+        "id": "en:tomato",
+        "rank": 2,
+        "text": "Tomato"
+      },
+      {
+        "text": "Onions",
+        "rank": 3,
+        "id": "en:onions"
+      },
+      {
+        "id": "en:Tomato Purée",
+        "rank": 4,
+        "text": "Tomato Purée"
+      },
+      {
+        "text": "Modified Maize Starch",
+        "rank": 5,
+        "id": "en:modified-corn-starch"
+      },
+      {
+        "text": "Wheat Flour",
+        "rank": 6,
+        "id": "en:wheat-flour"
+      },
+      {
+        "rank": 7,
+        "id": "en:flavour",
+        "text": "Flavouring"
+      },
+      {
+        "id": "en:salt",
+        "rank": 8,
+        "text": "Salt"
+      },
+      {
+        "text": "White Sugar",
+        "id": "en:white-sugar",
+        "rank": 9
+      },
+      {
+        "id": "en:maltodextrin",
+        "rank": 10,
+        "text": "Maltodextrin"
+      },
+      {
+        "text": "Sunflower Oil",
+        "rank": 11,
+        "id": "en:sunflower-oil"
+      },
+      {
+        "text": "Modified Maize Starch",
+        "id": "en:modified-corn-starch",
+        "rank": 12
+      },
+      {
+        "text": "Salt",
+        "id": "en:salt",
+        "rank": 13
+      },
+      {
+        "text": "White Sugar",
+        "id": "en:white-sugar",
+        "rank": 14
+      },
+      {
+        "text": "Garlic Purée",
+        "rank": 15,
+        "id": "en:garlic-puree"
+      },
+      {
+        "text": "Yeast Extract",
+        "id": "en:Yeast Extract",
+        "rank": 16
+      },
+      {
+        "text": "Basil",
+        "rank": 17,
+        "id": "en:Basil"
+      },
+      {
+        "text": "Thyme",
+        "rank": 18,
+        "id": "en:thyme"
+      },
+      {
+        "text": "Oregano",
+        "id": "en:Oregano",
+        "rank": 19
+      },
+      {
+        "text": "Onion Powder",
+        "rank": 20,
+        "id": "en:Onion Powder"
+      },
+      {
+        "text": "Black Pepper",
+        "id": "en:black-pepper",
+        "rank": 21
+      },
+      {
+        "id": "en:White Sauce",
+        "rank": 22,
+        "text": "White Sauce",
+        "percent": "23"
+      },
+      {
+        "text": "Modified Maize Starch",
+        "rank": 23,
+        "id": "en:modified-corn-starch"
+      },
+      {
+        "percent": "15",
+        "text": "Cooked Pasta",
+        "id": "en:Cooked Pasta",
+        "rank": 24
+      },
+      {
+        "text": "Cheddar Cheese",
+        "id": "en:Cheddar Cheese",
+        "rank": 25
+      },
+      {
+        "text": "_Milk_",
+        "id": "en:milk",
+        "rank": 26
+      },
+      {
+        "id": "en:water",
+        "text": "Water"
+      },
+      {
+        "id": "en:Minced Beef",
+        "text": "Minced Beef",
+        "percent": "17"
+      },
+      {
+        "text": "_Wheat_ Flour",
+        "id": "en:wheat-flour"
+      },
+      {
+        "id": "en:calcium-carbonate",
+        "text": "Calcium Carbonate"
+      },
+      {
+        "id": "en:iron",
+        "text": "Iron"
+      },
+      {
+        "text": "Niacin and Thiamin",
+        "id": "en:Niacin and Thiamin"
+      },
+      {
+        "id": "en:starch",
+        "text": "Starch"
+      },
+      {
+        "text": "Flavouring",
+        "id": "en:flavour"
+      },
+      {
+        "id": "en:colour",
+        "text": "Colour"
+      },
+      {
+        "id": "en:paprika-extract",
+        "text": "Paprika Extract"
+      },
+      {
+        "id": "en:water",
+        "text": "Water"
+      },
+      {
+        "id": "en:milk",
+        "text": "_Milk_"
+      },
+      {
+        "id": "en:Half Cream",
+        "text": "Half Cream"
+      },
+      {
+        "text": "_Milk_",
+        "id": "en:milk"
+      },
+      {
+        "text": "Durum _Wheat_ Semolina",
+        "id": "en:Durum _Wheat_ Semolina"
+      },
+      {
+        "id": "en:water",
+        "text": "Water"
+      },
+      {
+        "id": "en:Contains Colour",
+        "text": "Contains Colour"
+      },
+      {
+        "id": "en:Annatto",
+        "text": "Annatto"
+      }
       ],
       "additives_old_n": 2,
       "nutrient_levels": {},
@@ -5722,16 +5723,16 @@ products: any;
       "traces_from_ingredients": "",
       "code": "5000187140044",
       "additives_debug_tags": [
-        "en-e170-removed"
+      "en-e170-removed"
       ],
       "labels_tags": [],
       "nucleotides_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nutrition_data_prepared_per": "100g",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-completed, en:packaging-to-be-completed, en:quantity-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "quantity": "375 g",
@@ -5740,7 +5741,7 @@ products: any;
       "labels_prev_tags": [],
       "checkers_tags": [],
       "stores_tags": [
-        "lidl"
+      "lidl"
       ],
       "expiration_date_debug_tags": [],
       "last_modified_by": "sebleouf",
@@ -5748,7 +5749,7 @@ products: any;
       "product_name_en": "Beef Lasagne Classic",
       "emb_codes_orig": "",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "nutrition_data_per": "100g",
       "last_modified_t": 1537032259,
@@ -5760,9 +5761,9 @@ products: any;
       "expiration_date": "",
       "quantity_debug_tags": [],
       "additives_prev_tags": [
-        "en:e160b",
-        "en:e160c",
-        "en:e170"
+      "en:e160b",
+      "en:e160c",
+      "en:e170"
       ],
       "nutriments": {
         "fat_100g": 4,
@@ -5814,13 +5815,13 @@ products: any;
       "product_name_debug_tags": [],
       "unknown_ingredients_n": 15,
       "entry_dates_tags": [
-        "2018-01-19",
-        "2018-01",
-        "2018"
+      "2018-01-19",
+      "2018-01",
+      "2018"
       ],
       "creator": "charlyisidore",
       "vitamins_tags": [
-        "en:thiamin"
+      "en:thiamin"
       ],
       "allergens_from_ingredients": "Wheat, Milk, Milk, Wheat, Milk, Wheat Flour",
       "ingredients_text_en": "Meat Sauce (59%) (Water, Minced Beef (17%), Tomato, Onions, Tomato Purée, Modified Maize Starch, Wheat Flour (_Wheat_ Flour, Calcium Carbonate, Iron, Niacin and Thiamin), Flavouring (Starch, Flavouring, Colour (Paprika Extract), Salt, White Sugar, Maltodextrin, Sunflower Oil, Modified Maize Starch), Salt, White Sugar, Garlic Purée, Yeast Extract, Basil, Thyme, Oregano, Onion Powder, Black Pepper), White Sauce (23%) (Water, _Milk_, Half Cream (_Milk_), Modified Maize Starch), Cooked Pasta (15%) (Durum _Wheat_ Semolina, Water), Cheddar Cheese (_Milk_) (2.7%) (Contains Colour: Annatto)",
@@ -5828,107 +5829,107 @@ products: any;
       "nutrition_data_prepared_per_debug_tags": [],
       "manufacturing_places_debug_tags": [],
       "additives_prev_original_tags": [
-        "en:e170",
-        "en:e160c",
-        "en:e160b"
+      "en:e170",
+      "en:e160c",
+      "en:e160b"
       ],
       "packaging_tags": [],
       "languages_tags": [
-        "en:english",
-        "en:1"
+      "en:english",
+      "en:1"
       ],
       "nutrient_levels_tags": [],
       "last_edit_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "categories_debug_tags": [],
       "serving_quantity": 0,
       "ingredients_original_tags": [
-        "en:Meat Sauce",
-        "en:tomato",
-        "en:onions",
-        "en:Tomato Purée",
-        "en:modified-corn-starch",
-        "en:wheat-flour",
-        "en:flavour",
-        "en:salt",
-        "en:white-sugar",
-        "en:maltodextrin",
-        "en:sunflower-oil",
-        "en:modified-corn-starch",
-        "en:salt",
-        "en:white-sugar",
-        "en:garlic-puree",
-        "en:Yeast Extract",
-        "en:Basil",
-        "en:thyme",
-        "en:Oregano",
-        "en:Onion Powder",
-        "en:black-pepper",
-        "en:White Sauce",
-        "en:modified-corn-starch",
-        "en:Cooked Pasta",
-        "en:Cheddar Cheese",
-        "en:milk",
-        "en:water",
-        "en:Minced Beef",
-        "en:wheat-flour",
-        "en:calcium-carbonate",
-        "en:iron",
-        "en:Niacin and Thiamin",
-        "en:starch",
-        "en:flavour",
-        "en:colour",
-        "en:paprika-extract",
-        "en:water",
-        "en:milk",
-        "en:Half Cream",
-        "en:milk",
-        "en:Durum _Wheat_ Semolina",
-        "en:water",
-        "en:Contains Colour",
-        "en:Annatto"
+      "en:Meat Sauce",
+      "en:tomato",
+      "en:onions",
+      "en:Tomato Purée",
+      "en:modified-corn-starch",
+      "en:wheat-flour",
+      "en:flavour",
+      "en:salt",
+      "en:white-sugar",
+      "en:maltodextrin",
+      "en:sunflower-oil",
+      "en:modified-corn-starch",
+      "en:salt",
+      "en:white-sugar",
+      "en:garlic-puree",
+      "en:Yeast Extract",
+      "en:Basil",
+      "en:thyme",
+      "en:Oregano",
+      "en:Onion Powder",
+      "en:black-pepper",
+      "en:White Sauce",
+      "en:modified-corn-starch",
+      "en:Cooked Pasta",
+      "en:Cheddar Cheese",
+      "en:milk",
+      "en:water",
+      "en:Minced Beef",
+      "en:wheat-flour",
+      "en:calcium-carbonate",
+      "en:iron",
+      "en:Niacin and Thiamin",
+      "en:starch",
+      "en:flavour",
+      "en:colour",
+      "en:paprika-extract",
+      "en:water",
+      "en:milk",
+      "en:Half Cream",
+      "en:milk",
+      "en:Durum _Wheat_ Semolina",
+      "en:water",
+      "en:Contains Colour",
+      "en:Annatto"
       ],
       "languages_hierarchy": [
-        "en:english"
+      "en:english"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "",
       "labels_hierarchy": [],
       "link": "",
       "complete": 0,
       "allergens_tags": [
-        "en:gluten",
-        "en:milk"
+      "en:gluten",
+      "en:milk"
       ],
       "lc": "en",
       "additives_original_tags": [
-        "en:e160c",
-        "en:e160b"
+      "en:e160c",
+      "en:e160b"
       ],
       "allergens_debug_tags": [],
       "interface_version_modified": "20120622",
       "brands": "Bisto",
       "countries_debug_tags": [],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "labels": "",
       "nutrition_data_prepared": "",
@@ -5937,42 +5938,42 @@ products: any;
     {
       "_id": 5010038000359,
       "languages_hierarchy": [
-        "en:english",
-        "en:french"
+      "en:english",
+      "en:french"
       ],
       "ingredients_original_tags": [],
       "no_nutrition_data": "",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "generic_name_fi": "",
       "labels_hierarchy": [
-        "en:not-advised-for-specific-people",
-        "en:not-advised-for-pregnant-women"
+      "en:not-advised-for-specific-people",
+      "en:not-advised-for-pregnant-women"
       ],
       "last_edit_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:english",
-        "en:french",
-        "en:2",
-        "en:multilingual"
+      "en:english",
+      "en:french",
+      "en:2",
+      "en:multilingual"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "categories_debug_tags": [],
@@ -5982,22 +5983,22 @@ products: any;
       "additives_prev_original_tags": [],
       "product_name_fr": "",
       "packaging_tags": [
-        "canette",
-        "metal"
+      "canette",
+      "metal"
       ],
       "vitamins_tags": [],
       "allergens_from_ingredients": "",
       "ingredients_text_en": "",
       "ingredients_text_debug": "",
       "categories_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "brands": "Worthington's",
       "countries_debug_tags": [],
       "photographers_tags": [
-        "tacinte"
+      "tacinte"
       ],
       "nutrition_data_prepared": "",
       "labels": "Déconseillé aux femmes enceintes",
@@ -6010,15 +6011,15 @@ products: any;
       "complete": 0,
       "nucleotides_tags": [],
       "labels_tags": [
-        "en:not-advised-for-specific-people",
-        "en:not-advised-for-pregnant-women"
+      "en:not-advised-for-specific-people",
+      "en:not-advised-for-pregnant-women"
       ],
       "nutrition_data_prepared_per": "100g",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "pnns_groups_2_tags": [
-        "alcoholic-beverages"
+      "alcoholic-beverages"
       ],
       "generic_name_fr_debug_tags": [],
       "serving_size": "",
@@ -6036,20 +6037,20 @@ products: any;
       "ingredients": [],
       "nutrient_levels": {},
       "codes_tags": [
-        "code-13",
-        5010038000359,
-        "501003800035x",
-        "50100380003xx",
-        "5010038000xxx",
-        "501003800xxxx",
-        "50100380xxxxx",
-        "5010038xxxxxx",
-        "501003xxxxxxx",
-        "50100xxxxxxxx",
-        "5010xxxxxxxxx",
-        "501xxxxxxxxxx",
-        "50xxxxxxxxxxx",
-        "5xxxxxxxxxxxx"
+      "code-13",
+      5010038000359,
+      "501003800035x",
+      "50100380003xx",
+      "5010038000xxx",
+      "501003800xxxx",
+      "50100380xxxxx",
+      "5010038xxxxxx",
+      "501003xxxxxxx",
+      "50100xxxxxxxx",
+      "5010xxxxxxxxx",
+      "501xxxxxxxxxx",
+      "50xxxxxxxxxxx",
+      "5xxxxxxxxxxxx"
       ],
       "nutriments": {
         "alcohol_value": "3.6",
@@ -6062,9 +6063,9 @@ products: any;
       "unknown_ingredients_n": 0,
       "creator": "tacinte",
       "entry_dates_tags": [
-        "2014-12-13",
-        "2014-12",
-        "2014"
+      "2014-12-13",
+      "2014-12",
+      "2014"
       ],
       "nutrition_data_per": "100g",
       "last_modified_t": 1537032486,
@@ -6082,12 +6083,12 @@ products: any;
       "emb_codes_orig": "",
       "product_name_en": "Creamflow",
       "categories_prev_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "labels_prev_tags": [
-        "en:not-advised-for-pregnant-women"
+      "en:not-advised-for-pregnant-women"
       ],
       "checkers_tags": [],
       "stores_tags": [],
@@ -6274,15 +6275,15 @@ products: any;
       "emb_codes_20141016": "",
       "generic_name_en": "",
       "_keywords": [
-        "boisson",
-        "aux",
-        "alcoolisee",
-        "deconseille",
-        "enceinte",
-        "worthington",
-        "biere",
-        "femme",
-        "creamflow"
+      "boisson",
+      "aux",
+      "alcoolisee",
+      "deconseille",
+      "enceinte",
+      "worthington",
+      "biere",
+      "femme",
+      "creamflow"
       ],
       "traces_from_user": "(fr)",
       "generic_name": "",
@@ -6293,11 +6294,11 @@ products: any;
       "ingredients_hierarchy": [],
       "categories": "Boissons,Boissons alcoolisées,Bières",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_text_with_allergens_fr": "eau, <span class=\"allergen\">orge</span>, <span class=\"allergen\">blé</span>, sucre, houblon, levure, E150c.",
       "labels_prev_hierarchy": [
-        "en:not-advised-for-pregnant-women"
+      "en:not-advised-for-pregnant-women"
       ],
       "max_imgid": "3",
       "ingredients_text_fr": "eau, _orge_, _blé_, sucre, houblon, levure, E150c.",
@@ -6305,13 +6306,13 @@ products: any;
       "product_quantity": 440,
       "ingredients_text_fi": "",
       "informers_tags": [
-        "tacinte",
-        "keragui"
+      "tacinte",
+      "keragui"
       ],
       "packaging_debug_tags": [],
       "lang_debug_tags": [],
       "editors": [
-        "tacinte"
+      "tacinte"
       ],
       "rev": 23,
       "purchase_places": "",
@@ -6335,21 +6336,21 @@ products: any;
       "quality_tags": [],
       "purchase_places_tags": [],
       "editors_tags": [
-        "tacinte",
-        "keragui",
-        "sebleouf",
-        "tacite-mass-editor"
+      "tacinte",
+      "keragui",
+      "sebleouf",
+      "tacite-mass-editor"
       ],
       "nucleotides_prev_tags": [],
       "serving_size_debug_tags": [],
       "emb_codes": "",
       "nutrition_data": "on",
       "labels_debug_tags": [
-        "added-en-not-advised-for-specific-people"
+      "added-en-not-advised-for-specific-people"
       ],
       "debug_param_sorted_langs": [
-        "en",
-        "fr"
+      "en",
+      "fr"
       ],
       "ingredients_debug": [],
       "additives_old_tags": [],
@@ -6357,12 +6358,12 @@ products: any;
       "minerals_prev_tags": [],
       "amino_acids_prev_tags": [],
       "categories_prev_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "sortkey": 537032486,
       "id": "7014638000359",
@@ -6370,25 +6371,25 @@ products: any;
       "allergens_from_user": "(fr)",
       "ingredients_text_en_debug_tags": [],
       "manufacturing_places_tags": [
-        "uk"
+      "uk"
       ],
       "brands_tags": [
-        "worthington-s"
+      "worthington-s"
       ],
       "categories_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "allergens_hierarchy": [],
       "ingredients_tags": [],
       "correctors_tags": [
-        "keragui",
-        "tacite-mass-editor",
-        "sebleouf"
+      "keragui",
+      "tacite-mass-editor",
+      "sebleouf"
       ],
       "unknown_nutrients_tags": [],
       "last_editor": "sebleouf",
@@ -6397,30 +6398,30 @@ products: any;
       "generic_name_en_debug_tags": [],
       "traces_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "product_name_en_debug_tags": [],
       "ingredients_text_fr_debug_tags": [],
       "stores_debug_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "last_image_dates_tags": [
-        "2014-12-13",
-        "2014-12",
-        "2014"
+      "2014-12-13",
+      "2014-12",
+      "2014"
       ],
       "amino_acids_tags": [],
       "vitamins_prev_tags": []
@@ -6438,19 +6439,19 @@ products: any;
       "expiration_date_debug_tags": [],
       "link": "",
       "languages_hierarchy": [
-        "en:french",
-        "en:english"
+      "en:french",
+      "en:english"
       ],
       "product_name_en_debug_tags": [],
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_prev_tags": [],
       "nutriments": {},
       "last_image_dates_tags": [
-        "2018-08-05",
-        "2018-08",
-        "2018"
+      "2018-08-05",
+      "2018-08",
+      "2018"
       ],
       "serving_quantity": 0,
       "pnns_groups_2": "unknown",
@@ -6458,7 +6459,7 @@ products: any;
       "allergens_hierarchy": [],
       "product_name_fr_debug_tags": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "manufacturing_places_tags": [],
       "last_modified_t": 1537717671,
@@ -6473,7 +6474,7 @@ products: any;
       "categories_prev_hierarchy": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "lang_debug_tags": [],
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-completed, en:product-name-to-be-completed, en:photos-to-be-validated, en:photos-uploaded",
@@ -6497,46 +6498,46 @@ products: any;
       "labels_tags": [],
       "labels": "",
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_tags": [],
       "_keywords": [],
       "ingredients_ids_debug": [],
       "editors_tags": [
-        "sebleouf",
-        "openfoodfacts-contributors"
+      "sebleouf",
+      "openfoodfacts-contributors"
       ],
       "countries_debug_tags": [],
       "ingredients_from_palm_oil_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nutrition_data_per_debug_tags": [],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "amino_acids_tags": [],
       "sortkey": 537717671,
       "product_name": "",
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "categories_hierarchy": [],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "emb_codes_orig": "",
       "nutrition_data_prepared_per_debug_tags": [],
@@ -6545,7 +6546,7 @@ products: any;
       "emb_codes_tags": [],
       "interface_version_modified": "20120622",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "traces": "",
       "ingredients_text_with_allergens_fr": "",
@@ -6553,19 +6554,19 @@ products: any;
       "packaging_tags": [],
       "origins_debug_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "manufacturing_places_debug_tags": [],
       "nutrition_data_prepared_per": "100g",
@@ -6578,14 +6579,14 @@ products: any;
       "packaging": "",
       "additives_original_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "allergens_from_ingredients": "",
       "code": "5600320350158",
       "last_edit_dates_tags": [
-        "2018-09-23",
-        "2018-09",
-        "2018"
+      "2018-09-23",
+      "2018-09",
+      "2018"
       ],
       "images": {
         "1": {
@@ -6646,16 +6647,16 @@ products: any;
       "ingredients_text_en_debug_tags": [],
       "generic_name_fr": "",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "id": "2620420350158",
       "vitamins_tags": [],
       "serving_size": "",
       "languages_tags": [
-        "en:french",
-        "en:english",
-        "en:2",
-        "en:multilingual"
+      "en:french",
+      "en:english",
+      "en:2",
+      "en:multilingual"
       ],
       "additives_prev_original_tags": [],
       "allergens_debug_tags": [],
@@ -6663,8 +6664,8 @@ products: any;
       "additives_debug_tags": [],
       "serving_size_debug_tags": [],
       "debug_param_sorted_langs": [
-        "fr",
-        "en"
+      "fr",
+      "en"
       ],
       "categories_prev_tags": [],
       "cities_tags": [],
@@ -6675,9 +6676,9 @@ products: any;
       "interface_version_created": "20120622",
       "generic_name": "",
       "entry_dates_tags": [
-        "2018-08-05",
-        "2018-08",
-        "2018"
+      "2018-08-05",
+      "2018-08",
+      "2018"
       ],
       "ingredients_text_en": "",
       "brands_tags": [],
@@ -6687,20 +6688,20 @@ products: any;
       "generic_name_en": "",
       "nutrition_data": "on",
       "codes_tags": [
-        "code-13",
-        5600320350158,
-        "560032035015x",
-        "56003203501xx",
-        "5600320350xxx",
-        "560032035xxxx",
-        "56003203xxxxx",
-        "5600320xxxxxx",
-        "560032xxxxxxx",
-        "56003xxxxxxxx",
-        "5600xxxxxxxxx",
-        "560xxxxxxxxxx",
-        "56xxxxxxxxxxx",
-        "5xxxxxxxxxxxx"
+      "code-13",
+      5600320350158,
+      "560032035015x",
+      "56003203501xx",
+      "5600320350xxx",
+      "560032035xxxx",
+      "56003203xxxxx",
+      "5600320xxxxxx",
+      "560032xxxxxxx",
+      "56003xxxxxxxx",
+      "5600xxxxxxxxx",
+      "560xxxxxxxxxx",
+      "56xxxxxxxxxxx",
+      "5xxxxxxxxxxxx"
       ],
       "categories_tags": [],
       "languages": {
@@ -6757,34 +6758,34 @@ products: any;
       "countries_debug_tags": [],
       "manufacturing_places": "Afrique du Sud",
       "categories_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "nutrient_levels_tags": [],
       "categories_debug_tags": [],
       "ingredients_original_tags": [
-        "en:water",
-        "en:barley malt",
-        "en:maize extract & hops"
+      "en:water",
+      "en:barley malt",
+      "en:maize extract & hops"
       ],
       "lang": "en",
       "countries_tags": [
-        "en:south-africa"
+      "en:south-africa"
       ],
       "amino_acids_tags": [],
       "last_image_dates_tags": [
-        "2018-09-26",
-        "2018-09",
-        "2018"
+      "2018-09-26",
+      "2018-09",
+      "2018"
       ],
       "packaging_debug_tags": [],
       "generic_name_en": "Beer - Pilsener",
       "additives_prev_original_tags": [],
       "traces": "",
       "debug_param_sorted_langs": [
-        "en",
-        "fr"
+      "en",
+      "fr"
       ],
       "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
       "origins_tags": [],
@@ -6792,34 +6793,34 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "allergens_hierarchy": [],
       "photographers_tags": [
-        "beniben"
+      "beniben"
       ],
       "ingredients_that_may_be_from_palm_oil_n": 0,
       "labels_prev_tags": [
-        "en:no-additives",
-        "en:no-preservatives"
+      "en:no-additives",
+      "en:no-preservatives"
       ],
       "product_name_en_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        6003326008341,
-        "600332600834x",
-        "60033260083xx",
-        "6003326008xxx",
-        "600332600xxxx",
-        "60033260xxxxx",
-        "6003326xxxxxx",
-        "600332xxxxxxx",
-        "60033xxxxxxxx",
-        "6003xxxxxxxxx",
-        "600xxxxxxxxxx",
-        "60xxxxxxxxxxx",
-        "6xxxxxxxxxxxx"
+      "code-13",
+      6003326008341,
+      "600332600834x",
+      "60033260083xx",
+      "6003326008xxx",
+      "600332600xxxx",
+      "60033260xxxxx",
+      "6003326xxxxxx",
+      "600332xxxxxxx",
+      "60033xxxxxxxx",
+      "6003xxxxxxxxx",
+      "600xxxxxxxxxx",
+      "60xxxxxxxxxxx",
+      "6xxxxxxxxxxxx"
       ],
       "pnns_groups_2": "Alcoholic beverages",
       "brands_tags": [
-        "hansa",
-        "sab"
+      "hansa",
+      "sab"
       ],
       "product_name_fr": "Hansa Pilsener",
       "origins": "",
@@ -7065,7 +7066,7 @@ products: any;
         "en:english": 6
       },
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "additives_prev": " [ water -> en:water  ]  [ barley-malt -> en:barley-malt  ]  [ malt -> en:malt  ]  [ maize-extract-hops -> en:maize-extract-hops  ]  [ extract-hops -> en:extract-hops  ]  [ hops -> en:hops  ] ",
       "unknown_nutrients_tags": [],
@@ -7073,33 +7074,33 @@ products: any;
       "generic_name_fr_debug_tags": [],
       "packaging": "Verre,bouteille",
       "correctors_tags": [
-        "beniben"
+      "beniben"
       ],
       "nutrition_data_prepared_per": "100g",
       "interface_version_modified": "20120622",
       "labels_tags": [
-        "en:no-preservatives",
-        "en:no-additives"
+      "en:no-preservatives",
+      "en:no-additives"
       ],
       "ingredients_debug": [
-        "Water",
-        ",",
-        null,
-        null,
-        null,
-        " barley malt",
-        ",",
-        null,
-        null,
-        null,
-        " maize extract & hops."
+      "Water",
+      ",",
+      null,
+      null,
+      null,
+      " barley malt",
+      ",",
+      null,
+      null,
+      null,
+      " maize extract & hops."
       ],
       "product_name_en": "Pilsener",
       "labels": "No preservatives,No additives",
       "last_modified_by": "beniben",
       "ingredients_text": "Water, barley malt, maize extract & hops.",
       "purchase_places_tags": [
-        "afrique-du-sud"
+      "afrique-du-sud"
       ],
       "link_debug_tags": [],
       "ingredients_from_palm_oil_n": 0,
@@ -7113,20 +7114,20 @@ products: any;
       "interface_version_created": "20120622",
       "nutrient_levels": {},
       "states_hierarchy": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "allergens_tags": [],
       "traces_from_user": "(en)",
@@ -7142,12 +7143,12 @@ products: any;
       "ingredients_text_fr_debug_tags": [],
       "nutrition_data": "on",
       "ingredients_tags": [
-        "en:water",
-        "en:barley-malt",
-        "en:maize-extract-hops"
+      "en:water",
+      "en:barley-malt",
+      "en:maize-extract-hops"
       ],
       "pnns_groups_2_tags": [
-        "alcoholic-beverages"
+      "alcoholic-beverages"
       ],
       "ingredients_text_with_allergens": "Water, barley malt, maize extract & hops.",
       "traces_tags": [],
@@ -7157,29 +7158,29 @@ products: any;
       "no_nutrition_data": "",
       "nutrition_data_prepared_per_debug_tags": [],
       "editors_tags": [
-        "beniben"
+      "beniben"
       ],
       "generic_name_en_debug_tags": [],
       "ingredients_hierarchy": [
-        "en:water",
-        "en:barley malt",
-        "en:maize extract & hops"
+      "en:water",
+      "en:barley malt",
+      "en:maize extract & hops"
       ],
       "purchase_places": "Afrique du Sud",
       "informers_tags": [
-        "beniben"
+      "beniben"
       ],
       "emb_codes_debug_tags": [],
       "_keywords": [
-        "pilsener",
-        "alcoholic",
-        "sab",
-        "hansa",
-        "beer",
-        "no",
-        "preservative",
-        "additive",
-        "beverage"
+      "pilsener",
+      "alcoholic",
+      "sab",
+      "hansa",
+      "beer",
+      "no",
+      "preservative",
+      "additive",
+      "beverage"
       ],
       "product_quantity": 330,
       "complete": 1,
@@ -7191,44 +7192,44 @@ products: any;
       "manufacturing_places_debug_tags": [],
       "additives_original_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:english",
-        "en:2",
-        "en:multilingual"
+      "en:french",
+      "en:english",
+      "en:2",
+      "en:multilingual"
       ],
       "id": "6003326004497",
       "packaging_tags": [
-        "verre",
-        "bouteille"
+      "verre",
+      "bouteille"
       ],
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-60-percent-unknown"
+      "ingredients-unknown-score-above-0",
+      "ingredients-60-percent-unknown"
       ],
       "categories_prev_hierarchy": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "manufacturing_places_tags": [
-        "afrique-du-sud"
+      "afrique-du-sud"
       ],
       "ingredients": [
-        {
-          "rank": 1,
-          "id": "en:water",
-          "text": "Water"
-        },
-        {
-          "text": "barley malt",
-          "rank": 2,
-          "id": "en:barley malt"
-        },
-        {
-          "text": "maize extract & hops",
-          "id": "en:maize extract & hops",
-          "rank": 3
-        }
+      {
+        "rank": 1,
+        "id": "en:water",
+        "text": "Water"
+      },
+      {
+        "text": "barley malt",
+        "rank": 2,
+        "id": "en:barley malt"
+      },
+      {
+        "text": "maize extract & hops",
+        "id": "en:maize extract & hops",
+        "rank": 3
+      }
       ],
       "ingredients_n": 3,
       "labels_debug_tags": [],
@@ -7238,31 +7239,31 @@ products: any;
       "code": "6003326008341",
       "origins_debug_tags": [],
       "states_tags": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "allergens_debug_tags": [],
       "unknown_ingredients_n": 2,
       "nova_groups_tags": [
-        "en:3-processed-foods"
+      "en:3-processed-foods"
       ],
       "allergens_from_ingredients": "",
       "sortkey": 1537970130,
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "countries_hierarchy": [
-        "en:south-africa"
+      "en:south-africa"
       ],
       "last_modified_t": 1537970130,
       "nova_group": 3,
@@ -7272,15 +7273,15 @@ products: any;
       "max_imgid": "4",
       "generic_name_fr": "Bière - Hansa Pilsener",
       "categories_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "emb_codes_orig": "",
       "nutrition_score_debug": "no nutriscore for category en:alcoholic-beverages",
       "languages_hierarchy": [
-        "en:french",
-        "en:english"
+      "en:french",
+      "en:english"
       ],
       "lang_debug_tags": [],
       "rev": 22,
@@ -7288,35 +7289,35 @@ products: any;
       "vitamins_prev_tags": [],
       "ingredients_text_fr": "Eau, malt d'_orge_, extrait de maïs et houblon",
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "product_name_fr_debug_tags": [],
       "expiration_date": "15/06/2019",
       "traces_hierarchy": [],
       "categories_prev_tags": [
-        "en:beverages",
-        "en:alcoholic-beverages",
-        "en:beers"
+      "en:beverages",
+      "en:alcoholic-beverages",
+      "en:beers"
       ],
       "nova_group_debug": " -- categories/en:beers : 3",
       "last_edit_dates_tags": [
-        "2018-09-26",
-        "2018-09",
-        "2018"
+      "2018-09-26",
+      "2018-09",
+      "2018"
       ],
       "labels_hierarchy": [
-        "en:no-preservatives",
-        "en:no-additives"
+      "en:no-preservatives",
+      "en:no-additives"
       ],
       "nutrition_data_per_debug_tags": [],
       "ingredients_from_palm_oil_tags": [],
       "ingredients_n_tags": [
-        "3",
-        "1-10"
+      "3",
+      "1-10"
       ],
       "labels_prev_hierarchy": [
-        "en:no-additives",
-        "en:no-preservatives"
+      "en:no-additives",
+      "en:no-preservatives"
       ],
       "vitamins_tags": [],
       "creator": "beniben",
@@ -7325,18 +7326,18 @@ products: any;
       "ingredients_text_en_debug_tags": [],
       "categories": "Beverages,Alcoholic beverages,Beers",
       "entry_dates_tags": [
-        "2018-09-26",
-        "2018-09",
-        "2018"
+      "2018-09-26",
+      "2018-09",
+      "2018"
       ],
       "nucleotides_tags": [],
       "ingredients_text_en": "Water, barley malt, maize extract & hops.",
       "cities_tags": [],
       "serving_quantity": 0,
       "ingredients_ids_debug": [
-        "water",
-        "barley-malt",
-        "maize-extract-hops"
+      "water",
+      "barley-malt",
+      "maize-extract-hops"
       ],
       "product_name": "Pilsener",
       "generic_name": "Beer - Pilsener",
@@ -7350,42 +7351,42 @@ products: any;
       "traces_tags": [],
       "product_name_en_debug_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "stores_debug_tags": [],
       "generic_name_en_debug_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "amino_acids_tags": [],
       "last_image_dates_tags": [
-        "2014-02-22",
-        "2014-02",
-        "2014"
+      "2014-02-22",
+      "2014-02",
+      "2014"
       ],
       "vitamins_prev_tags": [],
       "allergens_hierarchy": [],
       "unknown_nutrients_tags": [],
       "correctors_tags": [
-        "sebleouf"
+      "sebleouf"
       ],
       "ingredients_tags": [],
       "categories_hierarchy": [],
       "brands_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "manufacturing_places": "",
       "last_editor": "sebleouf",
@@ -7394,7 +7395,7 @@ products: any;
       "additives_old_tags": [],
       "minerals_prev_tags": [],
       "debug_param_sorted_langs": [
-        "en"
+      "en"
       ],
       "nutrition_data": "on",
       "labels_debug_tags": [],
@@ -7407,7 +7408,7 @@ products: any;
       "categories_prev_tags": [],
       "sortkey": 537033196,
       "countries_tags": [
-        "en:australia"
+      "en:australia"
       ],
       "languages_codes": {},
       "lang": "en",
@@ -7415,8 +7416,8 @@ products: any;
       "last_image_t": 1393065628,
       "purchase_places_tags": [],
       "editors_tags": [
-        "sebleouf",
-        "openfoodfacts-contributors"
+      "sebleouf",
+      "openfoodfacts-contributors"
       ],
       "nucleotides_prev_tags": [],
       "serving_size_debug_tags": [],
@@ -7427,24 +7428,24 @@ products: any;
       "traces": "",
       "pnns_groups_2": "unknown",
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "informers_tags": [
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "packaging_debug_tags": [],
       "product_name": "",
       "purchase_places": "",
       "origins_debug_tags": [],
       "editors": [
-        ""
+      ""
       ],
       "lang_debug_tags": [],
       "rev": 3,
       "categories": "",
       "countries_hierarchy": [
-        "en:australia"
+      "en:australia"
       ],
       "ingredients_hierarchy": [],
       "labels_prev_hierarchy": [],
@@ -7487,7 +7488,7 @@ products: any;
       "link_debug_tags": [],
       "emb_codes_debug_tags": [],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "last_modified_by": "sebleouf",
       "interface_version_created": "20120622",
@@ -7501,9 +7502,9 @@ products: any;
       "unknown_ingredients_n": 0,
       "creator": "openfoodfacts-contributors",
       "entry_dates_tags": [
-        "2014-02-22",
-        "2014-02",
-        "2014"
+      "2014-02-22",
+      "2014-02",
+      "2014"
       ],
       "nutriments": {},
       "additives_prev_tags": [],
@@ -7518,23 +7519,23 @@ products: any;
       "traces_hierarchy": [],
       "ingredients": [],
       "codes_tags": [
-        "code-13",
-        7501064191329,
-        "750106419132x",
-        "75010641913xx",
-        "7501064191xxx",
-        "750106419xxxx",
-        "75010641xxxxx",
-        "7501064xxxxxx",
-        "750106xxxxxxx",
-        "75010xxxxxxxx",
-        "7501xxxxxxxxx",
-        "750xxxxxxxxxx",
-        "75xxxxxxxxxxx",
-        "7xxxxxxxxxxxx"
+      "code-13",
+      7501064191329,
+      "750106419132x",
+      "75010641913xx",
+      "7501064191xxx",
+      "750106419xxxx",
+      "75010641xxxxx",
+      "7501064xxxxxx",
+      "750106xxxxxxx",
+      "75010xxxxxxxx",
+      "7501xxxxxxxxx",
+      "750xxxxxxxxxx",
+      "75xxxxxxxxxxx",
+      "7xxxxxxxxxxxx"
       ],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "serving_size": "",
       "quantity": "",
@@ -7543,7 +7544,7 @@ products: any;
       "labels_tags": [],
       "nutrition_data_prepared_per": "100g",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "traces_from_ingredients": "",
       "code": "7501064191329",
@@ -7562,7 +7563,7 @@ products: any;
       "link": "",
       "categories_tags": [],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "countries_debug_tags": [],
       "nutrition_data_prepared": "",
@@ -7581,30 +7582,30 @@ products: any;
       "ingredients_original_tags": [],
       "no_nutrition_data": "",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "serving_quantity": 0,
       "categories_debug_tags": [],
       "last_edit_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "languages_tags": [
-        "en:0"
+      "en:0"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": []
     },
@@ -7613,96 +7614,96 @@ products: any;
       "last_modified_by": "argus",
       "last_editor": "argus",
       "languages_tags": [
-        "en:0"
+      "en:0"
       ],
       "last_image_dates_tags": [
-        "2018-09-19",
-        "2018-09",
-        "2018"
+      "2018-09-19",
+      "2018-09",
+      "2018"
       ],
       "last_edit_dates_tags": [
-        "2018-10-07",
-        "2018-10",
-        "2018"
+      "2018-10-07",
+      "2018-10",
+      "2018"
       ],
       "max_imgid": "11",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages_codes": {},
       "_keywords": [],
       "informers_tags": [
-        "openfoodfacts-contributors",
-        "kyzh",
-        "clombion",
-        "javichu",
-        "hangy",
-        "tacite-mass-editor",
-        "astrakan",
-        "abrasax",
-        "banshette",
-        "jean-mange",
-        "sioul",
-        "trapias",
-        "niwra",
-        "mojoaxel",
-        "openfood-ch-import",
-        "kiliweb",
-        "clodagh",
-        "meuzen",
-        "fliperfefo",
-        "tacinte",
-        "mexphil",
-        "gersois",
-        "anto",
-        "bogdantm",
-        "smias",
-        "keragui",
-        "psyvisions",
-        "roptat",
-        "newhoa",
-        "klaromatik",
-        "standardanalysis",
-        "pimidat",
-        "sanqui",
-        "asmoth",
-        "mvdkleijn",
-        "michi",
-        "neldelawi",
-        "hubhub",
-        "sp80",
-        "jshifrin25",
-        "plqnk",
-        "sil",
-        "harvs1789uk",
-        "osmanthe",
-        "primaernase",
-        "voxit",
-        "quentinix",
-        "ninehadi",
-        "silar",
-        "deogracia",
-        "agnoly",
-        "lilisse23",
-        "moon-rabbit",
-        "remi-poissonnier",
-        "fiffi",
-        "marcussacapuces91",
-        "date-limite-app",
-        "awal",
-        "openfoodfactsmx7"
+      "openfoodfacts-contributors",
+      "kyzh",
+      "clombion",
+      "javichu",
+      "hangy",
+      "tacite-mass-editor",
+      "astrakan",
+      "abrasax",
+      "banshette",
+      "jean-mange",
+      "sioul",
+      "trapias",
+      "niwra",
+      "mojoaxel",
+      "openfood-ch-import",
+      "kiliweb",
+      "clodagh",
+      "meuzen",
+      "fliperfefo",
+      "tacinte",
+      "mexphil",
+      "gersois",
+      "anto",
+      "bogdantm",
+      "smias",
+      "keragui",
+      "psyvisions",
+      "roptat",
+      "newhoa",
+      "klaromatik",
+      "standardanalysis",
+      "pimidat",
+      "sanqui",
+      "asmoth",
+      "mvdkleijn",
+      "michi",
+      "neldelawi",
+      "hubhub",
+      "sp80",
+      "jshifrin25",
+      "plqnk",
+      "sil",
+      "harvs1789uk",
+      "osmanthe",
+      "primaernase",
+      "voxit",
+      "quentinix",
+      "ninehadi",
+      "silar",
+      "deogracia",
+      "agnoly",
+      "lilisse23",
+      "moon-rabbit",
+      "remi-poissonnier",
+      "fiffi",
+      "marcussacapuces91",
+      "date-limite-app",
+      "awal",
+      "openfoodfactsmx7"
       ],
       "complete": 0,
       "creator": "openfoodfacts-contributors",
@@ -7710,311 +7711,311 @@ products: any;
       "last_image_t": 1537308003,
       "code": "",
       "entry_dates_tags": [
-        "1970-01-01",
-        "1970-01",
-        "1970"
+      "1970-01-01",
+      "1970-01",
+      "1970"
       ],
       "languages": {},
       "rev": 19495,
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-to-be-completed, en:photos-to-be-validated, en:photos-uploaded",
       "languages_hierarchy": [],
       "codes_tags": [
-        "code-0"
+      "code-0"
       ],
       "sortkey": 538865385,
       "created_t": 0,
       "editors_tags": [
-        "psyvisions",
-        "primaernase",
-        "michi",
-        "juk",
-        "snutin",
-        "tacite",
-        "anto",
-        "gartenkralle",
-        "jack-k-ca",
-        "argus",
-        "voxit",
-        "klaromatik",
-        "tacite-mass-editor",
-        "nightsax",
-        "ltaillade",
-        "twoflower",
-        "rico70100",
-        "2potsdemiel",
-        "niltugor",
-        "brambaud",
-        "vt48x",
-        "fredch78",
-        "djysi95",
-        "sonjawolf",
-        "rgerland",
-        "sp80",
-        "plasterium",
-        "jshifrin25",
-        "abrasax",
-        "psychogeek",
-        "scros97",
-        "jessyf77",
-        "bebone",
-        "sebebof",
-        "lulucmy",
-        "aristoi",
-        "raas",
-        "drunkenbison",
-        "macrico",
-        "ennoia11",
-        "aaaaa",
-        "asmoth",
-        "xsuu",
-        "segundo",
-        "bugs1506",
-        "rpesche",
-        "pipol",
-        "blatchi",
-        "gersois",
-        "neptuno",
-        "julesverne",
-        "sil",
-        "banshette",
-        "winy",
-        "elbarto",
-        "silar",
-        "reeva",
-        "agnoster",
-        "hannah186",
-        "neldelawi",
-        "harvs1789uk",
-        "oetti-cola",
-        "sanqui",
-        "liwup",
-        "deif",
-        "moon-rabbit",
-        "sho83440",
-        "korbib",
-        "plqnk",
-        "delta",
-        "batou9150",
-        "yclain",
-        "julianmmq",
-        "tzuan",
-        "monkeyhappy",
-        "adema",
-        "tototiti",
-        "anthony110890",
-        "osmanthe",
-        "moup",
-        "ross-holloway94",
-        "gohu66",
-        "beatlechris",
-        "accaheris",
-        "nmou88",
-        "muhammed88",
-        "fanfan54",
-        "bonbonboi",
-        "agnoly",
-        "charlyisidore",
-        "alexv",
-        "beniben",
-        "anne-flo",
-        "tux1nat0r",
-        "norbert45fr",
-        "dovg",
-        "baerlinaer",
-        "thefilou",
-        "bogdantm",
-        "pskl",
-        "gatier",
-        "tibal39",
-        "kyzh",
-        "bojackhorseman",
-        "clombion",
-        "krys",
-        "fliperfefo",
-        "nikotarmak",
-        "jphel",
-        "reoaard",
-        "kiliweb",
-        "stephane-platre",
-        "dzintars",
-        "newhoa",
-        "carolinefr",
-        "mojoaxel",
-        "astrakan",
-        "xchaosx",
-        "lucaa",
-        "roptat",
-        "highlander",
-        "engrtitus",
-        "elioss",
-        "nuelle-tchikot",
-        "rustyseal",
-        "paulohdt",
-        "hangy",
-        "motton",
-        "alnospam31",
-        "hotandcold",
-        "dreasora",
-        "trapias",
-        "zupfd30",
-        "anita33",
-        "agnescombani",
-        "date-limite-app",
-        "gwasanaethau",
-        "gusser93",
-        "choupinette",
-        "jiikuy",
-        "quentinix",
-        "openfoodfactsmx7",
-        "jezekael",
-        "hg42",
-        "valin",
-        "jsalazar",
-        "lg31",
-        "sharefacts",
-        "stephane",
-        "hhdpx",
-        "clodagh",
-        "emjay2603",
-        "raphael0202",
-        "zoralarousse",
-        "wholteza",
-        "teolemon",
-        "pho3nixx",
-        "gorgias",
-        "keragui",
-        "pimidat",
-        "streteur",
-        "narcose",
-        "meuzen",
-        "hubhub",
-        "basileus",
-        "bdn7",
-        "arupaloka",
-        "smias",
-        "yusk",
-        "fiidvacts",
-        "hmontreuil",
-        "tpt",
-        "kappaeffe",
-        "sv3n",
-        "tonet75",
-        "aesbeth",
-        "gdn62",
-        "mitch",
-        "boofboof",
-        "gaelle1204",
-        "ducatboy",
-        "hermite",
-        "rose-guirec",
-        "evilroyal",
-        "abdhessuk",
-        "mickey",
-        "mvdkleijn",
-        "zorglub",
-        "sigoise",
-        "deogracia",
-        "beaverm",
-        "dianechambriard",
-        "kally16s",
-        "mmemesmessinger",
-        "remi-poissonnier",
-        "mounaam",
-        "jean-mange",
-        "finish",
-        "kingster9668",
-        "adecastr",
-        "alex6169",
-        "supamanix",
-        "javichu",
-        "renevidal",
-        "salva",
-        "fiffi",
-        "somattt",
-        "ornito",
-        "corinne-bee",
-        "sioul",
-        "uniqdom",
-        "foodpoppet",
-        "blablabloblo",
-        "enric",
-        "yannick94",
-        "greenboy",
-        "nakoaktok",
-        "wandler",
-        "hadibou",
-        "hart",
-        "ninehadi",
-        "drongo",
-        "olius",
-        "cayennevarg",
-        "achaigneaud",
-        "raigoin",
-        "am92",
-        "mick76",
-        "openfood-ch-import",
-        "tinlyn",
-        "lilisse23",
-        "oischi",
-        "bettyboop1904",
-        "openfoodfacts-contributors",
-        "hubertquentin",
-        "niwra",
-        "kdkeller",
-        "eisbaer",
-        "olomorn",
-        "josefa",
-        "sebleouf",
-        "mexphil",
-        "awal",
-        "pigeau",
-        "marcussacapuces91",
-        "cyrilc3144",
-        "tacinte",
-        "zoemauve",
-        "standardanalysis",
-        "foodorigins"
+      "psyvisions",
+      "primaernase",
+      "michi",
+      "juk",
+      "snutin",
+      "tacite",
+      "anto",
+      "gartenkralle",
+      "jack-k-ca",
+      "argus",
+      "voxit",
+      "klaromatik",
+      "tacite-mass-editor",
+      "nightsax",
+      "ltaillade",
+      "twoflower",
+      "rico70100",
+      "2potsdemiel",
+      "niltugor",
+      "brambaud",
+      "vt48x",
+      "fredch78",
+      "djysi95",
+      "sonjawolf",
+      "rgerland",
+      "sp80",
+      "plasterium",
+      "jshifrin25",
+      "abrasax",
+      "psychogeek",
+      "scros97",
+      "jessyf77",
+      "bebone",
+      "sebebof",
+      "lulucmy",
+      "aristoi",
+      "raas",
+      "drunkenbison",
+      "macrico",
+      "ennoia11",
+      "aaaaa",
+      "asmoth",
+      "xsuu",
+      "segundo",
+      "bugs1506",
+      "rpesche",
+      "pipol",
+      "blatchi",
+      "gersois",
+      "neptuno",
+      "julesverne",
+      "sil",
+      "banshette",
+      "winy",
+      "elbarto",
+      "silar",
+      "reeva",
+      "agnoster",
+      "hannah186",
+      "neldelawi",
+      "harvs1789uk",
+      "oetti-cola",
+      "sanqui",
+      "liwup",
+      "deif",
+      "moon-rabbit",
+      "sho83440",
+      "korbib",
+      "plqnk",
+      "delta",
+      "batou9150",
+      "yclain",
+      "julianmmq",
+      "tzuan",
+      "monkeyhappy",
+      "adema",
+      "tototiti",
+      "anthony110890",
+      "osmanthe",
+      "moup",
+      "ross-holloway94",
+      "gohu66",
+      "beatlechris",
+      "accaheris",
+      "nmou88",
+      "muhammed88",
+      "fanfan54",
+      "bonbonboi",
+      "agnoly",
+      "charlyisidore",
+      "alexv",
+      "beniben",
+      "anne-flo",
+      "tux1nat0r",
+      "norbert45fr",
+      "dovg",
+      "baerlinaer",
+      "thefilou",
+      "bogdantm",
+      "pskl",
+      "gatier",
+      "tibal39",
+      "kyzh",
+      "bojackhorseman",
+      "clombion",
+      "krys",
+      "fliperfefo",
+      "nikotarmak",
+      "jphel",
+      "reoaard",
+      "kiliweb",
+      "stephane-platre",
+      "dzintars",
+      "newhoa",
+      "carolinefr",
+      "mojoaxel",
+      "astrakan",
+      "xchaosx",
+      "lucaa",
+      "roptat",
+      "highlander",
+      "engrtitus",
+      "elioss",
+      "nuelle-tchikot",
+      "rustyseal",
+      "paulohdt",
+      "hangy",
+      "motton",
+      "alnospam31",
+      "hotandcold",
+      "dreasora",
+      "trapias",
+      "zupfd30",
+      "anita33",
+      "agnescombani",
+      "date-limite-app",
+      "gwasanaethau",
+      "gusser93",
+      "choupinette",
+      "jiikuy",
+      "quentinix",
+      "openfoodfactsmx7",
+      "jezekael",
+      "hg42",
+      "valin",
+      "jsalazar",
+      "lg31",
+      "sharefacts",
+      "stephane",
+      "hhdpx",
+      "clodagh",
+      "emjay2603",
+      "raphael0202",
+      "zoralarousse",
+      "wholteza",
+      "teolemon",
+      "pho3nixx",
+      "gorgias",
+      "keragui",
+      "pimidat",
+      "streteur",
+      "narcose",
+      "meuzen",
+      "hubhub",
+      "basileus",
+      "bdn7",
+      "arupaloka",
+      "smias",
+      "yusk",
+      "fiidvacts",
+      "hmontreuil",
+      "tpt",
+      "kappaeffe",
+      "sv3n",
+      "tonet75",
+      "aesbeth",
+      "gdn62",
+      "mitch",
+      "boofboof",
+      "gaelle1204",
+      "ducatboy",
+      "hermite",
+      "rose-guirec",
+      "evilroyal",
+      "abdhessuk",
+      "mickey",
+      "mvdkleijn",
+      "zorglub",
+      "sigoise",
+      "deogracia",
+      "beaverm",
+      "dianechambriard",
+      "kally16s",
+      "mmemesmessinger",
+      "remi-poissonnier",
+      "mounaam",
+      "jean-mange",
+      "finish",
+      "kingster9668",
+      "adecastr",
+      "alex6169",
+      "supamanix",
+      "javichu",
+      "renevidal",
+      "salva",
+      "fiffi",
+      "somattt",
+      "ornito",
+      "corinne-bee",
+      "sioul",
+      "uniqdom",
+      "foodpoppet",
+      "blablabloblo",
+      "enric",
+      "yannick94",
+      "greenboy",
+      "nakoaktok",
+      "wandler",
+      "hadibou",
+      "hart",
+      "ninehadi",
+      "drongo",
+      "olius",
+      "cayennevarg",
+      "achaigneaud",
+      "raigoin",
+      "am92",
+      "mick76",
+      "openfood-ch-import",
+      "tinlyn",
+      "lilisse23",
+      "oischi",
+      "bettyboop1904",
+      "openfoodfacts-contributors",
+      "hubertquentin",
+      "niwra",
+      "kdkeller",
+      "eisbaer",
+      "olomorn",
+      "josefa",
+      "sebleouf",
+      "mexphil",
+      "awal",
+      "pigeau",
+      "marcussacapuces91",
+      "cyrilc3144",
+      "tacinte",
+      "zoemauve",
+      "standardanalysis",
+      "foodorigins"
       ],
       "correctors_tags": [
-        "kyzh",
-        "eisbaer",
-        "basileus",
-        "lucaa",
-        "segundo",
-        "liwup",
-        "raphael0202",
-        "sigoise",
-        "elioss",
-        "choupinette",
-        "finish",
-        "foodorigins",
-        "batou9150",
-        "aristoi",
-        "abrasax",
-        "banshette",
-        "lg31",
-        "tacinte",
-        "bebone",
-        "greenboy",
-        "supamanix",
-        "norbert45fr",
-        "yannick94",
-        "somattt",
-        "niwra",
-        "juk",
-        "mojoaxel",
-        "asmoth",
-        "mick76",
-        "kiliweb",
-        "meuzen",
-        "narcose",
-        "psyvisions",
-        "roptat",
-        "newhoa",
-        "openfoodfacts-contributors",
-        "standardanalysis",
-        "pimidat",
-        "fiffi"
+      "kyzh",
+      "eisbaer",
+      "basileus",
+      "lucaa",
+      "segundo",
+      "liwup",
+      "raphael0202",
+      "sigoise",
+      "elioss",
+      "choupinette",
+      "finish",
+      "foodorigins",
+      "batou9150",
+      "aristoi",
+      "abrasax",
+      "banshette",
+      "lg31",
+      "tacinte",
+      "bebone",
+      "greenboy",
+      "supamanix",
+      "norbert45fr",
+      "yannick94",
+      "somattt",
+      "niwra",
+      "juk",
+      "mojoaxel",
+      "asmoth",
+      "mick76",
+      "kiliweb",
+      "meuzen",
+      "narcose",
+      "psyvisions",
+      "roptat",
+      "newhoa",
+      "openfoodfacts-contributors",
+      "standardanalysis",
+      "pimidat",
+      "fiffi"
       ],
       "images": {
         "11": {
@@ -8037,29 +8038,29 @@ products: any;
         }
       },
       "photographers_tags": [
-        "sil",
-        "drunkenbison",
-        "date-limite-app",
-        "stephane",
-        "neptuno",
-        "kiliweb",
-        "stephane-platre",
-        "openfoodfacts-contributors"
+      "sil",
+      "drunkenbison",
+      "date-limite-app",
+      "stephane",
+      "neptuno",
+      "kiliweb",
+      "stephane-platre",
+      "openfoodfacts-contributors"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_modified_t": 1538865385
     },
@@ -8067,7 +8068,7 @@ products: any;
       "_id": "00",
       "ingredients_text_fr": "Ingredients:Potines de lait, siop oliphructose, chocolat ou lait 18% (sce, beurre de ccoo, poudre de lait entier, pâte de cacoo, émulsfiont: Mcthine de soja, vanilline), proteines de blé, sirop de polydextrose, stoblisants:glycéral et sorbitol, srop de fructose, huile de tournesol, emulsfionts Mecithine de soja et sucroesters, arome vanille,sel",
       "additives_original_tags": [
-        "en:e422"
+      "en:e422"
       ],
       "additives_old_n": 0,
       "languages_codes": {
@@ -8080,43 +8081,43 @@ products: any;
       "additives_old_tags": [],
       "sortkey": 1536997555,
       "ingredients_n_tags": [
-        "20",
-        "11-20"
+      "20",
+      "11-20"
       ],
       "unknown_ingredients_n": 12,
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "last_modified_by": null,
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "ingredients_hierarchy": [
-        "en:ingredient",
-        "fr:Potines de lait",
-        "fr:siop oliphructose",
-        "en:milk-chocolate",
-        "en:wheat-protein",
-        "en:protein",
-        "fr:sirop de polydextrose",
-        "fr:stoblisants",
-        "fr:glycéral et sorbitol",
-        "fr:srop de fructose",
-        "en:sunflower-oil",
-        "en:sunflower",
-        "fr:emulsfionts Mecithine de soja et sucroesters",
-        "en:vanilla-flavour",
-        "en:flavour",
-        "en:salt",
-        "fr:sce",
-        "fr:beurre de ccoo",
-        "en:whole-milk-powder",
-        "en:milk-powder",
-        "fr:pâte de cacoo",
-        "fr:émulsfiont",
-        "fr:Mcthine de soja",
-        "fr:vanilline"
+      "en:ingredient",
+      "fr:Potines de lait",
+      "fr:siop oliphructose",
+      "en:milk-chocolate",
+      "en:wheat-protein",
+      "en:protein",
+      "fr:sirop de polydextrose",
+      "fr:stoblisants",
+      "fr:glycéral et sorbitol",
+      "fr:srop de fructose",
+      "en:sunflower-oil",
+      "en:sunflower",
+      "fr:emulsfionts Mecithine de soja et sucroesters",
+      "en:vanilla-flavour",
+      "en:flavour",
+      "en:salt",
+      "fr:sce",
+      "fr:beurre de ccoo",
+      "en:whole-milk-powder",
+      "en:milk-powder",
+      "fr:pâte de cacoo",
+      "fr:émulsfiont",
+      "fr:Mcthine de soja",
+      "fr:vanilline"
       ],
       "nutriments": {
         "energy_unit": "kcal",
@@ -8173,70 +8174,70 @@ products: any;
         "energy_serving": "545"
       },
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "quantity_debug_tags": [],
       "ingredients_original_tags": [
-        "en:ingredient",
-        "fr:Potines de lait",
-        "fr:siop oliphructose",
-        "en:milk-chocolate",
-        "en:wheat-protein",
-        "fr:sirop de polydextrose",
-        "fr:stoblisants",
-        "fr:glycéral et sorbitol",
-        "fr:srop de fructose",
-        "en:sunflower-oil",
-        "fr:emulsfionts Mecithine de soja et sucroesters",
-        "en:vanilla-flavour",
-        "en:salt",
-        "fr:sce",
-        "fr:beurre de ccoo",
-        "en:whole-milk-powder",
-        "fr:pâte de cacoo",
-        "fr:émulsfiont",
-        "fr:Mcthine de soja",
-        "fr:vanilline"
+      "en:ingredient",
+      "fr:Potines de lait",
+      "fr:siop oliphructose",
+      "en:milk-chocolate",
+      "en:wheat-protein",
+      "fr:sirop de polydextrose",
+      "fr:stoblisants",
+      "fr:glycéral et sorbitol",
+      "fr:srop de fructose",
+      "en:sunflower-oil",
+      "fr:emulsfionts Mecithine de soja et sucroesters",
+      "en:vanilla-flavour",
+      "en:salt",
+      "fr:sce",
+      "fr:beurre de ccoo",
+      "en:whole-milk-powder",
+      "fr:pâte de cacoo",
+      "fr:émulsfiont",
+      "fr:Mcthine de soja",
+      "fr:vanilline"
       ],
       "lc": "fr",
       "entry_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "allergens_tags": [],
       "nutrition_score_debug": " -- energy 4 + sat-fat 4 + fr-sat-fat-for-fats 6 + sugars 2 + sodium 2 - fruits 0% 0 - fiber 5 - proteins 5 -- fsa 7 -- fr 7",
       "product_name": "lignaform",
       "code": "00",
       "_keywords": [
-        "proteinee",
-        "barre",
-        "lignaform"
+      "proteinee",
+      "barre",
+      "lignaform"
       ],
       "product_name_fr_debug_tags": [],
       "categories_hierarchy": [
-        "en:dietary-supplements",
-        "en:bodybuilding-supplements",
-        "en:protein-bars"
+      "en:dietary-supplements",
+      "en:bodybuilding-supplements",
+      "en:protein-bars"
       ],
       "ingredients_n": "20",
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "lang": "fr",
       "allergens_from_ingredients": "",
       "nutrition_grades": "c",
       "nutrition_data_prepared_per": "100g",
       "misc_tags": [
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "lang_debug_tags": [],
       "serving_size_debug_tags": [],
@@ -8247,26 +8248,26 @@ products: any;
       "additives_prev_n": 0,
       "max_imgid": "3",
       "ingredients_ids_debug": [
-        "ingredients",
-        "potines-de-lait",
-        "siop-oliphructose",
-        "chocolat-ou-lait-18",
-        "sce",
-        "beurre-de-ccoo",
-        "poudre-de-lait-entier",
-        "pate-de-cacoo",
-        "emulsfiont",
-        "mcthine-de-soja",
-        "vanilline",
-        "proteines-de-ble",
-        "sirop-de-polydextrose",
-        "stoblisants",
-        "glyceral-et-sorbitol",
-        "srop-de-fructose",
-        "huile-de-tournesol",
-        "emulsfionts-mecithine-de-soja-et-sucroesters",
-        "arome-vanille",
-        "sel"
+      "ingredients",
+      "potines-de-lait",
+      "siop-oliphructose",
+      "chocolat-ou-lait-18",
+      "sce",
+      "beurre-de-ccoo",
+      "poudre-de-lait-entier",
+      "pate-de-cacoo",
+      "emulsfiont",
+      "mcthine-de-soja",
+      "vanilline",
+      "proteines-de-ble",
+      "sirop-de-polydextrose",
+      "stoblisants",
+      "glyceral-et-sorbitol",
+      "srop-de-fructose",
+      "huile-de-tournesol",
+      "emulsfionts-mecithine-de-soja-et-sucroesters",
+      "arome-vanille",
+      "sel"
       ],
       "creator": "openfoodfacts-contributors",
       "nutrition_grade_fr": "c",
@@ -8282,23 +8283,23 @@ products: any;
       "brands_debug_tags": [],
       "checkers_tags": [],
       "codes_tags": [
-        "code-2",
-        "00",
-        "0x"
+      "code-2",
+      "00",
+      "0x"
       ],
       "additives_debug_tags": [
-        "en-e422-added"
+      "en-e422-added"
       ],
       "nutrition_grades_tags": [
-        "c"
+      "c"
       ],
       "categories": "Barres protéinées",
       "ingredients_text_fr_debug_tags": [],
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-60-percent-unknown",
-        "ingredients-fr-4-consonants",
-        "code-zero"
+      "ingredients-unknown-score-above-0",
+      "ingredients-60-percent-unknown",
+      "ingredients-fr-4-consonants",
+      "code-zero"
       ],
       "nutrient_levels": {
         "fat": "moderate",
@@ -8309,42 +8310,42 @@ products: any;
       "vitamins_tags": [],
       "manufacturing_places_debug_tags": [],
       "nova_groups_tags": [
-        "en:4-ultra-processed-food-and-drink-products"
+      "en:4-ultra-processed-food-and-drink-products"
       ],
       "nova_group_debug": " -- ingredients/en:salt : 3 -- ingredients/en:flavour : 4",
       "additives_prev_original_tags": [],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "manufacturing_places": "belgique",
       "ingredients_from_palm_oil_tags": [],
       "packaging": "5 barres",
       "nucleotides_prev_tags": [],
       "ingredients_tags": [
-        "en:ingredient",
-        "fr:potines-de-lait",
-        "fr:siop-oliphructose",
-        "en:milk-chocolate",
-        "en:wheat-protein",
-        "en:protein",
-        "fr:sirop-de-polydextrose",
-        "fr:stoblisants",
-        "fr:glyceral-et-sorbitol",
-        "fr:srop-de-fructose",
-        "en:sunflower-oil",
-        "en:sunflower",
-        "fr:emulsfionts-mecithine-de-soja-et-sucroesters",
-        "en:vanilla-flavour",
-        "en:flavour",
-        "en:salt",
-        "fr:sce",
-        "fr:beurre-de-ccoo",
-        "en:whole-milk-powder",
-        "en:milk-powder",
-        "fr:pate-de-cacoo",
-        "fr:emulsfiont",
-        "fr:mcthine-de-soja",
-        "fr:vanilline"
+      "en:ingredient",
+      "fr:potines-de-lait",
+      "fr:siop-oliphructose",
+      "en:milk-chocolate",
+      "en:wheat-protein",
+      "en:protein",
+      "fr:sirop-de-polydextrose",
+      "fr:stoblisants",
+      "fr:glyceral-et-sorbitol",
+      "fr:srop-de-fructose",
+      "en:sunflower-oil",
+      "en:sunflower",
+      "fr:emulsfionts-mecithine-de-soja-et-sucroesters",
+      "en:vanilla-flavour",
+      "en:flavour",
+      "en:salt",
+      "fr:sce",
+      "fr:beurre-de-ccoo",
+      "en:whole-milk-powder",
+      "en:milk-powder",
+      "fr:pate-de-cacoo",
+      "fr:emulsfiont",
+      "fr:mcthine-de-soja",
+      "fr:vanilline"
       ],
       "completed_t": 1536997555,
       "last_image_t": 1536997444,
@@ -8352,33 +8353,33 @@ products: any;
       "product_quantity": 40,
       "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
       "brands_tags": [
-        "lignaform"
+      "lignaform"
       ],
       "interface_version_created": "20120622",
       "additives_prev_tags": [],
       "additives_tags": [
-        "en:e422"
+      "en:e422"
       ],
       "nutrition_data_per_debug_tags": [],
       "ingredients_that_may_be_from_palm_oil_n": 0,
       "last_edit_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "product_name_fr": "lignaform",
       "amino_acids_tags": [],
       "categories_prev_hierarchy": [
-        "en:dietary-supplements",
-        "en:bodybuilding-supplements",
-        "en:protein-bars"
+      "en:dietary-supplements",
+      "en:bodybuilding-supplements",
+      "en:protein-bars"
       ],
       "nutrition_data_per": "serving",
       "nova_group": "4",
       "editors_tags": [
-        "opencontri22",
-        "openfoodfacts-contributors",
-        "sebleouf"
+      "opencontri22",
+      "openfoodfacts-contributors",
+      "sebleouf"
       ],
       "images": {
         "1": {
@@ -8538,275 +8539,275 @@ products: any;
       "additives_prev": " [ ingredients -> fr:ingredients  ]  [ potines-de-lait -> fr:potines-de-lait  ]  [ potines-de -> fr:potines-de  ]  [ potines -> fr:potines  ]  [ siop-oliphructose -> fr:siop-oliphructose  ]  [ siop -> fr:siop  ]  [ chocolat-ou-lait-18 -> fr:chocolat-ou-lait-18  ]  [ chocolat-ou-lait -> fr:chocolat-ou-lait  ]  [ chocolat-ou -> fr:chocolat-ou  ]  [ chocolat -> fr:chocolat  ]  [ sce -> fr:sce  ]  [ beurre-de-ccoo -> fr:beurre-de-ccoo  ]  [ beurre-de -> fr:beurre-de  ]  [ beurre -> fr:beurre  ]  [ poudre-de-lait-entier -> fr:poudre-de-lait-entier  ]  [ poudre-de-lait -> fr:poudre-de-lait  ]  [ poudre-de -> fr:poudre-de  ]  [ poudre -> fr:poudre  ]  [ pate-de-cacoo -> fr:pate-de-cacoo  ]  [ pate-de -> fr:pate-de  ]  [ pate -> fr:pate  ]  [ emulsfiont -> fr:emulsfiont  ]  [ mcthine-de-soja -> fr:mcthine-de-soja  ]  [ mcthine-de -> fr:mcthine-de  ]  [ mcthine -> fr:mcthine  ]  [ vanilline -> fr:vanilline  ]  [ proteines-de-ble -> fr:proteines-de-ble  ]  [ proteines-de -> fr:proteines-de  ]  [ proteines -> fr:proteines  ]  [ sirop-de-polydextrose -> fr:sirop-de-polydextrose  ]  [ sirop-de -> fr:sirop-de  ]  [ sirop -> fr:sirop  ]  [ stoblisants -> fr:stoblisants  ]  [ glyceral-et-sorbitol -> fr:glyceral-et-sorbitol  ]  [ glyceral-et -> fr:glyceral-et  ]  [ glyceral -> fr:glyceral  ]  [ srop-de-fructose -> fr:srop-de-fructose  ]  [ srop-de -> fr:srop-de  ]  [ srop -> fr:srop  ]  [ huile-de-tournesol -> fr:huile-de-tournesol  ]  [ huile-de -> fr:huile-de  ]  [ huile -> fr:huile  ]  [ emulsfionts-mecithine-de-soja-et-sucroesters -> fr:emulsfionts-mecithine-de-soja-et-sucroesters  ]  [ emulsfionts-mecithine-de-soja-et -> fr:emulsfionts-mecithine-de-soja-et  ]  [ emulsfionts-mecithine-de-soja -> fr:emulsfionts-mecithine-de-soja  ]  [ emulsfionts-mecithine-de -> fr:emulsfionts-mecithine-de  ]  [ emulsfionts-mecithine -> fr:emulsfionts-mecithine  ]  [ emulsfionts -> fr:emulsfionts  ]  [ arome-vanille -> fr:arome-vanille  ]  [ arome -> fr:arome  ]  [ sel -> fr:sel  ] ",
       "quantity": "5 barres de 40gr",
       "nutrient_levels_tags": [
-        "en:fat-in-moderate-quantity",
-        "en:saturated-fat-in-moderate-quantity",
-        "en:sugars-in-high-quantity",
-        "en:salt-in-moderate-quantity"
+      "en:fat-in-moderate-quantity",
+      "en:saturated-fat-in-moderate-quantity",
+      "en:sugars-in-high-quantity",
+      "en:salt-in-moderate-quantity"
       ],
       "additives_n": 1,
       "last_image_dates_tags": [
-        "2018-09-15",
-        "2018-09",
-        "2018"
+      "2018-09-15",
+      "2018-09",
+      "2018"
       ],
       "minerals_tags": [],
       "ingredients": [
-        {
-          "id": "en:ingredient",
-          "rank": 1,
-          "text": "Ingredients"
-        },
-        {
-          "id": "fr:Potines de lait",
-          "text": "Potines de lait",
-          "rank": 2
-        },
-        {
-          "text": "siop oliphructose",
-          "rank": 3,
-          "id": "fr:siop oliphructose"
-        },
-        {
-          "rank": 4,
-          "text": "chocolat ou lait",
-          "percent": "18",
-          "id": "en:milk-chocolate"
-        },
-        {
-          "text": "proteines de blé",
-          "rank": 5,
-          "id": "en:wheat-protein"
-        },
-        {
-          "id": "fr:sirop de polydextrose",
-          "text": "sirop de polydextrose",
-          "rank": 6
-        },
-        {
-          "text": "stoblisants",
-          "rank": 7,
-          "id": "fr:stoblisants"
-        },
-        {
-          "text": "glycéral et sorbitol",
-          "rank": 8,
-          "id": "fr:glycéral et sorbitol"
-        },
-        {
-          "id": "fr:srop de fructose",
-          "rank": 9,
-          "text": "srop de fructose"
-        },
-        {
-          "id": "en:sunflower-oil",
-          "text": "huile de tournesol",
-          "rank": 10
-        },
-        {
-          "id": "fr:emulsfionts Mecithine de soja et sucroesters",
-          "text": "emulsfionts Mecithine de soja et sucroesters",
-          "rank": 11
-        },
-        {
-          "text": "arome vanille",
-          "rank": 12,
-          "id": "en:vanilla-flavour"
-        },
-        {
-          "text": "sel",
-          "rank": 13,
-          "id": "en:salt"
-        },
-        {
-          "text": "sce",
-          "id": "fr:sce"
-        },
-        {
-          "text": "beurre de ccoo",
-          "id": "fr:beurre de ccoo"
-        },
-        {
-          "id": "en:whole-milk-powder",
-          "text": "poudre de lait entier"
-        },
-        {
-          "id": "fr:pâte de cacoo",
-          "text": "pâte de cacoo"
-        },
-        {
-          "text": "émulsfiont",
-          "id": "fr:émulsfiont"
-        },
-        {
-          "id": "fr:Mcthine de soja",
-          "text": "Mcthine de soja"
-        },
-        {
-          "text": "vanilline",
-          "id": "fr:vanilline"
-        }
+      {
+        "id": "en:ingredient",
+        "rank": 1,
+        "text": "Ingredients"
+      },
+      {
+        "id": "fr:Potines de lait",
+        "text": "Potines de lait",
+        "rank": 2
+      },
+      {
+        "text": "siop oliphructose",
+        "rank": 3,
+        "id": "fr:siop oliphructose"
+      },
+      {
+        "rank": 4,
+        "text": "chocolat ou lait",
+        "percent": "18",
+        "id": "en:milk-chocolate"
+      },
+      {
+        "text": "proteines de blé",
+        "rank": 5,
+        "id": "en:wheat-protein"
+      },
+      {
+        "id": "fr:sirop de polydextrose",
+        "text": "sirop de polydextrose",
+        "rank": 6
+      },
+      {
+        "text": "stoblisants",
+        "rank": 7,
+        "id": "fr:stoblisants"
+      },
+      {
+        "text": "glycéral et sorbitol",
+        "rank": 8,
+        "id": "fr:glycéral et sorbitol"
+      },
+      {
+        "id": "fr:srop de fructose",
+        "rank": 9,
+        "text": "srop de fructose"
+      },
+      {
+        "id": "en:sunflower-oil",
+        "text": "huile de tournesol",
+        "rank": 10
+      },
+      {
+        "id": "fr:emulsfionts Mecithine de soja et sucroesters",
+        "text": "emulsfionts Mecithine de soja et sucroesters",
+        "rank": 11
+      },
+      {
+        "text": "arome vanille",
+        "rank": 12,
+        "id": "en:vanilla-flavour"
+      },
+      {
+        "text": "sel",
+        "rank": 13,
+        "id": "en:salt"
+      },
+      {
+        "text": "sce",
+        "id": "fr:sce"
+      },
+      {
+        "text": "beurre de ccoo",
+        "id": "fr:beurre de ccoo"
+      },
+      {
+        "id": "en:whole-milk-powder",
+        "text": "poudre de lait entier"
+      },
+      {
+        "id": "fr:pâte de cacoo",
+        "text": "pâte de cacoo"
+      },
+      {
+        "text": "émulsfiont",
+        "id": "fr:émulsfiont"
+      },
+      {
+        "id": "fr:Mcthine de soja",
+        "text": "Mcthine de soja"
+      },
+      {
+        "text": "vanilline",
+        "id": "fr:vanilline"
+      }
       ],
       "ingredients_debug": [
-        "Ingredients",
-        ":",
-        ":",
-        null,
-        null,
-        "Potines de lait",
-        ",",
-        null,
-        null,
-        null,
-        " siop oliphructose",
-        ",",
-        null,
-        null,
-        null,
-        " chocolat ou lait 18% ",
-        "(",
-        "(",
-        null,
-        null,
-        "sce",
-        ",",
-        null,
-        null,
-        null,
-        " beurre de ccoo",
-        ",",
-        null,
-        null,
-        null,
-        " poudre de lait entier",
-        ",",
-        null,
-        null,
-        null,
-        " pâte de cacoo",
-        ",",
-        null,
-        null,
-        null,
-        " émulsfiont",
-        ":",
-        ":",
-        null,
-        null,
-        " Mcthine de soja",
-        ",",
-        null,
-        null,
-        null,
-        " vanilline)",
-        ",",
-        null,
-        null,
-        null,
-        " proteines de blé",
-        ",",
-        null,
-        null,
-        null,
-        " sirop de polydextrose",
-        ",",
-        null,
-        null,
-        null,
-        " stoblisants",
-        ":",
-        ":",
-        null,
-        null,
-        "glycéral et sorbitol",
-        ",",
-        null,
-        null,
-        null,
-        " srop de fructose",
-        ",",
-        null,
-        null,
-        null,
-        " huile de tournesol",
-        ",",
-        null,
-        null,
-        null,
-        " emulsfionts Mecithine de soja et sucroesters",
-        ",",
-        null,
-        null,
-        null,
-        " arome vanille",
-        ",",
-        null,
-        null,
-        null,
-        "sel"
+      "Ingredients",
+      ":",
+      ":",
+      null,
+      null,
+      "Potines de lait",
+      ",",
+      null,
+      null,
+      null,
+      " siop oliphructose",
+      ",",
+      null,
+      null,
+      null,
+      " chocolat ou lait 18% ",
+      "(",
+      "(",
+      null,
+      null,
+      "sce",
+      ",",
+      null,
+      null,
+      null,
+      " beurre de ccoo",
+      ",",
+      null,
+      null,
+      null,
+      " poudre de lait entier",
+      ",",
+      null,
+      null,
+      null,
+      " pâte de cacoo",
+      ",",
+      null,
+      null,
+      null,
+      " émulsfiont",
+      ":",
+      ":",
+      null,
+      null,
+      " Mcthine de soja",
+      ",",
+      null,
+      null,
+      null,
+      " vanilline)",
+      ",",
+      null,
+      null,
+      null,
+      " proteines de blé",
+      ",",
+      null,
+      null,
+      null,
+      " sirop de polydextrose",
+      ",",
+      null,
+      null,
+      null,
+      " stoblisants",
+      ":",
+      ":",
+      null,
+      null,
+      "glycéral et sorbitol",
+      ",",
+      null,
+      null,
+      null,
+      " srop de fructose",
+      ",",
+      null,
+      null,
+      null,
+      " huile de tournesol",
+      ",",
+      null,
+      null,
+      null,
+      " emulsfionts Mecithine de soja et sucroesters",
+      ",",
+      null,
+      null,
+      null,
+      " arome vanille",
+      ",",
+      null,
+      null,
+      null,
+      "sel"
       ],
       "brands": "lignaform",
       "allergens_hierarchy": [],
       "states_tags": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "states_hierarchy": [
-        "en:to-be-checked",
-        "en:complete",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-checked",
+      "en:complete",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "no_nutrition_data": "",
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_modified": "20150316.jqm2",
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "categories_tags": [
-        "en:dietary-supplements",
-        "en:bodybuilding-supplements",
-        "en:protein-bars"
+      "en:dietary-supplements",
+      "en:bodybuilding-supplements",
+      "en:protein-bars"
       ],
       "packaging_tags": [
-        "5-barres"
+      "5-barres"
       ],
       "vitamins_prev_tags": [],
       "amino_acids_prev_tags": [],
       "rev": 21,
       "categories_prev_tags": [
-        "en:dietary-supplements",
-        "en:bodybuilding-supplements",
-        "en:protein-bars"
+      "en:dietary-supplements",
+      "en:bodybuilding-supplements",
+      "en:protein-bars"
       ],
       "last_editor": null,
       "last_modified_t": 1536997555,
       "ingredients_text_debug": "Ingredients:Potines de lait, siop oliphructose, chocolat ou lait 18% (sce, beurre de ccoo, poudre de lait entier, pâte de cacoo, émulsfiont: Mcthine de soja, vanilline), proteines de blé, sirop de polydextrose, stoblisants:glycéral et sorbitol, srop de fructose, huile de tournesol, emulsfionts Mecithine de soja et sucroesters, arome vanille,sel",
       "manufacturing_places_tags": [
-        "belgique"
+      "belgique"
       ],
       "serving_quantity": 40
     },
@@ -8817,9 +8818,9 @@ products: any;
         "en": 2
       },
       "countries_tags": [
-        "en:france",
-        "en:germany",
-        "en:spain"
+      "en:france",
+      "en:germany",
+      "en:spain"
       ],
       "vitamins_tags": [],
       "sortkey": 538516663,
@@ -9257,8 +9258,8 @@ products: any;
       },
       "max_imgid": 22,
       "languages_hierarchy": [
-        "en:german",
-        "en:english"
+      "en:german",
+      "en:english"
       ],
       "vitamins_prev_tags": [],
       "last_editor": "openfoodfacts-contributors",
@@ -9282,82 +9283,82 @@ products: any;
       "nutrient_levels_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "packaging_tags": [
-        "producto"
+      "producto"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "last_image_t": 1538516663,
       "code": "000",
       "last_image_dates_tags": [
-        "2018-10-02",
-        "2018-10",
-        "2018"
+      "2018-10-02",
+      "2018-10",
+      "2018"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "packaging_debug_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "additives_debug_tags": [],
       "allergens_hierarchy": [],
       "interface_version_created": "20120622",
       "allergens_from_ingredients": "",
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "tacite",
-        "elsa057",
-        "segundo",
-        "date-limite-app",
-        "foodviewer",
-        "sebleouf",
-        "beniben"
+      "openfoodfacts-contributors",
+      "tacite",
+      "elsa057",
+      "segundo",
+      "date-limite-app",
+      "foodviewer",
+      "sebleouf",
+      "beniben"
       ],
       "additives_prev_tags": [],
       "last_modified_by": null,
       "_keywords": [
-        "ankerkraut",
-        "salatgewurz"
+      "ankerkraut",
+      "salatgewurz"
       ],
       "product_name_de_debug_tags": [],
       "last_edit_dates_tags": [
-        "2018-10-02",
-        "2018-10",
-        "2018"
+      "2018-10-02",
+      "2018-10",
+      "2018"
       ],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "foodviewer",
-        "date-limite-app"
+      "openfoodfacts-contributors",
+      "foodviewer",
+      "date-limite-app"
       ],
       "amino_acids_tags": [],
       "id": "000",
       "nutrition_data_prepared_per": "100g",
       "additives_tags": [],
       "quality_tags": [
-        "code-zero"
+      "code-zero"
       ],
       "additives_old_tags": [],
       "quantity": "200 g",
       "photographers_tags": [
-        "openfoodfacts-contributors",
-        "elsa057",
-        "date-limite-app"
+      "openfoodfacts-contributors",
+      "elsa057",
+      "date-limite-app"
       ],
       "ingredients_original_tags": [],
       "lang": "en",
@@ -9371,13 +9372,13 @@ products: any;
       "no_nutrition_data": "",
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "codes_tags": [
-        "code-3",
-        "000",
-        "00x",
-        "0xx"
+      "code-3",
+      "000",
+      "00x",
+      "0xx"
       ],
       "ingredients_ids_debug": [],
       "nutrition_score_debug": "no score when the product does not have a category",
@@ -9385,44 +9386,44 @@ products: any;
       "minerals_prev_tags": [],
       "ingredients_text_debug": null,
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages_tags": [
-        "en:german",
-        "en:english",
-        "en:2",
-        "en:multilingual"
+      "en:german",
+      "en:english",
+      "en:2",
+      "en:multilingual"
       ],
       "countries_hierarchy": [
-        "en:france",
-        "en:germany",
-        "en:spain"
+      "en:france",
+      "en:germany",
+      "en:spain"
       ],
       "ingredients_hierarchy": [],
       "amino_acids_prev_tags": [],
       "ingredients_text_with_allergens": null,
       "informers_tags": [
-        "openfoodfacts-contributors",
-        "foodviewer",
-        "date-limite-app"
+      "openfoodfacts-contributors",
+      "foodviewer",
+      "date-limite-app"
       ],
       "nutrient_levels": {},
       "entry_dates_tags": [
-        "2018-07-20",
-        "2018-07",
-        "2018"
+      "2018-07-20",
+      "2018-07",
+      "2018"
       ],
       "languages": {
         "en:german": 1,
@@ -9441,10 +9442,10 @@ products: any;
     {
       "_id": "0000",
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "rev": 29,
       "languages": {
@@ -9456,9 +9457,9 @@ products: any;
         "fr": 1
       },
       "last_edit_dates_tags": [
-        "2018-10-07",
-        "2018-10",
-        "2018"
+      "2018-10-07",
+      "2018-10",
+      "2018"
       ],
       "nucleotides_tags": [],
       "ingredients_text_with_allergens_fr": null,
@@ -9470,36 +9471,36 @@ products: any;
       "traces_from_ingredients": "",
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "created_t": 1530130337,
       "ingredients_hierarchy": [],
       "_keywords": [],
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "amino_acids_prev_tags": [],
       "max_imgid": 6,
       "entry_dates_tags": [
-        "2018-06-27",
-        "2018-06",
-        "2018"
+      "2018-06-27",
+      "2018-06",
+      "2018"
       ],
       "code": "0000",
       "complete": 0,
@@ -9507,8 +9508,8 @@ products: any;
       "traces_hierarchy": [],
       "lang": "fr",
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "ingredients_debug": [],
       "nova_group_debug": "no nova group when the product does not have ingredients",
@@ -9662,7 +9663,7 @@ products: any;
       "amino_acids_tags": [],
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-to-be-completed, en:photos-to-be-validated, en:photos-uploaded",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients": [],
       "last_image_t": 1538897729,
@@ -9678,46 +9679,46 @@ products: any;
       "additives_old_tags": [],
       "additives_debug_tags": [],
       "editors_tags": [
-        "segundo",
-        "beniben",
-        "sebleouf",
-        "openfoodfacts-contributors"
+      "segundo",
+      "beniben",
+      "sebleouf",
+      "openfoodfacts-contributors"
       ],
       "nutriments": {},
       "codes_tags": [
-        "code-4",
-        "0000",
-        "000x",
-        "00xx",
-        "0xxx"
+      "code-4",
+      "0000",
+      "000x",
+      "00xx",
+      "0xxx"
       ],
       "countries_hierarchy": [
-        "en:martinique"
+      "en:martinique"
       ],
       "lc": "fr",
       "countries_tags": [
-        "en:martinique"
+      "en:martinique"
       ],
       "additives_prev_original_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_image_dates_tags": [
-        "2018-10-07",
-        "2018-10",
-        "2018"
+      "2018-10-07",
+      "2018-10",
+      "2018"
       ],
       "additives_tags": [],
       "ingredients_text_with_allergens": null,
@@ -9730,35 +9731,35 @@ products: any;
       "complete": 0,
       "checkers_tags": [],
       "last_image_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "interface_version_created": "20120622",
       "last_modified_by": null,
       "lc": "fr",
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_editor": "openfoodfacts-contributors",
       "last_modified_t": 1537179705,
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "languages": {
         "en:french": 1
@@ -9767,61 +9768,61 @@ products: any;
       "correctors_tags": [],
       "creator": "openfoodfacts-contributors",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "entry_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "_keywords": [],
       "codes_tags": [
-        "code-5",
-        "00000",
-        "0000x",
-        "000xx",
-        "00xxx",
-        "0xxxx"
+      "code-5",
+      "00000",
+      "0000x",
+      "000xx",
+      "00xxx",
+      "0xxxx"
       ],
       "sortkey": 537179705,
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "id": "00000",
       "created_t": 1537179673,
       "last_edit_dates_tags": [
-        "2018-09-17",
-        "2018-09",
-        "2018"
+      "2018-09-17",
+      "2018-09",
+      "2018"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "code": "00000",
       "countries": "en:FR",
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "beniben",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "beniben",
+      "sebleouf"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_image_t": 1537179705,
       "images": {
@@ -9902,25 +9903,25 @@ products: any;
       "_id": "00000000",
       "product_name_en": "Zucchine surgelate Selex",
       "nova_groups_tags": [
-        "en:1-unprocessed-or-minimally-processed-foods"
+      "en:1-unprocessed-or-minimally-processed-foods"
       ],
       "brands_tags": [
-        "rocheval"
+      "rocheval"
       ],
       "ingredients_tags": [
-        "en:93-enocarbonates-c-orures-u-ates-nitrates-ll-ha200c-5t4"
+      "en:93-enocarbonates-c-orures-u-ates-nitrates-ll-ha200c-5t4"
       ],
       "categories_prev_tags": [
-        "en:beverages"
+      "en:beverages"
       ],
       "additives_n": 0,
       "sortkey": 508083636,
       "categories": "en:beverages",
       "brands": "Rocheval",
       "categories_tags": [
-        "en:beverages",
-        "en:non-sugared-beverages",
-        "en:non-alcoholic-beverages"
+      "en:beverages",
+      "en:non-sugared-beverages",
+      "en:non-alcoholic-beverages"
       ],
       "labels_debug_tags": [],
       "allergens_hierarchy": [],
@@ -9929,27 +9930,27 @@ products: any;
       "ingredients_text": "93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
       "additives_prev_original_tags": [],
       "pnns_groups_2_tags": [
-        "non-sugared-beverages"
+      "non-sugared-beverages"
       ],
       "max_imgid": "2",
       "ingredients_debug": [
-        "93 énocarbonates C orures u ates Nitrates ll",
-        " - ",
-        " - ",
-        " - ",
-        null,
-        "Hà200C=5t4"
+      "93 énocarbonates C orures u ates Nitrates ll",
+      " - ",
+      " - ",
+      " - ",
+      null,
+      "Hà200C=5t4"
       ],
       "ingredients_n_tags": [
-        "1",
-        "1-10"
+      "1",
+      "1-10"
       ],
       "unknown_nutrients_tags": [],
       "vitamins_prev_tags": [],
       "last_modified_t": 1508083636,
       "countries": "en:IT,France",
       "ingredients_original_tags": [
-        "en:93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4"
+      "en:93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4"
       ],
       "minerals_prev_tags": [],
       "additives_original_tags": [],
@@ -9957,37 +9958,37 @@ products: any;
       "categories_debug_tags": [],
       "labels_prev_tags": [],
       "pnns_groups_1_tags": [
-        "beverages"
+      "beverages"
       ],
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "additives": " [ 93-enocarbonates-c-orures-u-ates-nitrates-ll -> en:93-enocarbonates-c-orures-u-ates-nitrates-ll  ]  [ enocarbonates-c-orures-u-ates-nitrates-ll -> en:enocarbonates-c-orures-u-ates-nitrates-ll  ]  [ c-orures-u-ates-nitrates-ll -> en:c-orures-u-ates-nitrates-ll  ]  [ orures-u-ates-nitrates-ll -> en:orures-u-ates-nitrates-ll  ]  [ u-ates-nitrates-ll -> en:u-ates-nitrates-ll  ]  [ ates-nitrates-ll -> en:ates-nitrates-ll  ]  [ nitrates-ll -> en:nitrates-ll  ]  [ ll -> en:ll  ]  [ ha200c-5t4 -> en:ha200c-5t4  ]  [ 5t4 -> en:5t4  ] ",
       "nutrient_levels_tags": [
-        "en:fat-in-low-quantity",
-        "en:saturated-fat-in-low-quantity",
-        "en:sugars-in-low-quantity",
-        "en:salt-in-high-quantity"
+      "en:fat-in-low-quantity",
+      "en:saturated-fat-in-low-quantity",
+      "en:sugars-in-low-quantity",
+      "en:salt-in-high-quantity"
       ],
       "allergens": "",
       "last_edit_dates_tags": [
-        "2017-10-15",
-        "2017-10",
-        "2017"
+      "2017-10-15",
+      "2017-10",
+      "2017"
       ],
       "additives_prev": " [ 93-enocarbonates-c-orures-u-ates-nitrates-ll -> en:93-enocarbonates-c-orures-u-ates-nitrates-ll  ]  [ enocarbonates-c-orures-u-ates-nitrates-ll -> en:enocarbonates-c-orures-u-ates-nitrates-ll  ]  [ c-orures-u-ates-nitrates-ll -> en:c-orures-u-ates-nitrates-ll  ]  [ orures-u-ates-nitrates-ll -> en:orures-u-ates-nitrates-ll  ]  [ u-ates-nitrates-ll -> en:u-ates-nitrates-ll  ]  [ ates-nitrates-ll -> en:ates-nitrates-ll  ]  [ nitrates-ll -> en:nitrates-ll  ]  [ ll -> en:ll  ]  [ ha200c-5t4 -> en:ha200c-5t4  ]  [ 5t4 -> en:5t4  ] ",
       "quality_tags": [
-        "ingredients-ingredient-tag-length-greater-than-50",
-        "code-zero"
+      "ingredients-ingredient-tag-length-greater-than-50",
+      "code-zero"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors",
-        "zoneblockscommunity"
+      "kiliweb",
+      "openfoodfacts-contributors",
+      "zoneblockscommunity"
       ],
       "misc_tags": [
-        "en:nutrition-no-fiber",
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fiber",
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "nutriments": {
         "proteins_value": "0.1",
@@ -10039,15 +10040,15 @@ products: any;
       "allergens_tags": [],
       "ingredients_text_debug_tags": [],
       "codes_tags": [
-        "code-8",
-        "00000000",
-        "0000000x",
-        "000000xx",
-        "00000xxx",
-        "0000xxxx",
-        "000xxxxx",
-        "00xxxxxx",
-        "0xxxxxxx"
+      "code-8",
+      "00000000",
+      "0000000x",
+      "000000xx",
+      "00000xxx",
+      "0000xxxx",
+      "000xxxxx",
+      "00xxxxxx",
+      "0xxxxxxx"
       ],
       "ingredients_text_debug": "93 énocarbonates C orures u ates Nitrates ll - Hà200C=5t4",
       "no_nutrition_data": "",
@@ -10055,8 +10056,8 @@ products: any;
       "ingredients_from_palm_oil_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france",
-        "en:italy"
+      "en:france",
+      "en:italy"
       ],
       "nutrition_score_warning_no_fiber": 1,
       "additives_prev_tags": [],
@@ -10072,41 +10073,41 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "amino_acids_tags": [],
       "countries_tags": [
-        "en:france",
-        "en:italy"
+      "en:france",
+      "en:italy"
       ],
       "ingredients_hierarchy": [
-        "en:93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4"
+      "en:93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4"
       ],
       "nutrition_grades_tags": [
-        "e"
+      "e"
       ],
       "languages_tags": [
-        "en:english",
-        "en:french",
-        "en:2",
-        "en:multilingual"
+      "en:english",
+      "en:french",
+      "en:2",
+      "en:multilingual"
       ],
       "nutrition_score_debug": " -- in beverages category - a_points_fr_beverage: 1 (energy) + 0 (sat_fat) + 1 (sugars) + 10 (sodium) = 12 -  -- energy 0 + sat-fat 0 + fr-sat-fat-for-fats 0 + sugars 0 + sodium 10 - fruits 0% 0 - fiber 0 - proteins 0 -- fsa 10 -- fr 12",
       "traces_from_ingredients": "",
       "pnns_groups_2": "Non-sugared beverages",
       "languages_hierarchy": [
-        "en:english",
-        "en:french"
+      "en:english",
+      "en:french"
       ],
       "last_image_dates_tags": [
-        "2017-10-15",
-        "2017-10",
-        "2017"
+      "2017-10-15",
+      "2017-10",
+      "2017"
       ],
       "ingredients_text_with_allergens": "93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "creator": "zoneblockscommunity",
       "ingredients_ids_debug": [
-        "93-enocarbonates-c-orures-u-ates-nitrates-ll",
-        "ha200c-5t4"
+      "93-enocarbonates-c-orures-u-ates-nitrates-ll",
+      "ha200c-5t4"
       ],
       "allergens_from_ingredients": "",
       "labels_tags": [],
@@ -10122,7 +10123,7 @@ products: any;
       "minerals_tags": [],
       "nova_group": 1,
       "correctors_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "traces_hierarchy": [],
       "additives_old_tags": [],
@@ -10302,37 +10303,37 @@ products: any;
       "labels_prev_hierarchy": [],
       "nutrition_grades": "e",
       "informers_tags": [
-        "zoneblockscommunity",
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "zoneblockscommunity",
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "languages_codes": {
         "fr": 2,
         "en": 4
       },
       "categories_hierarchy": [
-        "en:beverages",
-        "en:non-sugared-beverages"
+      "en:beverages",
+      "en:non-sugared-beverages"
       ],
       "complete": 0,
       "entry_dates_tags": [
-        "2016-11-25",
-        "2016-11",
-        "2016"
+      "2016-11-25",
+      "2016-11",
+      "2016"
       ],
       "product_name_debug_tags": [],
       "vitamins_tags": [],
       "ingredients": [
-        {
-          "text": "93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
-          "id": "en:93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
-          "rank": 1
-        }
+      {
+        "text": "93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
+        "id": "en:93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
+        "rank": 1
+      }
       ],
       "last_editor": null,
       "ingredients_text_en": "93 énocarbonates C orures u ates Nitrates ll- Hà200C=5t4",
       "categories_prev_hierarchy": [
-        "en:beverages"
+      "en:beverages"
       ],
       "pnns_groups_1": "Beverages",
       "update_key": "nova20180918",
@@ -10342,89 +10343,89 @@ products: any;
       "additives_debug_tags": [],
       "lang": "en",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "rev": 8,
       "product_name": "Zucchine surgelate Selex",
       "nucleotides_prev_tags": [],
       "nova_groups": 1,
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "_keywords": [
-        "selex",
-        "rocheval",
-        "surgelate",
-        "zucchine",
-        "beverage"
+      "selex",
+      "rocheval",
+      "surgelate",
+      "zucchine",
+      "beverage"
       ],
       "traces_tags": []
     },
     {
       "_id": "0000000000",
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-uploaded"
       ],
       "interface_version_modified": "20150316.jqm2",
       "editors_tags": [
-        "zoneblockscommunity"
+      "zoneblockscommunity"
       ],
       "lc": "en",
       "id": "0000000000",
       "countries": "en:IT",
       "correctors_tags": [
-        "zoneblockscommunity"
+      "zoneblockscommunity"
       ],
       "entry_dates_tags": [
-        "2016-11-25",
-        "2016-11",
-        "2016"
+      "2016-11-25",
+      "2016-11",
+      "2016"
       ],
       "creator": "zoneblockscommunity",
       "languages_hierarchy": [
-        "en:english"
+      "en:english"
       ],
       "nutrient_levels": {},
       "rev": 2,
       "ingredients_from_palm_oil_tags": [],
       "additives_prev_original_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "traces_hierarchy": [],
       "serving_quantity": 0,
@@ -10433,7 +10434,7 @@ products: any;
       "ingredients": [],
       "product_name": "tonno callipo all'olio",
       "countries_tags": [
-        "en:italy"
+      "en:italy"
       ],
       "languages_codes": {
         "en": 1
@@ -10455,20 +10456,20 @@ products: any;
       "photographers_tags": [],
       "additives_prev_tags": [],
       "countries_hierarchy": [
-        "en:italy"
+      "en:italy"
       ],
       "nucleotides_prev_tags": [],
       "quality_tags": [
-        "code-zero"
+      "code-zero"
       ],
       "ingredients_tags": [],
       "nutrient_levels_tags": [],
       "allergens_hierarchy": [],
       "_keywords": [
-        "tonno",
-        "olio",
-        "callipo",
-        "all"
+      "tonno",
+      "olio",
+      "callipo",
+      "all"
       ],
       "update_key": "nova20180918",
       "ingredients_text_with_allergens_en": null,
@@ -10482,45 +10483,45 @@ products: any;
       "ingredients_debug": [],
       "allergens_tags": [],
       "informers_tags": [
-        "zoneblockscommunity"
+      "zoneblockscommunity"
       ],
       "nucleotides_tags": [],
       "lang": "en",
       "codes_tags": [
-        "code-10",
-        "0000000000",
-        "000000000x",
-        "00000000xx",
-        "0000000xxx",
-        "000000xxxx",
-        "00000xxxxx",
-        "0000xxxxxx",
-        "000xxxxxxx",
-        "00xxxxxxxx",
-        "0xxxxxxxxx"
+      "code-10",
+      "0000000000",
+      "000000000x",
+      "00000000xx",
+      "0000000xxx",
+      "000000xxxx",
+      "00000xxxxx",
+      "0000xxxxxx",
+      "000xxxxxxx",
+      "00xxxxxxxx",
+      "0xxxxxxxxx"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-uploaded"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "amino_acids_prev_tags": [],
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": "",
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "product_name_debug_tags": [],
       "additives_tags": [],
@@ -10547,13 +10548,13 @@ products: any;
       },
       "last_modified_t": 1483887610,
       "last_edit_dates_tags": [
-        "2017-01-08",
-        "2017-01",
-        "2017"
+      "2017-01-08",
+      "2017-01",
+      "2017"
       ],
       "languages_tags": [
-        "en:english",
-        "en:1"
+      "en:english",
+      "en:1"
       ],
       "unknown_ingredients_n": 0,
       "created_t": 1480088467,
@@ -10572,10 +10573,10 @@ products: any;
       "categories_prev_hierarchy": [],
       "nucleotides_prev_tags": [],
       "quality_tags": [
-        "code-zero"
+      "code-zero"
       ],
       "countries_hierarchy": [
-        "en:spain"
+      "en:spain"
       ],
       "ingredients_ids_debug": [],
       "labels": "",
@@ -10599,9 +10600,9 @@ products: any;
       "categories_hierarchy": [],
       "ingredients_text_debug": "",
       "entry_dates_tags": [
-        "2012-06-28",
-        "2012-06",
-        "2012"
+      "2012-06-28",
+      "2012-06",
+      "2012"
       ],
       "creator": "javichu",
       "rev": 2,
@@ -10610,7 +10611,7 @@ products: any;
       "id": "8422947520014",
       "lc": "es",
       "editors_tags": [
-        "javichu"
+      "javichu"
       ],
       "product_name_es": "- Para eliminar",
       "interface_version_modified": "20120622",
@@ -10620,16 +10621,16 @@ products: any;
       "nutrition_data_per": "100g",
       "nutriments": {},
       "languages_tags": [
-        "en:spanish",
-        "en:1"
+      "en:spanish",
+      "en:1"
       ],
       "last_edit_dates_tags": [
-        "2013-09-09",
-        "2013-09",
-        "2013"
+      "2013-09-09",
+      "2013-09",
+      "2013"
       ],
       "editors": [
-        "javichu"
+      "javichu"
       ],
       "last_modified_t": 1378759880,
       "allergens": "",
@@ -10642,34 +10643,34 @@ products: any;
       "images": {},
       "additives_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "serving_size": "",
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "brands_tags": [],
       "informers_tags": [
-        "javichu"
+      "javichu"
       ],
       "ingredients_text_with_allergens_es": "",
       "ingredients_debug": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "codes_tags": [
-        "code-11",
-        "00000000000",
-        "0000000000x",
-        "000000000xx",
-        "00000000xxx",
-        "0000000xxxx",
-        "000000xxxxx",
-        "00000xxxxxx",
-        "0000xxxxxxx",
-        "000xxxxxxxx",
-        "00xxxxxxxxx",
-        "0xxxxxxxxxx"
+      "code-11",
+      "00000000000",
+      "0000000000x",
+      "000000000xx",
+      "00000000xxx",
+      "0000000xxxx",
+      "000000xxxxx",
+      "00000xxxxxx",
+      "0000xxxxxxx",
+      "000xxxxxxxx",
+      "00xxxxxxxxx",
+      "0xxxxxxxxxx"
       ],
       "lang": "es",
       "labels_debug_tags": [],
@@ -10691,7 +10692,7 @@ products: any;
       "checkers": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "countries_tags": [
-        "en:spain"
+      "en:spain"
       ],
       "generic_name_es": "",
       "stores_tags": [],
@@ -10700,34 +10701,34 @@ products: any;
       "nutrient_levels": {},
       "ingredients_from_palm_oil_tags": [],
       "languages_hierarchy": [
-        "en:spanish"
+      "en:spanish"
       ],
       "countries": "España",
       "traces": "",
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-uploaded"
       ],
       "last_modified_by": "javichu",
       "traces_hierarchy": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "categories_prev_tags": [],
       "created_t": 1340913128,
       "categories_tags": [],
       "quantity": "",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "minerals_tags": [],
       "categories_debug_tags": [],
@@ -10747,24 +10748,24 @@ products: any;
       "stores": "",
       "ingredients_text": "",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-uploaded"
       ],
       "informers": [],
       "update_key": "nova20180918",
       "emb_codes_tags": [],
       "_keywords": [
-        "para",
-        "eliminar"
+      "para",
+      "eliminar"
       ],
       "allergens_hierarchy": [],
       "ingredients_original_tags": [],
@@ -10777,41 +10778,41 @@ products: any;
     {
       "_id": "0000000000000",
       "ingredients": [
-        {
-          "text": "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
-          "rank": 1,
-          "id": "en:MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes"
-        },
-        {
-          "text": "Prête o l'emploi",
-          "id": "en:Prête o l'emploi",
-          "rank": 2
-        },
-        {
-          "text": "POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave",
-          "rank": 3,
-          "id": "en:POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave"
-        },
-        {
-          "rank": 4,
-          "id": "en:182",
-          "text": "182"
-        },
-        {
-          "id": "en:Alba",
-          "rank": 5,
-          "text": "Alba"
-        },
-        {
-          "rank": 6,
-          "id": "en:CN",
-          "text": "CN"
-        },
-        {
-          "text": "Italia www.cascinasancassiano.com",
-          "id": "en:Italia www.cascinasancassiano.com",
-          "rank": 7
-        }
+      {
+        "text": "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
+        "rank": 1,
+        "id": "en:MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes"
+      },
+      {
+        "text": "Prête o l'emploi",
+        "id": "en:Prête o l'emploi",
+        "rank": 2
+      },
+      {
+        "text": "POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave",
+        "rank": 3,
+        "id": "en:POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave"
+      },
+      {
+        "rank": 4,
+        "id": "en:182",
+        "text": "182"
+      },
+      {
+        "id": "en:Alba",
+        "rank": 5,
+        "text": "Alba"
+      },
+      {
+        "rank": 6,
+        "id": "en:CN",
+        "text": "CN"
+      },
+      {
+        "text": "Italia www.cascinasancassiano.com",
+        "id": "en:Italia www.cascinasancassiano.com",
+        "rank": 7
+      }
       ],
       "ingredients_text_en": "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes. Prête o l'emploi. : POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0,3B 4,22 Cascina San Cassiano C.so Piave, 182 - Alba (CN) - Italia www.cascinasancassiano.com",
       "last_editor": "tacite-mass-editor",
@@ -10819,15 +10820,15 @@ products: any;
       "vitamins_tags": [],
       "quantity": "30g",
       "entry_dates_tags": [
-        "2016-10-18",
-        "2016-10",
-        "2016"
+      "2016-10-18",
+      "2016-10",
+      "2016"
       ],
       "categories_prev_hierarchy": [
-        "en:sugary-snacks",
-        "en:confectioneries",
-        "en:chewing-gum",
-        "en:sugar-free-chewing-gum"
+      "en:sugary-snacks",
+      "en:confectioneries",
+      "en:chewing-gum",
+      "en:sugar-free-chewing-gum"
       ],
       "pnns_groups_1": "Sugary snacks",
       "update_key": "nova20180918",
@@ -10837,19 +10838,19 @@ products: any;
       "labels_hierarchy": [],
       "lang": "en",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "rev": 32,
       "product_name": "Chocolat au lait",
@@ -10857,38 +10858,38 @@ products: any;
       "nova_groups": 3,
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "_keywords": [
-        "chewing-gum",
-        "centerfilled",
-        "sugary-snack",
-        "chewing-gum-sans-sucre",
-        "chewing",
-        "sugar",
-        "pronto",
-        "chocolat",
-        "san",
-        "confectionerie",
-        "gum",
-        "lait",
-        "snacks-sucre",
-        "au",
-        "confiserie",
-        "free",
-        "cassiano"
+      "chewing-gum",
+      "centerfilled",
+      "sugary-snack",
+      "chewing-gum-sans-sucre",
+      "chewing",
+      "sugar",
+      "pronto",
+      "chocolat",
+      "san",
+      "confectionerie",
+      "gum",
+      "lait",
+      "snacks-sucre",
+      "au",
+      "confiserie",
+      "free",
+      "cassiano"
       ],
       "traces_tags": [],
       "images": {
@@ -11122,7 +11123,7 @@ products: any;
         }
       },
       "manufacturing_places_tags": [
-        "denmark"
+      "denmark"
       ],
       "ingredients_text_with_allergens_fr": "",
       "last_image_t": 1528557828,
@@ -11133,32 +11134,32 @@ products: any;
       "interface_version_modified": "20150316.jqm2",
       "nutrition_score_warning_no_fruits_vegetables_nuts": 1,
       "sources": [
-        {
-          "id": "usda-ndb",
-          "url": "https://api.nal.usda.gov/ndb/reports/?ndbno=45113091&type=f&format=json&api_key=DEMO_KEY",
-          "fields": [
-            "brands",
-            "countries",
-            "serving_size",
-            "ingredients_text_en",
-            "nutrients.energy",
-            "nutrients.proteins",
-            "nutrients.fat",
-            "nutrients.carbohydrates",
-            "nutrients.fiber",
-            "nutrients.sugars",
-            "nutrients.calcium",
-            "nutrients.iron",
-            "nutrients.sodium",
-            "nutrients.vitamin-c",
-            "nutrients.vitamin-a",
-            "nutrients.saturated-fat",
-            "nutrients.trans-fat",
-            "nutrients.cholesterol"
-          ],
-          "import_t": 1489068299,
-          "images": []
-        }
+      {
+        "id": "usda-ndb",
+        "url": "https://api.nal.usda.gov/ndb/reports/?ndbno=45113091&type=f&format=json&api_key=DEMO_KEY",
+        "fields": [
+        "brands",
+        "countries",
+        "serving_size",
+        "ingredients_text_en",
+        "nutrients.energy",
+        "nutrients.proteins",
+        "nutrients.fat",
+        "nutrients.carbohydrates",
+        "nutrients.fiber",
+        "nutrients.sugars",
+        "nutrients.calcium",
+        "nutrients.iron",
+        "nutrients.sodium",
+        "nutrients.vitamin-c",
+        "nutrients.vitamin-a",
+        "nutrients.saturated-fat",
+        "nutrients.trans-fat",
+        "nutrients.cholesterol"
+        ],
+        "import_t": 1489068299,
+        "images": []
+      }
       ],
       "id": "0000000000000",
       "manufacturing_places": "Denmark",
@@ -11171,20 +11172,20 @@ products: any;
         "en": 5
       },
       "packaging_tags": [
-        "30g-bottle",
-        "slim-bottle"
+      "30g-bottle",
+      "slim-bottle"
       ],
       "informers_tags": [
-        "openfoodfacts-contributors",
-        "back11basics",
-        "usda-ndb-import",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "back11basics",
+      "usda-ndb-import",
+      "kiliweb"
       ],
       "categories_hierarchy": [
-        "en:sugary-snacks",
-        "en:confectioneries",
-        "en:chewing-gum",
-        "en:sugar-free-chewing-gum"
+      "en:sugary-snacks",
+      "en:confectioneries",
+      "en:chewing-gum",
+      "en:sugar-free-chewing-gum"
       ],
       "origins": "",
       "complete": 0,
@@ -11208,13 +11209,13 @@ products: any;
       "scans_n": 4,
       "additives_old_tags": [],
       "correctors_tags": [
-        "back11basics",
-        "usda-ndb-import",
-        "kiliweb",
-        "openfoodfacts-contributors",
-        "yukafix",
-        "sebleouf",
-        "tacite-mass-editor"
+      "back11basics",
+      "usda-ndb-import",
+      "kiliweb",
+      "openfoodfacts-contributors",
+      "yukafix",
+      "sebleouf",
+      "tacite-mass-editor"
       ],
       "traces_hierarchy": [],
       "generic_name_en_debug_tags": [],
@@ -11227,63 +11228,63 @@ products: any;
       "origins_debug_tags": [],
       "code": "0000000000000",
       "languages_tags": [
-        "en:english",
-        "en:french",
-        "en:2",
-        "en:multilingual"
+      "en:english",
+      "en:french",
+      "en:2",
+      "en:multilingual"
       ],
       "nutrition_grades_tags": [
-        "e"
+      "e"
       ],
       "generic_name_fr_debug_tags": [],
       "pnns_groups_2": "Sweets",
       "traces_from_ingredients": "",
       "nutrition_score_debug": " -- energy 6 + sat-fat 10 + fr-sat-fat-for-fats 7 + sugars 10 + sodium 1 - fruits 0% 0 - fiber 1 - proteins 5 -- fsa 26 -- fr 26",
       "languages_hierarchy": [
-        "en:english",
-        "en:french"
+      "en:english",
+      "en:french"
       ],
       "last_image_dates_tags": [
-        "2018-06-09",
-        "2018-06",
-        "2018"
+      "2018-06-09",
+      "2018-06",
+      "2018"
       ],
       "ingredients_text_with_allergens": "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes. Prête o l'emploi. : POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0,3B 4,22 Cascina San Cassiano C.so Piave, 182 - Alba (CN) - Italia www.cascinasancassiano.com",
       "emb_codes_debug_tags": [],
       "photographers_tags": [
-        "back11basics",
-        "kiliweb"
+      "back11basics",
+      "kiliweb"
       ],
       "traces": "",
       "emb_codes_orig": "",
       "creator": "back11basics",
       "purchase_places_debug_tags": [],
       "ingredients_ids_debug": [
-        "mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes",
-        "prete-o-l-emploi",
-        "pourioogde-produit-dtmurts-leg-prunes-lg-0",
-        "3b-4",
-        "22-cascina-san-cassiano-c-so-piave",
-        "182",
-        "alba",
-        "cn",
-        "italia-www-cascinasancassiano-com"
+      "mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes",
+      "prete-o-l-emploi",
+      "pourioogde-produit-dtmurts-leg-prunes-lg-0",
+      "3b-4",
+      "22-cascina-san-cassiano-c-so-piave",
+      "182",
+      "alba",
+      "cn",
+      "italia-www-cascinasancassiano-com"
       ],
       "codes_tags": [
-        "code-13",
-        "0000000000000",
-        "000000000000x",
-        "00000000000xx",
-        "0000000000xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000000000",
+      "000000000000x",
+      "00000000000xx",
+      "0000000000xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "ingredients_text_debug_tags": [],
       "expiration_date": "2 years from the manufacturing date",
@@ -11296,8 +11297,8 @@ products: any;
       "interface_version_created": "20120622",
       "serving_size_debug_tags": [],
       "countries_hierarchy": [
-        "en:france",
-        "en:united-states"
+      "en:france",
+      "en:united-states"
       ],
       "languages": {
         "en:english": 5,
@@ -11314,17 +11315,17 @@ products: any;
       "emb_codes": "",
       "serving_size": "30 g (30 g)",
       "countries_tags": [
-        "en:france",
-        "en:united-states"
+      "en:france",
+      "en:united-states"
       ],
       "ingredients_hierarchy": [
-        "en:MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
-        "en:Prête o l'emploi",
-        "en:POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave",
-        "en:182",
-        "en:Alba",
-        "en:CN",
-        "en:Italia www.cascinasancassiano.com"
+      "en:MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
+      "en:Prête o l'emploi",
+      "en:POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave",
+      "en:182",
+      "en:Alba",
+      "en:CN",
+      "en:Italia www.cascinasancassiano.com"
       ],
       "traces_debug_tags": [],
       "categories_debug_tags": [],
@@ -11333,43 +11334,43 @@ products: any;
       "labels_prev_tags": [],
       "link_debug_tags": [],
       "purchase_places_tags": [
-        "malta"
+      "malta"
       ],
       "link": "http://www.b11b.com/produkter/gum/pellets/",
       "additives": " [ mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ assaisonner-les-potes-les-pizzas-et-lasagnes -> en:assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ les-potes-les-pizzas-et-lasagnes -> en:les-potes-les-pizzas-et-lasagnes  ]  [ potes-les-pizzas-et-lasagnes -> en:potes-les-pizzas-et-lasagnes  ]  [ les-pizzas-et-lasagnes -> en:les-pizzas-et-lasagnes  ]  [ pizzas-et-lasagnes -> en:pizzas-et-lasagnes  ]  [ et-lasagnes -> en:et-lasagnes  ]  [ lasagnes -> en:lasagnes  ]  [ prete-o-l-emploi -> en:prete-o-l-emploi  ]  [ o-l-emploi -> en:o-l-emploi  ]  [ l-emploi -> en:l-emploi  ]  [ emploi -> en:emploi  ]  [ pourioogde-produit-dtmurts-leg-prunes-lg-0 -> en:pourioogde-produit-dtmurts-leg-prunes-lg-0  ]  [ produit-dtmurts-leg-prunes-lg-0 -> en:produit-dtmurts-leg-prunes-lg-0  ]  [ dtmurts-leg-prunes-lg-0 -> en:dtmurts-leg-prunes-lg-0  ]  [ leg-prunes-lg-0 -> en:leg-prunes-lg-0  ]  [ prunes-lg-0 -> en:prunes-lg-0  ]  [ lg-0 -> en:lg-0  ]  [ 0 -> en:0  ]  [ 3b-4 -> en:3b-4  ]  [ 4 -> en:fd-c  ]  [ 22-cascina-san-cassiano-c-so-piave -> en:22-cascina-san-cassiano-c-so-piave  ]  [ cascina-san-cassiano-c-so-piave -> en:cascina-san-cassiano-c-so-piave  ]  [ san-cassiano-c-so-piave -> en:san-cassiano-c-so-piave  ]  [ cassiano-c-so-piave -> en:cassiano-c-so-piave  ]  [ c-so-piave -> en:c-so-piave  ]  [ so-piave -> en:so-piave  ]  [ piave -> en:piave  ]  [ 182 -> en:182  ]  [ alba -> en:alba  ]  [ cn -> en:cn  ]  [ italia-www-cascinasancassiano-com -> en:italia-www-cascinasancassiano-com  ]  [ www-cascinasancassiano-com -> en:www-cascinasancassiano-com  ]  [ cascinasancassiano-com -> en:cascinasancassiano-com  ]  [ com -> en:com  ] ",
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "pnns_groups_1_tags": [
-        "sugary-snacks"
+      "sugary-snacks"
       ],
       "stores": "",
       "last_edit_dates_tags": [
-        "2018-08-10",
-        "2018-08",
-        "2018"
+      "2018-08-10",
+      "2018-08",
+      "2018"
       ],
       "additives_prev": " [ mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ ut-assaisonner-les-potes-les-pizzas-et-lasagnes -> en:ut-assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ assaisonner-les-potes-les-pizzas-et-lasagnes -> en:assaisonner-les-potes-les-pizzas-et-lasagnes  ]  [ les-potes-les-pizzas-et-lasagnes -> en:les-potes-les-pizzas-et-lasagnes  ]  [ potes-les-pizzas-et-lasagnes -> en:potes-les-pizzas-et-lasagnes  ]  [ les-pizzas-et-lasagnes -> en:les-pizzas-et-lasagnes  ]  [ pizzas-et-lasagnes -> en:pizzas-et-lasagnes  ]  [ et-lasagnes -> en:et-lasagnes  ]  [ lasagnes -> en:lasagnes  ]  [ prete-o-l-emploi -> en:prete-o-l-emploi  ]  [ o-l-emploi -> en:o-l-emploi  ]  [ l-emploi -> en:l-emploi  ]  [ emploi -> en:emploi  ]  [ pourioogde-produit-dtmurts-leg-prunes-lg-0 -> en:pourioogde-produit-dtmurts-leg-prunes-lg-0  ]  [ produit-dtmurts-leg-prunes-lg-0 -> en:produit-dtmurts-leg-prunes-lg-0  ]  [ dtmurts-leg-prunes-lg-0 -> en:dtmurts-leg-prunes-lg-0  ]  [ leg-prunes-lg-0 -> en:leg-prunes-lg-0  ]  [ prunes-lg-0 -> en:prunes-lg-0  ]  [ lg-0 -> en:lg-0  ]  [ 0 -> en:0  ]  [ 3b-4 -> en:3b-4  ]  [ 4 -> en:fd-c  ]  [ 22-cascina-san-cassiano-c-so-piave -> en:22-cascina-san-cassiano-c-so-piave  ]  [ cascina-san-cassiano-c-so-piave -> en:cascina-san-cassiano-c-so-piave  ]  [ san-cassiano-c-so-piave -> en:san-cassiano-c-so-piave  ]  [ cassiano-c-so-piave -> en:cassiano-c-so-piave  ]  [ c-so-piave -> en:c-so-piave  ]  [ so-piave -> en:so-piave  ]  [ piave -> en:piave  ]  [ 182 -> en:182  ]  [ alba -> en:alba  ]  [ cn -> en:cn  ]  [ italia-www-cascinasancassiano-com -> en:italia-www-cascinasancassiano-com  ]  [ www-cascinasancassiano-com -> en:www-cascinasancassiano-com  ]  [ cascinasancassiano-com -> en:cascinasancassiano-com  ]  [ com -> en:com  ] ",
       "nutrient_levels_tags": [
-        "en:fat-in-high-quantity",
-        "en:saturated-fat-in-high-quantity",
-        "en:sugars-in-high-quantity",
-        "en:salt-in-moderate-quantity"
+      "en:fat-in-high-quantity",
+      "en:saturated-fat-in-high-quantity",
+      "en:sugars-in-high-quantity",
+      "en:salt-in-moderate-quantity"
       ],
       "allergens": "",
       "quality_tags": [
-        "ingredients-unknown-score-above-5",
-        "ingredients-100-percent-unknown",
-        "ingredients-ingredient-tag-length-greater-than-50",
-        "code-zero"
+      "ingredients-unknown-score-above-5",
+      "ingredients-100-percent-unknown",
+      "ingredients-ingredient-tag-length-greater-than-50",
+      "code-zero"
       ],
       "manufacturing_places_debug_tags": [],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb",
-        "back11basics",
-        "tacite-mass-editor",
-        "usda-ndb-import",
-        "yukafix",
-        "sebleouf"
+      "openfoodfacts-contributors",
+      "kiliweb",
+      "back11basics",
+      "tacite-mass-editor",
+      "usda-ndb-import",
+      "yukafix",
+      "sebleouf"
       ],
       "nutriments": {
         "cholesterol_100g": "0",
@@ -11455,9 +11456,9 @@ products: any;
       },
       "allergens_tags": [],
       "misc_tags": [
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "unknown_nutrients_tags": [],
       "last_modified_t": 1533883104,
@@ -11468,13 +11469,13 @@ products: any;
       "packaging_debug_tags": [],
       "nutrition_data_prepared": "",
       "ingredients_original_tags": [
-        "en:MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
-        "en:Prête o l'emploi",
-        "en:POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave",
-        "en:182",
-        "en:Alba",
-        "en:CN",
-        "en:Italia www.cascinasancassiano.com"
+      "en:MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
+      "en:Prête o l'emploi",
+      "en:POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0‚3B 4‚22 Cascina San Cassiano C.so Piave",
+      "en:182",
+      "en:Alba",
+      "en:CN",
+      "en:Italia www.cascinasancassiano.com"
       ],
       "product_name_fr": "",
       "product_quantity": 30,
@@ -11487,43 +11488,43 @@ products: any;
       "nutrition_data": "on",
       "product_name_en": "Chocolat au lait",
       "ingredients_tags": [
-        "en:mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes",
-        "en:prete-o-l-emploi",
-        "en:pourioogde-produit-dtmurts-leg-prunes-lg-0-3b-4-22-cascina-san-cassiano-c-so-piave",
-        "en:182",
-        "en:alba",
-        "en:cn",
-        "en:italia-www-cascinasancassiano-com"
+      "en:mode-d-utilisation-utilisez-la-ut-assaisonner-les-potes-les-pizzas-et-lasagnes",
+      "en:prete-o-l-emploi",
+      "en:pourioogde-produit-dtmurts-leg-prunes-lg-0-3b-4-22-cascina-san-cassiano-c-so-piave",
+      "en:182",
+      "en:alba",
+      "en:cn",
+      "en:italia-www-cascinasancassiano-com"
       ],
       "nova_groups_tags": [
-        "en:3-processed-foods"
+      "en:3-processed-foods"
       ],
       "brands_tags": [
-        "san-cassiano",
-        "pronto"
+      "san-cassiano",
+      "pronto"
       ],
       "product_name_fr_debug_tags": [],
       "additives_n": 0,
       "debug_param_sorted_langs": [
-        "en",
-        "fr"
+      "en",
+      "fr"
       ],
       "ingredients_text_fr_debug_tags": [],
       "categories_prev_tags": [
-        "en:sugary-snacks",
-        "en:confectioneries",
-        "en:chewing-gum",
-        "en:sugar-free-chewing-gum"
+      "en:sugary-snacks",
+      "en:confectioneries",
+      "en:chewing-gum",
+      "en:sugar-free-chewing-gum"
       ],
       "sortkey": 533883104,
       "quantity_debug_tags": [],
       "brands": "San Cassiano,Pronto®",
       "allergens_hierarchy": [],
       "categories_tags": [
-        "en:sugary-snacks",
-        "en:confectioneries",
-        "en:chewing-gum",
-        "en:sugar-free-chewing-gum"
+      "en:sugary-snacks",
+      "en:confectioneries",
+      "en:chewing-gum",
+      "en:sugar-free-chewing-gum"
       ],
       "labels_debug_tags": [],
       "categories": "en:sugary-snacks,en:confectioneries,en:chewing-gum,fr:chewing-gum-sans-sucres,fr:confiseries,fr:snacks-sucres",
@@ -11533,60 +11534,60 @@ products: any;
       "ingredients_text": "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes. Prête o l'emploi. : POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0,3B 4,22 Cascina San Cassiano C.so Piave, 182 - Alba (CN) - Italia www.cascinasancassiano.com",
       "additives_prev_original_tags": [],
       "pnns_groups_2_tags": [
-        "sweets"
+      "sweets"
       ],
       "ingredients_debug": [
-        "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
-        ". ",
-        null,
-        null,
-        null,
-        "Prête o l'emploi",
-        ". ",
-        null,
-        null,
-        null,
-        "",
-        ":",
-        ":",
-        null,
-        null,
-        " POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0",
-        ",",
-        null,
-        null,
-        null,
-        "3B 4",
-        ",",
-        null,
-        null,
-        null,
-        "22 Cascina San Cassiano C.so Piave",
-        ",",
-        null,
-        null,
-        null,
-        " 182",
-        " - ",
-        " - ",
-        " - ",
-        null,
-        "Alba ",
-        "(",
-        "(",
-        null,
-        null,
-        "CN)",
-        " - ",
-        " - ",
-        " - ",
-        null,
-        "Italia www.cascinasancassiano.com"
+      "MODE D'UTILISATION utilisez la ut assaisonner les potes 'les pizzas et lasagnes",
+      ". ",
+      null,
+      null,
+      null,
+      "Prête o l'emploi",
+      ". ",
+      null,
+      null,
+      null,
+      "",
+      ":",
+      ":",
+      null,
+      null,
+      " POURIOOgDE PRODUIT dtmùrts lég Prunes lg 0",
+      ",",
+      null,
+      null,
+      null,
+      "3B 4",
+      ",",
+      null,
+      null,
+      null,
+      "22 Cascina San Cassiano C.so Piave",
+      ",",
+      null,
+      null,
+      null,
+      " 182",
+      " - ",
+      " - ",
+      " - ",
+      null,
+      "Alba ",
+      "(",
+      "(",
+      null,
+      null,
+      "CN)",
+      " - ",
+      " - ",
+      " - ",
+      null,
+      "Italia www.cascinasancassiano.com"
       ],
       "nutrition_data_prepared_per": "100g",
       "ingredients_n_tags": [
-        "7",
-        "1-10"
+      "7",
+      "1-10"
       ],
       "max_imgid": "6"
     },
@@ -11699,25 +11700,25 @@ products: any;
       "allergens": "",
       "nutrient_levels_tags": [],
       "last_edit_dates_tags": [
-        "2018-06-15",
-        "2018-06",
-        "2018"
+      "2018-06-15",
+      "2018-06",
+      "2018"
       ],
       "id": "0000000000017",
       "quality_tags": [],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "languages_codes": {
         "fr": 3
       },
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "allergens_tags": [],
       "nutriments": {
@@ -11761,25 +11762,25 @@ products: any;
         "proteins_value": "7.8"
       },
       "entry_dates_tags": [
-        "2018-06-15",
-        "2018-06",
-        "2018"
+      "2018-06-15",
+      "2018-06",
+      "2018"
       ],
       "codes_tags": [
-        "code-13",
-        "0000000000017",
-        "000000000001x",
-        "00000000000xx",
-        "0000000000xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000000017",
+      "000000000001x",
+      "00000000000xx",
+      "0000000000xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "product_name_debug_tags": [],
       "ingredients": [],
@@ -11790,7 +11791,7 @@ products: any;
       "ingredients_from_palm_oil_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "additives_debug_tags": [],
       "additives_prev_tags": [],
@@ -11801,19 +11802,19 @@ products: any;
         "en:french": 3
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "countries_debug_tags": [],
       "amino_acids_prev_tags": [],
@@ -11825,59 +11826,59 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "amino_acids_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "_keywords": [
-        "cracker",
-        "vitoria"
+      "cracker",
+      "vitoria"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "ingredients_tags": [],
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
       "sortkey": 529059204,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "last_image_dates_tags": [
-        "2018-06-15",
-        "2018-06",
-        "2018"
+      "2018-06-15",
+      "2018-06",
+      "2018"
       ],
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1529059080,
       "creator": "kiliweb",
       "additives_prev_original_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_debug": [],
@@ -11896,8 +11897,8 @@ products: any;
       "minerals_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "additives_old_tags": [],
       "lc": "fr",
@@ -11909,72 +11910,72 @@ products: any;
     {
       "_id": "0000000000100",
       "labels_hierarchy": [
-        "fr:Delois france"
+      "fr:Delois france"
       ],
       "additives_prev_n": 0,
       "additives_debug_tags": [],
       "update_key": "nova20180918",
       "pnns_groups_1": "Fat and sauces",
       "categories_prev_hierarchy": [
-        "en:groceries",
-        "en:condiments",
-        "en:sauces",
-        "en:mustards"
+      "en:groceries",
+      "en:condiments",
+      "en:sauces",
+      "en:mustards"
       ],
       "vitamins_tags": [],
       "last_editor": "del51",
       "ingredients": [
-        {
-          "text": "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
-          "percent": "6.2",
-          "id": "fr:eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
-          "rank": 1
-        },
-        {
-          "text": "oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
-          "id": "fr:oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
-          "rank": 2
-        },
-        {
-          "text": "cette _moutarde_ uniquement disponible chez courte paille",
-          "rank": 3,
-          "id": "fr:cette _moutarde_ uniquement disponible chez courte paille"
-        }
+      {
+        "text": "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
+        "percent": "6.2",
+        "id": "fr:eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
+        "rank": 1
+      },
+      {
+        "text": "oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
+        "id": "fr:oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
+        "rank": 2
+      },
+      {
+        "text": "cette _moutarde_ uniquement disponible chez courte paille",
+        "rank": 3,
+        "id": "fr:cette _moutarde_ uniquement disponible chez courte paille"
+      }
       ],
       "quantity": "100g",
       "entry_dates_tags": [
-        "2015-10-11",
-        "2015-10",
-        "2015"
+      "2015-10-11",
+      "2015-10",
+      "2015"
       ],
       "traces_tags": [],
       "_keywords": [
-        "epicerie",
-        "raisin",
-        "moutarde",
-        "france",
-        "mout",
-        "condiment",
-        "courte",
-        "au",
-        "sauce",
-        "de",
-        "paille",
-        "deloi"
+      "epicerie",
+      "raisin",
+      "moutarde",
+      "france",
+      "mout",
+      "condiment",
+      "courte",
+      "au",
+      "sauce",
+      "de",
+      "paille",
+      "deloi"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "nova_groups": 1,
@@ -11982,18 +11983,18 @@ products: any;
       "rev": 16,
       "lang": "fr",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "id": "2000000022524",
       "manufacturing_places": "",
@@ -12097,21 +12098,21 @@ products: any;
       "complete": 0,
       "origins": "",
       "categories_hierarchy": [
-        "en:groceries",
-        "en:condiments",
-        "en:sauces",
-        "en:mustards"
+      "en:groceries",
+      "en:condiments",
+      "en:sauces",
+      "en:mustards"
       ],
       "languages_codes": {
         "fr": 3
       },
       "informers_tags": [
-        "del51"
+      "del51"
       ],
       "packaging_tags": [],
       "nutrition_grades": "d",
       "labels_prev_hierarchy": [
-        "fr:Delois france"
+      "fr:Delois france"
       ],
       "ingredients_n": 3,
       "nova_group": 1,
@@ -12128,10 +12129,10 @@ products: any;
       "ingredients_text_fr": "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin (6.2%) oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel\r\n(cette _moutarde_ uniquement disponible chez courte paille)",
       "nova_group_debug": "",
       "editors": [
-        "del51"
+      "del51"
       ],
       "labels_tags": [
-        "fr:delois-france"
+      "fr:delois-france"
       ],
       "allergens_from_ingredients": "moutarde, moutarde",
       "cities_tags": [],
@@ -12143,64 +12144,64 @@ products: any;
       "additives_old_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "del51"
+      "del51"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "pnns_groups_2": "Dressings and sauces",
       "nutrition_score_debug": " -- energy 2 + sat-fat 2 + fr-sat-fat-for-fats 3 + sugars 4 + sodium 10 - fruits 0% 0 - fiber 0 - proteins 3 -- fsa 18 -- fr 18",
       "traces_from_ingredients": "",
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "d"
+      "d"
       ],
       "ingredients_ids_debug": [
-        "eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin",
-        "6-2-oignons-colorants",
-        "extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel",
-        "cette-moutarde-uniquement-disponible-chez-courte-paille"
+      "eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin",
+      "6-2-oignons-colorants",
+      "extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel",
+      "cette-moutarde-uniquement-disponible-chez-courte-paille"
       ],
       "emb_codes_orig": "",
       "traces": "",
       "creator": "del51",
       "photographers_tags": [
-        "del51"
+      "del51"
       ],
       "ingredients_text_with_allergens": "eau graines de téguments de <span class=\"allergen\">moutarde</span> vinaigre de vin rouge sel vin rouge sucre   moût de raisin (6.2%) oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel\r\n(cette <span class=\"allergen\">moutarde</span> uniquement disponible chez courte paille)",
       "last_image_dates_tags": [
-        "2015-10-15",
-        "2015-10",
-        "2015"
+      "2015-10-15",
+      "2015-10",
+      "2015"
       ],
       "additives_prev_tags": [],
       "interface_version_created": "20120622",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "origins_tags": [],
       "ingredients_from_palm_oil_tags": [],
       "no_nutrition_data": null,
       "ingredients_text_debug": "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin (6.2%) oignons colorants : extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel\r\n(cette _moutarde_ uniquement disponible chez courte paille)",
       "codes_tags": [
-        "code-4",
-        "1756",
-        "175x",
-        "17xx",
-        "1xxx"
+      "code-4",
+      "1756",
+      "175x",
+      "17xx",
+      "1xxx"
       ],
       "expiration_date": "25/02/17",
       "serving_size": "",
       "ingredients_hierarchy": [
-        "fr:eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
-        "fr:oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
-        "fr:cette _moutarde_ uniquement disponible chez courte paille"
+      "fr:eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
+      "fr:oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
+      "fr:cette _moutarde_ uniquement disponible chez courte paille"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "amino_acids_tags": [],
       "emb_codes": "",
@@ -12214,38 +12215,38 @@ products: any;
         "en:french": 3
       },
       "last_edit_dates_tags": [
-        "2016-05-18",
-        "2016-05",
-        "2016"
+      "2016-05-18",
+      "2016-05",
+      "2016"
       ],
       "additives_prev": " [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre -> fr:eau-graines-de-teguments-de-moutarde-vinaigre  ]  [ eau-graines-de-teguments-de-moutarde -> fr:eau-graines-de-teguments-de-moutarde  ]  [ eau-graines-de-teguments-de -> fr:eau-graines-de-teguments-de  ]  [ eau-graines-de-teguments -> fr:eau-graines-de-teguments  ]  [ eau-graines-de -> fr:eau-graines-de  ]  [ eau-graines -> fr:eau-graines  ]  [ eau -> fr:eau  ]  [ 6-2-oignons-colorants -> fr:6-2-oignons-colorants  ]  [ 6-2-oignons -> fr:6-2-oignons  ]  [ 6-2 -> fr:6-2  ]  [ 6 -> en:fd-c  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile -> fr:extraits-de-carotte-et-extrait-de-paprika-huile  ]  [ extraits-de-carotte-et-extrait-de-paprika -> fr:extraits-de-carotte-et-extrait-de-paprika  ]  [ extraits-de-carotte-et-extrait-de -> fr:extraits-de-carotte-et-extrait-de  ]  [ extraits-de-carotte-et-extrait -> fr:extraits-de-carotte-et-extrait  ]  [ extraits-de-carotte-et -> fr:extraits-de-carotte-et  ]  [ extraits-de-carotte -> fr:extraits-de-carotte  ]  [ extraits-de -> fr:extraits-de  ]  [ extraits -> fr:extraits  ]  [ cette-moutarde-uniquement-disponible-chez-courte-paille -> fr:cette-moutarde-uniquement-disponible-chez-courte-paille  ]  [ cette-moutarde-uniquement-disponible-chez-courte -> fr:cette-moutarde-uniquement-disponible-chez-courte  ]  [ cette-moutarde-uniquement-disponible-chez -> fr:cette-moutarde-uniquement-disponible-chez  ]  [ cette-moutarde-uniquement-disponible -> fr:cette-moutarde-uniquement-disponible  ]  [ cette-moutarde-uniquement -> fr:cette-moutarde-uniquement  ]  [ cette-moutarde -> fr:cette-moutarde  ]  [ cette -> fr:cette  ] ",
       "emb_codes_20141016": "",
       "stores": "courte paille",
       "allergens": "moutarde, moutarde",
       "nutrient_levels_tags": [
-        "en:fat-in-moderate-quantity",
-        "en:saturated-fat-in-moderate-quantity",
-        "en:sugars-in-high-quantity",
-        "en:salt-in-high-quantity"
+      "en:fat-in-moderate-quantity",
+      "en:saturated-fat-in-moderate-quantity",
+      "en:sugars-in-high-quantity",
+      "en:salt-in-high-quantity"
       ],
       "additives": " [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de-vin -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre-de -> fr:eau-graines-de-teguments-de-moutarde-vinaigre-de  ]  [ eau-graines-de-teguments-de-moutarde-vinaigre -> fr:eau-graines-de-teguments-de-moutarde-vinaigre  ]  [ eau-graines-de-teguments-de-moutarde -> fr:eau-graines-de-teguments-de-moutarde  ]  [ eau-graines-de-teguments-de -> fr:eau-graines-de-teguments-de  ]  [ eau-graines-de-teguments -> fr:eau-graines-de-teguments  ]  [ eau-graines-de -> fr:eau-graines-de  ]  [ eau-graines -> fr:eau-graines  ]  [ eau -> fr:eau  ]  [ 6-2-oignons-colorants -> fr:6-2-oignons-colorants  ]  [ 6-2-oignons -> fr:6-2-oignons  ]  [ 6-2 -> fr:6-2  ]  [ 6 -> en:fd-c  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile-de -> fr:extraits-de-carotte-et-extrait-de-paprika-huile-de  ]  [ extraits-de-carotte-et-extrait-de-paprika-huile -> fr:extraits-de-carotte-et-extrait-de-paprika-huile  ]  [ extraits-de-carotte-et-extrait-de-paprika -> fr:extraits-de-carotte-et-extrait-de-paprika  ]  [ extraits-de-carotte-et-extrait-de -> fr:extraits-de-carotte-et-extrait-de  ]  [ extraits-de-carotte-et-extrait -> fr:extraits-de-carotte-et-extrait  ]  [ extraits-de-carotte-et -> fr:extraits-de-carotte-et  ]  [ extraits-de-carotte -> fr:extraits-de-carotte  ]  [ extraits-de -> fr:extraits-de  ]  [ extraits -> fr:extraits  ]  [ cette-moutarde-uniquement-disponible-chez-courte-paille -> fr:cette-moutarde-uniquement-disponible-chez-courte-paille  ]  [ cette-moutarde-uniquement-disponible-chez-courte -> fr:cette-moutarde-uniquement-disponible-chez-courte  ]  [ cette-moutarde-uniquement-disponible-chez -> fr:cette-moutarde-uniquement-disponible-chez  ]  [ cette-moutarde-uniquement-disponible -> fr:cette-moutarde-uniquement-disponible  ]  [ cette-moutarde-uniquement -> fr:cette-moutarde-uniquement  ]  [ cette-moutarde -> fr:cette-moutarde  ]  [ cette -> fr:cette  ] ",
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "pnns_groups_1_tags": [
-        "fat-and-sauces"
+      "fat-and-sauces"
       ],
       "old_code": "0000000000100",
       "purchase_places_tags": [],
       "labels_prev_tags": [
-        "fr:delois-france"
+      "fr:delois-france"
       ],
       "link": "http://www.courtepaille.com/carte/accompagnements/",
       "categories_debug_tags": [],
       "stores_tags": [
-        "courte-paille"
+      "courte-paille"
       ],
       "labels": "Delois france",
       "allergens_tags": [
-        "en:mustard"
+      "en:mustard"
       ],
       "nutriments": {
         "salt": "4.6",
@@ -12302,25 +12303,25 @@ products: any;
         "fiber_value": "0"
       },
       "misc_tags": [
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "editors_tags": [
-        "del51"
+      "del51"
       ],
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-100-percent-unknown",
-        "ingredients-ingredient-tag-length-greater-than-50",
-        "ingredients-ingredient-tag-length-greater-than-100",
-        "quantity-not-recognized"
+      "ingredients-unknown-score-above-0",
+      "ingredients-100-percent-unknown",
+      "ingredients-ingredient-tag-length-greater-than-50",
+      "ingredients-ingredient-tag-length-greater-than-100",
+      "quantity-not-recognized"
       ],
       "product_name_fr": " moutarde au moût de raisin ",
       "ingredients_original_tags": [
-        "fr:eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
-        "fr:oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
-        "fr:cette _moutarde_ uniquement disponible chez courte paille"
+      "fr:eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin",
+      "fr:oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel",
+      "fr:cette _moutarde_ uniquement disponible chez courte paille"
       ],
       "countries": "France",
       "generic_name": "",
@@ -12334,64 +12335,64 @@ products: any;
       "packaging": "",
       "sortkey": 463531940,
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "additives_n": 0,
       "categories_prev_tags": [
-        "en:groceries",
-        "en:condiments",
-        "en:sauces",
-        "en:mustards"
+      "en:groceries",
+      "en:condiments",
+      "en:sauces",
+      "en:mustards"
       ],
       "brands_tags": [
-        "courte-paille"
+      "courte-paille"
       ],
       "nova_groups_tags": [
-        "en:1-unprocessed-or-minimally-processed-foods"
+      "en:1-unprocessed-or-minimally-processed-foods"
       ],
       "ingredients_tags": [
-        "fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin",
-        "fr:oignons-colorants-extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel",
-        "fr:cette-moutarde-uniquement-disponible-chez-courte-paille"
+      "fr:eau-graines-de-teguments-de-moutarde-vinaigre-de-vin-rouge-sel-vin-rouge-sucre-mout-de-raisin",
+      "fr:oignons-colorants-extraits-de-carotte-et-extrait-de-paprika-huile-de-tournesol-son-de-moutarde-sel",
+      "fr:cette-moutarde-uniquement-disponible-chez-courte-paille"
       ],
       "ingredients_n_tags": [
-        "3",
-        "1-10"
+      "3",
+      "1-10"
       ],
       "ingredients_debug": [
-        "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin ",
-        "(",
-        "(",
-        null,
-        null,
-        "6.2%) oignons colorants ",
-        ":",
-        ":",
-        null,
-        null,
-        " extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel\r\n",
-        "(",
-        "(",
-        null,
-        null,
-        "cette _moutarde_ uniquement disponible chez courte paille)"
+      "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin ",
+      "(",
+      "(",
+      null,
+      null,
+      "6.2%) oignons colorants ",
+      ":",
+      ":",
+      null,
+      null,
+      " extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel\r\n",
+      "(",
+      "(",
+      null,
+      null,
+      "cette _moutarde_ uniquement disponible chez courte paille)"
       ],
       "max_imgid": "2",
       "additives_prev_original_tags": [],
       "pnns_groups_2_tags": [
-        "dressings-and-sauces"
+      "dressings-and-sauces"
       ],
       "ingredients_text": "eau graines de téguments de _moutarde_ vinaigre de vin rouge sel vin rouge sucre   moût de raisin (6.2%) oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel\r\n(cette _moutarde_ uniquement disponible chez courte paille)",
       "ingredients_from_palm_oil_n": 0,
       "created_t": 1444572561,
       "categories_tags": [
-        "en:groceries",
-        "en:condiments",
-        "en:sauces",
-        "en:mustards"
+      "en:groceries",
+      "en:condiments",
+      "en:sauces",
+      "en:mustards"
       ],
       "allergens_hierarchy": [
-        "en:mustard"
+      "en:mustard"
       ],
       "labels_debug_tags": [],
       "brands": "courte paille",
@@ -12408,19 +12409,19 @@ products: any;
       "amino_acids_prev_tags": [],
       "lang": "fr",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages": {
         "en:french": 3
@@ -12428,27 +12429,27 @@ products: any;
       "ingredients_hierarchy": [],
       "traces_tags": [],
       "_keywords": [
-        "sweety",
-        "sauce",
-        "chili"
+      "sweety",
+      "sauce",
+      "chili"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nucleotides_prev_tags": [],
@@ -12459,26 +12460,26 @@ products: any;
       "vitamins_tags": [],
       "last_editor": null,
       "codes_tags": [
-        "code-13",
-        "0000000000123",
-        "000000000012x",
-        "00000000001xx",
-        "0000000000xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000000123",
+      "000000000012x",
+      "00000000001xx",
+      "0000000000xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "product_name_debug_tags": [],
       "entry_dates_tags": [
-        "2018-08-31",
-        "2018-08",
-        "2018"
+      "2018-08-31",
+      "2018-08",
+      "2018"
       ],
       "additives_prev_tags": [],
       "additives_debug_tags": [],
@@ -12486,18 +12487,18 @@ products: any;
       "update_key": "nova20180918",
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_from_palm_oil_tags": [],
       "languages_codes": {
         "fr": 3
       },
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "quality_tags": [],
       "allergens_tags": [],
@@ -12543,7 +12544,7 @@ products: any;
       },
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "additives_tags": [],
       "nucleotides_tags": [],
@@ -12649,9 +12650,9 @@ products: any;
       "last_image_t": 1535737985,
       "ingredients_text_with_allergens_fr": null,
       "last_edit_dates_tags": [
-        "2018-08-31",
-        "2018-08",
-        "2018"
+      "2018-08-31",
+      "2018-08",
+      "2018"
       ],
       "id": "0000000000123",
       "nutrient_levels_tags": [],
@@ -12661,7 +12662,7 @@ products: any;
       "additives_old_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "minerals_prev_tags": [],
       "additives_original_tags": [],
@@ -12678,35 +12679,35 @@ products: any;
       "countries": "en:france",
       "nutrient_levels": {},
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1535737982,
       "allergens_hierarchy": [],
       "ingredients_text_with_allergens": null,
       "last_image_dates_tags": [
-        "2018-08-31",
-        "2018-08",
-        "2018"
+      "2018-08-31",
+      "2018-08",
+      "2018"
       ],
       "ingredients_debug": [],
       "ingredients_ids_debug": [],
       "nutrition_data_prepared_per": "100g",
       "max_imgid": "2",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "additives_prev_original_tags": [],
       "creator": "kiliweb",
       "ingredients_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "sortkey": 535737986,
       "nutrition_score_debug": "no score when the product does not have a category",
@@ -12730,42 +12731,42 @@ products: any;
       "additives_old_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_original_tags": [],
       "minerals_prev_tags": [],
       "code": "0000000000291",
       "ingredients_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "sortkey": 534239732,
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": "",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1534239669,
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "last_image_dates_tags": [
-        "2018-08-14",
-        "2018-08",
-        "2018"
+      "2018-08-14",
+      "2018-08",
+      "2018"
       ],
       "ingredients_debug": [],
       "nutrition_data_prepared_per": "100g",
       "ingredients_ids_debug": [],
       "max_imgid": "2",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "additives_prev_original_tags": [],
       "creator": "kiliweb",
@@ -12775,26 +12776,26 @@ products: any;
       "ingredients": [],
       "vitamins_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000000291",
-        "000000000029x",
-        "00000000002xx",
-        "0000000000xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000000291",
+      "000000000029x",
+      "00000000002xx",
+      "0000000000xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "product_name_debug_tags": [],
       "entry_dates_tags": [
-        "2018-08-14",
-        "2018-08",
-        "2018"
+      "2018-08-14",
+      "2018-08",
+      "2018"
       ],
       "additives_prev_tags": [],
       "additives_debug_tags": [],
@@ -12802,7 +12803,7 @@ products: any;
       "nutrition_data_per_debug_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_from_palm_oil_tags": [],
       "serving_quantity": 0,
@@ -12814,19 +12815,19 @@ products: any;
       "amino_acids_prev_tags": [],
       "lang": "fr",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages": {
         "en:french": 3
@@ -12834,25 +12835,25 @@ products: any;
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "_keywords": [
-        "mendiant"
+      "mendiant"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nucleotides_prev_tags": [],
@@ -12961,9 +12962,9 @@ products: any;
       "last_image_t": 1534239684,
       "ingredients_text_with_allergens_fr": null,
       "last_edit_dates_tags": [
-        "2018-08-14",
-        "2018-08",
-        "2018"
+      "2018-08-14",
+      "2018-08",
+      "2018"
       ],
       "id": "0000000000291",
       "nutrient_levels_tags": [],
@@ -12972,35 +12973,35 @@ products: any;
         "fr": 3
       },
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "quality_tags": [],
       "allergens_tags": [],
       "nutriments": {},
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0
     },
     {
       "_id": "0000000000949",
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "languages_codes": {
         "fr": 3
       },
       "quality_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "allergens_tags": [],
@@ -13150,9 +13151,9 @@ products: any;
       "allergens": "",
       "nutrient_levels_tags": [],
       "last_edit_dates_tags": [
-        "2018-04-11",
-        "2018-04",
-        "2018"
+      "2018-04-11",
+      "2018-04",
+      "2018"
       ],
       "id": "0000000000949",
       "interface_version_modified": "20150316.jqm2",
@@ -13165,19 +13166,19 @@ products: any;
       "rev": 7,
       "lang": "fr",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages": {
         "en:french": 3
@@ -13185,62 +13186,62 @@ products: any;
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "_keywords": [
-        "carotte",
-        "salade",
-        "de",
-        "rapee"
+      "carotte",
+      "salade",
+      "de",
+      "rapee"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nucleotides_prev_tags": [],
       "ingredients_text_debug": null,
       "no_nutrition_data": "",
       "entry_dates_tags": [
-        "2018-04-11",
-        "2018-04",
-        "2018"
+      "2018-04-11",
+      "2018-04",
+      "2018"
       ],
       "ingredients": [],
       "vitamins_tags": [],
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000000949",
-        "000000000094x",
-        "00000000009xx",
-        "0000000000xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000000949",
+      "000000000094x",
+      "00000000009xx",
+      "0000000000xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "additives_prev_tags": [],
       "additives_debug_tags": [],
@@ -13248,18 +13249,18 @@ products: any;
       "nutrition_data_per_debug_tags": [],
       "ingredients_from_palm_oil_tags": [],
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1523440813,
       "allergens_hierarchy": [],
       "ingredients_text_with_allergens": null,
       "last_image_dates_tags": [
-        "2018-04-11",
-        "2018-04",
-        "2018"
+      "2018-04-11",
+      "2018-04",
+      "2018"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_ids_debug": [],
@@ -13269,15 +13270,15 @@ products: any;
       "additives_prev_original_tags": [],
       "ingredients_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "sortkey": 523440823,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
@@ -13285,7 +13286,7 @@ products: any;
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [],
       "code": "0000000000949",
@@ -13316,47 +13317,47 @@ products: any;
         "en:french": 3
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "_keywords": [
-        "aux",
-        "blanc",
-        "myrtille",
-        "fromage"
+      "aux",
+      "blanc",
+      "myrtille",
+      "fromage"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "amino_acids_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
@@ -13366,26 +13367,26 @@ products: any;
       "vitamins_tags": [],
       "last_editor": null,
       "codes_tags": [
-        "code-13",
-        "0000000000970",
-        "000000000097x",
-        "00000000009xx",
-        "0000000000xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000000970",
+      "000000000097x",
+      "00000000009xx",
+      "0000000000xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "product_name_debug_tags": [],
       "entry_dates_tags": [
-        "2018-03-08",
-        "2018-03",
-        "2018"
+      "2018-03-08",
+      "2018-03",
+      "2018"
       ],
       "additives_debug_tags": [],
       "additives_prev_tags": [],
@@ -13393,18 +13394,18 @@ products: any;
       "nutrition_data_per_debug_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_from_palm_oil_tags": [],
       "languages_codes": {
         "fr": 3
       },
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "quality_tags": [],
       "allergens_tags": [],
@@ -13450,7 +13451,7 @@ products: any;
       },
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "additives_tags": [],
       "nucleotides_tags": [],
@@ -13556,9 +13557,9 @@ products: any;
       "ingredients_text_with_allergens_fr": null,
       "last_image_t": 1520506371,
       "last_edit_dates_tags": [
-        "2018-03-08",
-        "2018-03",
-        "2018"
+      "2018-03-08",
+      "2018-03",
+      "2018"
       ],
       "id": "0000000000970",
       "allergens": "",
@@ -13569,7 +13570,7 @@ products: any;
       "additives_old_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_original_tags": [],
       "minerals_prev_tags": [],
@@ -13586,34 +13587,34 @@ products: any;
       "countries": "en:france",
       "nutrient_levels": {},
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1520506368,
       "allergens_hierarchy": [],
       "ingredients_text_with_allergens": null,
       "last_image_dates_tags": [
-        "2018-03-08",
-        "2018-03",
-        "2018"
+      "2018-03-08",
+      "2018-03",
+      "2018"
       ],
       "ingredients_ids_debug": [],
       "ingredients_debug": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "additives_prev_original_tags": [],
       "creator": "kiliweb",
       "ingredients_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "sortkey": 520506371,
       "nutrition_score_debug": "no score when the product does not have a category",
@@ -13624,27 +13625,27 @@ products: any;
       "last_editor": "openfoodfacts-contributors",
       "created_t": 1537766416,
       "entry_dates_tags": [
-        "2018-09-24",
-        "2018-09",
-        "2018"
+      "2018-09-24",
+      "2018-09",
+      "2018"
       ],
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-to-be-completed, en:photos-to-be-validated, en:photos-uploaded",
       "interface_version_created": "20120622",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "id": "0000000001001",
       "last_modified_t": 1537766416,
       "max_imgid": 1,
       "sortkey": 537766416,
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "lc": "en",
       "lang": "en",
@@ -13653,19 +13654,19 @@ products: any;
       "languages_codes": {},
       "rev": 2,
       "languages_tags": [
-        "en:0"
+      "en:0"
       ],
       "correctors_tags": [],
       "languages": {},
       "last_image_dates_tags": [
-        "2018-09-24",
-        "2018-09",
-        "2018"
+      "2018-09-24",
+      "2018-09",
+      "2018"
       ],
       "last_edit_dates_tags": [
-        "2018-09-24",
-        "2018-09",
-        "2018"
+      "2018-09-24",
+      "2018-09",
+      "2018"
       ],
       "code": "0000000001001",
       "complete": 0,
@@ -13691,55 +13692,55 @@ products: any;
       },
       "_keywords": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-to-be-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-to-be-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "countries": "en:FR",
       "codes_tags": [
-        "code-13",
-        "invalid-ean",
-        "0000000001001",
-        "000000000100x",
-        "00000000010xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "invalid-ean",
+      "0000000001001",
+      "000000000100x",
+      "00000000010xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "languages_hierarchy": [],
       "checkers_tags": [],
@@ -13749,7 +13750,7 @@ products: any;
       "_id": "0000000001007",
       "id": "0000000001007",
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "lc": "fr",
       "amino_acids_tags": [],
@@ -13761,47 +13762,47 @@ products: any;
       "nucleotides_prev_tags": [],
       "quality_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "serving_quantity": 0,
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nutrition_data_per": "100g",
       "languages_codes": {
         "fr": 3
       },
       "_keywords": [
-        "vainilla"
+      "vainilla"
       ],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "amino_acids_prev_tags": [],
       "states": "en:to-be-completed, en:nutrition-facts-to-be-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "product_name_debug_tags": [],
       "additives_prev_original_tags": [],
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nova_group_debug": "no nova group when the product does not have ingredients",
       "nutrition_data_per_debug_tags": [],
@@ -13812,38 +13813,38 @@ products: any;
       "last_image_t": 1538127565,
       "vitamins_tags": [],
       "entry_dates_tags": [
-        "2018-09-28",
-        "2018-09",
-        "2018"
+      "2018-09-28",
+      "2018-09",
+      "2018"
       ],
       "nutriments": {},
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "lang": "fr",
       "ingredients_text_with_allergens": null,
       "last_image_dates_tags": [
-        "2018-09-28",
-        "2018-09",
-        "2018"
+      "2018-09-28",
+      "2018-09",
+      "2018"
       ],
       "nutrition_score_debug": "no score when the product does not have a category",
       "last_modified_by": null,
@@ -13853,7 +13854,7 @@ products: any;
       "nutrition_data_prepared_per": "100g",
       "ingredients_original_tags": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "minerals_tags": [],
       "ingredients_tags": [],
@@ -13868,8 +13869,8 @@ products: any;
       "sortkey": 538127565,
       "created_t": 1538127563,
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "interface_version_created": "20150316.jqm2",
       "last_modified_t": 1538127565,
@@ -13879,33 +13880,33 @@ products: any;
       "nutrient_levels": {},
       "ingredients_hierarchy": [],
       "last_edit_dates_tags": [
-        "2018-09-28",
-        "2018-09",
-        "2018"
+      "2018-09-28",
+      "2018-09",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "ingredients_debug": [],
       "ingredients_text_debug": null,
       "ingredients_from_palm_oil_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000001007",
-        "000000000100x",
-        "00000000010xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001007",
+      "000000000100x",
+      "00000000010xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "ingredients_text_with_allergens_fr": null,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "creator": "kiliweb",
       "additives_original_tags": [],
@@ -14021,25 +14022,25 @@ products: any;
     {
       "_id": "0000000001151",
       "codes_tags": [
-        "code-13",
-        1151,
-        "000000000115x",
-        "00000000011xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      1151,
+      "000000000115x",
+      "00000000011xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "quality_tags": [],
       "product_name": "&quot;Baguette Lyonnais&quot;",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_text_with_allergens": null,
       "ingredients_text_with_allergens_fr": null,
@@ -14097,21 +14098,21 @@ products: any;
       "last_modified_by": "kiliweb",
       "amino_acids_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "languages": {
         "en:french": 3
       },
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "amino_acids_prev_tags": [],
       "additives_debug_tags": [],
@@ -14215,19 +14216,19 @@ products: any;
       },
       "serving_quantity": 0,
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "ingredients_original_tags": [],
       "created_t": 1537883404,
@@ -14235,24 +14236,24 @@ products: any;
       "minerals_tags": [],
       "no_nutrition_data": "",
       "last_image_dates_tags": [
-        "2018-09-25",
-        "2018-09",
-        "2018"
+      "2018-09-25",
+      "2018-09",
+      "2018"
       ],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "unknown_ingredients_n": 0,
       "languages_codes": {
         "fr": 3
       },
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "entry_dates_tags": [
-        "2018-09-25",
-        "2018-09",
-        "2018"
+      "2018-09-25",
+      "2018-09",
+      "2018"
       ],
       "ingredients_debug": [],
       "last_image_t": 1537883405,
@@ -14271,40 +14272,40 @@ products: any;
       "interface_version_created": "20150316.jqm2",
       "additives_prev_original_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "sortkey": 537883538,
       "allergens_from_ingredients": "",
       "nutrition_data_prepared_per": "100g",
       "_keywords": [
-        "lyonnai",
-        "baguette"
+      "lyonnai",
+      "baguette"
       ],
       "additives_old_tags": [],
       "nutrient_levels_tags": [],
       "ingredients_ids_debug": [],
       "allergens_hierarchy": [],
       "last_edit_dates_tags": [
-        "2018-09-25",
-        "2018-09",
-        "2018"
+      "2018-09-25",
+      "2018-09",
+      "2018"
       ],
       "vitamins_prev_tags": [],
       "nutrient_levels": {},
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "checkers_tags": [],
       "max_imgid": "2",
@@ -14314,19 +14315,19 @@ products: any;
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "traces_from_ingredients": "",
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_from_palm_oil_tags": [],
       "vitamins_tags": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "traces_hierarchy": [],
       "interface_version_modified": "20150316.jqm2",
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "last_editor": "kiliweb",
       "nucleotides_prev_tags": [],
@@ -14336,7 +14337,7 @@ products: any;
       "_id": "0000000001199",
       "additives_old_tags": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "traces_hierarchy": [],
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
@@ -14357,17 +14358,17 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_n": 0,
       "product_name_fr": "Solène céréales poulet",
       "ingredients_original_tags": [
-        "en:antioxidant",
-        "fr:ébahorbate de sodium",
-        "fr:00 orant",
-        "fr:c amel",
-        "fr:origine UE",
-        "en:tomato",
-        "fr:MAYONNAISE I eau",
-        "fr:jaunes d'OEUF vinaigre",
-        "en:mustard",
-        "en:water",
-        "en:mustard-seed"
+      "en:antioxidant",
+      "fr:ébahorbate de sodium",
+      "fr:00 orant",
+      "fr:c amel",
+      "fr:origine UE",
+      "en:tomato",
+      "fr:MAYONNAISE I eau",
+      "fr:jaunes d'OEUF vinaigre",
+      "en:mustard",
+      "en:water",
+      "en:mustard-seed"
       ],
       "minerals_tags": [],
       "countries": "France",
@@ -14375,130 +14376,130 @@ products: any;
       "categories_tags": [],
       "labels_debug_tags": [],
       "allergens_hierarchy": [
-        "en:eggs",
-        "en:mustard"
+      "en:eggs",
+      "en:mustard"
       ],
       "last_image_dates_tags": [
-        "2018-02-05",
-        "2018-02",
-        "2018"
+      "2018-02-05",
+      "2018-02",
+      "2018"
       ],
       "brands": "CROUS",
       "categories": "",
       "ingredients_from_palm_oil_n": 0,
       "created_t": 1517833594,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "additives_prev_original_tags": [],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "ingredients_text": "antioxydant : ébahorbate de sodium, 00 orant • c amel - origine UE), tomate 33,3%, MAYONNAISE I eau, jaunes d'OEUF vinaigre, MOUTARDE [eau, graines de MOUTARDE,",
       "creator": "kiliweb",
       "ingredients_n_tags": [
-        "11",
-        "11-20"
+      "11",
+      "11-20"
       ],
       "ingredients_ids_debug": [
-        "antioxydant",
-        "ebahorbate-de-sodium",
-        "00-orant",
-        "c-amel",
-        "origine-ue",
-        "tomate-33",
-        "3",
-        "mayonnaise-i-eau",
-        "jaunes-d-oeuf-vinaigre",
-        "moutarde",
-        "eau",
-        "graines-de-moutarde"
+      "antioxydant",
+      "ebahorbate-de-sodium",
+      "00-orant",
+      "c-amel",
+      "origine-ue",
+      "tomate-33",
+      "3",
+      "mayonnaise-i-eau",
+      "jaunes-d-oeuf-vinaigre",
+      "moutarde",
+      "eau",
+      "graines-de-moutarde"
       ],
       "ingredients_debug": [
-        "antioxydant ",
-        ":",
-        ":",
-        null,
-        null,
-        "  ébahorbate de sodium",
-        ",",
-        null,
-        null,
-        null,
-        " 00 orant ",
-        "•",
-        "•",
-        null,
-        null,
-        " c amel",
-        " - ",
-        " - ",
-        " - ",
-        null,
-        "origine UE)",
-        ",",
-        null,
-        null,
-        null,
-        " tomate 33",
-        ",",
-        null,
-        null,
-        null,
-        "3%",
-        ",",
-        null,
-        null,
-        null,
-        " MAYONNAISE I eau",
-        ",",
-        null,
-        null,
-        null,
-        " jaunes d'OEUF vinaigre",
-        ",",
-        null,
-        null,
-        null,
-        " MOUTARDE ",
-        "[",
-        "[",
-        null,
-        null,
-        "eau",
-        ",",
-        null,
-        null,
-        null,
-        " graines de MOUTARDE",
-        ","
+      "antioxydant ",
+      ":",
+      ":",
+      null,
+      null,
+      "  ébahorbate de sodium",
+      ",",
+      null,
+      null,
+      null,
+      " 00 orant ",
+      "•",
+      "•",
+      null,
+      null,
+      " c amel",
+      " - ",
+      " - ",
+      " - ",
+      null,
+      "origine UE)",
+      ",",
+      null,
+      null,
+      null,
+      " tomate 33",
+      ",",
+      null,
+      null,
+      null,
+      "3%",
+      ",",
+      null,
+      null,
+      null,
+      " MAYONNAISE I eau",
+      ",",
+      null,
+      null,
+      null,
+      " jaunes d'OEUF vinaigre",
+      ",",
+      null,
+      null,
+      null,
+      " MOUTARDE ",
+      "[",
+      "[",
+      null,
+      null,
+      "eau",
+      ",",
+      null,
+      null,
+      null,
+      " graines de MOUTARDE",
+      ","
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_tags": [
-        "en:antioxidant",
-        "fr:ebahorbate-de-sodium",
-        "fr:00-orant",
-        "fr:c-amel",
-        "fr:origine-ue",
-        "en:tomato",
-        "fr:mayonnaise-i-eau",
-        "fr:jaunes-d-oeuf-vinaigre",
-        "en:mustard",
-        "en:water",
-        "en:mustard-seed"
+      "en:antioxidant",
+      "fr:ebahorbate-de-sodium",
+      "fr:00-orant",
+      "fr:c-amel",
+      "fr:origine-ue",
+      "en:tomato",
+      "fr:mayonnaise-i-eau",
+      "fr:jaunes-d-oeuf-vinaigre",
+      "en:mustard",
+      "en:water",
+      "en:mustard-seed"
       ],
       "brands_tags": [
-        "crous"
+      "crous"
       ],
       "pnns_groups_2": "unknown",
       "additives_n": 0,
@@ -14506,23 +14507,23 @@ products: any;
       "traces_from_ingredients": "",
       "categories_prev_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "sortkey": 517833609,
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages": {
         "en:french": 4
@@ -14537,124 +14538,124 @@ products: any;
       "amino_acids_prev_tags": [],
       "amino_acids_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "ingredients_hierarchy": [
-        "en:antioxidant",
-        "fr:ébahorbate de sodium",
-        "fr:00 orant",
-        "fr:c amel",
-        "fr:origine UE",
-        "en:tomato",
-        "fr:MAYONNAISE I eau",
-        "fr:jaunes d'OEUF vinaigre",
-        "en:mustard",
-        "en:water",
-        "en:mustard-seed"
+      "en:antioxidant",
+      "fr:ébahorbate de sodium",
+      "fr:00 orant",
+      "fr:c amel",
+      "fr:origine UE",
+      "en:tomato",
+      "fr:MAYONNAISE I eau",
+      "fr:jaunes d'OEUF vinaigre",
+      "en:mustard",
+      "en:water",
+      "en:mustard-seed"
       ],
       "traces_tags": [],
       "_keywords": [
-        "poulet",
-        "solene",
-        "cereale",
-        "crou"
+      "poulet",
+      "solene",
+      "cereale",
+      "crou"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "vitamins_tags": [],
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000001199",
-        "000000000119x",
-        "00000000011xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001199",
+      "000000000119x",
+      "00000000011xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": "kiliweb",
       "ingredients": [
-        {
-          "id": "en:antioxidant",
-          "rank": 1,
-          "text": "antioxydant"
-        },
-        {
-          "text": "ébahorbate de sodium",
-          "id": "fr:ébahorbate de sodium",
-          "rank": 2
-        },
-        {
-          "text": "00 orant",
-          "rank": 3,
-          "id": "fr:00 orant"
-        },
-        {
-          "rank": 4,
-          "id": "fr:c amel",
-          "text": "c amel"
-        },
-        {
-          "id": "fr:origine UE",
-          "rank": 5,
-          "text": "origine UE"
-        },
-        {
-          "percent": "33.3",
-          "id": "en:tomato",
-          "rank": 6,
-          "text": "tomate"
-        },
-        {
-          "id": "fr:MAYONNAISE I eau",
-          "rank": 7,
-          "text": "MAYONNAISE I eau"
-        },
-        {
-          "rank": 8,
-          "id": "fr:jaunes d'OEUF vinaigre",
-          "text": "jaunes d'OEUF vinaigre"
-        },
-        {
-          "id": "en:mustard",
-          "rank": 9,
-          "text": "MOUTARDE"
-        },
-        {
-          "id": "en:water",
-          "text": "eau"
-        },
-        {
-          "text": "graines de MOUTARDE",
-          "id": "en:mustard-seed"
-        }
+      {
+        "id": "en:antioxidant",
+        "rank": 1,
+        "text": "antioxydant"
+      },
+      {
+        "text": "ébahorbate de sodium",
+        "id": "fr:ébahorbate de sodium",
+        "rank": 2
+      },
+      {
+        "text": "00 orant",
+        "rank": 3,
+        "id": "fr:00 orant"
+      },
+      {
+        "rank": 4,
+        "id": "fr:c amel",
+        "text": "c amel"
+      },
+      {
+        "id": "fr:origine UE",
+        "rank": 5,
+        "text": "origine UE"
+      },
+      {
+        "percent": "33.3",
+        "id": "en:tomato",
+        "rank": 6,
+        "text": "tomate"
+      },
+      {
+        "id": "fr:MAYONNAISE I eau",
+        "rank": 7,
+        "text": "MAYONNAISE I eau"
+      },
+      {
+        "rank": 8,
+        "id": "fr:jaunes d'OEUF vinaigre",
+        "text": "jaunes d'OEUF vinaigre"
+      },
+      {
+        "id": "en:mustard",
+        "rank": 9,
+        "text": "MOUTARDE"
+      },
+      {
+        "id": "en:water",
+        "text": "eau"
+      },
+      {
+        "text": "graines de MOUTARDE",
+        "id": "en:mustard-seed"
+      }
       ],
       "entry_dates_tags": [
-        "2018-02-05",
-        "2018-02",
-        "2018"
+      "2018-02-05",
+      "2018-02",
+      "2018"
       ],
       "ingredients_text_debug_tags": [],
       "brands_debug_tags": [],
@@ -14671,13 +14672,13 @@ products: any;
       "nutrition_data_per_debug_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "nutrition_grades": "a",
       "quality_tags": [
-        "ingredients-unknown-score-above-0",
-        "ingredients-50-percent-unknown",
-        "ingredients-fr-ending-comma"
+      "ingredients-unknown-score-above-0",
+      "ingredients-50-percent-unknown",
+      "ingredients-fr-ending-comma"
       ],
       "ingredients_n": 11,
       "labels_prev_hierarchy": [],
@@ -14685,16 +14686,16 @@ products: any;
         "fr": 4
       },
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "categories_hierarchy": [],
       "allergens_tags": [
-        "en:eggs",
-        "en:mustard"
+      "en:eggs",
+      "en:mustard"
       ],
       "nutriments": {
         "sugars_unit": "",
@@ -14742,7 +14743,7 @@ products: any;
         "carbohydrates_value": "30.3"
       },
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "categories_debug_tags": [],
@@ -14855,14 +14856,14 @@ products: any;
       "interface_version_modified": "20150316.jqm2",
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "additives_prev": " [ antioxydant -> fr:antioxydant  ]  [ ebahorbate-de-sodium -> fr:ebahorbate-de-sodium  ]  [ ebahorbate-de -> fr:ebahorbate-de  ]  [ ebahorbate -> fr:ebahorbate  ]  [ 00-orant -> fr:00-orant  ]  [ 00 -> fr:00  ]  [ c-amel -> fr:c-amel  ]  [ c -> fr:c  ]  [ origine-ue -> fr:origine-ue  ]  [ origine -> fr:origine  ]  [ tomate-33 -> fr:tomate-33  ]  [ tomate -> fr:tomate  ]  [ 3 -> en:fd-c  ]  [ mayonnaise-i-eau -> fr:mayonnaise-i-eau  ]  [ mayonnaise-i -> fr:mayonnaise-i  ]  [ mayonnaise -> fr:mayonnaise  ]  [ jaunes-d-oeuf-vinaigre -> fr:jaunes-d-oeuf-vinaigre  ]  [ jaunes-d-oeuf -> fr:jaunes-d-oeuf  ]  [ jaunes-d -> fr:jaunes-d  ]  [ jaunes -> fr:jaunes  ]  [ moutarde -> fr:moutarde  ]  [ eau -> fr:eau  ]  [ graines-de-moutarde -> fr:graines-de-moutarde  ]  [ graines-de -> fr:graines-de  ]  [ graines -> fr:graines  ] ",
       "id": "0000000001199",
       "last_edit_dates_tags": [
-        "2018-02-05",
-        "2018-02",
-        "2018"
+      "2018-02-05",
+      "2018-02",
+      "2018"
       ],
       "allergens": "OEUF, MOUTARDE, MOUTARDE",
       "nutrient_levels_tags": []
@@ -14885,20 +14886,20 @@ products: any;
       "categories": "Tartes à la noix de coco",
       "brands": "Crous Resto',Crous",
       "categories_tags": [
-        "en:pies",
-        "en:sweet-pies",
-        "en:coconut-pies"
+      "en:pies",
+      "en:sweet-pies",
+      "en:coconut-pies"
       ],
       "allergens_hierarchy": [],
       "labels_debug_tags": [],
       "created_t": 1517830801,
       "ingredients_text": "",
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "additives_prev_original_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "3",
       "nutrition_data_prepared_per": "100g",
@@ -14906,17 +14907,17 @@ products: any;
       "product_name_fr_debug_tags": [],
       "ingredients_tags": [],
       "brands_tags": [
-        "crous-resto",
-        "crous"
+      "crous-resto",
+      "crous"
       ],
       "ingredients_text_fr_debug_tags": [],
       "categories_prev_tags": [
-        "en:pies",
-        "en:sweet-pies",
-        "en:coconut-pies"
+      "en:pies",
+      "en:sweet-pies",
+      "en:coconut-pies"
       ],
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "quantity_debug_tags": [],
       "sortkey": 527070794,
@@ -14932,7 +14933,7 @@ products: any;
       "emb_codes": "",
       "amino_acids_tags": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "traces_debug_tags": [],
       "ingredients_hierarchy": [],
@@ -14940,20 +14941,20 @@ products: any;
       "ingredients_text_debug_tags": [],
       "expiration_date": "",
       "codes_tags": [
-        "code-13",
-        "0000000001281",
-        "000000000128x",
-        "00000000012xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001281",
+      "000000000128x",
+      "00000000012xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "ingredients_text_debug": "",
       "brands_debug_tags": [],
@@ -14962,23 +14963,23 @@ products: any;
       "origins_tags": [],
       "serving_size_debug_tags": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "additives_prev_tags": [],
       "quality_tags": [
-        "quantity-not-recognized"
+      "quantity-not-recognized"
       ],
       "manufacturing_places_debug_tags": [],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors",
-        "tacite"
+      "kiliweb",
+      "openfoodfacts-contributors",
+      "tacite"
       ],
       "misc_tags": [
-        "en:nutrition-no-fruits-vegetables-nuts",
-        "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
-        "en:nutriscore-computed"
+      "en:nutrition-no-fruits-vegetables-nuts",
+      "en:nutrition-no-fiber-or-fruits-vegetables-nuts",
+      "en:nutriscore-computed"
       ],
       "nutriments": {
         "sugars_unit": "",
@@ -15038,26 +15039,26 @@ products: any;
       "purchase_places_tags": [],
       "link_debug_tags": [],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "ingredients_from_or_that_may_be_from_palm_oil_n": 1,
       "nutrient_levels_tags": [
-        "en:fat-in-high-quantity",
-        "en:saturated-fat-in-high-quantity",
-        "en:sugars-in-high-quantity",
-        "en:salt-in-low-quantity"
+      "en:fat-in-high-quantity",
+      "en:saturated-fat-in-high-quantity",
+      "en:sugars-in-high-quantity",
+      "en:salt-in-low-quantity"
       ],
       "allergens": "",
       "stores": "",
       "last_edit_dates_tags": [
-        "2018-05-23",
-        "2018-05",
-        "2018"
+      "2018-05-23",
+      "2018-05",
+      "2018"
       ],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "tacite",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "tacite",
+      "kiliweb"
       ],
       "traces_hierarchy": [],
       "additives_old_tags": [],
@@ -15081,13 +15082,13 @@ products: any;
       "purchase_places": "",
       "minerals_tags": [],
       "last_image_dates_tags": [
-        "2018-05-23",
-        "2018-05",
-        "2018"
+      "2018-05-23",
+      "2018-05",
+      "2018"
       ],
       "ingredients_text_with_allergens": "",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "emb_codes_debug_tags": [],
       "creator": "kiliweb",
@@ -15096,78 +15097,78 @@ products: any;
       "emb_codes_orig": "",
       "ingredients_ids_debug": [],
       "nutrition_grades_tags": [
-        "d"
+      "d"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "generic_name_fr_debug_tags": [],
       "nutrition_score_debug": " -- energy 4 + sat-fat 10 + fr-sat-fat-for-fats 10 + sugars 4 + sodium 0 - fruits 0% 0 - fiber 4 - proteins 2 -- fsa 14 -- fr 14",
       "traces_from_ingredients": "",
       "pnns_groups_2": "unknown",
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "lang": "fr",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "expiration_date_debug_tags": [],
       "rev": 11,
       "product_name": "Tarte noix de coco",
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "_keywords": [
-        "tarte",
-        "crou",
-        "resto",
-        "la",
-        "coco",
-        "noix",
-        "de"
+      "tarte",
+      "crou",
+      "resto",
+      "la",
+      "coco",
+      "noix",
+      "de"
       ],
       "traces_tags": [],
       "quantity": "",
       "entry_dates_tags": [
-        "2018-02-05",
-        "2018-02",
-        "2018"
+      "2018-02-05",
+      "2018-02",
+      "2018"
       ],
       "product_name_debug_tags": [],
       "vitamins_tags": [],
       "ingredients": [],
       "last_editor": null,
       "categories_prev_hierarchy": [
-        "en:pies",
-        "en:sweet-pies",
-        "en:coconut-pies"
+      "en:pies",
+      "en:sweet-pies",
+      "en:coconut-pies"
       ],
       "pnns_groups_1": "unknown",
       "nutrition_data_per_debug_tags": [],
@@ -15178,21 +15179,21 @@ products: any;
       "nutrition_grades": "d",
       "lang_debug_tags": [],
       "packaging_tags": [
-        "barquette",
-        "plastique"
+      "barquette",
+      "plastique"
       ],
       "informers_tags": [
-        "kiliweb",
-        "tacite"
+      "kiliweb",
+      "tacite"
       ],
       "languages_codes": {
         "fr": 3
       },
       "origins": "",
       "categories_hierarchy": [
-        "en:pies",
-        "en:sweet-pies",
-        "en:coconut-pies"
+      "en:pies",
+      "en:sweet-pies",
+      "en:coconut-pies"
       ],
       "complete": 0,
       "ingredients_text_with_allergens_fr": "",
@@ -15328,33 +15329,33 @@ products: any;
       "ingredients_text_debug": null,
       "no_nutrition_data": "",
       "entry_dates_tags": [
-        "2018-03-07",
-        "2018-03",
-        "2018"
+      "2018-03-07",
+      "2018-03",
+      "2018"
       ],
       "last_editor": null,
       "product_name_debug_tags": [],
       "ingredients": [],
       "codes_tags": [
-        "code-13",
-        "0000000001311",
-        "000000000131x",
-        "00000000013xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001311",
+      "000000000131x",
+      "00000000013xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "vitamins_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "nutrition_data_per_debug_tags": [],
       "update_key": "nova20180918",
@@ -15372,48 +15373,48 @@ products: any;
         "en:french": 3
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "_keywords": [
-        "salade",
-        "exotique",
-        "fruit",
-        "de"
+      "salade",
+      "exotique",
+      "fruit",
+      "de"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_hierarchy": [],
       "traces_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nutrition_data_per": "100g",
@@ -15522,18 +15523,18 @@ products: any;
       "nutrient_levels_tags": [],
       "allergens": "",
       "last_edit_dates_tags": [
-        "2018-03-07",
-        "2018-03",
-        "2018"
+      "2018-03-07",
+      "2018-03",
+      "2018"
       ],
       "id": "0000000001311",
       "interface_version_modified": "20150316.jqm2",
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 3
@@ -15541,7 +15542,7 @@ products: any;
       "quality_tags": [],
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "nutriments": {
         "sodium_100g": 1.2598425196850394,
@@ -15599,7 +15600,7 @@ products: any;
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [],
       "additives_original_tags": [],
@@ -15607,31 +15608,31 @@ products: any;
       "code": "0000000001311",
       "ingredients_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "sortkey": 520419813,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": "",
       "created_t": 1520419800,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "last_image_dates_tags": [
-        "2018-03-07",
-        "2018-03",
-        "2018"
+      "2018-03-07",
+      "2018-03",
+      "2018"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_ids_debug": [],
@@ -15644,32 +15645,32 @@ products: any;
       "ingredients_text_debug": null,
       "no_nutrition_data": "",
       "entry_dates_tags": [
-        "2018-07-30",
-        "2018-07",
-        "2018"
+      "2018-07-30",
+      "2018-07",
+      "2018"
       ],
       "codes_tags": [
-        "code-13",
-        "0000000001328",
-        "000000000132x",
-        "00000000013xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001328",
+      "000000000132x",
+      "00000000013xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "vitamins_tags": [],
       "product_name_debug_tags": [],
       "ingredients": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "additives_prev_tags": [],
@@ -15688,46 +15689,46 @@ products: any;
         "en:french": 3
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "_keywords": [
-        "30",
-        "chouquette"
+      "30",
+      "chouquette"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "amino_acids_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "nucleotides_tags": [],
@@ -15835,25 +15836,25 @@ products: any;
       },
       "nutrient_levels_tags": [],
       "last_edit_dates_tags": [
-        "2018-07-30",
-        "2018-07",
-        "2018"
+      "2018-07-30",
+      "2018-07",
+      "2018"
       ],
       "id": "0000000001328",
       "interface_version_modified": "20150316.jqm2",
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 3
       },
       "quality_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "allergens_tags": [],
@@ -15912,7 +15913,7 @@ products: any;
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [],
       "minerals_prev_tags": [],
@@ -15920,31 +15921,31 @@ products: any;
       "additives_original_tags": [],
       "ingredients_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "sortkey": 532982384,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
       "created_t": 1532982378,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "allergens_hierarchy": [],
       "ingredients_text_with_allergens": null,
       "last_image_dates_tags": [
-        "2018-07-30",
-        "2018-07",
-        "2018"
+      "2018-07-30",
+      "2018-07",
+      "2018"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_ids_debug": [],
@@ -15959,41 +15960,41 @@ products: any;
       "additives_prev_original_tags": [],
       "max_imgid": "2",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_debug": [],
       "nutrition_data_prepared_per": "100g",
       "ingredients_ids_debug": [],
       "last_image_dates_tags": [
-        "2018-04-11",
-        "2018-04",
-        "2018"
+      "2018-04-11",
+      "2018-04",
+      "2018"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1523443867,
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": "",
       "sortkey": 523443872,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "ingredients_tags": [],
       "minerals_prev_tags": [],
       "code": "0000000001564",
       "additives_original_tags": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "traces_hierarchy": [],
       "additives_old_tags": [],
@@ -16012,7 +16013,7 @@ products: any;
       "vitamins_prev_tags": [],
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "nutriments": {
         "energy_100g": "410",
@@ -16057,11 +16058,11 @@ products: any;
       "allergens_tags": [],
       "quality_tags": [],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 3
@@ -16071,9 +16072,9 @@ products: any;
       "allergens": "",
       "id": "0000000001564",
       "last_edit_dates_tags": [
-        "2018-04-11",
-        "2018-04",
-        "2018"
+      "2018-04-11",
+      "2018-04",
+      "2018"
       ],
       "last_image_t": 1523443872,
       "ingredients_text_with_allergens_fr": null,
@@ -16181,28 +16182,28 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "_keywords": [
-        "blanc",
-        "fromage",
-        "peche"
+      "blanc",
+      "fromage",
+      "peche"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_hierarchy": [],
       "traces_tags": [],
@@ -16211,19 +16212,19 @@ products: any;
         "en:french": 3
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_prev_tags": [],
       "countries_debug_tags": [],
@@ -16234,7 +16235,7 @@ products: any;
       "last_modified_by": null,
       "ingredients_from_palm_oil_tags": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "nutrition_data_per_debug_tags": [],
@@ -16242,26 +16243,26 @@ products: any;
       "additives_prev_tags": [],
       "additives_debug_tags": [],
       "entry_dates_tags": [
-        "2018-04-11",
-        "2018-04",
-        "2018"
+      "2018-04-11",
+      "2018-04",
+      "2018"
       ],
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000001564",
-        "000000000156x",
-        "00000000015xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001564",
+      "000000000156x",
+      "00000000015xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "vitamins_tags": [],
       "last_editor": null,
@@ -16273,11 +16274,11 @@ products: any;
       "_id": "0000000001663",
       "countries": "France",
       "ingredients_original_tags": [
-        "en:whole-milk",
-        "en:sugar",
-        "en:corn-starch",
-        "en:cocoa",
-        "en:agar-agar"
+      "en:whole-milk",
+      "en:sugar",
+      "en:corn-starch",
+      "en:cocoa",
+      "en:agar-agar"
       ],
       "minerals_tags": [],
       "product_name_fr": "Crème dessert chocolat",
@@ -16294,21 +16295,21 @@ products: any;
       "code": "0000000001663",
       "minerals_prev_tags": [],
       "additives_original_tags": [
-        "en:e406"
+      "en:e406"
       ],
       "lc": "fr",
       "additives_old_n": 1,
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [
-        "en:e406"
+      "en:e406"
       ],
       "sortkey": 509478053,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "categories_prev_tags": [],
       "nutrition_score_debug": "no score when the product does not have a category",
@@ -16316,96 +16317,96 @@ products: any;
       "additives_n": 1,
       "pnns_groups_2": "unknown",
       "brands_tags": [
-        "ferme-de-la-fremondiere"
+      "ferme-de-la-fremondiere"
       ],
       "ingredients_tags": [
-        "en:whole-milk",
-        "en:milk",
-        "en:sugar",
-        "en:corn-starch",
-        "en:starch",
-        "en:cocoa",
-        "en:agar-agar"
+      "en:whole-milk",
+      "en:milk",
+      "en:sugar",
+      "en:corn-starch",
+      "en:starch",
+      "en:cocoa",
+      "en:agar-agar"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_ids_debug": [
-        "lait-entier",
-        "sucre",
-        "amidon-de-mais",
-        "cacao",
-        "agar-agar"
+      "lait-entier",
+      "sucre",
+      "amidon-de-mais",
+      "cacao",
+      "agar-agar"
       ],
       "ingredients_debug": [
-        "Lait entier",
-        ",",
-        null,
-        null,
-        null,
-        " sucre",
-        ",",
-        null,
-        null,
-        null,
-        " amidon de maïs",
-        ",",
-        null,
-        null,
-        null,
-        " cacao",
-        ",",
-        null,
-        null,
-        null,
-        " Agar agar."
+      "Lait entier",
+      ",",
+      null,
+      null,
+      null,
+      " sucre",
+      ",",
+      null,
+      null,
+      null,
+      " amidon de maïs",
+      ",",
+      null,
+      null,
+      null,
+      " cacao",
+      ",",
+      null,
+      null,
+      null,
+      " Agar agar."
       ],
       "ingredients_n_tags": [
-        "5",
-        "1-10"
+      "5",
+      "1-10"
       ],
       "creator": "kiliweb",
       "ingredients_text": "Lait entier, sucre, amidon de maïs, cacao, Agar agar.",
       "additives_prev_original_tags": [
-        "en:e406"
+      "en:e406"
       ],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "created_t": 1509478049,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_from_palm_oil_n": 0,
       "categories": "",
       "last_image_dates_tags": [
-        "2017-10-31",
-        "2017-10",
-        "2017"
+      "2017-10-31",
+      "2017-10",
+      "2017"
       ],
       "brands": "Ferme De La Frémondière",
       "labels_debug_tags": [],
       "categories_tags": [],
       "allergens_hierarchy": [
-        "en:milk"
+      "en:milk"
       ],
       "ingredients_text_with_allergens": "<span class=\"allergen\">Lait entier</span>, sucre, amidon de maïs, cacao, Agar agar.",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "nutrition_data_per_debug_tags": [],
       "update_key": "nova20180918",
       "additives_prev_tags": [
-        "en:e406"
+      "en:e406"
       ],
       "additives_prev_n": 1,
       "additives_debug_tags": [],
@@ -16418,94 +16419,94 @@ products: any;
       "no_nutrition_data": "",
       "ingredients_text_debug_tags": [],
       "entry_dates_tags": [
-        "2017-10-31",
-        "2017-10",
-        "2017"
+      "2017-10-31",
+      "2017-10",
+      "2017"
       ],
       "vitamins_tags": [],
       "ingredients": [
-        {
-          "rank": 1,
-          "id": "en:whole-milk",
-          "text": "Lait entier"
-        },
-        {
-          "id": "en:sugar",
-          "rank": 2,
-          "text": "sucre"
-        },
-        {
-          "rank": 3,
-          "id": "en:corn-starch",
-          "text": "amidon de maïs"
-        },
-        {
-          "text": "cacao",
-          "id": "en:cocoa",
-          "rank": 4
-        },
-        {
-          "text": "Agar agar",
-          "id": "en:agar-agar",
-          "rank": 5
-        }
+      {
+        "rank": 1,
+        "id": "en:whole-milk",
+        "text": "Lait entier"
+      },
+      {
+        "id": "en:sugar",
+        "rank": 2,
+        "text": "sucre"
+      },
+      {
+        "rank": 3,
+        "id": "en:corn-starch",
+        "text": "amidon de maïs"
+      },
+      {
+        "text": "cacao",
+        "id": "en:cocoa",
+        "rank": 4
+      },
+      {
+        "text": "Agar agar",
+        "id": "en:agar-agar",
+        "rank": 5
+      }
       ],
       "last_editor": null,
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000001663",
-        "000000000166x",
-        "00000000016xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001663",
+      "000000000166x",
+      "00000000016xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "_keywords": [
-        "fremondiere",
-        "dessert",
-        "ferme",
-        "chocolat",
-        "la",
-        "creme",
-        "de"
+      "fremondiere",
+      "dessert",
+      "ferme",
+      "chocolat",
+      "la",
+      "creme",
+      "de"
       ],
       "ingredients_hierarchy": [
-        "en:whole-milk",
-        "en:milk",
-        "en:sugar",
-        "en:corn-starch",
-        "en:starch",
-        "en:cocoa",
-        "en:agar-agar"
+      "en:whole-milk",
+      "en:milk",
+      "en:sugar",
+      "en:corn-starch",
+      "en:starch",
+      "en:cocoa",
+      "en:agar-agar"
       ],
       "traces_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "amino_acids_prev_tags": [],
@@ -16516,19 +16517,19 @@ products: any;
       "serving_quantity": 0,
       "last_modified_by": null,
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "languages": {
@@ -16539,12 +16540,12 @@ products: any;
       "id": "0000000001663",
       "additives_prev": " [ lait-entier -> fr:lait-entier  ]  [ lait -> fr:lait  ]  [ sucre -> fr:sucre  ]  [ amidon-de-mais -> fr:amidon-de-mais  ]  [ amidon-de -> fr:amidon-de  ]  [ amidon -> fr:amidon  ]  [ cacao -> fr:cacao  ]  [ agar-agar -> en:e406  -> exists  -- ok  ] ",
       "last_edit_dates_tags": [
-        "2017-10-31",
-        "2017-10",
-        "2017"
+      "2017-10-31",
+      "2017-10",
+      "2017"
       ],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "additives": " [ lait-entier -> fr:lait-entier  ]  [ lait -> fr:lait  ]  [ sucre -> fr:sucre  ]  [ amidon-de-mais -> fr:amidon-de-mais  ]  [ amidon-de -> fr:amidon-de  ]  [ amidon -> fr:amidon  ]  [ cacao -> fr:cacao  ]  [ agar-agar -> en:e406  -> exists  -- ok  ] ",
@@ -16553,7 +16554,7 @@ products: any;
       "nucleotides_tags": [],
       "labels_prev_tags": [],
       "additives_tags": [
-        "en:e406"
+      "en:e406"
       ],
       "labels": "",
       "last_image_t": 1509478052,
@@ -16658,7 +16659,7 @@ products: any;
         }
       },
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "nutriments": {
@@ -16702,15 +16703,15 @@ products: any;
         "fat_serving": ""
       },
       "allergens_tags": [
-        "en:milk"
+      "en:milk"
       ],
       "categories_hierarchy": [],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 4
@@ -16723,13 +16724,13 @@ products: any;
     {
       "_id": "0000000001885",
       "categories_prev_hierarchy": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:fruits-and-vegetables-based-foods",
-        "en:desserts",
-        "en:fruits-based-foods",
-        "en:compotes",
-        "fr:compotes-de-poire"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:fruits-and-vegetables-based-foods",
+      "en:desserts",
+      "en:fruits-based-foods",
+      "en:compotes",
+      "fr:compotes-de-poire"
       ],
       "ingredients": [],
       "vitamins_tags": [],
@@ -16737,9 +16738,9 @@ products: any;
       "last_editor": "tacite",
       "quantity": "",
       "entry_dates_tags": [
-        "2017-11-20",
-        "2017-11",
-        "2017"
+      "2017-11-20",
+      "2017-11",
+      "2017"
       ],
       "update_key": "nova20180918",
       "nutrition_data_per_debug_tags": [],
@@ -16750,43 +16751,43 @@ products: any;
       "product_name": "Compote de poire",
       "expiration_date_debug_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "_keywords": [
-        "crou",
-        "de",
-        "compote",
-        "poire"
+      "crou",
+      "de",
+      "compote",
+      "poire"
       ],
       "traces_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "additives_tags": [],
       "nutrition_grade_fr": "a",
@@ -16900,8 +16901,8 @@ products: any;
         "fr": 3
       },
       "informers_tags": [
-        "kiliweb",
-        "tacite"
+      "kiliweb",
+      "tacite"
       ],
       "packaging_tags": [],
       "nutrition_grades": "a",
@@ -16910,13 +16911,13 @@ products: any;
       "complete": 0,
       "origins": "",
       "categories_hierarchy": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:fruits-and-vegetables-based-foods",
-        "en:desserts",
-        "en:fruits-based-foods",
-        "en:compotes",
-        "fr:compotes-de-poire"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:fruits-and-vegetables-based-foods",
+      "en:desserts",
+      "en:fruits-based-foods",
+      "en:compotes",
+      "fr:compotes-de-poire"
       ],
       "ingredients_text_fr": "",
       "nova_group_debug": "no nova group when the product does not have ingredients",
@@ -16937,22 +16938,22 @@ products: any;
       "additives_old_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors",
-        "tacite"
+      "openfoodfacts-contributors",
+      "tacite"
       ],
       "cities_tags": [],
       "origins_debug_tags": [],
       "code": "0000000001885",
       "generic_name_fr_debug_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "a"
+      "a"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "pnns_groups_2": "Fruits",
       "nutrition_score_debug": " -- energy 1 + sat-fat 0 + fr-sat-fat-for-fats 0 + sugars 5 + sodium 0 - fruits 85% 5 - fiber 5 - proteins 0 -- fsa -4 -- fr -4",
@@ -16960,12 +16961,12 @@ products: any;
       "nutrition_score_warning_fruits_vegetables_nuts_from_category": "en:fruits-based-foods",
       "emb_codes_debug_tags": [],
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "last_image_dates_tags": [
-        "2017-11-20",
-        "2017-11",
-        "2017"
+      "2017-11-20",
+      "2017-11",
+      "2017"
       ],
       "ingredients_text_with_allergens": "",
       "ingredients_ids_debug": [],
@@ -16977,26 +16978,26 @@ products: any;
       "no_nutrition_data": "",
       "ingredients_text_debug": "",
       "codes_tags": [
-        "code-13",
-        "0000000001885",
-        "000000000188x",
-        "00000000018xx",
-        "0000000001xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000001885",
+      "000000000188x",
+      "00000000018xx",
+      "0000000001xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "ingredients_text_debug_tags": [],
       "expiration_date": "",
       "additives_prev_tags": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "serving_size_debug_tags": [],
       "interface_version_created": "20150316.jqm2",
@@ -17013,7 +17014,7 @@ products: any;
       },
       "serving_size": "",
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "traces_debug_tags": [],
       "ingredients_hierarchy": [],
@@ -17029,25 +17030,25 @@ products: any;
       "stores_tags": [],
       "stores": "",
       "last_edit_dates_tags": [
-        "2018-02-08",
-        "2018-02",
-        "2018"
+      "2018-02-08",
+      "2018-02",
+      "2018"
       ],
       "nutrient_levels_tags": [
-        "en:fat-in-low-quantity",
-        "en:saturated-fat-in-low-quantity",
-        "en:sugars-in-high-quantity",
-        "en:salt-in-low-quantity"
+      "en:fat-in-low-quantity",
+      "en:saturated-fat-in-low-quantity",
+      "en:sugars-in-high-quantity",
+      "en:salt-in-low-quantity"
       ],
       "allergens": "",
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "pnns_groups_1_tags": [
-        "fruits-and-vegetables"
+      "fruits-and-vegetables"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb",
-        "tacite"
+      "openfoodfacts-contributors",
+      "kiliweb",
+      "tacite"
       ],
       "manufacturing_places_debug_tags": [],
       "quality_tags": [],
@@ -17104,10 +17105,10 @@ products: any;
       },
       "allergens_tags": [],
       "misc_tags": [
-        "en:nutrition-fruits-vegetables-nuts-from-category",
-        "en:nutrition-fruits-vegetables-nuts-from-category-en-fruits-based-foods",
-        "en:nutrition-all-nutriscore-values-known",
-        "en:nutriscore-computed"
+      "en:nutrition-fruits-vegetables-nuts-from-category",
+      "en:nutrition-fruits-vegetables-nuts-from-category-en-fruits-based-foods",
+      "en:nutrition-all-nutriscore-values-known",
+      "en:nutriscore-computed"
       ],
       "vitamins_prev_tags": [],
       "last_modified_t": 1518126491,
@@ -17124,47 +17125,47 @@ products: any;
       "additives_original_tags": [],
       "ingredients_tags": [],
       "brands_tags": [
-        "crous"
+      "crous"
       ],
       "product_name_fr_debug_tags": [],
       "sortkey": 518126491,
       "quantity_debug_tags": [],
       "debug_param_sorted_langs": [
-        "fr"
+      "fr"
       ],
       "categories_prev_tags": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:fruits-and-vegetables-based-foods",
-        "en:desserts",
-        "en:fruits-based-foods",
-        "en:compotes",
-        "fr:compotes-de-poire"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:fruits-and-vegetables-based-foods",
+      "en:desserts",
+      "en:fruits-based-foods",
+      "en:compotes",
+      "fr:compotes-de-poire"
       ],
       "ingredients_text_fr_debug_tags": [],
       "created_t": 1511180337,
       "brands": "Crous",
       "categories_tags": [
-        "en:plant-based-foods-and-beverages",
-        "en:plant-based-foods",
-        "en:fruits-and-vegetables-based-foods",
-        "en:desserts",
-        "en:fruits-based-foods",
-        "en:compotes",
-        "fr:compotes-de-poire"
+      "en:plant-based-foods-and-beverages",
+      "en:plant-based-foods",
+      "en:fruits-and-vegetables-based-foods",
+      "en:desserts",
+      "en:fruits-based-foods",
+      "en:compotes",
+      "fr:compotes-de-poire"
       ],
       "allergens_hierarchy": [],
       "labels_debug_tags": [],
       "categories": "Compotes de poire",
       "ingredients_debug": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_text": "",
       "additives_prev_original_tags": [],
       "pnns_groups_2_tags": [
-        "fruits"
+      "fruits"
       ],
       "nutrition_score_warning_fruits_vegetables_nuts_from_category_value": 85
     },
@@ -17172,9 +17173,9 @@ products: any;
       "_id": "0000000002042",
       "id": "0000000002042",
       "last_edit_dates_tags": [
-        "2018-04-12",
-        "2018-04",
-        "2018"
+      "2018-04-12",
+      "2018-04",
+      "2018"
       ],
       "allergens": "",
       "nutrient_levels_tags": [],
@@ -17324,18 +17325,18 @@ products: any;
         "saturated-fat": 2.5
       },
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "languages_codes": {
         "fr": 3
       },
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "quality_tags": [],
       "additives_debug_tags": [],
@@ -17344,7 +17345,7 @@ products: any;
       "nutrition_data_per_debug_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_from_palm_oil_tags": [],
       "no_nutrition_data": "",
@@ -17353,51 +17354,51 @@ products: any;
       "last_editor": null,
       "vitamins_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000002042",
-        "000000000204x",
-        "00000000020xx",
-        "0000000002xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000002042",
+      "000000000204x",
+      "00000000020xx",
+      "0000000002xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "product_name_debug_tags": [],
       "entry_dates_tags": [
-        "2018-04-12",
-        "2018-04",
-        "2018"
+      "2018-04-12",
+      "2018-04",
+      "2018"
       ],
       "ingredients_hierarchy": [],
       "traces_tags": [],
       "_keywords": [
-        "paella",
-        "de",
-        "poulet"
+      "paella",
+      "de",
+      "poulet"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nucleotides_prev_tags": [],
@@ -17410,57 +17411,57 @@ products: any;
       "countries_debug_tags": [],
       "amino_acids_prev_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "languages": {
         "en:french": 3
       },
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "sortkey": 523528261,
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": "",
       "ingredients_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_ids_debug": [],
       "nutrition_data_prepared_per": "100g",
       "ingredients_debug": [],
       "max_imgid": "2",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "additives_prev_original_tags": [],
       "creator": "kiliweb",
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "created_t": 1523528250,
       "allergens_hierarchy": [],
       "ingredients_text_with_allergens": null,
       "last_image_dates_tags": [
-        "2018-04-12",
-        "2018-04",
-        "2018"
+      "2018-04-12",
+      "2018-04",
+      "2018"
       ],
       "product_name_fr": "Paëlla de poulet",
       "ingredients_original_tags": [],
@@ -17480,7 +17481,7 @@ products: any;
       "lc": "fr",
       "additives_old_tags": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "traces_hierarchy": []
     },
@@ -17494,19 +17495,19 @@ products: any;
       "checkers_tags": [],
       "rev": 7,
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages": {
         "en:french": 3
@@ -17515,60 +17516,60 @@ products: any;
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "_keywords": [
-        "shaker",
-        "salade",
-        "chef"
+      "shaker",
+      "salade",
+      "chef"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nucleotides_prev_tags": [],
       "ingredients_text_debug": null,
       "no_nutrition_data": "",
       "entry_dates_tags": [
-        "2018-04-04",
-        "2018-04",
-        "2018"
+      "2018-04-04",
+      "2018-04",
+      "2018"
       ],
       "vitamins_tags": [],
       "ingredients": [],
       "last_editor": null,
       "codes_tags": [
-        "code-13",
-        "0000000002219",
-        "000000000221x",
-        "00000000022xx",
-        "0000000002xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000002219",
+      "000000000221x",
+      "00000000022xx",
+      "0000000002xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "product_name_debug_tags": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "additives_prev_tags": [],
@@ -17577,11 +17578,11 @@ products: any;
       "update_key": "nova20180918",
       "ingredients_from_palm_oil_tags": [],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 3
@@ -17589,7 +17590,7 @@ products: any;
       "quality_tags": [],
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "allergens_tags": [],
       "nutriments": {
@@ -17738,16 +17739,16 @@ products: any;
       "allergens": "",
       "nutrient_levels_tags": [],
       "last_edit_dates_tags": [
-        "2018-04-04",
-        "2018-04",
-        "2018"
+      "2018-04-04",
+      "2018-04",
+      "2018"
       ],
       "id": "0000000002219",
       "interface_version_modified": "20150316.jqm2",
       "lc": "fr",
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "traces_hierarchy": [],
       "additives_old_tags": [],
@@ -17767,18 +17768,18 @@ products: any;
       "nutrient_levels": {},
       "created_t": 1522840946,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "last_image_dates_tags": [
-        "2018-04-04",
-        "2018-04",
-        "2018"
+      "2018-04-04",
+      "2018-04",
+      "2018"
       ],
       "max_imgid": "2",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_debug": [],
       "ingredients_ids_debug": [],
@@ -17787,15 +17788,15 @@ products: any;
       "additives_prev_original_tags": [],
       "ingredients_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "sortkey": 522840950,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": ""
@@ -17805,32 +17806,32 @@ products: any;
       "ingredients_text_debug": null,
       "no_nutrition_data": "",
       "entry_dates_tags": [
-        "2018-03-08",
-        "2018-03",
-        "2018"
+      "2018-03-08",
+      "2018-03",
+      "2018"
       ],
       "ingredients": [],
       "vitamins_tags": [],
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000002257",
-        "000000000225x",
-        "00000000022xx",
-        "0000000002xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000002257",
+      "000000000225x",
+      "00000000022xx",
+      "0000000002xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "nutrition_data_per_debug_tags": [],
@@ -17846,51 +17847,51 @@ products: any;
       "last_modified_by": null,
       "serving_quantity": 0,
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "languages": {
         "en:french": 3
       },
       "_keywords": [
-        "legume",
-        "salade",
-        "de",
-        "macedoine"
+      "legume",
+      "salade",
+      "de",
+      "macedoine"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_hierarchy": [],
       "traces_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nutrition_data_per": "100g",
@@ -18000,24 +18001,24 @@ products: any;
       "allergens": "",
       "id": "0000000002257",
       "last_edit_dates_tags": [
-        "2018-03-08",
-        "2018-03",
-        "2018"
+      "2018-03-08",
+      "2018-03",
+      "2018"
       ],
       "interface_version_modified": "20150316.jqm2",
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 3
       },
       "quality_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "nutriments": {
@@ -18076,7 +18077,7 @@ products: any;
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [],
       "code": "0000000002257",
@@ -18084,32 +18085,32 @@ products: any;
       "minerals_prev_tags": [],
       "ingredients_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "sortkey": 520506124,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
       "created_t": 1520506122,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "last_image_dates_tags": [
-        "2018-03-08",
-        "2018-03",
-        "2018"
+      "2018-03-08",
+      "2018-03",
+      "2018"
       ],
       "allergens_hierarchy": [],
       "ingredients_text_with_allergens": null,
       "max_imgid": "2",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_ids_debug": [],
       "ingredients_debug": [],
@@ -18273,7 +18274,7 @@ products: any;
       "additives_tags": [],
       "labels_prev_tags": [],
       "pnns_groups_1_tags": [
-        "unknown"
+      "unknown"
       ],
       "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
       "additives": " [ baguette-poite-vin-pain-baguette-50 -> fr:baguette-poite-vin-pain-baguette-50  ]  [ baguette-poite-vin-pain-baguette -> fr:baguette-poite-vin-pain-baguette  ]  [ baguette-poite-vin-pain -> fr:baguette-poite-vin-pain  ]  [ baguette-poite-vin -> fr:baguette-poite-vin  ]  [ baguette-poite -> fr:baguette-poite  ]  [ baguette -> fr:baguette  ]  [ 6 -> en:fd-c  ]  [ fqrine-de-ble -> fr:fqrine-de-ble  ]  [ fqrine-de -> fr:fqrine-de  ]  [ fqrine -> fr:fqrine  ]  [ eau -> fr:eau  ]  [ sel -> fr:sel  ]  [ levure -> fr:levure  ]  [ gluten -> fr:gluten  ]  [ farine-de-ble-maite -> fr:farine-de-ble-maite  ]  [ farine-de-ble -> fr:farine-de-ble  ]  [ farine-de -> fr:farine-de  ]  [ farine -> fr:farine  ]  [ levure-desactivee -> fr:levure-desactivee  ]  [ levure -> fr:levure  ]  [ acide-ascorbique -> en:e300  -> exists  -- mandatory_additive_class: en:acidity-regulator,en:antioxidant,en:flour-treatment-agent,en:sequestrant,en:acid (current: ingredient)  -> exists as a vitamin en:l-ascorbic-acid  ]  [ garniture-fromage-mi-chevre-46 -> fr:garniture-fromage-mi-chevre-46  ]  [ garniture-fromage-mi-chevre -> fr:garniture-fromage-mi-chevre  ]  [ garniture-fromage-mi -> fr:garniture-fromage-mi  ]  [ garniture-fromage -> fr:garniture-fromage  ]  [ garniture -> fr:garniture  ]  [ lait-pasteurise -> fr:lait-pasteurise  ]  [ lait -> fr:lait  ]  [ 95-0-lait-de-vache -> fr:95-0-lait-de-vache  ]  [ 95-0-lait-de -> fr:95-0-lait-de  ]  [ 95-0-lait -> fr:95-0-lait  ]  [ 95-0 -> fr:95-0  ]  [ 95 -> fr:95  ]  [ 5-0-lait-de-chevre -> fr:5-0-lait-de-chevre  ]  [ 5-0-lait-de -> fr:5-0-lait-de  ]  [ 5-0-lait -> fr:5-0-lait  ]  [ 5-0 -> fr:5-0  ]  [ 5 -> en:fd-c  ]  [ sel -> fr:sel  ]  [ ferments-lactiques-et-daffinage -> fr:ferments-lactiques-et-daffinage  ]  [ ferments-lactiques-et -> fr:ferments-lactiques-et  ]  [ ferments-lactiques -> fr:ferments-lactiques  ]  [ ferments -> fr:ferments  ]  [ coagulant -> fr:coagulant  ]  [ tomate-saladg-20 -> fr:tomate-saladg-20  ]  [ tomate-saladg -> fr:tomate-saladg  ]  [ tomate -> fr:tomate  ]  [ 4 -> en:fd-c  ]  [ huile-d-olive-i-basilic -> fr:huile-d-olive-i-basilic  ]  [ huile-d-olive-i -> fr:huile-d-olive-i  ]  [ huile-d-olive -> fr:huile-d-olive  ]  [ huile-d -> fr:huile-d  ]  [ huile -> fr:huile  ] ",
@@ -18283,22 +18284,22 @@ products: any;
       "additives_prev": " [ baguette-poite-vin-pain-baguette-50 -> fr:baguette-poite-vin-pain-baguette-50  ]  [ baguette-poite-vin-pain-baguette -> fr:baguette-poite-vin-pain-baguette  ]  [ baguette-poite-vin-pain -> fr:baguette-poite-vin-pain  ]  [ baguette-poite-vin -> fr:baguette-poite-vin  ]  [ baguette-poite -> fr:baguette-poite  ]  [ baguette -> fr:baguette  ]  [ 6 -> en:fd-c  ]  [ fqrine-de-ble -> fr:fqrine-de-ble  ]  [ fqrine-de -> fr:fqrine-de  ]  [ fqrine -> fr:fqrine  ]  [ eau -> fr:eau  ]  [ sel -> fr:sel  ]  [ levure -> fr:levure  ]  [ gluten -> fr:gluten  ]  [ farine-de-ble-maite -> fr:farine-de-ble-maite  ]  [ farine-de-ble -> fr:farine-de-ble  ]  [ farine-de -> fr:farine-de  ]  [ farine -> fr:farine  ]  [ levure-desactivee -> fr:levure-desactivee  ]  [ levure -> fr:levure  ]  [ acide-ascorbique -> en:e300  -> exists  -- ok  ]  [ garniture-fromage-mi-chevre-46 -> fr:garniture-fromage-mi-chevre-46  ]  [ garniture-fromage-mi-chevre -> fr:garniture-fromage-mi-chevre  ]  [ garniture-fromage-mi -> fr:garniture-fromage-mi  ]  [ garniture-fromage -> fr:garniture-fromage  ]  [ garniture -> fr:garniture  ]  [ lait-pasteurise -> fr:lait-pasteurise  ]  [ lait -> fr:lait  ]  [ 95-0-lait-de-vache -> fr:95-0-lait-de-vache  ]  [ 95-0-lait-de -> fr:95-0-lait-de  ]  [ 95-0-lait -> fr:95-0-lait  ]  [ 95-0 -> fr:95-0  ]  [ 95 -> fr:95  ]  [ 5-0-lait-de-chevre -> fr:5-0-lait-de-chevre  ]  [ 5-0-lait-de -> fr:5-0-lait-de  ]  [ 5-0-lait -> fr:5-0-lait  ]  [ 5-0 -> fr:5-0  ]  [ 5 -> en:fd-c  ]  [ sel -> fr:sel  ]  [ ferments-lactiques-et-daffinage -> fr:ferments-lactiques-et-daffinage  ]  [ ferments-lactiques-et -> fr:ferments-lactiques-et  ]  [ ferments-lactiques -> fr:ferments-lactiques  ]  [ ferments -> fr:ferments  ]  [ coagulant -> fr:coagulant  ]  [ tomate-saladg-20 -> fr:tomate-saladg-20  ]  [ tomate-saladg -> fr:tomate-saladg  ]  [ tomate -> fr:tomate  ]  [ 4 -> en:fd-c  ]  [ huile-d-olive-i-basilic -> fr:huile-d-olive-i-basilic  ]  [ huile-d-olive-i -> fr:huile-d-olive-i  ]  [ huile-d-olive -> fr:huile-d-olive  ]  [ huile-d -> fr:huile-d  ]  [ huile -> fr:huile  ] ",
       "id": "0000000002264",
       "last_edit_dates_tags": [
-        "2018-02-12",
-        "2018-02",
-        "2018"
+      "2018-02-12",
+      "2018-02",
+      "2018"
       ],
       "ingredients_n": 18,
       "labels_prev_hierarchy": [],
       "quality_tags": [
-        "ingredients-50-percent-unknown"
+      "ingredients-50-percent-unknown"
       ],
       "nutrition_grades": "a",
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "languages_codes": {
         "fr": 5
@@ -18306,11 +18307,11 @@ products: any;
       "categories_hierarchy": [],
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "allergens_tags": [
-        "en:gluten",
-        "en:milk"
+      "en:gluten",
+      "en:milk"
       ],
       "nutriments": {
         "fat_unit": "",
@@ -18358,120 +18359,120 @@ products: any;
         "fiber_serving": ""
       },
       "entry_dates_tags": [
-        "2018-02-12",
-        "2018-02",
-        "2018"
+      "2018-02-12",
+      "2018-02",
+      "2018"
       ],
       "ingredients_text_debug_tags": [],
       "ingredients": [
-        {
-          "rank": 1,
-          "id": "fr:baguette Poite vin Pain baguette",
-          "percent": "50.6",
-          "text": "baguette Poite vin Pain baguette"
-        },
-        {
-          "text": "fqrine de BLÉ",
-          "rank": 2,
-          "id": "fr:fqrine de BLÉ"
-        },
-        {
-          "rank": 3,
-          "id": "en:water",
-          "text": "eau"
-        },
-        {
-          "text": "sel",
-          "id": "en:salt",
-          "rank": 4
-        },
-        {
-          "text": "levure",
-          "rank": 5,
-          "id": "en:yeast"
-        },
-        {
-          "text": "GLUTEN",
-          "rank": 6,
-          "id": "en:gluten"
-        },
-        {
-          "text": "farine de BLE maité",
-          "rank": 7,
-          "id": "fr:farine de BLE maité"
-        },
-        {
-          "rank": 8,
-          "id": "fr:levure-desactivee",
-          "text": "levure désactivée"
-        },
-        {
-          "id": "en:ascorbic-acid",
-          "rank": 9,
-          "text": "acide ascorbique"
-        },
-        {
-          "rank": 10,
-          "id": "fr:Garniture FROMAGE mi-chèvre",
-          "percent": "46",
-          "text": "Garniture FROMAGE mi-chèvre"
-        },
-        {
-          "text": "tomate saladg",
-          "percent": "20.4",
-          "id": "fr:tomate saladg",
-          "rank": 11
-        },
-        {
-          "text": "huile d'olive I basilic",
-          "id": "fr:huile d'olive I basilic",
-          "percent": "1",
-          "rank": 12
-        },
-        {
-          "id": "fr:lait-pasteurise",
-          "text": "LAIT pasteurisé"
-        },
-        {
-          "text": "95 0% LAIT de vache",
-          "id": "fr:95 0 % LAIT de vache"
-        },
-        {
-          "text": "5 0% LAIT de chèvre",
-          "id": "fr:5 0 % LAIT de chèvre"
-        },
-        {
-          "id": "en:salt",
-          "text": "sel"
-        },
-        {
-          "text": "FERMENTS LACTIQUES et daffinage",
-          "id": "fr:FERMENTS LACTIQUES et daffinage"
-        },
-        {
-          "id": "fr:coagulant",
-          "text": "coagulant"
-        }
+      {
+        "rank": 1,
+        "id": "fr:baguette Poite vin Pain baguette",
+        "percent": "50.6",
+        "text": "baguette Poite vin Pain baguette"
+      },
+      {
+        "text": "fqrine de BLÉ",
+        "rank": 2,
+        "id": "fr:fqrine de BLÉ"
+      },
+      {
+        "rank": 3,
+        "id": "en:water",
+        "text": "eau"
+      },
+      {
+        "text": "sel",
+        "id": "en:salt",
+        "rank": 4
+      },
+      {
+        "text": "levure",
+        "rank": 5,
+        "id": "en:yeast"
+      },
+      {
+        "text": "GLUTEN",
+        "rank": 6,
+        "id": "en:gluten"
+      },
+      {
+        "text": "farine de BLE maité",
+        "rank": 7,
+        "id": "fr:farine de BLE maité"
+      },
+      {
+        "rank": 8,
+        "id": "fr:levure-desactivee",
+        "text": "levure désactivée"
+      },
+      {
+        "id": "en:ascorbic-acid",
+        "rank": 9,
+        "text": "acide ascorbique"
+      },
+      {
+        "rank": 10,
+        "id": "fr:Garniture FROMAGE mi-chèvre",
+        "percent": "46",
+        "text": "Garniture FROMAGE mi-chèvre"
+      },
+      {
+        "text": "tomate saladg",
+        "percent": "20.4",
+        "id": "fr:tomate saladg",
+        "rank": 11
+      },
+      {
+        "text": "huile d'olive I basilic",
+        "id": "fr:huile d'olive I basilic",
+        "percent": "1",
+        "rank": 12
+      },
+      {
+        "id": "fr:lait-pasteurise",
+        "text": "LAIT pasteurisé"
+      },
+      {
+        "text": "95 0% LAIT de vache",
+        "id": "fr:95 0 % LAIT de vache"
+      },
+      {
+        "text": "5 0% LAIT de chèvre",
+        "id": "fr:5 0 % LAIT de chèvre"
+      },
+      {
+        "id": "en:salt",
+        "text": "sel"
+      },
+      {
+        "text": "FERMENTS LACTIQUES et daffinage",
+        "id": "fr:FERMENTS LACTIQUES et daffinage"
+      },
+      {
+        "id": "fr:coagulant",
+        "text": "coagulant"
+      }
       ],
       "vitamins_tags": [
-        "en:l-ascorbic-acid"
+      "en:l-ascorbic-acid"
       ],
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000002264",
-        "000000000226x",
-        "00000000022xx",
-        "0000000002xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000002264",
+      "000000000226x",
+      "00000000022xx",
+      "0000000002xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "ingredients_text_debug": "baguette Poite vin Pain baguette 50,6%: fqrine de BLÉ, eau, sel, levure, GLUTEN, farine de BLE maité, levure désactivée, acide ascorbique, Garniture FROMAGE mi-chèvre 46% (LAIT pasteurisé [95 0% LAIT de vache, 5 0% LAIT de chèvre], sel, FERMENTS LACTIQUES et daffinage, coagulant), tomate saladg 20,4%, huile d'olive I basilic ",
@@ -18482,32 +18483,32 @@ products: any;
       "pnns_groups_1": "unknown",
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "additives_prev_tags": [
-        "en:e300"
+      "en:e300"
       ],
       "additives_prev_n": 1,
       "additives_debug_tags": [
-        "en-e300-removed"
+      "en-e300-removed"
       ],
       "labels_hierarchy": [],
       "nutrition_data_per_debug_tags": [],
       "update_key": "nova20180918",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "languages": {
@@ -18523,84 +18524,84 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "amino_acids_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "traces_tags": [],
       "ingredients_hierarchy": [
-        "fr:baguette Poite vin Pain baguette",
-        "fr:fqrine de BLÉ",
-        "en:water",
-        "en:salt",
-        "en:yeast",
-        "en:raising-agent",
-        "en:gluten",
-        "fr:farine de BLE maité",
-        "fr:levure-desactivee",
-        "en:ascorbic-acid",
-        "fr:Garniture FROMAGE mi-chèvre",
-        "fr:tomate saladg",
-        "fr:huile d'olive I basilic",
-        "fr:lait-pasteurise",
-        "en:milk",
-        "fr:95 0 % LAIT de vache",
-        "fr:5 0 % LAIT de chèvre",
-        "en:salt",
-        "fr:FERMENTS LACTIQUES et daffinage",
-        "fr:coagulant"
+      "fr:baguette Poite vin Pain baguette",
+      "fr:fqrine de BLÉ",
+      "en:water",
+      "en:salt",
+      "en:yeast",
+      "en:raising-agent",
+      "en:gluten",
+      "fr:farine de BLE maité",
+      "fr:levure-desactivee",
+      "en:ascorbic-acid",
+      "fr:Garniture FROMAGE mi-chèvre",
+      "fr:tomate saladg",
+      "fr:huile d'olive I basilic",
+      "fr:lait-pasteurise",
+      "en:milk",
+      "fr:95 0 % LAIT de vache",
+      "fr:5 0 % LAIT de chèvre",
+      "en:salt",
+      "fr:FERMENTS LACTIQUES et daffinage",
+      "fr:coagulant"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "_keywords": [
-        "poitevin",
-        "crou",
-        "resto",
-        "baguette"
+      "poitevin",
+      "crou",
+      "resto",
+      "baguette"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "brands_tags": [
-        "crous-resto"
+      "crous-resto"
       ],
       "ingredients_tags": [
-        "fr:baguette-poite-vin-pain-baguette",
-        "fr:fqrine-de-ble",
-        "en:water",
-        "en:salt",
-        "en:yeast",
-        "en:raising-agent",
-        "en:gluten",
-        "fr:farine-de-ble-maite",
-        "fr:levure-desactivee",
-        "en:ascorbic-acid",
-        "fr:garniture-fromage-mi-chevre",
-        "fr:tomate-saladg",
-        "fr:huile-d-olive-i-basilic",
-        "fr:lait-pasteurise",
-        "en:milk",
-        "fr:95-0-lait-de-vache",
-        "fr:5-0-lait-de-chevre",
-        "en:salt",
-        "fr:ferments-lactiques-et-daffinage",
-        "fr:coagulant"
+      "fr:baguette-poite-vin-pain-baguette",
+      "fr:fqrine-de-ble",
+      "en:water",
+      "en:salt",
+      "en:yeast",
+      "en:raising-agent",
+      "en:gluten",
+      "fr:farine-de-ble-maite",
+      "fr:levure-desactivee",
+      "en:ascorbic-acid",
+      "fr:garniture-fromage-mi-chevre",
+      "fr:tomate-saladg",
+      "fr:huile-d-olive-i-basilic",
+      "fr:lait-pasteurise",
+      "en:milk",
+      "fr:95-0-lait-de-vache",
+      "fr:5-0-lait-de-chevre",
+      "en:salt",
+      "fr:ferments-lactiques-et-daffinage",
+      "fr:coagulant"
       ],
       "nutrition_score_debug": "no score when the product does not have a category",
       "traces_from_ingredients": "",
@@ -18609,162 +18610,162 @@ products: any;
       "pnns_groups_2": "unknown",
       "sortkey": 518439971,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "categories": "",
       "labels_debug_tags": [],
       "ingredients_text_with_allergens": "baguette Poite vin Pain baguette 50,6%: fqrine de <span class=\"allergen\">BLÉ</span>, eau, sel, levure, <span class=\"allergen\">GLUTEN</span>, farine de <span class=\"allergen\">BLE</span> maité, levure désactivée, acide ascorbique, Garniture <span class=\"allergen\">FROMAGE</span> mi-chèvre 46% (<span class=\"allergen\">LAIT</span> pasteurisé [95 0% <span class=\"allergen\">LAIT</span> de vache, 5 0% <span class=\"allergen\">LAIT</span> de chèvre], sel, FERMENTS <span class=\"allergen\">LACTIQUES</span> et daffinage, coagulant), tomate saladg 20,4%, huile d'olive I basilic 1%",
       "categories_tags": [],
       "allergens_hierarchy": [
-        "en:gluten",
-        "en:milk"
+      "en:gluten",
+      "en:milk"
       ],
       "last_image_dates_tags": [
-        "2018-02-12",
-        "2018-02",
-        "2018"
+      "2018-02-12",
+      "2018-02",
+      "2018"
       ],
       "brands": "Crous resto",
       "created_t": 1518439960,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_from_palm_oil_n": 0,
       "creator": "kiliweb",
       "additives_prev_original_tags": [
-        "en:e300"
+      "en:e300"
       ],
       "pnns_groups_2_tags": [
-        "unknown"
+      "unknown"
       ],
       "ingredients_text": "baguette Poite vin Pain baguette 50,6%: fqrine de BLÉ, eau, sel, levure, GLUTEN, farine de BLE maité, levure désactivée, acide ascorbique, Garniture FROMAGE mi-chèvre 46% (LAIT pasteurisé [95 0% LAIT de vache, 5 0% LAIT de chèvre], sel, FERMENTS LACTIQUES et daffinage, coagulant), tomate saladg 20,4%, huile d'olive I basilic 1%",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "3",
       "ingredients_n_tags": [
-        "18",
-        "11-20"
+      "18",
+      "11-20"
       ],
       "ingredients_debug": [
-        "baguette Poite vin Pain baguette 50",
-        ",",
-        null,
-        null,
-        null,
-        "6%",
-        ":",
-        ":",
-        null,
-        null,
-        " fqrine de BLÉ",
-        ",",
-        null,
-        null,
-        null,
-        " eau",
-        ",",
-        null,
-        null,
-        null,
-        " sel",
-        ",",
-        null,
-        null,
-        null,
-        " levure",
-        ",",
-        null,
-        null,
-        null,
-        " GLUTEN",
-        ",",
-        null,
-        null,
-        null,
-        " farine de BLE maité",
-        ",",
-        null,
-        null,
-        null,
-        " levure désactivée",
-        ",",
-        null,
-        null,
-        null,
-        " acide ascorbique",
-        ",",
-        null,
-        null,
-        null,
-        " Garniture FROMAGE mi-chèvre 46% ",
-        "(",
-        "(",
-        null,
-        null,
-        "LAIT pasteurisé ",
-        "[",
-        "[",
-        null,
-        null,
-        "95 0% LAIT de vache",
-        ",",
-        null,
-        null,
-        null,
-        " 5 0% LAIT de chèvre]",
-        ",",
-        null,
-        null,
-        null,
-        " sel",
-        ",",
-        null,
-        null,
-        null,
-        " FERMENTS LACTIQUES et daffinage",
-        ",",
-        null,
-        null,
-        null,
-        " coagulant)",
-        ",",
-        null,
-        null,
-        null,
-        " tomate saladg 20",
-        ",",
-        null,
-        null,
-        null,
-        "4%",
-        ",",
-        null,
-        null,
-        null,
-        " huile d'olive I basilic "
+      "baguette Poite vin Pain baguette 50",
+      ",",
+      null,
+      null,
+      null,
+      "6%",
+      ":",
+      ":",
+      null,
+      null,
+      " fqrine de BLÉ",
+      ",",
+      null,
+      null,
+      null,
+      " eau",
+      ",",
+      null,
+      null,
+      null,
+      " sel",
+      ",",
+      null,
+      null,
+      null,
+      " levure",
+      ",",
+      null,
+      null,
+      null,
+      " GLUTEN",
+      ",",
+      null,
+      null,
+      null,
+      " farine de BLE maité",
+      ",",
+      null,
+      null,
+      null,
+      " levure désactivée",
+      ",",
+      null,
+      null,
+      null,
+      " acide ascorbique",
+      ",",
+      null,
+      null,
+      null,
+      " Garniture FROMAGE mi-chèvre 46% ",
+      "(",
+      "(",
+      null,
+      null,
+      "LAIT pasteurisé ",
+      "[",
+      "[",
+      null,
+      null,
+      "95 0% LAIT de vache",
+      ",",
+      null,
+      null,
+      null,
+      " 5 0% LAIT de chèvre]",
+      ",",
+      null,
+      null,
+      null,
+      " sel",
+      ",",
+      null,
+      null,
+      null,
+      " FERMENTS LACTIQUES et daffinage",
+      ",",
+      null,
+      null,
+      null,
+      " coagulant)",
+      ",",
+      null,
+      null,
+      null,
+      " tomate saladg 20",
+      ",",
+      null,
+      null,
+      null,
+      "4%",
+      ",",
+      null,
+      null,
+      null,
+      " huile d'olive I basilic "
       ],
       "ingredients_ids_debug": [
-        "baguette-poite-vin-pain-baguette-50",
-        "6",
-        "fqrine-de-ble",
-        "eau",
-        "sel",
-        "levure",
-        "gluten",
-        "farine-de-ble-maite",
-        "levure-desactivee",
-        "acide-ascorbique",
-        "garniture-fromage-mi-chevre-46",
-        "lait-pasteurise",
-        "95-0-lait-de-vache",
-        "5-0-lait-de-chevre",
-        "sel",
-        "ferments-lactiques-et-daffinage",
-        "coagulant",
-        "tomate-saladg-20",
-        "4",
-        "huile-d-olive-i-basilic"
+      "baguette-poite-vin-pain-baguette-50",
+      "6",
+      "fqrine-de-ble",
+      "eau",
+      "sel",
+      "levure",
+      "gluten",
+      "farine-de-ble-maite",
+      "levure-desactivee",
+      "acide-ascorbique",
+      "garniture-fromage-mi-chevre-46",
+      "lait-pasteurise",
+      "95-0-lait-de-vache",
+      "5-0-lait-de-chevre",
+      "sel",
+      "ferments-lactiques-et-daffinage",
+      "coagulant",
+      "tomate-saladg-20",
+      "4",
+      "huile-d-olive-i-basilic"
       ],
       "allergens_from_ingredients": "BLÉ, GLUTEN, BLE, FROMAGE, LAIT, LAIT, LAIT, LACTIQUES",
       "unknown_nutrients_tags": [],
@@ -18779,32 +18780,32 @@ products: any;
       "countries": "France",
       "product_name_fr": "Baguette Poitevin",
       "ingredients_original_tags": [
-        "fr:baguette Poite vin Pain baguette",
-        "fr:fqrine de BLÉ",
-        "en:water",
-        "en:salt",
-        "en:yeast",
-        "en:gluten",
-        "fr:farine de BLE maité",
-        "fr:levure-desactivee",
-        "en:ascorbic-acid",
-        "fr:Garniture FROMAGE mi-chèvre",
-        "fr:tomate saladg",
-        "fr:huile d'olive I basilic",
-        "fr:lait-pasteurise",
-        "fr:95 0 % LAIT de vache",
-        "fr:5 0 % LAIT de chèvre",
-        "en:salt",
-        "fr:FERMENTS LACTIQUES et daffinage",
-        "fr:coagulant"
+      "fr:baguette Poite vin Pain baguette",
+      "fr:fqrine de BLÉ",
+      "en:water",
+      "en:salt",
+      "en:yeast",
+      "en:gluten",
+      "fr:farine de BLE maité",
+      "fr:levure-desactivee",
+      "en:ascorbic-acid",
+      "fr:Garniture FROMAGE mi-chèvre",
+      "fr:tomate saladg",
+      "fr:huile d'olive I basilic",
+      "fr:lait-pasteurise",
+      "fr:95 0 % LAIT de vache",
+      "fr:5 0 % LAIT de chèvre",
+      "en:salt",
+      "fr:FERMENTS LACTIQUES et daffinage",
+      "fr:coagulant"
       ],
       "minerals_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [
-        "en:e300"
+      "en:e300"
       ],
       "lc": "fr",
       "additives_old_n": 1,
@@ -18816,34 +18817,34 @@ products: any;
     {
       "_id": "0000000002400",
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "ingredients_tags": [],
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
       "sortkey": 520248080,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "last_image_dates_tags": [
-        "2018-03-05",
-        "2018-03",
-        "2018"
+      "2018-03-05",
+      "2018-03",
+      "2018"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "created_t": 1520248076,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "creator": "kiliweb",
       "additives_prev_original_tags": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "2",
       "ingredients_debug": [],
@@ -18861,7 +18862,7 @@ products: any;
       "product_name_fr": "Ciabatta Bombay",
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "additives_old_tags": [],
       "lc": "fr",
@@ -18977,24 +18978,24 @@ products: any;
       "allergens": "",
       "id": "0000000002400",
       "last_edit_dates_tags": [
-        "2018-03-05",
-        "2018-03",
-        "2018"
+      "2018-03-05",
+      "2018-03",
+      "2018"
       ],
       "quality_tags": [],
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "languages_codes": {
         "fr": 3
       },
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "nutriments": {
         "saturated-fat_unit": "",
@@ -19038,25 +19039,25 @@ products: any;
       },
       "allergens_tags": [],
       "entry_dates_tags": [
-        "2018-03-05",
-        "2018-03",
-        "2018"
+      "2018-03-05",
+      "2018-03",
+      "2018"
       ],
       "codes_tags": [
-        "code-13",
-        "0000000002400",
-        "000000000240x",
-        "00000000024xx",
-        "0000000002xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000002400",
+      "000000000240x",
+      "00000000024xx",
+      "0000000002xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "product_name_debug_tags": [],
@@ -19067,26 +19068,26 @@ products: any;
       "ingredients_from_palm_oil_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "update_key": "nova20180918",
       "nutrition_data_per_debug_tags": [],
       "additives_debug_tags": [],
       "additives_prev_tags": [],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "languages": {
         "en:french": 3
@@ -19102,27 +19103,27 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "_keywords": [
-        "ciabatta",
-        "bombay"
+      "ciabatta",
+      "bombay"
       ],
       "ingredients_hierarchy": [],
       "traces_tags": []
@@ -19171,25 +19172,25 @@ products: any;
       },
       "allergens_tags": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "complete": 0,
       "languages_codes": {
         "fr": 2
       },
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "quality_tags": [],
       "id": "0000000002417",
       "last_edit_dates_tags": [
-        "2018-03-22",
-        "2018-03",
-        "2018"
+      "2018-03-22",
+      "2018-03",
+      "2018"
       ],
       "nutrient_levels_tags": [],
       "allergens": "",
@@ -19250,29 +19251,29 @@ products: any;
       "ingredients_text_with_allergens_fr": null,
       "last_image_t": 1521725617,
       "_keywords": [
-        "ciabatta",
-        "roma"
+      "ciabatta",
+      "roma"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "nucleotides_prev_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "ingredients_that_may_be_from_palm_oil_tags": [],
@@ -19287,19 +19288,19 @@ products: any;
         "en:french": 2
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "nutrition_data_per_debug_tags": [],
@@ -19307,70 +19308,70 @@ products: any;
       "additives_debug_tags": [],
       "additives_prev_tags": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "interface_version_created": "20150316.jqm2",
       "ingredients_from_palm_oil_tags": [],
       "no_nutrition_data": "",
       "ingredients_text_debug": null,
       "codes_tags": [
-        "code-13",
-        "0000000002417",
-        "000000000241x",
-        "00000000024xx",
-        "0000000002xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000002417",
+      "000000000241x",
+      "00000000024xx",
+      "0000000002xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "product_name_debug_tags": [],
       "vitamins_tags": [],
       "ingredients": [],
       "entry_dates_tags": [
-        "2018-03-22",
-        "2018-03",
-        "2018"
+      "2018-03-22",
+      "2018-03",
+      "2018"
       ],
       "ingredients_debug": [],
       "nutrition_data_prepared_per": "100g",
       "ingredients_ids_debug": [],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "max_imgid": "1",
       "additives_prev_original_tags": [],
       "creator": "kiliweb",
       "created_t": 1521725615,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "last_image_dates_tags": [
-        "2018-03-22",
-        "2018-03",
-        "2018"
+      "2018-03-22",
+      "2018-03",
+      "2018"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "sortkey": 521725617,
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
       "ingredients_tags": [],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "code": "0000000002417",
       "minerals_prev_tags": [],
@@ -19380,7 +19381,7 @@ products: any;
       "additives_old_tags": [],
       "traces_hierarchy": [],
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "minerals_tags": [],
       "ingredients_original_tags": [],
@@ -19402,7 +19403,7 @@ products: any;
       "last_editor": null,
       "vitamins_prev_tags": [],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "additives_original_tags": [],
       "nova_group_debug": "no nova group when the product does not have ingredients",
@@ -19453,7 +19454,7 @@ products: any;
       "vitamins_tags": [],
       "sortkey": 538739049,
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "languages_codes": {
         "fr": 3
@@ -19558,18 +19559,18 @@ products: any;
         }
       },
       "last_image_dates_tags": [
-        "2018-10-05",
-        "2018-10",
-        "2018"
+      "2018-10-05",
+      "2018-10",
+      "2018"
       ],
       "code": "0000000003018",
       "last_image_t": 1538739049,
       "nutrition_data_per_debug_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "traces_from_ingredients": "",
       "created_t": 1538739046,
@@ -19579,19 +19580,19 @@ products: any;
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "ingredients_text_with_allergens_fr": null,
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "countries": "en:france",
@@ -19599,14 +19600,14 @@ products: any;
       "ingredients_from_palm_oil_tags": [],
       "id": "0000000003018",
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "amino_acids_tags": [],
       "lang": "fr",
       "lc": "fr",
       "ingredients_original_tags": [],
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "additives_old_tags": [],
       "quality_tags": [],
@@ -19614,59 +19615,59 @@ products: any;
       "nutrition_data_prepared_per": "100g",
       "allergens_from_ingredients": "",
       "editors_tags": [
-        "openfoodfacts-contributors",
-        "kiliweb"
+      "openfoodfacts-contributors",
+      "kiliweb"
       ],
       "interface_version_created": "20150316.jqm2",
       "allergens_hierarchy": [],
       "additives_debug_tags": [],
       "last_edit_dates_tags": [
-        "2018-10-05",
-        "2018-10",
-        "2018"
+      "2018-10-05",
+      "2018-10",
+      "2018"
       ],
       "_keywords": [
-        "salade",
-        "tomate"
+      "salade",
+      "tomate"
       ],
       "last_modified_by": null,
       "additives_prev_tags": [],
       "entry_dates_tags": [
-        "2018-10-05",
-        "2018-10",
-        "2018"
+      "2018-10-05",
+      "2018-10",
+      "2018"
       ],
       "languages": {
         "en:french": 3
       },
       "nutrient_levels": {},
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_text_with_allergens": null,
       "amino_acids_prev_tags": [],
       "ingredients_hierarchy": [],
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "last_modified_t": 1538739049,
       "nucleotides_tags": [],
@@ -19683,24 +19684,24 @@ products: any;
       "minerals_prev_tags": [],
       "interface_version_modified": "20150316.jqm2",
       "codes_tags": [
-        "code-13",
-        "0000000003018",
-        "000000000301x",
-        "00000000030xx",
-        "0000000003xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000003018",
+      "000000000301x",
+      "00000000030xx",
+      "0000000003xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "ingredients_ids_debug": [],
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "nutrition_score_debug": "no score when the product does not have a category",
       "no_nutrition_data": "",
@@ -19710,38 +19711,38 @@ products: any;
     {
       "_id": "0000000003087",
       "photographers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "created_t": 1474103866,
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "brands": "Ferme t'y R'nao",
       "last_image_dates_tags": [
-        "2016-09-17",
-        "2016-09",
-        "2016"
+      "2016-09-17",
+      "2016-09",
+      "2016"
       ],
       "ingredients_debug": [],
       "ingredients_ids_debug": [],
       "max_imgid": "1",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "additives_prev_original_tags": [],
       "creator": "openfoodfacts-contributors",
       "ingredients_tags": [],
       "brands_tags": [
-        "ferme-t-y-r-nao"
+      "ferme-t-y-r-nao"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "quantity_debug_tags": [],
       "sortkey": 474103893,
@@ -19772,17 +19773,17 @@ products: any;
         "fr": 2
       },
       "informers_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "editors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "quality_tags": [],
       "allergens_tags": [],
       "nutriments": {},
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "additives_tags": [],
       "nucleotides_tags": [],
@@ -19840,9 +19841,9 @@ products: any;
       "ingredients_text_with_allergens_fr": null,
       "last_image_t": 1474103866,
       "last_edit_dates_tags": [
-        "2016-09-17",
-        "2016-09",
-        "2016"
+      "2016-09-17",
+      "2016-09",
+      "2016"
       ],
       "id": "0000000003087",
       "allergens": "",
@@ -19859,45 +19860,45 @@ products: any;
         "en:french": 2
       },
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "_keywords": [
-        "de",
-        "farine",
-        "nao",
-        "ble",
-        "ferme",
-        "noir"
+      "de",
+      "farine",
+      "nao",
+      "ble",
+      "ferme",
+      "noir"
       ],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-to-be-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-to-be-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "amino_acids_tags": [],
       "nucleotides_prev_tags": [],
@@ -19906,36 +19907,36 @@ products: any;
       "ingredients_text_debug": null,
       "product_name_debug_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000003087",
-        "000000000308x",
-        "00000000030xx",
-        "0000000003xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000003087",
+      "000000000308x",
+      "00000000030xx",
+      "0000000003xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "vitamins_tags": [],
       "ingredients": [],
       "quantity": "1kg",
       "entry_dates_tags": [
-        "2016-09-17",
-        "2016-09",
-        "2016"
+      "2016-09-17",
+      "2016-09",
+      "2016"
       ],
       "additives_debug_tags": [],
       "additives_prev_tags": [],
       "update_key": "nova20180918",
       "interface_version_created": "20120622",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "ingredients_from_palm_oil_tags": []
     },
@@ -19944,9 +19945,9 @@ products: any;
       "allergens": "",
       "nutrient_levels_tags": [],
       "last_edit_dates_tags": [
-        "2018-03-09",
-        "2018-03",
-        "2018"
+      "2018-03-09",
+      "2018-03",
+      "2018"
       ],
       "id": "0000000003384",
       "interface_version_modified": "20150316.jqm2",
@@ -20073,7 +20074,7 @@ products: any;
       },
       "complete": 0,
       "misc_tags": [
-        "en:nutriscore-not-computed"
+      "en:nutriscore-not-computed"
       ],
       "allergens_tags": [],
       "nutriments": {
@@ -20117,11 +20118,11 @@ products: any;
         "energy_unit": "kcal"
       },
       "informers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "editors_tags": [
-        "kiliweb",
-        "openfoodfacts-contributors"
+      "kiliweb",
+      "openfoodfacts-contributors"
       ],
       "languages_codes": {
         "fr": 3
@@ -20129,7 +20130,7 @@ products: any;
       "quality_tags": [],
       "interface_version_created": "20150316.jqm2",
       "countries_hierarchy": [
-        "en:france"
+      "en:france"
       ],
       "additives_debug_tags": [],
       "additives_prev_tags": [],
@@ -20139,56 +20140,56 @@ products: any;
       "ingredients_text_debug": null,
       "no_nutrition_data": "",
       "entry_dates_tags": [
-        "2018-03-09",
-        "2018-03",
-        "2018"
+      "2018-03-09",
+      "2018-03",
+      "2018"
       ],
       "ingredients": [],
       "vitamins_tags": [],
       "codes_tags": [
-        "code-13",
-        "0000000003384",
-        "000000000338x",
-        "00000000033xx",
-        "0000000003xxx",
-        "000000000xxxx",
-        "00000000xxxxx",
-        "0000000xxxxxx",
-        "000000xxxxxxx",
-        "00000xxxxxxxx",
-        "0000xxxxxxxxx",
-        "000xxxxxxxxxx",
-        "00xxxxxxxxxxx",
-        "0xxxxxxxxxxxx"
+      "code-13",
+      "0000000003384",
+      "000000000338x",
+      "00000000033xx",
+      "0000000003xxx",
+      "000000000xxxx",
+      "00000000xxxxx",
+      "0000000xxxxxx",
+      "000000xxxxxxx",
+      "00000xxxxxxxx",
+      "0000xxxxxxxxx",
+      "000xxxxxxxxxx",
+      "00xxxxxxxxxxx",
+      "0xxxxxxxxxxxx"
       ],
       "last_editor": null,
       "product_name_debug_tags": [],
       "traces_tags": [],
       "ingredients_hierarchy": [],
       "countries_tags": [
-        "en:france"
+      "en:france"
       ],
       "_keywords": [
-        "douceur",
-        "mousse",
-        "chocolat"
+      "douceur",
+      "mousse",
+      "chocolat"
       ],
       "ingredients_that_may_be_from_palm_oil_tags": [],
       "amino_acids_tags": [],
       "states_tags": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "nucleotides_prev_tags": [],
       "countries_debug_tags": [],
@@ -20199,19 +20200,19 @@ products: any;
       "rev": 10,
       "product_name": "Mousse chocolat douceur",
       "states_hierarchy": [
-        "en:to-be-completed",
-        "en:nutrition-facts-completed",
-        "en:ingredients-to-be-completed",
-        "en:expiration-date-to-be-completed",
-        "en:packaging-code-to-be-completed",
-        "en:characteristics-to-be-completed",
-        "en:categories-to-be-completed",
-        "en:brands-to-be-completed",
-        "en:packaging-to-be-completed",
-        "en:quantity-to-be-completed",
-        "en:product-name-completed",
-        "en:photos-to-be-validated",
-        "en:photos-uploaded"
+      "en:to-be-completed",
+      "en:nutrition-facts-completed",
+      "en:ingredients-to-be-completed",
+      "en:expiration-date-to-be-completed",
+      "en:packaging-code-to-be-completed",
+      "en:characteristics-to-be-completed",
+      "en:categories-to-be-completed",
+      "en:brands-to-be-completed",
+      "en:packaging-to-be-completed",
+      "en:quantity-to-be-completed",
+      "en:product-name-completed",
+      "en:photos-to-be-validated",
+      "en:photos-uploaded"
       ],
       "lang": "fr",
       "languages": {
@@ -20219,21 +20220,21 @@ products: any;
       },
       "sortkey": 520597247,
       "languages_hierarchy": [
-        "en:french"
+      "en:french"
       ],
       "traces_from_ingredients": "",
       "nutrition_score_debug": "no score when the product does not have a category",
       "ingredients_tags": [],
       "nutrition_grades_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "languages_tags": [
-        "en:french",
-        "en:1"
+      "en:french",
+      "en:1"
       ],
       "max_imgid": "3",
       "nova_group_tags": [
-        "not-applicable"
+      "not-applicable"
       ],
       "ingredients_debug": [],
       "ingredients_ids_debug": [],
@@ -20241,14 +20242,14 @@ products: any;
       "additives_prev_original_tags": [],
       "created_t": 1520597206,
       "photographers_tags": [
-        "kiliweb"
+      "kiliweb"
       ],
       "ingredients_text_with_allergens": null,
       "allergens_hierarchy": [],
       "last_image_dates_tags": [
-        "2018-03-09",
-        "2018-03",
-        "2018"
+      "2018-03-09",
+      "2018-03",
+      "2018"
       ],
       "countries": "en:france",
       "product_name_fr": "Mousse chocolat douceur",
@@ -20267,12 +20268,15 @@ products: any;
       "lc": "fr",
       "states": "en:to-be-completed, en:nutrition-facts-completed, en:ingredients-to-be-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-to-be-completed, en:categories-to-be-completed, en:brands-to-be-completed, en:packaging-to-be-completed, en:quantity-to-be-completed, en:product-name-completed, en:photos-to-be-validated, en:photos-uploaded",
       "correctors_tags": [
-        "openfoodfacts-contributors"
+      "openfoodfacts-contributors"
       ],
       "traces_hierarchy": [],
       "additives_old_tags": []
     }
-  ];
+    ];
 
-}
+  }
+  delete() {
+    this.products.delete(this.products);
+  }
 }

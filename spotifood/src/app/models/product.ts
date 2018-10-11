@@ -1,4 +1,4 @@
-import { nutriments } from './nutriments';
+import { Nutriments } from './nutriments';
 
 export class Product {
   id: string;

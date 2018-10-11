@@ -18,11 +18,11 @@ export class FormAdminEditComponent implements OnInit {
     nutriments: {}
   };
 
-  constructor(private FormService: FormService, private route: ActivatedRoute, private router: Router, 
+  constructor(private FormService: FormService, private route: ActivatedRoute, private router: Router,
   private location: Location) { }
 
   ngOnInit() {
-    let id = +this.route.snapshot.paramMap.get('id');
+    const id = +this.route.snapshot.paramMap.get('id');
 
     this.getProduct(id);
   }

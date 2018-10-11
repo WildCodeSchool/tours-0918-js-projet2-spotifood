@@ -9,8 +9,8 @@ export class ProduitAdminComponent implements OnInit {
 products: any;
 
   ngOnInit() {
-   
-this.products = [
+  
+    this.products = [
     {
       "_id": 638097545939,
       "additives_n": 0,

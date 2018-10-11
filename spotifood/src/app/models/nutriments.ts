@@ -1,7 +1,7 @@
 
-export class Nutriments {
+export class Nutrients {
     lipids: number;
     saturated: number;
-    sugar: number;
+    sugars: number;
     salt: number;
 }

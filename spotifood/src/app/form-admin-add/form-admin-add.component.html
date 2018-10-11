@@ -5,7 +5,7 @@
     <legend class="form-legend">Ajouter / modifier un produit</legend>
 
     <div class="form-element form-input">
-      <input name="name" id="field-name" class="form-element-field" [(ngModel)]="product['product_name_fr']" placeholder="Saisissez le nom du produit" type="input" required />
+      <input name="name" id="field-name" class="form-element-field" [(ngModel)]="product.name" placeholder="Saisissez le nom du produit" type="input" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-name">Nom</label>
       <small class="form-element-hint">(champ obligatoire)</small>
@@ -46,20 +46,20 @@
     </div>
 
     <div class="form-element form-input">
-      <input name="store" id="field-store" class="form-element-field" placeholder="magasin(s) où l'on peut trouver le produit" type="text" />
+      <input name="store" id="field-store" class="form-element-field" [(ngModel)]="product.store" placeholder="magasin(s) où l'on peut trouver le produit" type="text" />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-store">Magasin</label>
     </div>
 
     <div class="form-element form-input">
-      <input name="ingredients" name="brand" id="field-ingredients" class="form-element-field" [(ngModel)]="product['ingredients_text']" placeholder="Listez les ingrédients" type="text" required />
+      <input name="ingredients" name="brand" id="field-ingredients" class="form-element-field" [(ngModel)]="product.ingredients" placeholder="Listez les ingrédients" type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-ingredients">Ingrédients</label>
       <small class="form-element-hint">(champ obligatoire)</small>
     </div>
 
     <div class="form-element form-input">
-      <input name="allergens" id="field-allergens" class="form-element-field" [(ngModel)]="product['allergens_from_ingredients']" placeholder="" type="text" required />
+      <input name="allergens" id="field-allergens" class="form-element-field" [(ngModel)]="product.allergens" placeholder="" type="text" required />
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="field-allergens">Allergènes</label>
       <small class="form-element-hint">(champ obligatoire)</small>
@@ -68,15 +68,15 @@
     <div class="form-radio form-radio-block">
       <div class="form-sublegend">NutriScore</div>
       <div class="pt-3 d-flex flex-wrap">
-        <label class="form-radio-label"> <input name="nutriscore" name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="A" /> <i class="form-radio-button"></i> <span>A</span>
+        <label class="form-radio-label"> <input name="nutriscore" name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutriscore" type="radio" value="a" /> <i class="form-radio-button"></i> <span>A</span>
         </label>
-        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="B" /> <i class="form-radio-button"></i> <span>B</span>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutriscore" type="radio" value="b" /> <i class="form-radio-button"></i> <span>B</span>
         </label>
-        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="C" /> <i class="form-radio-button"></i> <span>C</span>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutriscore" type="radio" value="c" /> <i class="form-radio-button"></i> <span>C</span>
         </label>
-        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="D" /> <i class="form-radio-button"></i> <span>D</span>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutriscore" type="radio" value="d" /> <i class="form-radio-button"></i> <span>D</span>
         </label>
-        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutrition_grades" type="radio" value="E" /> <i class="form-radio-button"></i> <span>E</span>
+        <label class="form-radio-label"> <input name="nutriscore" class="form-radio-field" [(ngModel)]="product.nutriscore" type="radio" value="e" /> <i class="form-radio-button"></i> <span>E</span>
         </label>
       </div>
     </div>
@@ -84,16 +84,29 @@
 <!-- Nutritional values -->
     <div class="form-radio form-radio-block">
       <div class="form-sublegend">Repères nutritionnels pour 100g</div>
-      <div class="form-element form-input"> <input name="lipids" id="field-lipids" class="form-element-field" [(ngModel)]="product.nutriments.fat" placeholder="Valeur en g" type="number" required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
+      
+      <div class="form-element form-input"> 
+        <input name="lipids" id="field-lipids" class="form-element-field" [(ngModel)]="product.nutrients.lipids" placeholder="Valeur en g" type="number" required /> 
+        <div class="form-element-bar"></div> 
+        <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
       </div>
 
-      <div class="form-element form-input"> <input name="saturated" id="field-saturated" class="form-element-field" [(ngModel)]="product.nutriments['saturated-fat']" placeholder="Valeur en g" type="number"   required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
+      <div class="form-element form-input"> 
+        <input name="saturated" id="field-saturated" class="form-element-field" [(ngModel)]="product.nutrients.saturated" placeholder="Valeur en g" type="number" required /> 
+        <div class="form-element-bar"></div> 
+        <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
       </div>
 
-      <div class="form-element form-input"> <input name="sugars" id="field-sugars" class="form-element-field" [(ngModel)]="product.nutriments.sugars" placeholder="Valeur en g" type="number"   required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-sugars">Sucres</label>
+      <div class="form-element form-input"> 
+        <input name="sugars" id="field-sugars" class="form-element-field" [(ngModel)]="product.nutrients.sugars" placeholder="Valeur en g" type="number" required /> 
+        <div class="form-element-bar"></div> 
+        <label class="form-element-label" for="field-sugars">Sucres</label>
       </div>
 
-      <div class="form-element form-input"> <input name="salt" id="field-salt" class="form-element-field" [(ngModel)]="product.nutriments['salt_100g']" placeholder="Valeur en g" type="number"   required /> <div class="form-element-bar"></div> <label class="form-element-label" for="field-salt">Sel</label>
+      <div class="form-element form-input"> 
+        <input name="salt" id="field-salt" class="form-element-field" [(ngModel)]="product.nutrients.salt" placeholder="Valeur en g" type="number" required /> 
+        <div class="form-element-bar"></div> 
+        <label class="form-element-label" for="field-salt">Sel</label>
       </div>
     </div>
 

@@ -1,16 +1,16 @@
-import { Nutriments } from './nutriments';
+import { Nutrients } from './nutriments';
 
 export class Product {
-  id: string;
+  id: string | number;
   name: string;
   quantity: string;
-  brand: string[];
-  labels: string[];
-  categories: string[];
+  brands: string;
+  labels: string;
+  categories: string;
   packaging: string;
-  store: string[];
-  ingredients: string[];
-  allergens: string[];
+  store: string;
+  ingredients: string;
+  allergens: string;
   nutriscore: string;
-  nutriments: Nutriments;
+  nutrients: Nutrients;
 }

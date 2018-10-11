@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormService } from '../common/form.service';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
+import { Product } from '../models/product';
 
 
 @Component({
@@ -11,14 +12,10 @@ import { Location } from '@angular/common';
 })
 export class FormAdminEditComponent implements OnInit {
 
-  // liste des services à afficher
-  products: any[];
   // produit à créer
-  product: any = {
-    nutriments: {}
-  };
+  product: Product = new Product();
 
-  constructor(private FormService: FormService, private route: ActivatedRoute, private router: Router,
+  constructor(private formService: FormService, private route: ActivatedRoute, private router: Router,
   private location: Location) { }
 
   ngOnInit() {
@@ -26,13 +23,16 @@ export class FormAdminEditComponent implements OnInit {
     this.getProduct(id);
   }
 
+  add() {
+    this.formService.add(this.product);
+  }
+
   update() {
-    this.FormService.update(this.product);
-    this.product = {};
+    this.formService.update(this.product);
   }
 
   getProduct(id): void {
-    this.FormService.getProduct(id).subscribe(product => this.product = product);
+    this.product =  this.formService.getProduct(id);
   }
 
 }

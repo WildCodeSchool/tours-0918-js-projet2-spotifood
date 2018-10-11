@@ -1,31 +1,48 @@
-import {
-  Injectable
-} from '@angular/core';
-import {
-  Product
-} from '../models/product';
+import { Injectable } from '@angular/core';
+import { Product } from '../models/product';
+import { Nutrients } from '../models/nutriments';
 import products from './products';
-
-import {
-  Observable,
-  of
-} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FormService {
-  products: any[];
+  // déclaration du tableau products de type Product
+  products: Product[];
   constructor() {
     if (!localStorage.products) {
-      console.log('if');
       // Initialisation du local storage et du tableau products
-      this.products = products;
+      this.products = products.map((x) => {
+
+        const product = new Product();
+
+        product.id = x['_id'];
+        product.name = x['product_name_fr'] ? x['product_name_fr'] : x['product_name'];
+        product.quantity = x.quantity;
+        product.brands = x.brands;
+        product.labels = x.labels;
+        product.categories = x.categories;
+        product.packaging = x.packaging;
+        product.store = x.stores;
+        product.ingredients = x['ingredients_text_fr'] ? x['ingredients_text_fr'] : x.ingredients_text;
+        product.allergens = x.allergens;
+        product.nutriscore = x['nutrition_grade-fr'] ? x['nutrition_grade-fr'] : x['nutrition_grades'];
+
+        product.nutrients = new Nutrients();
+
+        if (x.nutriments) {
+          product.nutrients.lipids = +x.nutriments['fat_100g'];
+          product.nutrients.sugars = +x.nutriments['sugars_100g'];
+          product.nutrients.saturated = +x.nutriments['saturated-fat_100g'];
+          product.nutrients.salt = +x.nutriments['salt_100g'];
+        }
+
+        return product;
+      });
       this.saveToLocalStorage(this.products);
 
     } else {
-      console.log('else');
-
+      // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
       const data = JSON.parse(localStorage.products);
       this.products = data;
     }
@@ -43,13 +60,13 @@ export class FormService {
     this.saveToLocalStorage(this.products);
   }
 
-  saveToLocalStorage(products) {
-    const data = JSON.stringify(products);
+  saveToLocalStorage(elements) {
+    const data = JSON.stringify(elements);
     localStorage.setItem('products', data);
   }
 
-  getProduct(id: number) {
+  getProduct(id: string) {
     // tslint:disable-next-line:triple-equals
-    return of(this.products.find(product => product['_id'] == id));
+    return this.products.find(product => product.id == id);
   }
 }

@@ -3,7 +3,7 @@
 
   <div class="row">
 
-      <div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products | paginate: { itemsPerPage: 3, currentPage: page}">
+      <div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: page}">
               <div *ngIf="product.images;then picture else pictureError"></div>
 
               <ng-template #picture>
@@ -14,11 +14,10 @@
               </ng-template>
 
               <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title">{{product.product_name}}</h5>
+                <h5 class="card-title">{{product.name}}</h5>
                 <p class="card-text mb-auto">Quantity: {{product.quantity}}<br>
                   Emballage: : {{product.packaging}}<br>
-                  Pays de vente :<br>
-                  Magasins : <br></p>
+                  Magasins :{{product.store}} <br></p>
                 <a class="btn btn-outline-primary btn-sm mt-4" role="button" (click)="openMedia(content)">Détail
                   Produit</a>
               </div>
@@ -35,6 +34,7 @@
 <!--End My product list-->
 <!--Pagination-->
 <div>
-  <pagination-controls previousLabel="<-"
-  nextLabel="->" responsive="true" (pageChange)="page = $event"></pagination-controls>
+  <pagination-controls previousLabel=""
+  nextLabel="" responsive="true" (pageChange)="page = $event"></pagination-controls>
 </div>
+

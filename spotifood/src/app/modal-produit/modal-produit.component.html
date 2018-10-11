@@ -1,7 +1,7 @@
 <!--My modal-->
     <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">{{productModal.product_name}}</h4>
+          <h4 class="modal-title">{{productModal.name}}</h4>
             <button type="button" class="close"  (click)="modalInput.dismiss()" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -12,17 +12,16 @@
               <p>Marques : {{productModal.brands}}</p>
               <p>Conditionnement: {{ productModal.packaging}}</p>
               <p>Catégories : {{ productModal.categories}}</p>
-              <p>Pays de vente : {{productModal.countries}}</p>
               <p>Labels, certifications, récompenses : {{productModal.labels}}</p>
           <h5>Ingrédients</h5>
-              <p>Liste des ingrédients : {{productModal.ingredients_text}}</p>
-              <p>produits provoquant des allergies ou intolérances : {{productModal.allergens_from_ingredients}}</p>
+              <p>Liste des ingrédients : {{productModal.ingredients}}</p>
+              <p>produits provoquant des allergies ou intolérances : {{productModal.allergens}}</p>
           <h5>Informations nutritionnelles</h5>
-              <p>NutriScore : {{productModal.nutrition_grades}} </p>
-              <p>Matières grasses / Lipides : {{productModal.nutriments.fat}}</p>
-              <p>Acides gras saturés : {{productModal.nutriments['saturated-fat']}}</p>
+              <p>NutriScore : {{productModal.nutriscore}} </p>
+              <p>Matières grasses / Lipides : {{productModal.nutriments.lipids}}</p>
+              <p>Acides gras saturés : {{productModal.nutriments.aturated}}</p>
               <p>Sucres : {{productModal.nutriments.sugars}}</p>
-              <p>Sel : {{productModal.nutriments.salt_value}}</p>
+              <p>Sel : {{productModal.nutriments.salt}}</p>
         </div>
         <div class="modal-footer">
               <button type="button" class="btn btn-danger" (click)="modalInput.close()">Close</button>

@@ -1,7 +1,15 @@
-import { Injectable } from '@angular/core';
-import { Product } from '../models/product';
+import {
+  Injectable
+} from '@angular/core';
+import {
+  Product
+} from '../models/product';
+import products from './products';
 
-import { Observable, of } from 'rxjs';
+import {
+  Observable,
+  of
+} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +17,20 @@ import { Observable, of } from 'rxjs';
 export class FormService {
   products: any[];
   constructor() {
-    const data = JSON.parse(localStorage.products);
-    this.products = data;
+    if (!localStorage.products) {
+      console.log('if');
+      // Initialisation du local storage et du tableau products
+      this.products = products;
+      this.saveToLocalStorage(this.products);
+
+    } else {
+      console.log('else');
+
+      const data = JSON.parse(localStorage.products);
+      this.products = data;
+    }
   }
+
 
   add(element) {
     element.id = this.products.length;
@@ -30,6 +49,7 @@ export class FormService {
   }
 
   getProduct(id: number) {
-    return of(this.products.find(product => product.id == id));
+    // tslint:disable-next-line:triple-equals
+    return of(this.products.find(product => product['_id'] == id));
   }
 }

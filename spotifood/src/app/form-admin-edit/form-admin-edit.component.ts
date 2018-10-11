@@ -22,8 +22,7 @@ export class FormAdminEditComponent implements OnInit {
   private location: Location) { }
 
   ngOnInit() {
-    const id = +this.route.snapshot.paramMap.get('id');
-
+    const id = this.route.snapshot.paramMap.get('id');
     this.getProduct(id);
   }
 

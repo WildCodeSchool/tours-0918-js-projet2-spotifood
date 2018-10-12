@@ -4,6 +4,7 @@ import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
 import { AdministrateurComponent } from './administrateur/administrateur.component';
+import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 
 const ROUTES: Route[] = [
   {
@@ -13,6 +14,10 @@ const ROUTES: Route[] = [
   {
     path: 'produits',
     component: ProduitsComponent
+  },
+  {
+    path: 'comparateur',
+    component: ComparateurProduitComponent
   },
   { path: '',
     redirectTo: '/accueil',

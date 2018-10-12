@@ -31,16 +31,10 @@ export class FormService {
         product.nutrients = new Nutrients();
 
         if (x.nutriments) {
-          product.nutrients.lipids = x.nutriments['fat_100g'] ? +x.nutriments['fat_100g'] : -1;
-          product.nutrients.sugars = x.nutriments['sugars_100g'] ? +x.nutriments['sugars_100g'] : -1;
-          product.nutrients.saturated = x.nutriments['saturated-fat_100g'] ? +x.nutriments['saturated-fat_100g'] : -1;
-          product.nutrients.salt = x.nutriments['salt_100g'] ? +x.nutriments['salt_100g'] : -1;
-        } else {
-          console.log('something');
-          product.nutrients.lipids = -1;
-          product.nutrients.sugars = -1;
-          product.nutrients.saturated = -1;
-          product.nutrients.salt = -1;
+          product.nutrients.lipids = +x.nutriments['fat_100g'];
+          product.nutrients.sugars = +x.nutriments['sugars_100g'];
+          product.nutrients.saturated = +x.nutriments['saturated-fat_100g'];
+          product.nutrients.salt = +x.nutriments['salt_100g'];
         }
 
         return product;

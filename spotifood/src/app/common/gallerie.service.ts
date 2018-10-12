@@ -8,12 +8,12 @@ import {Nutrients} from '../models/nutriments';
 })
 export class GallerieService {
 
-  product: Product[]; // tableau de produits
+  products: Product[]; // tableau de produits
 
     constructor() {
-    if (!localStorage.product) {
+    if (!localStorage.products) {
       // Initialisation du local storage et du tableau products avec tableau des produits
-      this.product = products.map((x) => {
+      this.products = products.map((x) => {
 
         const product = new Product();
 
@@ -40,22 +40,22 @@ export class GallerieService {
 
         return product;
       });
-      this.saveToLocalStorage(this.product);
+      this.saveToLocalStorage(this.products);
 
     } else {
       // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
-      const data = JSON.parse(localStorage.product);
-      this.product = data;
+      const data = JSON.parse(localStorage.products);
+      this.products = data;
     }
   }
 
 
   saveToLocalStorage(product) {
     const data = JSON.stringify(product);
-    localStorage.setItem('product', data);
+    localStorage.setItem('products', data);
   }
   get(): Product[] {
-    return this.product;
+    return this.products;
 
   }
 }

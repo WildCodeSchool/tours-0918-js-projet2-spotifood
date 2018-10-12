@@ -1,6 +1,6 @@
 .sidebar {
     height: 40rem;
-    width: 225px;
+    width: 220px;
     position: sticky;
     z-index: 1;
     top: 89px;
@@ -17,7 +17,7 @@ legend {
   height: 70vh;
 }
 
-.sidebar button {
+.sidebar {
     text-decoration: none;
     font-size: 1rem;
     color: #818181;
@@ -25,7 +25,7 @@ legend {
 }
 
 /* Survol souris changement de couleur */
-.sidebar button:hover {
+.sidebar option:hover {
     color: #000000;
 }
 
@@ -36,7 +36,7 @@ a {
     color: #059e05;
 }
 
-#boutonfiltre {
+#boutonfiltre { 
     border:none;
     padding:6px 5 6px 5;
     border-radius:8px;
@@ -50,13 +50,13 @@ a {
 }
 
 .hidden {
-    transform: translateX(-215px);
+    transform: translateX(-225px);
     transition: transform 0.6s ease-in-out;
 }
 
 .transBtn {
     z-index: 1000;
-    transform: translateX(225px) !important;
+    transform: translateX(60px) !important;
     transition: transform 0.6s ease-in-out;
 }
 
@@ -130,4 +130,14 @@ a {
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+select {
+  background-color: #28a745;
+  border-color: #28a745
+}
+
+
+div.navbar-nav{
+  max-height: 300px;
 }

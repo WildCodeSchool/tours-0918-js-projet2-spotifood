@@ -1,6 +1,7 @@
 import { Route } from '@angular/router';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ProduitsComponent } from './produits/produits.component';
+import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 
 const ROUTES: Route[] = [
   {
@@ -14,6 +15,14 @@ const ROUTES: Route[] = [
   { path: '',
     redirectTo: '/accueil',
     pathMatch: 'full' },
+  {
+    path: 'add',
+    component: FormAdminEditComponent
+  },
+  {
+    path: 'edit/:id',
+    component: FormAdminEditComponent
+  }
 ];
 
 export { ROUTES };

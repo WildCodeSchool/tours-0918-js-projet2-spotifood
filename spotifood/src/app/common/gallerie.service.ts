@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
-import {Produits} from '../models/product';
+import {Product} from '../models/product';
 import products from './tableau-produits';
-import {Nutriments} from '../models/nutriments';
+import {Nutrients} from '../models/nutriments';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GallerieService {
 
-  product: Produits[]; // tableau de produits
+  product: Product[]; // tableau de produits
 
     constructor() {
     if (!localStorage.product) {
       // Initialisation du local storage et du tableau products avec tableau des produits
       this.product = products.map((x) => {
 
-        const product = new Produits();
+        const product = new Product();
 
         product.id = x['_id'];
         product.name = x['product_name_fr'] ? x['product_name_fr'] : x['product_name'];
@@ -29,13 +29,13 @@ export class GallerieService {
         product.allergens = x.allergens;
         product.nutriscore = x['nutrition_grade-fr'] ? x['nutrition_grade-fr'] : x['nutrition_grades'];
 
-        product.nutriments = new Nutriments();
+        product.nutrients = new Nutrients();
 
         if (x.nutriments) {
-          product.nutriments.lipids = +x.nutriments['fat_100g'];
-          product.nutriments.sugars = +x.nutriments['sugars_100g'];
-          product.nutriments.saturated = +x.nutriments['saturated-fat_100g'];
-          product.nutriments.salt = +x.nutriments['salt_100g'];
+          product.nutrients.lipids = +x.nutriments['fat_100g'];
+          product.nutrients.sugars = +x.nutriments['sugars_100g'];
+          product.nutrients.saturated = +x.nutriments['saturated-fat_100g'];
+          product.nutrients.salt = +x.nutriments['salt_100g'];
         }
 
         return product;
@@ -54,7 +54,7 @@ export class GallerieService {
     const data = JSON.stringify(product);
     localStorage.setItem('product', data);
   }
-  get(): Produits[] {
+  get(): Product[] {
     return this.product;
 
   }

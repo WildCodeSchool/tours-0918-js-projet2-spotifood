@@ -3,7 +3,7 @@ import {
   OnInit
 } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Produits} from '../models/product'; // class produit
+import { Product} from '../models/product'; // class produit
 import { GallerieService} from '../common/gallerie.service';
 
 @Component({
@@ -13,7 +13,7 @@ import { GallerieService} from '../common/gallerie.service';
 })
 export class ListProduitComponent implements OnInit {
    // liste des produits à afficher
-   products: Produits[];
+   products: Product[];
    page = 1;
 
   // A service to open modal windows.

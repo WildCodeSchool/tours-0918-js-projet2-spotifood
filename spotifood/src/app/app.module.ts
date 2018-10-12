@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
+import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ProduitsComponent } from './produits/produits.component';
     SidenavComponent,
     FooterComponent,
     ProduitsComponent,
+    FormAdminEditComponent,
   ],
   imports: [
     BrowserModule,

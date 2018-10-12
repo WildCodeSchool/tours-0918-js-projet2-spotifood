@@ -1,4 +1,4 @@
-export class Nutriments {
+export class Nutrients {
   lipids: number;
   saturated: number;
   sugars: number;

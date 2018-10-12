@@ -26,6 +26,7 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { AdministrateurComponent } from './administrateur/administrateur.component';
 import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 import { ComparateurComponent } from './comparateur/comparateur.component';
+import { LoginadminComponent } from './loginadmin/loginadmin.component';
 
 @NgModule({
   declarations: [
@@ -44,12 +45,12 @@ import { ComparateurComponent } from './comparateur/comparateur.component';
     AdministrateurComponent,
     ComparateurProduitComponent,
     ComparateurComponent,
+    LoginadminComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
-   //  ScrollDispatchModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES),
     NgbCollapseModule,

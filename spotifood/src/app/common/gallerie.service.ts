@@ -58,6 +58,15 @@ export class GallerieService {
     return this.products;
 
   }
+
+  delete(id): void {
+
+    const produit = this.products.find(product => product.id == id);
+    const index = this.products.indexOf(produit);
+    this.products.splice(index, 1);
+    this.saveToLocalStorage(this.products);
+
+  }
 }
 
 

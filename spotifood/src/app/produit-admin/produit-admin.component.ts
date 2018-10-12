@@ -16,4 +16,7 @@ export class ProduitAdminComponent implements OnInit {
   ngOnInit() {
     this.products = this.serviceAdmin.get();
 }
+delete(id) {
+  this.serviceAdmin.delete(id);
+}
 }

@@ -19,7 +19,7 @@
 
         <div class="d-flex justify-content-around icons">
           <img routerLink="/edit/{{product.id}}" class="pen" src="../../assets/images/pen.png" role="button">
-          <img routerLink="/edit/{{product.id}}" class="trash" src="../../assets/images/trash.png" role="button">
+          <img (click)="delete(product.id)" class="trash" src="../../assets/images/trash.png" role="button">
          <!-- </a> -->
        </div>
      </div>

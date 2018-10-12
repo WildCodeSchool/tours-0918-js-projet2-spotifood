@@ -22,6 +22,7 @@ import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
+import { AdministrateurComponent } from './administrateur/administrateur.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
     FormAdminEditComponent,
     ProduitAdminComponent,
     NavbarAdminComponent,
+    AdministrateurComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
+import { AdministrateurComponent } from './administrateur/administrateur.component';
 
 const ROUTES: Route[] = [
   {
@@ -25,7 +26,11 @@ const ROUTES: Route[] = [
     component: FormAdminEditComponent
   },
   {
-    path: 'produits-admin',
+    path: 'admin',
+    component: AdministrateurComponent
+  },
+  {
+    path: 'admin/produits',
     component: ProduitAdminComponent
   }
 ];

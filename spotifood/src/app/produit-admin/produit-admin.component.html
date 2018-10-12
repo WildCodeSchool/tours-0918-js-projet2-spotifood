@@ -1,6 +1,6 @@
 
 <div class="d-flex justify-content-center ajouter">
-  <button type="button" class="btn btn-success">Ajouter</button>
+  <button routerLink="/add" type="button" class="btn btn-success">Ajouter</button>
 </div>
 
 <div class="d-flex justify-content-center produit">
@@ -17,10 +17,10 @@
         <h5 class="card-title">{{product.name}}</h5>
 
         <div class="row icons">
-          <a class="btn btn-inline-primary btn-sm mt-4" role="button" href="#">🖌</a>
+          <a routerLink="/edit/{{product.id}}" class="btn btn-inline-primary btn-sm mt-4" role="button">🖌</a>
 
           <a href="#">
-           <img class="trash" src="http://image.noelshack.com/fichiers/2018/41/3/1539183063-flat-1298035-640-fotor.png">
+           <img class="trash" src="../../assets/images/trash.png">
          </a>
        </div>
      </div>

@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
 
+
 import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { ModalProduitComponent } from './modal-produit/modal-produit.component';
@@ -20,6 +21,7 @@ import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
+import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
     ProduitsComponent,
     FormAdminEditComponent,
     ProduitAdminComponent,
+    NavbarAdminComponent,
   ],
   imports: [
     BrowserModule,

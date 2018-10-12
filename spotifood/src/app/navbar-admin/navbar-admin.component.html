@@ -2,9 +2,9 @@
 
   <a href="#" class="navbar-brand d-flex w-50 mr-auto">
     <img src="https://i.goopics.net/xj12p.png">
-    <span class="navbar-brand">SpotiFood</span>
-  <span class="navbar" routerLink="/produits" id="visiteur">⟵ version visiteur </span>
-</a>
+    <span class="navbar-brand text-white">SpotiFood</span>
+    <!-- <span class="navbar"  id="visiteur">⟵ version visiteur </span> -->
+  </a>
 
   <button class="navbar-toggler mr-4" type="button" (click)="isCollapsed = !isCollapsed">
     <span class="navbar-toggler-icon"></span>
@@ -13,16 +13,16 @@
   <div class="navbar-collapse w-100" [ngbCollapse]="!isCollapsed">
   	<ul class="navbar-nav mr-auto w-50 justify-content-center">
       <li class="nav-item active">
-        <a class="nav-link" href="admin" id="produit">Produit<span class="sr-only">(current)</span></a>
+        <a class="nav-link mr-2 text-white" routerLink="/produits" id="produit">Produit<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pagelogin" id="produit">Déconnexion</a>
+        <a class="nav-link text-white" routerLink="/produits" id="produit">Déconnexion</a>
       </li>
     </ul>
 
     <form class="form-inline justify-content-end">
       <input class="form-control mr-2" type="search" placeholder="Rechercher" aria-label="Search">
-      <button class="btn btn-outline-success m-2" type="submit">Entrer</button>
+      <button class="btn border-dark btn-success m-2" type="submit">Entrer</button>
     </form>
   </div>
 </nav>

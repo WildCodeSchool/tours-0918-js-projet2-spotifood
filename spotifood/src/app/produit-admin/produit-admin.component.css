@@ -5,7 +5,7 @@
 }
 
 .ajouter {
-  margin-top: 5%;
+  margin-top: 125px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -30,10 +30,11 @@ img {
 .trash {
   width: 20%;
   height: auto;
+  cursor: pointer;
 }
 
 .card {
   min-width: 150px;
   max-width: 240px;
-  height: 350px;
+  height: 360px;
 }

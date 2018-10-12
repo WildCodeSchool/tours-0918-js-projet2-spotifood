@@ -1,7 +1,7 @@
 .container-fluid {
     height: 100vh;
     width: 100vw;
-    background: url('http://image.noelshack.com/fichiers/2018/41/2/1539092963-italian-cuisine-2378729-1920.jpg') no-repeat center fixed;
+    background: url('../../assets/images/admin-bg.jpg') no-repeat center fixed;
     /* pour anciens Chrome et Safari */
     -webkit-background-size: cover;
     background-size: cover;

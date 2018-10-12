@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
@@ -41,7 +42,8 @@ import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
     FormsModule,
     ScrollDispatchModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

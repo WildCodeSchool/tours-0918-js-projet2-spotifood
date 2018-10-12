@@ -1,57 +1,49 @@
-<h1 class="text-center">COMPARATEUR</h1>
 
-<div class="container">
-	<div class="row col-md-12 col-sm-12 col-lg-12 col-none">
-		<div class="col-md-5 col-5">
 			<form>
-					<input class="fas fa-search" type="text" name="search" placeholder="Search.." >
+          <input class="fas fa-search form-control"  (keypress)="recherche()" [(ngModel)]="searchLeft" type="text" name="search" required placeholder="Search.." #search="ngModel">
+          <div *ngIf="search.invalid && (search.dirty || search.touched)"
+          class="alert alert-danger">
+          <div *ngIf="search.errors.required">
+              Champ is required.
+            </div>
+            <div *ngIf="">
+              Ce champ est incorrecte.
+            </div>
+          </div>
 			</form>
-		</div>
-		<div class="col-md-5 col-5 offset-2">
-			<form>
-				<input class="fas fa-search" type="text" name="search" placeholder="Search..">
-			</form>
-		</div>
-	</div>
-</div>
 
-
-
-<div class="container" *ngFor="let product of products; let i = index">
-	<div class="row col-md-12 col-sm-12 col-lg-12 col-xl-12 col-none justify-content-between" *ngIf="i">
-		<div class="card col-md-5 col-6" *ngFor="let product of [products[i], product[2]]">
-		  <img class="card-img-top offset-2" src="https://static.openfoodfacts.org/images/products/{{product.id}}.jpg" alt="Card image cap">
+		<div class="card">
+		  <img class="card-img-top offset-2" src="https://via.placeholder.com/300x400" alt="Card image cap">
 		  <div class="card-body text-center">
-					<h3 class="card-title">{{product.product_name}}</h3>
-					<p class="card-text"><strong>Quantité :</strong><br>{{product.quantity}}</p>
-					<p class="card-text"><strong>Marque :</strong><br>{{product.brands}}</p>
+					<h3 class="card-title">{{ product.product_name }}</h3>
+					<p class="card-text"><strong>Quantité :</strong><br>{{ product.quantity }}</p>
+					<p class="card-text"><strong>Marque :</strong><br>{{ product.brands }}</p>
 					<p class="card-text"><strong>liens :</strong><br></p>
-					<p class="card-text"><strong>Labels, certifications, récompenses:</strong><br></p>
-					<p class="card-text"><strong>Catégories : </strong><br></p>
-					<p class="card-text"><strong>Quantité :</strong><br></p>
-					<p class="card-text"><strong>Conditionnement :</strong><br></p>
-					<p class="card-text"><strong>Magasin :</strong><br> {{product.countries}} </p>
-					<p class="card-text"><strong>Ingrédients :</strong><br></p>
-          <p class="card-text"><strong>Allergènes : </strong><br></p>
+					<p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> {{product.labels}} </p>
+					<p class="card-text"><strong>Catégories :</strong><br> {{ product.categories }} </p>
+					<p class="card-text"><strong>Conditionnement :</strong><br> {{product.packaging}} </p>
+					<p class="card-text"><strong>Magasin :</strong><br> {{ product.stores }} </p>
+					<p class="card-text"><strong>Ingrédients :</strong><br> {{ product.ingredients_text_fr }} </p>
+          <p class="card-text"><strong>Allergènes : </strong><br> {{ product.allergens_fr }} </p>
           <img class="nutris" src="http://image.noelshack.com/fichiers/2018/41/3/1539184142-nutriscore-a.png"/>
-          <p class="card-text"><strong>Repères nutritionnels pour 100 g : </strong><br></p>
+          <p class="card-text"><strong>Repères nutritionnels pour 100g : </strong><br></p>
             <ul>
               <li>
-                <p>Matières grasses / Lipides: </p>
+                <p>Matières grasses / Lipides: {{product.nutriments.fat_100g}} </p>
               </li>
               <li>
-                <p>Acides gras saturés: </p>
+                <p>Acides gras saturés: {{product.nutriments['saturated-fat_100g']}} </p>
               </li>
               <li>
-                <p>Sucres: </p>
+                <p>Sucres: {{product.nutriments.sugars_100g}} </p>
               </li>
               <li>
-                <p>sel: </p>
+                <p>sel: {{product.nutriments.salt_100g}} </p>
               </li>
             </ul>
-		    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			</div>
-		</div>
-  </div>
-</div>
+		    <p class="card-text"><small class="text-muted">Last updated 3 hour ago</small></p>
+      </div>
+    </div>
+
+
 

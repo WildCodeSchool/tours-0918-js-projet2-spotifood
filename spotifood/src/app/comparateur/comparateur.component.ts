@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CommonService } from '../common/common.service';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { Product } from '../models/product';
+import { Nutrients } from '../models/nutriments';
+import { GallerieService } from '../common/gallerie.service';
 
 @Component({
   selector: 'app-comparateur',
@@ -13,15 +13,15 @@ export class ComparateurComponent implements OnInit {
   searchLeft: any;
   searchRight: any;
 
-  products: any;
+  products: Product[];
   productsRight: any;
 
-  product: any;
+  product: Product;
   productDroite: any;
 
   error: string;
 
-  constructor(private service: CommonService, private modalService: NgbModal) { }
+  constructor(private service: GallerieService, private modalService: NgbModal) { }
 
   ngOnInit() {
     this.products = this.service.get();
@@ -33,7 +33,7 @@ export class ComparateurComponent implements OnInit {
 
   recherche() {
     for (let i = 0; i < this.products.length; i++) {
-      if (this.products[i].product_name && this.products[i].product_name.toLowerCase() === this.searchLeft.toLowerCase()) {
+      if (this.products[i].name && this.products[i].name.toLowerCase() === this.searchLeft.toLowerCase()) {
         this.product = this.products[i];
         console.log(true);
       }

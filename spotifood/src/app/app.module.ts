@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import { CommonService } from './common/common.service';
 
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -56,9 +55,7 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     NgbCollapseModule,
     NgxPaginationModule
   ],
-  providers: [
-    CommonService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

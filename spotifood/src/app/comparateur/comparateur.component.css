@@ -16,7 +16,7 @@ h1{
 
 .card-img-top {
   height: 190px;
-  width: 150px;
+  width: auto;
 }
 
 .card:hover {

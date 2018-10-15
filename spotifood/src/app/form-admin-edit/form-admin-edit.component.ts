@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormService } from '../common/form.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
 import { Alert } from 'selenium-webdriver';
+import { GallerieService } from '../common/gallerie.service';
 
 @Component({
   selector: 'app-form-admin-edit',
@@ -16,7 +16,7 @@ export class FormAdminEditComponent implements OnInit {
   product: Product = new Product();
   addForm: boolean;
 
-  constructor(private formService: FormService, private route: ActivatedRoute) { }
+  constructor(private formService: GallerieService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     if (this.route.snapshot.paramMap.get('id')) {

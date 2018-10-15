@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
-import products from './tableau-produits';
+import products from './products';
 import { Nutrients } from '../models/nutriments';
 
 @Injectable({
@@ -18,24 +18,24 @@ export class GallerieService {
         const product = new Product();
 
         product.id = x['_id'];
-        product.name = x['product_name_fr'] ? x['product_name_fr'] : x['product_name'];
+        product.name = x['product_name'];
         product.quantity = x.quantity;
-        product.brands = x.brands;
+        product.brands = x.brand;
         product.labels = x.labels;
         product.categories = x.categories;
         product.packaging = x.packaging;
-        product.store = x.stores;
-        product.ingredients = x['ingredients_text_fr'] ? x['ingredients_text_fr'] : x.ingredients_text;
-        product.allergens = x.allergens;
-        product.nutriscore = x['nutrition_grade-fr'] ? x['nutrition_grade-fr'] : x['nutrition_grades'];
+        product.ingredients =  x.ingredients;
+        product.allergens = x.allergenes;
+        product.nutriscore = x.nutriscore;
+        product.images = x.image;
 
         product.nutrients = new Nutrients();
 
-        if (x.nutriments) {
-          product.nutrients.lipids = +x.nutriments['fat_100g'];
-          product.nutrients.sugars = +x.nutriments['sugars_100g'];
-          product.nutrients.saturated = +x.nutriments['saturated-fat_100g'];
-          product.nutrients.salt = +x.nutriments['salt_100g'];
+        if (x.nutritional_value) {
+          product.nutrients.lipids = +x.nutritional_value.lipides;
+          product.nutrients.sugars = +x.nutritional_value.sugar;
+          product.nutrients.saturated = +x.nutritional_value.saturated_fat;
+          product.nutrients.salt = +x.nutritional_value.salt;
         }
 
         return product;
@@ -56,7 +56,23 @@ export class GallerieService {
   }
   get(): Product[] {
     return this.products;
+  }
 
+  add(element) {
+    element.id = this.products.length;
+    this.products.push(element);
+    this.saveToLocalStorage(this.products);
+  }
+
+  update(element) {
+    const index = this.products.indexOf(element);
+    this.products[index] = element;
+    this.saveToLocalStorage(this.products);
+  }
+
+  getProduct(id: string) {
+    // tslint:disable-next-line:triple-equals
+    return this.products.find(product => product.id == id);
   }
 
   delete(id): void {

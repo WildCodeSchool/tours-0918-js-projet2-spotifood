@@ -13,7 +13,7 @@
 			</form>
 
 		<div class="card">
-		  <img class="card-img-top offset-2 mx-auto" src="https://via.placeholder.com/300x400" alt="Card image cap">
+		  <img class="card-img-top offset-2 mx-auto" src={{product.images}}>
 		  <div class="card-body text-center">
 					<h3 class="card-title">{{ product.name }}</h3>
 					<p class="card-text"><strong>Quantité :</strong><br>{{ product.quantity }}</p>
@@ -22,7 +22,6 @@
 					<p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> {{product.labels}} </p>
 					<p class="card-text"><strong>Catégories :</strong><br> {{ product.categories }} </p>
 					<p class="card-text"><strong>Conditionnement :</strong><br> {{product.packaging}} </p>
-					<p class="card-text"><strong>Magasin :</strong><br> {{ product.stores }} </p>
 					<p class="card-text"><strong>Ingrédients :</strong><br> {{ product.ingredients }} </p>
           <p class="card-text"><strong>Allergènes : </strong><br> {{ product.allergens }} </p>
           <img class="nutris" src="../../assets/images/nutri-a.png"/>

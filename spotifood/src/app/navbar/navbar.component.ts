@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Product } from '../models/product';
+import { GallerieService } from '../common/gallerie.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,13 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  products: Product[];
+  constructor(private service: GallerieService) { }
 
   ngOnInit() {
+    this.products = this.service.get();
   }
 
 }
 
 
- 

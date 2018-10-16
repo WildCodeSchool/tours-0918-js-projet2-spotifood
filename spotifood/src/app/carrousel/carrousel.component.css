@@ -1,5 +1,5 @@
 .carousel-wrapper {
-  background: url('https://imagizer.imageshack.com/v2/xq90/921/HwKhlv.jpg') no-repeat top;
+  background: url('../../assets/images/carrousel-bg.jpg') no-repeat top;
   /* pour anciens Chrome et Safari */
   -webkit-background-size: cover;
           background-size: cover;

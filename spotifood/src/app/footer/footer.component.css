@@ -36,3 +36,7 @@ footer {
   background: url('../../assets/images/yt-logo.png') no-repeat center center;
   background-size: 110px;
 }
+
+.toAdmin {
+  cursor: pointer;
+}

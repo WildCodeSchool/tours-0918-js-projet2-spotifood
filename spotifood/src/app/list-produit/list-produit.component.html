@@ -1,29 +1,40 @@
 <!--My product list-->
 <div class="d-flex justify-content-center">
-<div class="row">
-<div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products">
-      <div *ngIf="product.images;then picture else pictureError"></div>
-      <ng-template #picture>
-        <img class="card-img-right img-responsive center" alt="img" src="https://static.openfoodfacts.org/images/products/{{product._id}}/1.400.jpg">
-      </ng-template>
-      <ng-template #pictureError>
-        <img class="card-img-right img-responsive center" alt="img" src="https://via.placeholder.com/300x400">
-      </ng-template>
-      <div class="card-body d-flex flex-column align-items-center">
-        <h5 class="card-title">{{product.product_name}}</h5>
-        <p class="card-text mb-auto">Quantity: {{product.quantity}}<br>
-          Emballage: : {{product.packaging}}<br>
-          Pays de vente :<br>
-          Magasins : <br></p>
-        <a class="btn btn-outline-primary btn-sm mt-4" role="button" href="#" (click)="openMedia(content)">Détail
-          Produit</a>
+
+  <div class="row">
+
+      <div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: page}">
+              <div class="images">
+                <div *ngIf="product.images;then picture else pictureError"></div>
+                <ng-template #picture>
+                  <img class="card-img-right img-responsive center" alt="img" src="{{product.images}}">
+                </ng-template>
+                <ng-template #pictureError>
+                  <img class="card-img-right img-responsive center" alt="img" src="https://via.placeholder.com/300x400">
+                </ng-template>
+              </div>
+
+              <div class="card-body d-flex flex-column align-items-center">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p class="card-text mb-auto">Quantity: {{product.quantity}}<br>
+                  Emballage : {{product.packaging}}<br>
+                <a class="btn btn-outline-primary btn-sm mt-4" role="button" (click)="openMedia(content)">Détail
+                  Produit</a>
+              </div>
+
+                <ng-template #content let-modal>
+                  <app-modal-produit [productModal]="product" [modalInput]="modal"></app-modal-produit>
+                </ng-template>
       </div>
-      <ng-template #content let-modal>
-        <app-modal-produit [productModal]="product" [modalInput]="modal"></app-modal-produit>
-      </ng-template>
-    </div>
+
   </div>
+
 </div>
-<app-pagination></app-pagination>
+
 <!--End My product list-->
+<!--Pagination-->
+<div>
+  <pagination-controls previousLabel=""
+  nextLabel="" responsive="true" (pageChange)="page = $event"></pagination-controls>
+</div>
 

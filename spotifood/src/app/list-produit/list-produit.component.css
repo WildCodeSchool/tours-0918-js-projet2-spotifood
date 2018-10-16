@@ -11,7 +11,12 @@
 }
 
 img {
-  height: 200px;
+  width: 100%;
+  margin-top: 7%;
   padding-top: 25px;
   padding-left: 20px;
+}
+
+.images {
+  width: 400px;
 }

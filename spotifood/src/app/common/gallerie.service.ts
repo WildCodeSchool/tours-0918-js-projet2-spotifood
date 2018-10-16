@@ -17,8 +17,8 @@ export class GallerieService {
 
         const product = new Product();
 
-        product.id = x['_id'];
-        product.name = x['product_name'];
+        product.id = x.id;
+        product.name = x.product_name;
         product.quantity = x.quantity;
         product.brands = x.brand;
         product.labels = x.labels;

@@ -16,7 +16,7 @@
   }
 }
 
-img {
+.card-img-top {
   height: 190px;
   width: 150px;
 }
@@ -24,6 +24,9 @@ img {
 .icons {
   position: absolute;
   bottom: 1rem;
+  left: 0;
+  right: 0;
+  height: 45px;
 }
 
 .pen,

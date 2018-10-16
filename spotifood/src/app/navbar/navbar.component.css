@@ -1,27 +1,6 @@
-
 .navbar-brand {
   margin-left: 30px;
   font-size: 1.5rem;
-}
-.logo {
-  max-height: 50px;
-}
-
-.brand-text {
-  font-family: 'Cookie',
-  cursive;
-  font-size: 2.2rem;
-}
-.navbar-toggler {
-  background-color: #da5374;
-}
-nav {
-  /* background-color: #c5c3c3; */
-  height: 100px;
-  background-image: url('../../assets/images/mures.jpg');
-  background-size: cover;
-  background-position: 50% 40%;
-
 }
 
 @media screen and (max-width: 400px) {
@@ -30,6 +9,105 @@ nav {
   }
 }
 
-.nav-link:hover {
+.logo {
+  max-height: 50px;
+}
+
+.brand-text {
+  font-family: 'Cookie',
+  cursive;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+input{
+  border-radius: 20px;
+}
+
+nav {
+  /* background-color: #c5c3c3; */
+  height: 100px;
+  background-color: #0e0d0d99;
+   /* #8080804d; */
+}
+
+.navbar-nav {
+  width: 400px;
+}
+
+@media screen and (min-width: 991px) {
+  nav li {
+    border-right: 1px solid #0000004d;
+  }
+
+  nav li:first-of-type {
+    border-left: 1px solid #0000004d;
+  }
+
+  nav {
+    box-shadow: 0px 10px 3px 1px rgba(20, 20, 24, 0.2);
+  }
+}
+
+nav li a {
+  padding: 15px 30px;
+}
+
+nav li a:hover {
   transform: scale(1.2);
+  background-color: grey;
+}
+
+/**
+Search form
+*/
+.form-inline {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+  font-weight: 400;
+  font-weight: normal;
+  margin-right: 3%;
+}
+
+
+/**
+navbar collapse
+*/
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    background-color: #0e0d0d99;
+    padding-bottom: 20px;
+  }
+
+  nav li a:hover {
+    transform: scale(1.2);
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-inline .form-control {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  i {
+    right: 160px !important;
+  }
 }

@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
-<a routerLink="/accueil" class="navbar-brand d-flex w-50 mr-auto">
+<a routerLink="/accueil" class="navbar-brand d-flex w-auto mr-auto">
     <img class="logo" src="https://i.goopics.net/xj12p.png">
     <span class="navbar-brand brand-text">SpotiFood</span>
 </a>
@@ -10,24 +10,28 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="navbar-collapse w-100" [ngbCollapse]="!isCollapsed">
-    <ul class="navbar-nav mr-auto w-50 justify-content-center">
+<div class="navbar-collapse w-100" [ngbCollapse]="!isCollapsed">
+    <ul class="navbar-nav mx-auto justify-content-center">
       <li class="nav-item active">
-        <a class="nav-link mr-2 text-white" routerLink="/produits">Produits<span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" routerLink="/produits">Produits<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-2 text-white" routerLink="/comparateur">Comparateur</a>
+        <a class="nav-link text-white" routerLink="/comparateur">Comparateur</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-2 text-white" href="#">Contribuer</a>
+        <a class="nav-link text-white" href="#">Contribuer</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link mr-2 text-white" href="#">Contact</a>
+        <a class="nav-link text-white" href="#">Contact</a>
       </li>
     </ul>
+
     <form class="form-inline justify-content-end">
-      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn border-dark btn-success m-2" type="submit">Search</button>
+      <input class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Search" aria-label="Search">
+      <datalist id="mylist">
+        <option *ngFor="let product of products">{{product.name)</option>
+      </datalist>
+      <i role="submit" class="fas fa-search"></i>
     </form>
   </div>
 </nav>

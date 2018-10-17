@@ -19,15 +19,45 @@
 
         <div class="d-flex justify-content-around icons">
           <img routerLink="/edit/{{product.id}}" class="pen" src="../../assets/images/pen.png" role="button">
-          <img (click)="delete(product.id)" class="trash" src="../../assets/images/trash.png" role="button">
-         <!-- </a> -->
-       </div>
-     </div>
-   </div>
- </div>
+          <img (click)="delete(product.id)" (click)="open(content)" class="trash" src="../../assets/images/trash.png" role="button">
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="d-flex justify-content-center">
-<pagination-controls previousLabel=""
-nextLabel="" responsive="true" (pageChange)="page = $event">
+  <pagination-controls previousLabel=""
+  nextLabel="" responsive="true" (pageChange)="page = $event">
 </pagination-controls>
 </div>
+
+
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Suppression produit</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">       
+        <div class="input-group">
+          <div class="input-group-append">
+            <p>Le produit a bien été supprimé !</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-success" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+
+
+<hr>
+
+

@@ -112,17 +112,19 @@
 
   <div class="form-actions">
     <button class="btn btn-outline-danger rounded-0"  routerLink="/admin/produits" type="reset">Annuler</button>
+
     <button class="btn btn-success rounded-0" (click)="open(content)" type="submit" (click)="add()" *ngIf="addForm">Confirmer</button>
-    <button class="btn btn-success rounded-0" type="submit" (click)="update()" (click)="openmodif(content)" *ngIf="!addForm">Confirmer</button>
+
+    <button class="btn btn-success rounded-0" (click)="openmodif(contentmodif)" type="submit" (click)="update()"  *ngIf="!addForm">Confirmer</button>
   </div>
 </form>
 
 
 <ng-template #content let-modal>
- 
+
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Ajout produit</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')" routerLink="/admin/produits">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -139,7 +141,7 @@
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')" routerLink="/admin/produits">Ok</button>
-    <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Ajouter nouveau produit</button>
+    <button type="button" class="btn btn-outline-success" (click)="modal.close('Save click')">Ajouter nouveau produit</button>
   </div>
 
 </ng-template>
@@ -147,10 +149,10 @@
 <hr>
 
 <ng-template #contentmodif let-modal>
- 
-  <div class="modal-header">
+
+  <div class="modal-header" id="modal2">
     <h4 class="modal-title" id="modal-basic-title-modif">Modification produit</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <button type="button" class="close" aria-label="Close" routerLink="/admin/produits" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -166,7 +168,7 @@
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')" routerLink="/admin/produits">Ok</button>
+    <button type="button" class="btn btn-outline-success" (click)="modal.close('Save click')" routerLink="/admin/produits">Ok</button>
     
   </div>
 

@@ -29,7 +29,7 @@ export class FormAdminEditComponent implements OnInit {
   }
 
   openmodif(contentmodif) {
-    this.modalService.open(contentmodif, {ariaLabelledBy: 'modal-basic-title-modif'}).result.then((result) => {
+    this.modalService.open(contentmodif, {ariaLabelledBy: 'modal2'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
@@ -67,7 +67,7 @@ export class FormAdminEditComponent implements OnInit {
 
   update() {
     this.formService.update(this.product);
-    alert('La fiche a bien été modifiée');
+    
   }
 
   getProduct(id): void {
@@ -78,5 +78,5 @@ export class FormAdminEditComponent implements OnInit {
 
 
 
-  
+
 

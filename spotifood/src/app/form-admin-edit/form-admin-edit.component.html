@@ -58,7 +58,7 @@
       <label class="form-element-label" for="field-allergens">Allergènes</label>
       <small class="form-element-hint">(champ obligatoire)</small>
     </div>
-<!-- buttons to choose nutriscore -->
+    <!-- buttons to choose nutriscore -->
     <div class="form-radio form-radio-block">
       <div class="form-sublegend">NutriScore</div>
       <div class="pt-3 d-flex flex-wrap">
@@ -81,28 +81,28 @@
 
       <div class="form-element form-input">
         <input name="lipids" id="field-lipids" class="form-element-field" [(ngModel)]="product.nutrients.lipids"
-          placeholder="Valeur en g" type="number" required />
+        placeholder="Valeur en g" type="number" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
       </div>
 
-       <div class="form-element form-input">
+      <div class="form-element form-input">
         <input name="saturated" id="field-saturated" class="form-element-field" [(ngModel)]="product.nutrients.saturated"
-          placeholder="Valeur en g" type="number" required />
+        placeholder="Valeur en g" type="number" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
       </div>
 
       <div class="form-element form-input">
         <input name="sugars" id="field-sugars" class="form-element-field" [(ngModel)]="product.nutrients.sugars"
-          placeholder="Valeur en g" type="number" required />
+        placeholder="Valeur en g" type="number" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-sugars">Sucres</label>
       </div>
 
       <div class="form-element form-input">
         <input name="salt" id="field-salt" class="form-element-field" [(ngModel)]="product.nutrients.salt" placeholder="Valeur en g"
-          type="number" required />
+        type="number" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-salt">Sel</label>
       </div>
@@ -112,7 +112,36 @@
 
   <div class="form-actions">
     <button class="btn btn-outline-danger rounded-0"  routerLink="/admin/produits" type="reset">Annuler</button>
-    <button class="btn btn-success rounded-0" type="submit" (click)="add()" *ngIf="addForm">Confirmer</button>
+    <button class="btn btn-success rounded-0" (click)="open(content)" type="submit" (click)="add()" *ngIf="addForm">Confirmer</button>
     <button class="btn btn-success rounded-0" type="submit" (click)="update()" *ngIf="!addForm">Confirmer</button>
   </div>
 </form>
+
+
+<ng-template #content let-modal>
+ 
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Ajout produit</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <p>L' ajout du produit a été éffectué !</p>
+        <div class="input-group">         
+          <div class="input-group-append">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+
+</ng-template>
+
+<hr>
+

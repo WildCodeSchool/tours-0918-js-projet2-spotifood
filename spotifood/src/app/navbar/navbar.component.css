@@ -32,7 +32,7 @@ nav {
 }
 
 .navbar-nav {
-  width: 400px;
+  width: 700px;
 }
 
 @media screen and (min-width: 991px) {
@@ -42,6 +42,14 @@ nav {
 
   nav li:first-of-type {
     border-left: 1px solid #0000004d;
+  }
+
+  nav li a {
+    border-left: 1px solid gray;
+  }
+
+  nav li a:last-of-type {
+    border-right: 1px solid gray;
   }
 
   nav {

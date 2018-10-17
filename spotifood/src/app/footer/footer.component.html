@@ -14,7 +14,8 @@
       <a href="https://www.youtube.com" class="logo-yt"></a>
     </div>
     <div class="col-12 col-md-3 pl-sm-5 d-flex justify-content-center pt-3 pt-md-0 pt-lg-1">
-      <u class="text-white toAdmin" [routerLink]="['/admin']" routerLinkActive="router-link-active" >Espace Administrateur&nbsp;&#10132;</u>
+      <u *ngIf="!adminLogged" class="text-white toAdmin" [routerLink]="['/admin']" routerLinkActive="router-link-active" >Espace Administrateur&nbsp;&#10132;</u>
+      <u *ngIf="adminLogged" class="text-white toAdmin" [routerLink]="['/admin/produits']" routerLinkActive="router-link-active" >Espace Administrateur&nbsp;&#10132;</u>
     </div>
 </div>
 

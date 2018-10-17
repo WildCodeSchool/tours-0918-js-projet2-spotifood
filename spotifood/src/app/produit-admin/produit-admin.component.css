@@ -41,3 +41,8 @@
   max-width: 240px;
   height: 360px;
 }
+
+
+.ifNotLogged {
+  margin-top: 140px;
+}

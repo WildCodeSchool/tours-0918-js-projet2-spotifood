@@ -36,13 +36,14 @@
         <input name="labels" #labels="ngModel" id="field-labels" class="form-element-field" [(ngModel)]="product.labels" placeholder="" type="text" />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-labels">Labels, certifications, récompenses</label>
+        <small class="form-element-hint">(séparez plusieurs valeurs par des virgules)</small>
       </div>
 
       <div class="form-element form-input">
         <input name="categories" #categories="ngModel" id="field-categories" class="form-element-field" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-categories">Catégories</label>
-        <small class="form-element-hint" *ngIf="categories.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="categories.untouched">(champ obligatoire - séparez plusieurs valeurs par des virgules)</small>
         <small class="form-element-hint text-danger" *ngIf="categories.touched && categories.invalid"> Ce champ est obligatoire</small>
       </div>
 
@@ -50,7 +51,7 @@
         <input name="packaging" #packaging="ngModel" id="field-packaging" class="form-element-field" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-packaging">Conditionnement</label>
-        <small class="form-element-hint" *ngIf="packaging.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="packaging.untouched">(champ obligatoire - séparez plusieurs valeurs par des virgules)</small>
         <small class="form-element-hint text-danger" *ngIf="packaging.touched && packaging.invalid"> Ce champ est obligatoire</small>
       </div>
 
@@ -58,7 +59,7 @@
         <input name="ingredients" #ingredients="ngModel" id="field-ingredients" class="form-element-field" [(ngModel)]="product.ingredients" placeholder="Listez les ingrédients" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-ingredients">Ingrédients</label>
-        <small class="form-element-hint" *ngIf="ingredients.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="ingredients.untouched">(champ obligatoire - séparez plusieurs valeurs par des virgules)</small>
         <small class="form-element-hint text-danger" *ngIf="ingredients.touched && ingredients.invalid"> Ce champ est obligatoire</small>
       </div>
 
@@ -66,7 +67,7 @@
         <input name="allergens" #allergens="ngModel" id="field-allergens" class="form-element-field" [(ngModel)]="product.allergens" placeholder="" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-allergens">Allergènes</label>
-        <small class="form-element-hint" *ngIf="allergens.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="allergens.untouched">(champ obligatoire - séparez plusieurs valeurs par des virgules)</small>
         <small class="form-element-hint text-danger" *ngIf="allergens.touched && allergens.invalid"> Ce champ est obligatoire</small>
       </div>
   <!-- buttons to choose nutriscore -->

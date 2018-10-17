@@ -302,3 +302,10 @@ select.form-element-field {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/**
+if admin is not logged
+*/
+.ifNotLogged {
+  margin-top: 140px;
+}

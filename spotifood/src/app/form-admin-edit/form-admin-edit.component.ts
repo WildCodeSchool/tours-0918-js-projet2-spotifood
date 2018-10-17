@@ -4,6 +4,7 @@ import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
 import { Alert } from 'selenium-webdriver';
 import { GallerieService } from '../common/gallerie.service';
+import { LoggingService } from '../common/logging.service';
 
 @Component({
   selector: 'app-form-admin-edit',
@@ -15,8 +16,9 @@ export class FormAdminEditComponent implements OnInit {
   // produit à créer
   product: Product = new Product();
   addForm: boolean;
+  adminLogged: boolean;
 
-  constructor(private formService: GallerieService, private route: ActivatedRoute) { }
+  constructor(private formService: GallerieService, private route: ActivatedRoute, private loggingService: LoggingService) { }
 
   ngOnInit() {
     if (this.route.snapshot.paramMap.get('id')) {
@@ -28,6 +30,8 @@ export class FormAdminEditComponent implements OnInit {
       this.product = new Product();
       this.product.nutrients = new Nutrients();
     }
+
+    this.adminLogged = this.loggingService.getLogStatus();
   }
 
   add() {

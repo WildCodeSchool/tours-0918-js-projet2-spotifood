@@ -63,7 +63,7 @@ export class GallerieService {
 
     element.name = element.name.charAt(0).toUpperCase() + element.name.slice(1).toLowerCase();
     element.brands = element.brands.charAt(0).toUpperCase() + element.brands.slice(1).toLowerCase();
-    if (element.labels) this.capitalize(element.labels);
+    if (element.labels) element.labels = this.capitalize(element.labels);
     element.categories = this.capitalize(element.categories);
     element.packaging = this.capitalize(element.packaging);
     element.allergens = this.capitalize(element.allergens);

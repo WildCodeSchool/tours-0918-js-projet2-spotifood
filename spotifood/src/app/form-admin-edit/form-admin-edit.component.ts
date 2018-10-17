@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
-import { Alert } from 'selenium-webdriver';
 import { GallerieService } from '../common/gallerie.service';
 import { LoggingService } from '../common/logging.service';
 

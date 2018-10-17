@@ -1,6 +1,9 @@
 
-			<form>
-          <input class="fas fa-search form-control"  (keypress)="recherche()" [(ngModel)]="searchLeft" type="text" name="search" required placeholder="Search.." #search="ngModel">
+      <form>
+          <input class="fas fa-search form-control awesomplete" list="mylist"  (keypress)="recherche()" [(ngModel)]="searchLeft" type="text" name="search" required placeholder="Search.." #search="ngModel">
+          <datalist id="mylist">
+            <option *ngFor="let product of products">{{ product.name }}</option>
+          </datalist>
           <div *ngIf="search.invalid && (search.dirty || search.touched)"
           class="alert alert-danger">
           <div *ngIf="search.errors.required">

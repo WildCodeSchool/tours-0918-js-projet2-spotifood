@@ -26,7 +26,7 @@ export class ComparateurComponent implements OnInit {
   ngOnInit() {
     this.products = this.service.get();
     this.searchLeft = '';
-    this.product = this.products[2];
+    this.product = this.products[9];
     this.error = 'Ce champ est requis.' ;
   }
 

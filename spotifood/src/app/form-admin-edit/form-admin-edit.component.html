@@ -1,63 +1,73 @@
+<app-navbar></app-navbar>
+
 <div *ngIf="adminLogged">
   <!-- HTML and CSS inspired by https://codepen.io/jonnitto/pen/OVmvPB-->
-  <app-navbar></app-navbar>
-  <form class="form-card">
+
+  <form class="form-card" #f="ngForm">
     <fieldset class="form-fieldset">
       <legend class="form-legend">Ajouter / modifier un produit</legend>
 
-      <div class="form-element form-input">
-        <input name="name" id="field-name" class="form-element-field" [(ngModel)]="product.name" placeholder="Saisissez le nom du produit" type="input" required />
+      <div class="form-element form-input form-group">
+        <input name="name" #name="ngModel" id="field-name" class="form-element-field" [(ngModel)]="product.name" placeholder="Saisissez le nom du produit" type="input" required minlength="5"/>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-name">Nom</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="name.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="name.touched && name.invalid"> Ce champ est obligatoire</small>
+        <small class="form-element-hint text-danger" *ngIf="name.errors?.minlength">Le nom doit contenir au minimum 5 caractères</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="quantity" id="field-quantity" class="form-element-field" [(ngModel)]="product.quantity" placeholder="Saisissez un chiffre et une unité" type="text" required/>
+        <input name="quantity" #quantity="ngModel" id="field-quantity" class="form-element-field" [(ngModel)]="product.quantity" placeholder="Saisissez un chiffre et une unité" type="text" required/>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-quantity">Quantité (+ unité)</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="quantity.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="quantity.touched && quantity.invalid"> Ce champ est obligatoire</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="brand" id="field-brand" class="form-element-field" [(ngModel)]="product.brands" placeholder="Précisez la marque" type="text" required />
+        <input name="brand" #brand="ngModel" id="field-brand" class="form-element-field" [(ngModel)]="product.brands" placeholder="Précisez la marque" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-brand">Marque</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="brand.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="brand.touched && brand.invalid"> Ce champ est obligatoire</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="labels" id="field-labels" class="form-element-field" [(ngModel)]="product.labels" placeholder="" type="text" />
+        <input name="labels" #labels="ngModel" id="field-labels" class="form-element-field" [(ngModel)]="product.labels" placeholder="" type="text" />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-labels">Labels, certifications, récompenses</label>
       </div>
 
       <div class="form-element form-input">
-        <input name="categories" id="field-categories" class="form-element-field" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text" required />
+        <input name="categories" #categories="ngModel" id="field-categories" class="form-element-field" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-categories">Catégories</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="categories.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="categories.touched && categories.invalid"> Ce champ est obligatoire</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="packaging" id="field-packaging" class="form-element-field" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text" required />
+        <input name="packaging" #packaging="ngModel" id="field-packaging" class="form-element-field" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-packaging">Conditionnement</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="packaging.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="packaging.touched && packaging.invalid"> Ce champ est obligatoire</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="ingredients" name="brand" id="field-ingredients" class="form-element-field" [(ngModel)]="product.ingredients" placeholder="Listez les ingrédients" type="text" required />
+        <input name="ingredients" #ingredients="ngModel" id="field-ingredients" class="form-element-field" [(ngModel)]="product.ingredients" placeholder="Listez les ingrédients" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-ingredients">Ingrédients</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="ingredients.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="ingredients.touched && ingredients.invalid"> Ce champ est obligatoire</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="allergens" id="field-allergens" class="form-element-field" [(ngModel)]="product.allergens" placeholder="" type="text" required />
+        <input name="allergens" #allergens="ngModel" id="field-allergens" class="form-element-field" [(ngModel)]="product.allergens" placeholder="" type="text" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-allergens">Allergènes</label>
-        <small class="form-element-hint">(champ obligatoire)</small>
+        <small class="form-element-hint" *ngIf="allergens.untouched">(champ obligatoire)</small>
+        <small class="form-element-hint text-danger" *ngIf="allergens.touched && allergens.invalid"> Ce champ est obligatoire</small>
       </div>
   <!-- buttons to choose nutriscore -->
       <div class="form-radio form-radio-block">
@@ -81,39 +91,47 @@
         <div class="form-sublegend">Repères nutritionnels pour 100g</div>
 
         <div class="form-element form-input">
-          <input name="lipids" id="field-lipids" class="form-element-field" [(ngModel)]="product.nutrients.lipids"
+          <input name="lipids" #lipids="ngModel" id="field-lipids" class="form-element-field" [(ngModel)]="product.nutrients.lipids"
             placeholder="Valeur en g" type="number" required />
           <div class="form-element-bar"></div>
           <label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
+          <small class="form-element-hint" *ngIf="lipids.untouched">(champ obligatoire)</small>
+          <small class="form-element-hint text-danger" *ngIf="lipids.touched && lipids.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
         </div>
 
          <div class="form-element form-input">
-          <input name="saturated" id="field-saturated" class="form-element-field" [(ngModel)]="product.nutrients.saturated"
+          <input name="saturated" #saturated="ngModel" id="field-saturated" class="form-element-field" [(ngModel)]="product.nutrients.saturated"
             placeholder="Valeur en g" type="number" required />
           <div class="form-element-bar"></div>
           <label class="form-element-label" for="field-saturated">Acides gras saturés</label>
+          <small class="form-element-hint" *ngIf="saturated.untouched">(champ obligatoire)</small>
+          <small class="form-element-hint text-danger" *ngIf="saturated.touched && saturated.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
         </div>
 
         <div class="form-element form-input">
-          <input name="sugars" id="field-sugars" class="form-element-field" [(ngModel)]="product.nutrients.sugars"
+          <input name="sugars" #sugars="ngModel" id="field-sugars" class="form-element-field" [(ngModel)]="product.nutrients.sugars"
             placeholder="Valeur en g" type="number" required />
           <div class="form-element-bar"></div>
           <label class="form-element-label" for="field-sugars">Sucres</label>
+          <small class="form-element-hint" *ngIf="sugars.untouched">(champ obligatoire)</small>
+          <small class="form-element-hint text-danger" *ngIf="sugars.touched && sugars.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
         </div>
 
         <div class="form-element form-input">
-          <input name="salt" id="field-salt" class="form-element-field" [(ngModel)]="product.nutrients.salt" placeholder="Valeur en g"
+          <input name="salt" #salt="ngModel" id="field-salt" class="form-element-field" [(ngModel)]="product.nutrients.salt" placeholder="Valeur en g"
             type="number" required />
           <div class="form-element-bar"></div>
           <label class="form-element-label" for="field-salt">Sel</label>
+          <small class="form-element-hint" *ngIf="salt.untouched">(champ obligatoire)</small>
+          <small class="form-element-hint text-danger" *ngIf="salt.touched && salt.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
         </div>
       </div>
 
     </fieldset>
 
     <div class="form-actions">
-      <button class="btn btn-outline-danger rounded-0"  routerLink="/admin/produits" type="reset">Annuler</button>
-      <button class="btn btn-success rounded-0" type="submit" (click)="add()" *ngIf="addForm">Confirmer</button>
+      <button class="btn btn-outline-danger rounded-0" routerLink="/admin/produits" type="reset">Annuler</button>
+      <button class="btn btn-success rounded-0" type="submit" [disabled]="f.invalid" (click)="add()" *ngIf="addForm">Confirmer</button>
       <button class="btn btn-success rounded-0" type="submit" (click)="update()" *ngIf="!addForm">Confirmer</button>
     </div>
   </form>

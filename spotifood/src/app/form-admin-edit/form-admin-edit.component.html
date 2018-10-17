@@ -113,7 +113,7 @@
   <div class="form-actions">
     <button class="btn btn-outline-danger rounded-0"  routerLink="/admin/produits" type="reset">Annuler</button>
     <button class="btn btn-success rounded-0" (click)="open(content)" type="submit" (click)="add()" *ngIf="addForm">Confirmer</button>
-    <button class="btn btn-success rounded-0" type="submit" (click)="update()" *ngIf="!addForm">Confirmer</button>
+    <button class="btn btn-success rounded-0" type="submit" (click)="update()" (click)="openmodif(content)" *ngIf="!addForm">Confirmer</button>
   </div>
 </form>
 
@@ -138,10 +138,38 @@
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')" routerLink="/admin/produits">Ok</button>
+    <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Ajouter nouveau produit</button>
   </div>
 
 </ng-template>
 
 <hr>
 
+<ng-template #contentmodif let-modal>
+ 
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title-modif">Modification produit</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <p>Les modifications ont bien été prisent en compte !</p>
+        <div class="input-group">         
+          <div class="input-group-append">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')" routerLink="/admin/produits">Ok</button>
+    
+  </div>
+
+</ng-template>
+
+<hr>

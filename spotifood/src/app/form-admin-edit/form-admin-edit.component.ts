@@ -28,6 +28,15 @@ export class FormAdminEditComponent implements OnInit {
     });
   }
 
+  openmodif(contentmodif) {
+    this.modalService.open(contentmodif, {ariaLabelledBy: 'modal-basic-title-modif'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';

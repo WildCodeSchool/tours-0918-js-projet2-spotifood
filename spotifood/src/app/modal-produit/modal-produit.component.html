@@ -8,20 +8,55 @@
         </div>
         <div class="modal-body">
           <h5>Caractéristiques du produit</h5>
-              <p>Quantité: {{productModal.quantity}}</p>
-              <p>Marques : {{productModal.brands}}</p>
-              <p>Conditionnement: {{ productModal.packaging}}</p>
-              <p>Catégories : {{ productModal.categories}}</p>
-              <p>Labels, certifications, récompenses : {{productModal.labels}}</p>
+            <table>
+            <tr>
+              <td><strong>Quantité :</strong></td>
+              <td class="indice">{{productModal.quantity}}</td>
+            </tr>
+            <tr>
+              <td><strong>Marques :</strong></td>
+              <td class="indice">{{productModal.brands}}</td>
+            </tr>
+            <tr>
+              <td><strong>Conditionnement :</strong></td>
+              <td class="indice"> {{ productModal.packaging}}</td>
+            </tr>
+            <tr>
+              <td><strong>Catégories :</strong></td>
+              <td class="indice"> {{ productModal.categories}}</td>
+            </tr>
+            <tr>
+              <td><strong>Labels, certifications, récompenses :</strong></td>
+              <td class="indice"> {{productModal.labels}}</td>
+            </tr>
+            </table>
           <h5>Ingrédients</h5>
               <p>Liste des ingrédients : {{productModal.ingredients}}</p>
-              <p>produits provoquant des allergies ou intolérances : {{productModal.allergens}}</p>
+              <p>produits provoquant des allergies ou intolérances :<span> {{productModal.allergens}} </span></p>
           <h5>Informations nutritionnelles</h5>
-              <p>NutriScore : {{productModal.nutriscore}} </p>
-              <p>Matières grasses / Lipides : {{productModal.nutrients.lipids}}</p>
-              <p>Acides gras saturés : {{productModal.nutrients.saturated}}</p>
-              <p>Sucres : {{productModal.nutrients.sugars}}</p>
-              <p>Sel : {{productModal.nutrients.salt}}</p>
+          <table>
+            <td>
+              <tr>
+                <td><strong>NutriScore :</strong></td>
+                <td class="indice">{{productModal.nutriscore}}</td>
+            </tr>
+            <tr>
+              <td><strong>Matières grasses / Lipides :</strong></td>
+              <td class="indice">{{productModal.nutrients.lipids}}</td>
+            </tr>
+            <tr>
+              <td><strong>Acides gras saturés :</strong></td>
+              <td class="indice">{{productModal.nutrients.saturated}}</td>
+            </tr>
+            <tr>
+              <td><strong>Sucres :</strong></td>
+              <td class="indice">{{productModal.nutrients.sugars}}</td>
+            </tr>
+            <tr>
+              <td><strong>Sel :</strong></td>
+              <td class="indice">{{productModal.nutrients.salt}}</td>
+            </tr>
+            </table>
         </div>
         <div class="modal-footer">
               <button type="button" class="btn btn-danger" (click)="modalInput.close()">Close</button>

@@ -17,4 +17,5 @@ export class ModalProduitComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

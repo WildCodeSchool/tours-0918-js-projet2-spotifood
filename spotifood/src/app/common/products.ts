@@ -67,7 +67,7 @@ const products = [{
 	'Sardines à l\'huile',
 	'Sardines à l\'huile d\'olive'
 	],
-	'labels': [],
+	'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Filets de sardines (39,6%), huile d\'olive vierge extra, fenouil (14,9%), oignons (9,3%), jus de citron, tomates (2,9%), tomates mi-séchées (2,8%), oignons rissolés (2,4%), fécule de manioc, ail, plantes aromatiques (0,9%), sel, badiane, épices.',
 	'allergenes': [
@@ -108,7 +108,7 @@ const products = [{
 	'Plats préparés',
 	'Plats à base de poisson'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Filets de sardines (49,2 %), huile d\'olive vierge extra, oignons rissolés, jus de citron (5,9 %), olives vertes (5,8 %), amandes grillées (2,5 %), plantes aromatiques, citron (1,7 %), fécule de manioc, sel, sucre, épices.',
 	'allergenes': [
@@ -266,7 +266,7 @@ const products = [{
 	'Sodas au cola',
 	'Boissons sucrées'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Eau pétillante, sucre, colorant E150d, acidifiant E338, arômes naturels (extraits végétaux), dont caféine.',
 	'additifs': [
@@ -449,7 +449,7 @@ const products = [{
 	'Snacks sucrés',
 	'Produits déshydratés'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Pomme (85%), Fraise (15%)',
 	'nova': 3,
@@ -617,7 +617,7 @@ const products = [{
 	'Eaux minérales naturelles',
 	'Boissons non sucrées'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Eau',
 	'allergenes': [],
@@ -718,7 +718,7 @@ const products = [{
 	'Céréales pour petit-déjeuner',
 	'Céréales au miel'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Semoule de maïs 78 %, sucre, miel 3,5 %, sel, colorant : caramel (E150c), vitamines : niacine (PP), acide pantothénique (B5), riboflavine (B2), thiamine (B1), vitamine B6, acide folique (B9), vitamine B12, fer.',
 	'additifs': [
@@ -766,7 +766,7 @@ const products = [{
 	'Céréales pour petit-déjeuner',
 	'Céréales au miel'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Farine de maïs, sucre, sirop de glucose, miel (5%), sel, extrait de malt d\'orge, colorants (caramel E150c, carotènes), vitamines (vitamine PP, vitamine B6, vitamine B2, vitamine B1, vitamine B9, vitamine D, vitamine B12), phosphate tricalcique, fer',
 	'additifs': [
@@ -1025,7 +1025,7 @@ const products = [{
 	'categories': [
 	'Petits pois et carottes en conserve'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Légumes (carottes 32%, petits pois 30%), eau, sucre, sel, arôme naturel d\'herbes.',
 	'additifs': [],
@@ -1070,7 +1070,7 @@ const products = [{
 	'Pasteurized cheeses',
 	'Goat cheeses'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Lait de chèvre pasteurisé, sel',
 	'additifs': [],
@@ -1226,7 +1226,7 @@ const products = [{
 	'Breads',
 	'Sliced breads'
 	],
-	'labels': [],
+  'labels': ['"Pas de labels"'],
 	'country': 'France',
 	'ingredients': 'Farine de blé 63%; eau; huile de colza; sucre; levure; dextrose; farine de fèves; sel; émulsifiants: lécithines (colza), E471, E472e, E482; gluten de blé; conservateur: E282; sirop de malt d\'orge; épaississant: gomme xanthane; agent de traitement de la farine: acide ascorbique.',
 	'additifs': [

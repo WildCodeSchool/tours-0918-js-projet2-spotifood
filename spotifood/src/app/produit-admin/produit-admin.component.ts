@@ -44,9 +44,8 @@ export class ProduitAdminComponent implements OnInit {
   }
 
  
-
-  suppr(idSuppr) {
-     this.serviceAdmin.delete(idSuppr);
+  suppr(id) {
+     this.serviceAdmin.delete(id);
     
   }
 

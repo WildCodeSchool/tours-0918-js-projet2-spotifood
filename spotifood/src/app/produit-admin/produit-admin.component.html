@@ -55,7 +55,7 @@
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-danger" (click)="modal.close('Save click')">Annuler la suppression</button>
 
-    <button type="button" class="btn btn-outline-success" (click)="suppr(idSuppr)"  >Ok</button>
+    <button type="button" (click)="modal.close('Save click')" class="btn btn-outline-success" (click)="suppr(id)">Ok</button>
 
   </div>
 </ng-template>

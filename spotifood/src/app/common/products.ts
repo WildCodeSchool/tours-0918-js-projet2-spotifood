@@ -4,8 +4,8 @@ const products = [{
 	'brand': 'Picard',
 	'quantity': '1kg',
 	'packaging': [
-	'carton',
-	'surgelé'
+	'Carton',
+	'Surgelé'
 	],
 	'categories': [
 	'Plats préparés',
@@ -23,7 +23,7 @@ const products = [{
 	'ingredients': 'Pomme de terre 42,9%, viande bovine 25,1% (origine : France*), eau, crème fraiche légère liquide (lait) 3,9%, chapelures 2,9% [farine de blé (gluten), sel, levure], oignon, fécule de pomme de terre, emmental français râpé 0,7% (contient : lait), purée de tomate double concentrée, beurre (lait), carotte, sel, ail, poireau, persil, oignon en poudre, thym, poivre, plantes aromatiques (persil, laurier, thym), curcuma, muscade.',
 	'allergenes': [
 	'Gluten',
-	'lait'
+	'Lait'
 	],
 	'nova': 3,
 	'nutriscore': 'B',
@@ -55,7 +55,7 @@ const products = [{
 	'brand': 'La Belle-Iloise',
 	'quantity': '80g',
 	'packaging': [
-	'conserve',
+	'Conserve',
 	],
 	'categories': [
 	'Conserves',
@@ -102,7 +102,7 @@ const products = [{
 	'brand': 'La Belle-Iloise',
 	'quantity': '80g',
 	'packaging': [
-	'conserve',
+	'Conserve',
 	],
 	'categories': [
 	'Plats préparés',
@@ -112,8 +112,8 @@ const products = [{
 	'country': 'France',
 	'ingredients': 'Filets de sardines (49,2 %), huile d\'olive vierge extra, oignons rissolés, jus de citron (5,9 %), olives vertes (5,8 %), amandes grillées (2,5 %), plantes aromatiques, citron (1,7 %), fécule de manioc, sel, sucre, épices.',
 	'allergenes': [
-	'poisson',
-	'fruits à coque'
+	'Poisson',
+	'Fruits à coque'
 	],
 	'nova': 3,
 	'nutriscore': 'C',
@@ -146,9 +146,9 @@ const products = [{
 	'brand': 'Leader Price',
 	'quantity': '1L',
 	'packaging': [
-	'bouteille',
-	'bouchon',
-	'plastique'
+	'Bouteille',
+	'Bouchon',
+	'Plastique'
 	],
 	'categories': [
 	'Produits laitiers',
@@ -166,7 +166,7 @@ const products = [{
 	'country': 'France',
 	'ingredients': 'Lait demi-écrémé stérilisé UHT.',
 	'allergenes': [
-	'lait'
+	'Lait'
 	],
 	'nova': 1,
 	'nutriscore': 'B',
@@ -199,14 +199,14 @@ const products = [{
 	'brand': 'Lutti ',
 	'quantity': '130g',
 	'packaging': [
-	'sachet',
-	'plastique'
+	'Sachet',
+	'Plastique'
 	],
 	'categories': [
-	'snacks sucrés',
-	'confiserie',
-	'bonbons',
-	'bonbons gélifiés'
+	'Cnacks sucrés',
+	'Confiserie',
+	'Bonbons',
+	'Bonbons gélifiés'
 	],
 	'labels': [
 	'Peu ou pas de sucre',
@@ -256,8 +256,8 @@ const products = [{
 	'brand': 'Coca-Cola',
 	'quantity': '50cl',
 	'packaging': [
-	'bouteille',
-	'plastique'
+	'Bouteille',
+	'Plastique'
 	],
 	'categories': [
 	'Boissons',
@@ -303,10 +303,10 @@ const products = [{
 	'brand': 'Chipso', // Illisible
 	'quantity': '150g',
 	'packaging': [
-	'sachet',
+	'Sachet',
 	],
 	'categories': [
-	'chips',
+	'Chips',
 	],
 	'labels': [
 	'Éco-Emballages'
@@ -341,11 +341,11 @@ const products = [{
 	'brand': 'Made Good',
 	'quantity': '24g',
 	'packaging': [
-	'sachet',
-	'plastique'
+	'Sachet',
+	'Plastique'
 	],
 	'categories': [
-	'snacks sucrés'
+	'Snacks Sucrés'
 	],
 	'labels': [
 	'Bio', 'Végétarien', 'Végétalien', 'Sans arachide', 'CA-BIO-154', 'Union Orthodoxe'
@@ -353,7 +353,7 @@ const products = [{
 	'country': 'France',
 	'ingredients': 'Flocons d\'avoine pure (41 %), pépites de chocolat (sucre de canne, liqueur de cacao, beurre de cacao, extrait de huile de tournesol, sucre de betterave, nectar d\'agave, pomme, riz brun complet croustillant, inuline d\'agave, farine de tapioca, poudre de légumes (épinards, brocolis, carottes tomates, betteraves) (0,4%), poudre de champignon shiitake, arôme chocolat, arôme vanille.',
 	'allergenes': [
-	'gluten',
+	'Gluten',
 	],
 	'nova': 4,
 	'nutriscore': 'D',
@@ -392,7 +392,8 @@ const products = [{
 	'Petit-déjeuners',
 	'Produits à tartiner',
 	'Produits à tartiner sucrés',
-	'Pâtes à tartiner, Pâtes à tartiner au chocolat',
+  'Pâtes à tartiner',
+  'Pâtes à tartiner au chocolat',
 	'Pâtes à tartiner aux noisettes',
 	'Pâtes à tartiner aux noisettes et au cacao'
 	],
@@ -441,12 +442,12 @@ const products = [{
 	'brand': 'Il était un fruit',
 	'quantity': '60g',
 	'packaging': [
-	'sachet',
-	'boite carton'
+	'Sachet',
+	'Boite carton'
 	],
 	'categories': [
-	'snacks sucrés',
-	'produits déshydratés'
+	'Snacks sucrés',
+	'Produits déshydratés'
 	],
 	'labels': [],
 	'country': 'France',
@@ -481,8 +482,8 @@ const products = [{
 	'brand': 'Bonval',
 	'quantity': '180g',
 	'packaging': [
-	'frais',
-	'plastique'
+	'Frais',
+	'Plastique'
 	],
 	'categories': [
 	'Viandes',
@@ -538,7 +539,7 @@ const products = [{
 	'brand': 'Mix',
 	'quantity': '320g',
 	'packaging': [
-	'carton'
+	'Carton'
 	],
 	'categories': [
 	'Plats préparés',
@@ -603,8 +604,8 @@ const products = [{
 	'brand': 'Badoit',
 	'quantity': '50 cl',
 	'packaging': [
-	'bouteille',
-	'plastique'
+	'Bouteille',
+	'Plastique'
 	],
 	'categories': [
 	'Boissons',
@@ -650,9 +651,9 @@ const products = [{
 	'brand': 'Tropicana',
 	'quantity': '1.5L',
 	'packaging': [
-	'bouteille',
-	'plastique',
-	'bouteille plastique'
+	'Bouteille',
+	'Plastique',
+	'Bouteille plastique'
 	],
 	'categories': [
 	'Aliments et boissons à base de végétaux',
@@ -673,7 +674,7 @@ const products = [{
 	'ingredients': 'Jus de mandarine, d\'orange, de pomme et de raisin blanc',
 	'additifs': [],
 	'allergenes': [
-	'orange'
+	'Orange'
 	],
 	'nova': 1,
 	'nutriscore': 'D',
@@ -705,8 +706,8 @@ const products = [{
 	'brand': 'Auchan',
 	'quantity': '375g',
 	'packaging': [
-	'carton',
-	'boîte',
+	'Carton',
+	'Boîte',
 	],
 	'categories': [
 	'Aliments et boissons à base de végétaux',
@@ -753,8 +754,8 @@ const products = [{
 	'brand': 'Kellogg\'s ',
 	'quantity': '375g',
 	'packaging': [
-	'carton',
-	'sachet plastique',
+	'Carton',
+	'Sachet plastique',
 	],
 	'categories': [
 	'Aliments et boissons à base de végétaux',
@@ -802,8 +803,8 @@ const products = [{
 	'brand': 'Notre Jardin',
 	'quantity': '800g',
 	'packaging': [
-	'conserve',
-	'metal',
+	'Conserve',
+	'Metal',
 	],
 	'categories': [
 	'Aliments et boissons à base de végétaux',
@@ -855,9 +856,9 @@ const products = [{
 	'brand': 'Férial',
 	'quantity': '350g',
 	'packaging': [
-	'plastique',
-	'barquette',
-	'frais'
+	'Plastique',
+	'Barquette',
+	'Frais'
 	],
 	'categories': [
 	'Viandes',
@@ -901,8 +902,8 @@ const products = [{
 	'brand': 'Balisto',
 	'quantity': '167g',
 	'packaging': [
-	'sachet',
-	'plastique'
+	'Sachet',
+	'Plastique'
 	],
 	'categories': [
 	'Snacks sucrés',
@@ -961,9 +962,9 @@ const products = [{
 	'brand': 'Saint Alby',
 	'quantity': '180g',
 	'packaging': [
-	'frais',
-	'plastique',
-	'barquette'
+	'Frais',
+	'Plastique',
+	'Barquette'
 	],
 	'categories': [
 	'Viandes',
@@ -1018,8 +1019,8 @@ const products = [{
 	'brand': 'Auchan',
 	'quantity': '800g',
 	'packaging': [
-	'boite metal',
-	'conserve'
+	'Boite metal',
+	'Conserve'
 	],
 	'categories': [
 	'Petits pois et carottes en conserve'
@@ -1059,7 +1060,7 @@ const products = [{
 	'brand': 'Auchan',
 	'quantity': '200g',
 	'packaging': [
-	'papier'
+	'Papier'
 	],
 	'categories': [
 	'Dairies',
@@ -1104,12 +1105,12 @@ const products = [{
 	'packaging': [
 	'Bouteille',
 	'Plastique',
-	'bouteille et bouchon plastique à recycler'
+	'Bouteille et bouchon plastique à recycler'
 	],
 	'categories': [
-	'boissons',
-	'thé glacé',
-	'boissons sucrées',
+	'Boissons',
+	'Thé glacé',
+	'Boissons sucrées',
 	'Thés glacés saveur mûre'
 	],
 	'labels': [
@@ -1158,7 +1159,7 @@ const products = [{
 	'brand': 'Vico',
 	'quantity': '120g',
 	'packaging': [
-	'sachet',
+	'Sachet',
 	'Plastique'
 	],
 	'categories': [
@@ -1215,7 +1216,7 @@ const products = [{
 	'brand': 'épi d\'or',
 	'quantity': '500g',
 	'packaging': [
-	'sachet',
+	'Sachet',
 	'Plastique'
 	],
 	'categories': [

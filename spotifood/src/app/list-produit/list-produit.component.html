@@ -1,9 +1,94 @@
+<div class="products">
+
+<!-- Debut sidenav -->
+  <nav class="sidebar bg-light  d-none d-lg-block pl-2" id="nav1">
+    <a class="navbar-brand" href="#">Filtrer</a>
+    <div class="" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <div class="row">
+
+          <div class="col-12">
+            <div ngbDropdown class="d-inline-block my-3">
+              <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedCategorie}}</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button class="dropdown-item" *ngFor="let categorie of categorieTotal" (click)="getProductByCategorie(categorie)" (click)="changeSelectedCategorie(categorie)">{{categorie}}</button>
+                  </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div ngbDropdown class="d-inline-block my-3">
+              <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedMarque}}</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="dropdown-item" *ngFor="let marque of marques" (click)="changeSelectedMarque(marque)" (click)="getProductByMarque(marque)">{{marque}}</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div ngbDropdown class="d-inline-block my-3">
+              <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedAllergene}}</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="dropdown-item" *ngFor="let allergene of allergenes" (click)="changeSelectedAllergene(allergene)" (click)="getProductByAllergene(allergene)">{{allergene}}</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div ngbDropdown class="d-inline-block my-3">
+              <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedPackaging}}</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="dropdown-item" *ngFor="let package of packaging" (click)="changeSelectedPackaging(package)" (click)="getProductByPackaging(package)">{{package}}</button>
+              </div>
+            </div>
+          </div>
+
+          <form class="my-5 m-2">
+            <fieldset>
+              <legend>Nutri-Score</legend>
+
+              <div class="m-2">
+                <label class="containerRadio">
+                  <input type="radio" name="drone" value="A" (click)="getProductByScore('A')"/>
+                  <span class="checkmark"></span>
+                  A &nbsp;
+                </label>
+
+                <label class="containerRadio">
+                  <input type="radio" name="drone" value="B" (click)="getProductByScore('B')"/>
+                  <span class="checkmark"></span>
+                  B &nbsp;
+                </label>
+                <label class="containerRadio">
+                  <input type="radio" name="drone" value="C" (click)="getProductByScore('C')"/>
+                  <span class="checkmark"></span>
+                  C &nbsp;
+                </label>
+                <label class="containerRadio">
+                  <input type="radio" name="drone" value="D" (click)="getProductByScore('D')"/>
+                  <span class="checkmark"></span>
+                  D &nbsp;
+                </label>
+                <label class="containerRadio">
+                  <input type="radio" name="drone" value="E" (click)="getProductByScore('E')"/>
+                  <span class="checkmark"></span>
+                  E &nbsp;
+                </label>
+              </div>
+            </fieldset>
+          </form>
+          </div>
+          <button class="mx-4 btn btn-success text-white" (click)="tabTri=''" (click)="reinitialiser()">Réinitialiser</button>
+        </div>
+      </div>
+  </nav>
+<!-- Fin sidenav -->
+
 <!--My product list-->
-<div class="d-flex justify-content-center">
-
-  <div class="row">
-
-      <div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: page}">
+<div class="listProduits offset-2 col-9 d-flex justify-content-center">
+<!-- Affichage des produits triés -->
+ <div *ngIf="tabTri" class="row">
+      <div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of tabTri | paginate: { itemsPerPage: 2, currentPage: page}">
               <div class="images">
                 <div *ngIf="product.images;then picture else pictureError"></div>
                 <ng-template #picture>
@@ -26,15 +111,41 @@
                   <app-modal-produit [productModal]="product" [modalInput]="modal"></app-modal-produit>
                 </ng-template>
       </div>
-
-  </div>
-
 </div>
+<!-- Fin Affichage des produits triés -->
 
+<!-- Affichage de tous les produits de la galerie -->
+<div *ngIf="!tabTri" class="row">
+  <div class="col-12 col-lg-5 card flex-md-row shadow p-2 mb-4 ml-2 bg-white rounded" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: page}">
+    <div class="images">
+      <div *ngIf="product.images;then picture else pictureError"></div>
+      <ng-template #picture>
+        <img class="card-img-right img-responsive center" alt="img" src="{{product.images}}">
+      </ng-template>
+      <ng-template #pictureError>
+        <img class="card-img-right img-responsive center" alt="img" src="https://via.placeholder.com/300x400">
+      </ng-template>
+    </div>
+
+    <div class="card-body d-flex flex-column align-items-center">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text mb-auto">Quantity: {{product.quantity}}<br>
+        Emballage : {{product.packaging}}<br>
+        <a class="btn btn-outline-primary btn-sm mt-4" role="button" (click)="openMedia(content)">Détail
+          Produit</a>
+    </div>
+
+    <ng-template #content let-modal>
+      <app-modal-produit [productModal]="product" [modalInput]="modal"></app-modal-produit>
+    </ng-template>
+  </div>
+</div>
+<!-- Fin Affichage de tous les produits de la galerie -->
+</div>
 <!--End My product list-->
 <!--Pagination-->
-<div>
-  <pagination-controls previousLabel=""
-  nextLabel="" responsive="true" (pageChange)="page = $event"></pagination-controls>
+<div class="d-flex justify-content-center pagine">
+  <pagination-controls previousLabel="" nextLabel="" responsive="true" (pageChange)="page = $event"></pagination-controls>
+</div>
 </div>
 

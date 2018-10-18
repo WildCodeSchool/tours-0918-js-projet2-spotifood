@@ -3,12 +3,19 @@ import { Product } from '../models/product';
 import products from './products';
 import { Nutrients } from '../models/nutriments';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class GallerieService {
 
   products: Product[]; // tableau de produits
+  categories: any[];
+  categoriesTotal: string[];
+  selectedCategorie: string;
+  selectedMarque: string;
+  selectedAllergene: string;
+  selectedPackaging: string;
 
     constructor() {
     if (!localStorage.products) {
@@ -77,15 +84,84 @@ export class GallerieService {
 
   delete(id): void {
 
-    const produit = this.products.find(product => product.id == id);
+    const produit = this.products.find(product => product.id === id);
     const index = this.products.indexOf(produit);
     this.products.splice(index, 1);
     this.saveToLocalStorage(this.products);
 
   }
+  getProduitByCategorie(categorie): Product[] {
+    const arrayTri = this.products.filter((product) => {
+      if (product.categories && product.categories.includes(categorie)) {
+            return product;
+      }
+    });
+      return arrayTri;
+  }
+  getProductByMarque(marque: string): Product[] {
+    const arrayTri = this.products.filter((product) => product.brands === marque);
+    return arrayTri;
+  }
+  getProductByAllergene(allergene: string) {
+    const arrayTri = this.products.filter((product) => {
+      if (product.allergens && product.allergens.includes(allergene)) {
+        return product;
+      }
+    });
+    return arrayTri;
+  }
+
+  getProductByPackaging(packaging: string) {
+    const arrayTri = this.products.filter((product) => {
+      if (product.packaging && product.packaging.includes(packaging)) {
+        return product;
+      }
+    });
+    return arrayTri;
+  }
+  getProductByScore(score: string) {
+    const arrayTri = this.products.filter((product) => product.nutriscore === score);
+    return arrayTri;
+  }
+
+getCategories(): string[] {
+ this.categories = this.products.map((product) => {
+      const categorie: string [] = product.categories;
+      return categorie;
+  });
+  return this.categories;
+
 }
 
+tableauCategorie(categories) {
+  categories = categories.join(',');
+  categories = categories.split(',');
+      return categories;
+}
 
+  categorieUnique(categoriesTotal) {
+    return categoriesTotal.sort().filter((item, pos, ary) => {
+    return !pos || item !== ary[pos - 1];
+  });
+}
 
+  changeSelectedCategorie(newSelecetedCategorie: string) {
+   this.selectedCategorie = newSelecetedCategorie;
+   return this.selectedCategorie;
+  }
 
+  changeSelectedMarque(marque: string) {
+    this.selectedMarque = marque;
+    return this.selectedMarque;
+  }
+
+  changeSelectedAllergene(allergene: string) {
+    this.selectedAllergene = allergene;
+    return this.selectedAllergene;
+  }
+  changeSelectedPackaging(packaging: string) {
+    this.selectedPackaging = packaging;
+    return this.selectedPackaging;
+  }
+}
 

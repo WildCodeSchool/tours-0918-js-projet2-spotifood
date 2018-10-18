@@ -26,10 +26,10 @@ export class ListProduitComponent implements OnInit {
    selectedMarque = 'Marques';
    selectedAllergene = 'Allergenes';
    selectedPackaging = 'Conditionnement';
-   // labels = _.uniq(_.flatten(_.map(products, 'labels')));
-  marques = _.uniq(_.flatten(_.map(products, 'brand')));
-  allergenes = _.uniq(_.flatten(_.map(products, 'allergenes')));
-  packaging = _.uniq(_.flatten(_.map(products, 'packaging')));
+    marques = _.uniq(_.flatten(_.map(products, 'brand')));
+    allergenes = _.uniq(_.flatten(_.map(products, 'allergenes')));
+    packaging = _.uniq(_.flatten(_.map(products, 'packaging')));
+    filterDisplayed: boolean;
 
   // A service to open modal windows.
   // service pour gerer la gallerie des produits
@@ -43,6 +43,7 @@ export class ListProduitComponent implements OnInit {
         this.categories = this.gallerieService.getCategories();
         this.categorieTotal = this.gallerieService.tableauCategorie(this.categories);
         this.categorieTotal = this.gallerieService.categorieUnique(this.categorieTotal);
+        this.filterDisplayed = false;
     }
 
   getProductByCategorie(categorie) {
@@ -85,5 +86,9 @@ export class ListProduitComponent implements OnInit {
     this.selectedMarque = 'Marques';
     this.selectedAllergene = 'Allergenes';
     this.selectedPackaging = 'Conditionnement';
+  }
+
+  showFilter() {
+    this.filterDisplayed = !this.filterDisplayed;
   }
   }

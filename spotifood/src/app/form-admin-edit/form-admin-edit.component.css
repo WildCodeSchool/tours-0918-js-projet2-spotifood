@@ -302,3 +302,26 @@ select.form-element-field {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/**
+if admin is not logged
+*/
+.ifNotLogged {
+  margin-top: 140px;
+}
+
+/**
+if form invalid
+*/
+
+.ng-valid[required],
+.ng-valid.required,
+.ng-valid {
+  border-left: 5px solid #42A948;
+  /* green */
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #a94442;
+  /* red */
+}

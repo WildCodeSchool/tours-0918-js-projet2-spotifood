@@ -11,7 +11,7 @@
   </button>
 
 <div class="navbar-collapse w-100" [ngbCollapse]="!isCollapsed">
-    <ul class="navbar-nav mx-auto justify-content-center">
+    <ul class="navbar-nav mx-auto justify-content-center" *ngIf="!adminLogged">
       <li class="nav-item active">
         <a class="nav-link text-white" routerLink="/produits">Produits<span class="sr-only">(current)</span></a>
       </li>
@@ -23,6 +23,19 @@
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav mx-auto justify-content-center" *ngIf="adminLogged">
+      <li class="nav-item active">
+        <a class="nav-link text-white" *ngIf="!userView" (click)="changeView()">Vue utilisateur<span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" *ngIf="userView" (click)="changeView()">Comparateur<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-white" routerLink="/admin/produits">Produits<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/produits" (click)="logOut()">Déconnexion</a>
       </li>
     </ul>
 

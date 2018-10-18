@@ -67,8 +67,24 @@ export class GallerieService {
 
   add(element) {
     element.id = this.products.length;
+
+    element.name = element.name.charAt(0).toUpperCase() + element.name.slice(1).toLowerCase();
+    element.brands = element.brands.charAt(0).toUpperCase() + element.brands.slice(1).toLowerCase();
+    if (element.labels) element.labels = this.capitalize(element.labels);
+    element.categories = this.capitalize(element.categories);
+    element.packaging = this.capitalize(element.packaging);
+    element.allergens = this.capitalize(element.allergens);
+
     this.products.push(element);
     this.saveToLocalStorage(this.products);
+  }
+
+  capitalize(str) {
+    return str.split(',').map(w => {
+      w = w.trim();
+      w = w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+      return w
+    }).join(',');
   }
 
   update(element) {

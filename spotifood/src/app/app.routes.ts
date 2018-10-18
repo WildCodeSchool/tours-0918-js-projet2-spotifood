@@ -6,6 +6,7 @@ import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
 import { AdministrateurComponent } from './administrateur/administrateur.component';
 import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 
 const ROUTES: Route[] = [
   {
@@ -38,6 +39,10 @@ const ROUTES: Route[] = [
   {
     path: 'admin/produits',
     component: ProduitAdminComponent
+  },
+  {
+    path: 'admin/messagerie',
+    component: MessagerieAdminComponent
   }
 ];
 

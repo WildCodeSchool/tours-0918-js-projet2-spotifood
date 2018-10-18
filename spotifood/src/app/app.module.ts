@@ -24,6 +24,7 @@ import { AdministrateurComponent } from './administrateur/administrateur.compone
 import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 import { ComparateurComponent } from './comparateur/comparateur.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import { AutofocusDirective } from './autofocus.directive';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     ComparateurProduitComponent,
     ComparateurComponent,
     LoginadminComponent,
+    AutofocusDirective,
   ],
   imports: [
     BrowserModule,

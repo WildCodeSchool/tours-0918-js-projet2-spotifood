@@ -1,10 +1,19 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Input,
+  OnChanges,
+  SimpleChanges
 } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Product} from '../models/product'; // class produit
-import { GallerieService} from '../common/gallerie.service';
+import {
+  NgbModal
+} from '@ng-bootstrap/ng-bootstrap';
+import {
+  Product
+} from '../models/product'; // class produit
+import {
+  GallerieService
+} from '../common/gallerie.service';
 import products from '../common/products';
 import * as _ from 'lodash';
 
@@ -14,36 +23,50 @@ import * as _ from 'lodash';
   templateUrl: './list-produit.component.html',
   styleUrls: ['./list-produit.component.css']
 })
-export class ListProduitComponent implements OnInit {
-   // liste des produits à afficher
-   products: Product[];
-   page = 1;
-   tabTri: Product[];
-   categories: string[];
-   categorie: string;
-   categorieTotal: string[];
-   selectedCategorie = 'Catégories';
-   selectedMarque = 'Marques';
-   selectedAllergene = 'Allergenes';
-   selectedPackaging = 'Conditionnement';
-   // labels = _.uniq(_.flatten(_.map(products, 'labels')));
+export class ListProduitComponent implements OnInit, OnChanges {
+  // liste des produits à afficher
+  products: Product[];
+  page = 1;
+  tabTri: Product[];
+  categories: string[];
+  categorie: string;
+  categorieTotal: string[];
+  selectedCategorie = 'Catégories';
+  selectedMarque = 'Marques';
+  selectedAllergene = 'Allergenes';
+  selectedPackaging = 'Conditionnement';
+  // labels = _.uniq(_.flatten(_.map(products, 'labels')));
   marques = _.uniq(_.flatten(_.map(products, 'brand')));
   allergenes = _.uniq(_.flatten(_.map(products, 'allergenes')));
   packaging = _.uniq(_.flatten(_.map(products, 'packaging')));
 
+  //  <-- product name provided by the navbar
+  @Input()
+  productName: string;
+  // -->
+
   // A service to open modal windows.
   // service pour gerer la gallerie des produits
-  constructor(private service: NgbModal, private gallerieService: GallerieService) {
+  constructor(private service: NgbModal, private gallerieService: GallerieService) {}
+  openMedia(content) {
+    this.service.open(content);
   }
- openMedia(content) {
-   this.service.open(content);
- }
   ngOnInit() {
-        this.products = this.gallerieService.get();
-        this.categories = this.gallerieService.getCategories();
-        this.categorieTotal = this.gallerieService.tableauCategorie(this.categories);
-        this.categorieTotal = this.gallerieService.categorieUnique(this.categorieTotal);
-    }
+    this.products = this.gallerieService.get();
+    this.categories = this.gallerieService.getCategories();
+    this.categorieTotal = this.gallerieService.tableauCategorie(this.categories);
+    this.categorieTotal = this.gallerieService.categorieUnique(this.categorieTotal);
+  }
+
+  //  <-- for the navbar's search field
+  ngOnChanges(changes: SimpleChanges) {
+    this.displayProduct();
+  }
+
+  displayProduct() {
+    this.products = this.gallerieService.dispProduct(this.productName);
+  }
+  //  -->
 
   getProductByCategorie(categorie) {
     this.tabTri = this.gallerieService.getProduitByCategorie(categorie);
@@ -77,7 +100,7 @@ export class ListProduitComponent implements OnInit {
     this.selectedAllergene = this.gallerieService.changeSelectedAllergene(allergene);
   }
   changeSelectedPackaging(packaging) {
-      this.selectedPackaging = this.gallerieService.changeSelectedPackaging(packaging);
+    this.selectedPackaging = this.gallerieService.changeSelectedPackaging(packaging);
   }
 
   reinitialiser() {
@@ -86,4 +109,5 @@ export class ListProduitComponent implements OnInit {
     this.selectedAllergene = 'Allergenes';
     this.selectedPackaging = 'Conditionnement';
   }
-  }
+
+}

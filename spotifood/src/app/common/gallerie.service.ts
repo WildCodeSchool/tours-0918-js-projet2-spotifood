@@ -179,5 +179,20 @@ tableauCategorie(categories) {
     this.selectedPackaging = packaging;
     return this.selectedPackaging;
   }
+
+
+
+  /**
+   * for the navbar's search field
+   */
+  dispProduct(name): Product[] {
+    console.log("hoora");
+    const arrayTri = this.products.filter((product) => {
+      if (product.name && product.name.includes(name)) {
+            return product;
+      }
+    });
+    return arrayTri;
+  }
 }
 

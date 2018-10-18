@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Product } from '../models/product';
 import { GallerieService } from '../common/gallerie.service';
 import { LoggingService } from '../common/logging.service';
@@ -14,11 +14,25 @@ export class NavbarComponent implements OnInit {
   products: Product[];
   adminLogged: boolean;
   userView: boolean;
+
+  productName: string;
+
+  @Output()
+  productDisplay = new EventEmitter();
+
   constructor(private service: GallerieService, private loggingService: LoggingService, private router: Router) { }
 
   ngOnInit() {
     this.products = this.service.get();
     this.adminLogged = this.loggingService.getLogStatus();
+  }
+
+  goToProducts() {
+    this.router.navigate(['/produits']);
+  }
+
+  displayProduct() {
+    this.productDisplay.emit(this.productName);
   }
 
   logOut() {

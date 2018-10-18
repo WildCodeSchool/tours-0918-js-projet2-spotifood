@@ -2,12 +2,22 @@
   margin-left: 30px;
   font-size: 1.5rem;
 }
-
+/*
+<---smaller font-size so that the logo image doesn't shrink
+*/
 @media screen and (max-width: 400px) {
   .navbar-brand {
     font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto !important;
   }
 }
+/* 
+---> */
 
 .logo {
   max-height: 50px;
@@ -31,29 +41,9 @@ nav {
    /* #8080804d; */
 }
 
-.navbar-nav {
-  width: 700px;
-}
-
-@media screen and (min-width: 991px) {
-  nav li {
-    border-right: 1px solid #0000004d;
-  }
-
-  nav li:first-of-type {
-    border-left: 1px solid #0000004d;
-  }
-
-  nav li a {
-    border-left: 1px solid gray;
-  }
-
-  nav li a:last-of-type {
-    border-right: 1px solid gray;
-  }
-
-  nav {
-    box-shadow: 0px 10px 3px 1px rgba(20, 20, 24, 0.2);
+@media screen and (min-width: 1200px) {
+  .navbar-nav {
+    width: 700px;
   }
 }
 
@@ -67,7 +57,7 @@ nav li a:hover {
 }
 
 /**
-Search form
+<--- Search form
 */
 .form-inline {
   position: relative;
@@ -84,11 +74,32 @@ input {
   font-weight: 400;
   font-weight: normal;
   margin-right: 3%;
+  padding-right: 25px;
 }
 
+@media screen and (min-width: 1400px) {
+  input.fa-search {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  input.fa-search {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  input.fa-search {
+    width: 221px;
+  }
+}
+
+/* 
+---> */
 
 /**
-navbar collapse
+<--- navbar collapse
 */
 @media screen and (max-width: 991px) {
   .navbar-collapse {
@@ -119,3 +130,32 @@ navbar collapse
     right: 160px !important;
   }
 }
+/* 
+---> */
+
+/*
+<--- when menu is not collapsed
+*/
+@media screen and (min-width: 991px) {
+  nav li {
+    border-right: 1px solid #0000004d;
+  }
+
+  nav li:first-of-type {
+    border-left: 1px solid #0000004d;
+  }
+
+  nav li a {
+    border-left: 1px solid gray;
+  }
+
+  nav li a:last-of-type {
+    border-right: 1px solid gray;
+  }
+
+  nav {
+    box-shadow: 0px 10px 3px 1px rgba(20, 20, 24, 0.2);
+  }
+}
+/* 
+---> */

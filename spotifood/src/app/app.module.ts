@@ -14,7 +14,6 @@ import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { ModalProduitComponent } from './modal-produit/modal-produit.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
@@ -35,7 +34,6 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     ListProduitComponent,
     ModalProduitComponent,
     CarrouselComponent,
-    SidenavComponent,
     FooterComponent,
     ProduitsComponent,
     FormAdminEditComponent,

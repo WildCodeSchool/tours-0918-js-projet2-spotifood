@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import message from '../DataMessage/message';
+import { MessagerieService } from '../DataMessage/messagerie.service';
+import { Message } from '../models/messagerie';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,18 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  nom: string;
-  objet: string;
-  email: string;
-  message: string;
+  message: Message;
 
-  constructor() { }
+  constructor(private service: MessagerieService) { }
 
   ngOnInit() {
+    this.message = new Message();
   }
 
-  onSubmit(form: NgForm) {
-    console.log(form.value);
-}
+  send() {
+    this.service.add(this.message);
+  }
+
+
 
 }

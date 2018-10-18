@@ -14,7 +14,10 @@ export class ProduitAdminComponent implements OnInit {
   page = 1;
   closeResult: string;
 
-  constructor(private serviceAdmin: GallerieService, private modalService: NgbModal) {}
+  constructor(private serviceAdmin: GallerieService, private modalService: NgbModal) {
+     const product = new Product();
+  }
+ 
 
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
@@ -25,7 +28,7 @@ export class ProduitAdminComponent implements OnInit {
   }
 
 
-    private getDismissReason(reason: any): string {
+  private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
     } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
@@ -38,8 +41,14 @@ export class ProduitAdminComponent implements OnInit {
 
   ngOnInit() {
     this.products = this.serviceAdmin.get();
-}
-delete(id) {
-  this.serviceAdmin.delete(id);
-}
+  }
+
+ 
+
+  suppr(idSuppr) {
+     this.serviceAdmin.delete(idSuppr);
+    
+  }
+
+
 }

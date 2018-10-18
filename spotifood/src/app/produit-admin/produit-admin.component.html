@@ -19,7 +19,7 @@
 
         <div class="d-flex justify-content-around icons">
           <img routerLink="/edit/{{product.id}}" class="pen" src="../../assets/images/pen.png" role="button">
-          <img (click)="delete(product.id)" (click)="open(content)" class="trash" src="../../assets/images/trash.png" role="button">
+          <img (click)="open(content)" class="trash" src="../../assets/images/trash.png" role="button">
           <!-- </a> -->
         </div>
       </div>
@@ -53,11 +53,12 @@
     </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-success" (click)="modal.close('Save click')">Ok</button>
+    <button type="button" class="btn btn-outline-danger" (click)="modal.close('Save click')">Annuler la suppression</button>
+
+    <button type="button" class="btn btn-outline-success" (click)="suppr(idSuppr)"  >Ok</button>
+
   </div>
 </ng-template>
 
 
 <hr>
-
-

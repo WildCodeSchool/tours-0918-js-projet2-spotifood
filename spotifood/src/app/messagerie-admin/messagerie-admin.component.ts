@@ -18,7 +18,7 @@ export class MessagerieAdminComponent implements OnInit {
   }
 
   delete(messagerie: Message) {
-    this.servce.delete(this.message);
+    this.servce.delete(messagerie);
   }
 
 }

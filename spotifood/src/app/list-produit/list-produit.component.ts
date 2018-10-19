@@ -1,10 +1,19 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Input,
+  OnChanges,
+  SimpleChanges
 } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Product} from '../models/product'; // class produit
-import { GallerieService} from '../common/gallerie.service';
+import {
+  NgbModal
+} from '@ng-bootstrap/ng-bootstrap';
+import {
+  Product
+} from '../models/product'; // class produit
+import {
+  GallerieService
+} from '../common/gallerie.service';
 import products from '../common/products';
 import * as _ from 'lodash';
 
@@ -31,13 +40,17 @@ export class ListProduitComponent implements OnInit {
     packaging = _.uniq(_.flatten(_.map(products, 'packaging')));
     filterDisplayed: boolean;
 
+  //  <-- product name provided by the navbar
+  @Input()
+  productName: string;
+  // -->
+
   // A service to open modal windows.
   // service pour gerer la gallerie des produits
-  constructor(private service: NgbModal, private gallerieService: GallerieService) {
+  constructor(private service: NgbModal, private gallerieService: GallerieService) {}
+  openMedia(content) {
+    this.service.open(content);
   }
- openMedia(content) {
-   this.service.open(content);
- }
   ngOnInit() {
         this.products = this.gallerieService.get();
         this.categories = this.gallerieService.getCategories();
@@ -45,6 +58,16 @@ export class ListProduitComponent implements OnInit {
         this.categorieTotal = this.gallerieService.categorieUnique(this.categorieTotal);
         this.filterDisplayed = false;
     }
+
+  //  <-- for the navbar's search field
+  ngOnChanges(changes: SimpleChanges) {
+    this.displayProduct();
+  }
+
+  displayProduct() {
+    this.products = this.gallerieService.dispProduct(this.productName);
+  }
+  //  -->
 
   getProductByCategorie(categorie) {
     this.tabTri = this.gallerieService.getProduitByCategorie(categorie);
@@ -78,7 +101,7 @@ export class ListProduitComponent implements OnInit {
     this.selectedAllergene = this.gallerieService.changeSelectedAllergene(allergene);
   }
   changeSelectedPackaging(packaging) {
-      this.selectedPackaging = this.gallerieService.changeSelectedPackaging(packaging);
+    this.selectedPackaging = this.gallerieService.changeSelectedPackaging(packaging);
   }
 
   reinitialiser() {
@@ -91,4 +114,4 @@ export class ListProduitComponent implements OnInit {
   showFilter() {
     this.filterDisplayed = !this.filterDisplayed;
   }
-  }
+}

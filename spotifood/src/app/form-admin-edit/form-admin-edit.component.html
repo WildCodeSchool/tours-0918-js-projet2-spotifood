@@ -13,9 +13,8 @@
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-name">Nom</label>
         <small class="form-element-hint" *ngIf="name.untouched">(champ obligatoire)</small>
-        <small class="form-element-hint text-danger" *ngIf="name.touched && name.invalid"> Ce champ est obligatoire</small>
-        <small class="form-element-hint text-danger" *ngIf="name.errors?.minlength">Le nom doit contenir au minimum 5
-          caractères</small>
+        <small class="form-element-hint text-danger" *ngIf="name.touched && name.invalid"> Ce champ est obligatoire et doit contenir au minimum 5 caractères</small>
+
       </div>
 
       <div class="form-element form-input">
@@ -30,7 +29,10 @@
 
       <div class="form-element form-input">
         <input name="brand" #brand="ngModel" id="field-brand" class="form-element-field" [(ngModel)]="product.brands"
-          placeholder="Précisez la marque" type="text" required />
+          placeholder="Précisez la marque" type="text" required awesomplete list="listBrand"/>
+        <datalist id="listBrand">
+          <option *ngFor="let product of products">{{product.brands}}</option>
+        </datalist>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-brand">Marque</label>
         <small class="form-element-hint" *ngIf="brand.untouched">(champ obligatoire)</small>
@@ -39,15 +41,21 @@
 
       <div class="form-element form-input">
         <input name="labels" #labels="ngModel" id="field-labels" class="form-element-field" [(ngModel)]="product.labels"
-          placeholder="" type="text" />
+          placeholder="Séparez plusieurs valeurs par des virgules" type="text" required awesomplete list="listLabels"/>
+        <datalist id="listLabels">
+          <option *ngFor="let product of products">{{product.labels}}</option>
+        </datalist>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-labels">Labels, certifications, récompenses</label>
-        <small class="form-element-hint">(séparez plusieurs valeurs par des virgules)</small>
+        <small class="form-element-hint">(champ obligatoire&nbsp;; séparez plusieurs valeurs par des virgules)</small>
+        <small class="form-element-hint text-danger" *ngIf="brand.touched && brand.invalid"> Ce champ est obligatoire</small>
       </div>
 
       <div class="form-element form-input">
-        <input name="categories" #categories="ngModel" id="field-categories" class="form-element-field" [(ngModel)]="product.categories"
-          placeholder="Indiquez la/les catégories du produit" type="text" required />
+        <input name="categories" #categories="ngModel" id="field-categories" class="form-element-field" [(ngModel)]="product.categories" placeholder="Indiquez la/les catégories du produit" type="text" required awesomplete list="listCateg"/>
+        <datalist id="listCateg">
+          <option *ngFor="let product of products">{{product.categories}}</option>
+        </datalist>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-categories">Catégories</label>
         <small class="form-element-hint" *ngIf="categories.untouched">(champ obligatoire - séparez plusieurs valeurs
@@ -57,8 +65,10 @@
       </div>
 
       <div class="form-element form-input">
-        <input name="packaging" #packaging="ngModel" id="field-packaging" class="form-element-field" [(ngModel)]="product.packaging"
-          placeholder="ex: carton, bouteille en plastique, etc." type="text" required />
+        <input name="packaging" #packaging="ngModel" id="field-packaging" class="form-element-field" [(ngModel)]="product.packaging" placeholder="ex: carton, bouteille en plastique, etc." type="text" required awesomplete list="listPack"/>
+        <datalist id="listPack">
+          <option *ngFor="let product of products">{{product.packaging}}</option>
+        </datalist>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-packaging">Conditionnement</label>
         <small class="form-element-hint" *ngIf="packaging.untouched">(champ obligatoire - séparez plusieurs valeurs par
@@ -79,14 +89,9 @@
       </div>
 
       <div class="form-element form-input">
-        <input name="allergens" #allergens="ngModel" id="field-allergens" class="form-element-field" [(ngModel)]="product.allergens"
-          placeholder="" type="text" required />
+        <input name="allergens" #allergens="ngModel" id="field-allergens" class="form-element-field" [(ngModel)]="product.allergens" placeholder="" type="text" />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-allergens">Allergènes</label>
-        <small class="form-element-hint" *ngIf="allergens.untouched">(champ obligatoire - séparez plusieurs valeurs par
-          des virgules)</small>
-        <small class="form-element-hint text-danger" *ngIf="allergens.touched && allergens.invalid"> Ce champ est
-          obligatoire</small>
       </div>
       <!-- buttons to choose nutriscore -->
       <div class="form-radio form-radio-block">
@@ -157,11 +162,12 @@
 
       <!-- uploading pictures -->
       <div class="form-element form-input">
-          <input name="pic" #image="ngModel" id="field-image" class="form-element-field" [(ngModel)]="product.images" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|png)" placeholder="Url vers une image au format jpg ou png" type="text" />
-          <div class="form-element-bar"></div>
-          <label class="form-element-label" for="field-image">Url vers l'image</label>
-          <small class="form-element-hint text-danger" *ngIf="image.invalid">L'image doit être au format PNG ou JPG</small>
-        </div>
+        <input name="pic" #image="ngModel" id="field-image" class="form-element-field" [(ngModel)]="product.images" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|png)" placeholder="Url vers une image au format jpg ou png" type="text" />
+        <div class="form-element-bar"></div>
+        <label class="form-element-label" for="field-image">Url vers l'image</label>
+        <small class="form-element-hint text-danger" *ngIf="image.invalid">L'image doit être au format PNG ou JPG</small>
+      </div>
+      <img src="{{product.images}}" alt="pic of the product"/>
 
     </fieldset>
 

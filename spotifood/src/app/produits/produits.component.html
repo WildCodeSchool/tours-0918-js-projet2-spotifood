@@ -1,8 +1,8 @@
-<app-navbar></app-navbar>
+<app-navbar (productDisplay)='tellListToDisplayProduct($event)'></app-navbar>
 <div class="container-fluid no-gutters">
   <div class="main-content">
-    <app-carrousel></app-carrousel>
-        <app-list-produit></app-list-produit>
+    <app-carrousel (productDisplay)='tellListToDisplayProduct($event)'></app-carrousel>
+        <app-list-produit [productName]='productToDisplay'></app-list-produit>
   </div>
 </div>
 <app-footer></app-footer>

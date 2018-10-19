@@ -1,18 +1,18 @@
 <div class="carousel-wrapper d-none d-lg-block" *ngIf="visible">
   <ngb-carousel #carousel="ngbCarousel" [showNavigationIndicators]=false>
-    <ng-template d-bock w-100 ngbSlide *ngFor="let product of products">
+    <ng-template d-bock w-100 ngbSlide *ngFor="let product of topProducts">
       <div class="image-replacement"></div>
 
       <div class="container-fluid inner-container">
         <div class="row">
 
           <div class="col-6 text-center">
-            <img src="https://static.openfoodfacts.org/images/products/{{product.id}}.200.jpg">
+            <img src="{{product.images}}" alt="product image">
           </div>
 
           <div class="col-6 pt-4 pl-5">
             <div class="caption">{{product.name}}</div>
-            <button class="mt-4 btn btn-light">Voir détails produit</button>
+            <button class="mt-4 btn btn-light" (click)="displayProduct(product.name)">Détail produit</button>
           </div>
 
         </div>

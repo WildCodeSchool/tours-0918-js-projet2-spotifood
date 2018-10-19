@@ -19,12 +19,14 @@ export class ProduitAdminComponent implements OnInit {
   }
  
 
-  open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
+  open(content, id) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result
+    .then(result => {
+      this.delete(id);
+    }).catch(reason => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
+
   }
 
 
@@ -44,7 +46,7 @@ export class ProduitAdminComponent implements OnInit {
   }
 
  
-  suppr(id) {
+  delete(id) {
      this.serviceAdmin.delete(id);
     
   }

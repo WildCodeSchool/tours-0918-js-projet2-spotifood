@@ -26,6 +26,7 @@ import { ComparateurComponent } from './comparateur/comparateur.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { AutofocusDirective } from './autofocus.directive';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
 import { GallerieService } from '../common/gallerie.service';
@@ -16,9 +17,38 @@ export class FormAdminEditComponent implements OnInit {
   product: Product = new Product();
   products: Product[];
   addForm: boolean;
+  closeResult: string;
   adminLogged: boolean;
 
-  constructor(private formService: GallerieService, private route: ActivatedRoute, private loggingService: LoggingService) { }
+  // tslint:disable-next-line:max-line-length
+  constructor(private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal, private loggingService: LoggingService) { }
+
+  open(content) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+  openmodif(contentmodif) {
+    this.modalService.open(contentmodif, {ariaLabelledBy: 'modal2'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return  `with: ${reason}`;
+    }
+  }
 
   ngOnInit() {
     if (this.route.snapshot.paramMap.get('id')) {
@@ -44,11 +74,11 @@ export class FormAdminEditComponent implements OnInit {
 
   update() {
     this.formService.update(this.product);
-    alert('La fiche a bien été modifiée');
+
   }
 
   getProduct(id): void {
-    this.product =  this.formService.getProduct(id);
+    this.product = this.formService.getProduct(id);
   }
 
 }

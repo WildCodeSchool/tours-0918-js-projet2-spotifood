@@ -10,7 +10,7 @@ export class MessagerieService {
   message: Message[];
 
   constructor() {
-    if (!localStorage.message) {
+    if (!localStorage.Messagerie) {
       // Initialisation du local storage et du tableau products avec tableau des produits
       this.message = message.map((x) => {
 
@@ -27,7 +27,7 @@ export class MessagerieService {
 
     } else {
       // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
-      const data = JSON.parse(localStorage.message);
+      const data = JSON.parse(localStorage.Messagerie);
       this.message = data;
     }
    }

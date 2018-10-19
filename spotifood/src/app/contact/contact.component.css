@@ -202,10 +202,10 @@ select.form-element-field {
   margin: 0;
 }
 
-.btn{ 
+.btn{
   margin-left: 50%;
   margin-top: 4%;
-  
+
 }
 
 @media screen and (max-width: 900px) {
@@ -213,7 +213,7 @@ select.form-element-field {
   h1{
     text-decoration: underline;
     color: #00004d;
-    padding-top: 40%;
+    padding-top: 20%;
     padding-left: 55%;
     padding-bottom: 5%;
   }
@@ -221,11 +221,56 @@ select.form-element-field {
   .form-element-bar {
     position: relative;
     height: 1px;
-    width: 80%;
+    width: 60%;
     margin-left: 30%;
     background: #00004d;
     display: block;
   }
 
+  .form-element-field {
+    outline: none;
+    margin-left: 30%;
+    color: #00004d;
+    height: 1.5rem;
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border: 0 solid transparent;
+    line-height: 1.5;
+    width: 60%;
+    box-shadow: none;
+    opacity: 0.001;
+    transition: opacity 0.28s ease;
+    will-change: opacity;
+  }
+
 }
 
+@media screen and (max-width: 500px) {
+  h1{
+    text-decoration: underline;
+    color: #00004d;
+    padding-top: 50%;
+    padding-left: 55%;
+    padding-bottom: 5%;
+  }
+
+  .form-element-field {
+    outline: none;
+    margin-left: 30%;
+    color: #00004d;
+    height: 1.5rem;
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border: 0 solid transparent;
+    line-height: 1.5;
+    width: 60%;
+    box-shadow: none;
+    opacity: 0.001;
+    transition: opacity 0.28s ease;
+    will-change: opacity;
+  }
+}

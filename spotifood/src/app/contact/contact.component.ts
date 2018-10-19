@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
 
   send() {
     this.service.add(this.message);
+    this.message = new Message();
   }
 
 

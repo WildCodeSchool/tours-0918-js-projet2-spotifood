@@ -26,6 +26,7 @@ import { ComparateurProduitComponent } from './comparateur-produit/comparateur-p
 import { ComparateurComponent } from './comparateur/comparateur.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.co
     ComparateurComponent,
     LoginadminComponent,
     MessagerieAdminComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

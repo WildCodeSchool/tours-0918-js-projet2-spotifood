@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="container-fluid text-center">
+
+  <h1>Nous contacter</h1>
+
+  <form class="form-group">
+
+    <form class="form-element form-input">
+      <input class="form-element-field" [(ngModel)]="message.name" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="name" required/>
+      <div class="form-element-bar"></div>
+      <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Nom</label>
+    </form>
+
+    <form class="form-element form-input">
+        <input  list="requete" class="form-element-field" [(ngModel)]="message.objet" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="name" required/>
+        <div class="form-element-bar"></div>
+        <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Objet</label>
+        <datalist id="requete">
+          <option>Professionnel</option>
+          <option>Signaler un produit</option>
+          <option>Demande de renseignement</option>
+          <option>Autre</option>
+        </datalist>
+      </form>
+
+      <form class="form-element form-input">
+          <input class="form-element-field" [(ngModel)]="message.email" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="email" required/>
+          <div class="form-element-bar"></div>
+          <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Email</label>
+        </form>
+
+        <form class="form-element form-input">
+            <input class="form-element-field"[(ngModel)]="message.message" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="message" required/>
+            <div class="form-element-bar"></div>
+            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Message</label>
+            <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>
+          </form>
+        </form>
+      </div>
+
+      <app-footer></app-footer>

@@ -1,7 +1,17 @@
 .container-fluid{
   padding-top: 10%;
+  height: auto;
+  width: auto;
   background: url('https://i.goopics.net/jGajj.jpg');
+  background-repeat: repeat;
   padding-bottom: 5%;
+}
+
+.trash{
+  width: 5%;
+  height: auto;
+  cursor: pointer;
+  margin-left: 98%;
 }
 
 .card{

@@ -1,37 +1,20 @@
 <app-navbar-admin></app-navbar-admin>
 
 <div class='container-fluid'>
-<h1 class="text-white">Bienvenue sur votre messagerie !</h1>
+  <h1 class="text-white">Bienvenue sur votre messagerie !</h1>
 
-<div class="row col-12">
-<div class="card col-9 offset-2">
-  <div class="card-header">
-    Nouveau message de 'Captain America'
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Signalement d'un produit</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
-  </div>
-</div>
-
-<div class="card card col-9 offset-2">
-    <div class="card-header">
-      Nouveau message de 'Captain America'
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Signalement d'un produit</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
-    </div>
-  </div>
-
-  <div class="card card col-9 offset-2">
+  <div class="row col-12">
+    <div class="card col-9 offset-2" *ngFor="let message of message">
       <div class="card-header">
-        Nouveau message de 'Captain America'
+        Nouveau message de {{ message.name }}
       </div>
       <div class="card-body">
-        <h5 class="card-title">Signalement d'un produit</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.With supporting text below as a natural lead-in to additional content.</p>
+        <h5 class="card-title">{{ message.objet }}</h5>
+        <p class="card-text">{{ message.message }}</p>
+        <div class="card-footer text-muted">
+          {{ message.email }}
+        </div>
+        <img class="trash" (click)="delete()" src="../../assets/images/trash.png" role="button">
       </div>
     </div>
-</div>
-
+  </div>

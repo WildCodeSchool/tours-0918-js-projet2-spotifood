@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MessagerieService } from '../DataMessage/messagerie.service';
+import { Message } from '../models/messagerie';
 
 @Component({
   selector: 'app-messagerie-admin',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagerieAdminComponent implements OnInit {
 
-  constructor() { }
+  message: Message[];
+
+  constructor(private servce: MessagerieService) { }
 
   ngOnInit() {
+    this.message = this.servce.get();
+  }
+
+  delete(messagerie: Message) {
+    this.servce.delete(this.message);
   }
 
 }

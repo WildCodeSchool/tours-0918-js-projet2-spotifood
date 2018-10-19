@@ -46,4 +46,11 @@ export class MessagerieService {
     this.message.push(messagerie);
     this.saveToLocalStorage(this.message);
   }
+
+  delete(messagerie: Message) {
+    const mess = this.message.find(list => this.message === name);
+    const index = this.message.indexOf(messagerie);
+    this.message.splice(index, 1);
+    this.saveToLocalStorage(this.message);
+  }
 }

@@ -76,7 +76,6 @@ export class GallerieService {
   }
 
   delete(id): void {
-
     const produit = this.products.find(product => product.id == id);
     const index = this.products.indexOf(produit);
     this.products.splice(index, 1);

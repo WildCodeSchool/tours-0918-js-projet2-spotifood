@@ -2,7 +2,7 @@
 
 <div *ngIf="adminLogged">
   <div class="d-flex justify-content-center ajouter">
-    <button routerLink="/add" type="button" class="btn border-dark btn-success">Ajouter un produit</button>
+    <button routerLink="/admin/add" type="button" class="btn border-dark btn-success">Ajouter un produit</button>
   </div>
 
   <div class="container-fluid produit">
@@ -23,7 +23,7 @@
           <h5 class="card-title">{{product.name}}</h5>
 
           <div class="d-flex justify-content-around icons">
-            <img routerLink="/edit/{{product.id}}" class="pen" src="../../assets/images/pen.png" role="button">
+            <img routerLink="/admin/edit/{{product.id}}" class="pen" src="../../assets/images/pen.png" role="button">
             <img (click)="delete(product.id)" class="trash" src="../../assets/images/trash.png" role="button">
             <!-- </a> -->
           </div>

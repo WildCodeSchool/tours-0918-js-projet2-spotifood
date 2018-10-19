@@ -23,7 +23,7 @@ import * as _ from 'lodash';
   templateUrl: './list-produit.component.html',
   styleUrls: ['./list-produit.component.css']
 })
-export class ListProduitComponent implements OnInit {
+export class ListProduitComponent implements OnInit, OnChanges {
    // liste des produits à afficher
    products: Product[];
    page = 1;

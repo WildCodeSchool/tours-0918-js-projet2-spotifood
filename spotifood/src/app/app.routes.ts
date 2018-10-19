@@ -24,11 +24,11 @@ const ROUTES: Route[] = [
     redirectTo: '/accueil',
     pathMatch: 'full' },
   {
-    path: 'add',
+    path: 'admin/add',
     component: FormAdminEditComponent
   },
   {
-    path: 'edit/:id',
+    path: 'admin/edit/:id',
     component: FormAdminEditComponent
   },
   {

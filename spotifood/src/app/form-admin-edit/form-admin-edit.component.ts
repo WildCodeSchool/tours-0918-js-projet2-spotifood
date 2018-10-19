@@ -14,6 +14,7 @@ export class FormAdminEditComponent implements OnInit {
 
   // produit à créer
   product: Product = new Product();
+  products: Product[];
   addForm: boolean;
   adminLogged: boolean;
 
@@ -31,6 +32,8 @@ export class FormAdminEditComponent implements OnInit {
     }
 
     this.adminLogged = this.loggingService.getLogStatus();
+
+    this.products = this.formService.get();
   }
 
   add() {

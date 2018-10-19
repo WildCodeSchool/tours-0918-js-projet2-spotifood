@@ -167,7 +167,7 @@
         <label class="form-element-label" for="field-image">Url vers l'image</label>
         <small class="form-element-hint text-danger" *ngIf="image.invalid">L'image doit être au format PNG ou JPG</small>
       </div>
-      <img src="{{product.images}}" alt="pic of the product"/>
+      <img *ngIf="product.images" src="{{product.images}}" alt="pic of the product"/>
 
     </fieldset>
 

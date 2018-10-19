@@ -13,9 +13,8 @@
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="field-name">Nom</label>
         <small class="form-element-hint" *ngIf="name.untouched">(champ obligatoire)</small>
-        <small class="form-element-hint text-danger" *ngIf="name.touched && name.invalid"> Ce champ est obligatoire</small>
-        <small class="form-element-hint text-danger" *ngIf="name.errors?.minlength">Le nom doit contenir au minimum 5
-          caractères</small>
+        <small class="form-element-hint text-danger" *ngIf="name.touched && name.invalid"> Ce champ est obligatoire et doit contenir au minimum 5 caractères</small>
+
       </div>
 
       <div class="form-element form-input">

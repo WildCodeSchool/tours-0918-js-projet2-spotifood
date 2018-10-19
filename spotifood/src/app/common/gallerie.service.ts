@@ -66,10 +66,11 @@ export class GallerieService {
   }
 
   add(element) {
-    element.id = this.products.length;
+    element.id = Date.now();
 
     element.name = element.name.charAt(0).toUpperCase() + element.name.slice(1).toLowerCase();
     element.brands = element.brands.charAt(0).toUpperCase() + element.brands.slice(1).toLowerCase();
+    // tslint:disable-next-line:curly
     if (element.labels) element.labels = this.capitalize(element.labels);
     element.categories = this.capitalize(element.categories);
     element.packaging = this.capitalize(element.packaging);
@@ -83,7 +84,7 @@ export class GallerieService {
     return str.split(',').map(w => {
       w = w.trim();
       w = w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-      return w
+      return w;
     }).join(',');
   }
 
@@ -99,13 +100,12 @@ export class GallerieService {
   }
 
   delete(id): void {
-
     const produit = this.products.find(product => product.id === id);
     const index = this.products.indexOf(produit);
     this.products.splice(index, 1);
     this.saveToLocalStorage(this.products);
-
   }
+  
   getProduitByCategorie(categorie): Product[] {
     const arrayTri = this.products.filter((product) => {
       if (product.categories && product.categories.includes(categorie)) {
@@ -140,20 +140,20 @@ export class GallerieService {
     return arrayTri;
   }
 
-getCategories(): string[] {
- this.categories = this.products.map((product) => {
-      const categorie: string [] = product.categories;
-      return categorie;
-  });
-  return this.categories;
+  getCategories(): string[] {
+    this.categories = this.products.map((product) => {
+        const categorie: string [] = product.categories;
+        return categorie;
+    });
+    return this.categories;
 
-}
+  }
 
-tableauCategorie(categories) {
-  categories = categories.join(',');
-  categories = categories.split(',');
-      return categories;
-}
+  tableauCategorie(categories) {
+    categories = categories.join(',');
+    categories = categories.split(',');
+    return categories;
+  }
 
   categorieUnique(categoriesTotal) {
     return categoriesTotal.sort().filter((item, pos, ary) => {
@@ -162,8 +162,8 @@ tableauCategorie(categories) {
 }
 
   changeSelectedCategorie(newSelecetedCategorie: string) {
-   this.selectedCategorie = newSelecetedCategorie;
-   return this.selectedCategorie;
+    this.selectedCategorie = newSelecetedCategorie;
+    return this.selectedCategorie;
   }
 
   changeSelectedMarque(marque: string) {
@@ -186,7 +186,6 @@ tableauCategorie(categories) {
    * for the navbar's search field
    */
   dispProduct(name): Product[] {
-    console.log("hoora");
     const arrayTri = this.products.filter((product) => {
       if (product.name && product.name.includes(name)) {
             return product;

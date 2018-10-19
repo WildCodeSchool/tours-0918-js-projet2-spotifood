@@ -156,11 +156,12 @@
 
       <!-- uploading pictures -->
       <div class="form-element form-input">
-          <input name="pic" #image="ngModel" id="field-image" class="form-element-field" [(ngModel)]="product.images" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|png)" placeholder="Url vers une image au format jpg ou png" type="text" />
-          <div class="form-element-bar"></div>
-          <label class="form-element-label" for="field-image">Url vers l'image</label>
-          <small class="form-element-hint text-danger" *ngIf="image.invalid">L'image doit être au format PNG ou JPG</small>
-        </div>
+        <input name="pic" #image="ngModel" id="field-image" class="form-element-field" [(ngModel)]="product.images" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|png)" placeholder="Url vers une image au format jpg ou png" type="text" />
+        <div class="form-element-bar"></div>
+        <label class="form-element-label" for="field-image">Url vers l'image</label>
+        <small class="form-element-hint text-danger" *ngIf="image.invalid">L'image doit être au format PNG ou JPG</small>
+      </div>
+      <img src="{{product.images}}" alt="pic of the product"/>
 
     </fieldset>
 

@@ -105,7 +105,7 @@ export class GallerieService {
     this.products.splice(index, 1);
     this.saveToLocalStorage(this.products);
   }
-  
+
   getProduitByCategorie(categorie): Product[] {
     const arrayTri = this.products.filter((product) => {
       if (product.categories && product.categories.includes(categorie)) {

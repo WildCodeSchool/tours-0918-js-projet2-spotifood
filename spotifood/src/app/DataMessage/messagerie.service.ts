@@ -7,12 +7,12 @@ import { Message } from '../models/messagerie';
 })
 export class MessagerieService {
 
-  message: Message[];
+  messages: Message[];
 
   constructor() {
     if (!localStorage.Messagerie) {
       // Initialisation du local storage et du tableau products avec tableau des produits
-      this.message = message.map((x) => {
+      this.messages = message.map((x) => {
 
         const send = new Message();
 
@@ -23,12 +23,12 @@ export class MessagerieService {
 
         return send;
       });
-      this.saveToLocalStorage(this.message);
+      this.saveToLocalStorage(this.messages);
 
     } else {
       // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
       const data = JSON.parse(localStorage.Messagerie);
-      this.message = data;
+      this.messages = data;
     }
    }
 
@@ -39,18 +39,17 @@ export class MessagerieService {
   }
 
   get(): Message[] {
-    return this.message;
+    return this.messages;
   }
 
   add(messagerie: Message) {
-    this.message.push(messagerie);
-    this.saveToLocalStorage(this.message);
+    this.messages.push(messagerie);
+    this.saveToLocalStorage(this.messages);
   }
 
   delete(messagerie: Message) {
-    const mess = this.message.find(list => this.message === name);
-    const index = this.message.indexOf(messagerie);
-    this.message.splice(index, 1);
-    this.saveToLocalStorage(this.message);
+    const index = this.messages.findIndex(message => message.name === messagerie.name);
+    this.messages.splice(index, 1);
+    this.saveToLocalStorage(this.messages);
   }
 }

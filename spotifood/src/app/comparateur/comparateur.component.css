@@ -25,9 +25,13 @@ h1{
 
 
 img{
-    width: 60%;
-    margin-top: 7%;
+  max-height: 170px;
+  max-width: 85%;
+  width: auto;
+  height: auto;
 }
+
+
 
 .fas {
   font-family: 'Roboto', sans-serif;

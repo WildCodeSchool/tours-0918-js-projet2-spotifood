@@ -1,0 +1,36 @@
+.container-fluid{
+  padding-top: 10%;
+  height: auto;
+  width: auto;
+  background: url('https://i.goopics.net/jGajj.jpg');
+  background-repeat: repeat;
+  padding-bottom: 5%;
+}
+
+.trash{
+  width: 5%;
+  height: auto;
+  cursor: pointer;
+  margin-left: 98%;
+}
+
+.card{
+  margin-top: 3%;
+  top: -10%;
+}
+
+h1{
+  margin-left: 16%;
+}
+
+@media screen and (max-width: 850px) {
+  .container-fluid{
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-fluid{
+    padding-top: 30%;
+  }
+}

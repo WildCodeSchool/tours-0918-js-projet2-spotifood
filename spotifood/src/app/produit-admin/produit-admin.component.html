@@ -34,6 +34,7 @@
   <div class="d-flex justify-content-center">
     <pagination-controls previousLabel="" nextLabel="" responsive="true" (pageChange)="page = $event"></pagination-controls>
   </div>
+</div>
 
 <div *ngIf="!adminLogged" class="ifNotLogged container">
   <p class="alert alert-danger w-100 text-center" role="alert">Vous n'êtes pas autorisé à accéder à cette page. Vous
@@ -47,8 +48,6 @@
   </div>
 </div>
 
-
-
 <ng-template #content let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Suppression produit</h4>
@@ -61,7 +60,7 @@
       <div class="form-group">
         <div class="input-group">
           <div class="input-group-append">
-            <p>Le produit a bien été supprimé !</p>
+            <p>Êtes-vous sûr(e) de vouloir supprimer ce produit&nbsp;?</p>
           </div>
         </div>
       </div>
@@ -70,7 +69,7 @@
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-danger" (click)="modal.dismiss('annuler')">Annuler la suppression</button>
 
-    <button type="button" (click)="modal.close()" class="btn btn-outline-success">Ok</button>
+    <button type="button" (click)="modal.close()" class="btn btn-outline-success">Oui</button>
 
   </div>
 </ng-template>

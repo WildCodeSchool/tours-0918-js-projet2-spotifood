@@ -4,7 +4,6 @@ import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-
 import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
 import { GallerieService } from '../common/gallerie.service';
-import { LoggingService } from '../common/logging.service';
 import message from '../DataMessage/message';
 import { MessagerieService } from '../DataMessage/messagerie.service';
 import { Message } from '../models/messagerie';
@@ -22,7 +21,6 @@ export class PageContribuerComponent implements OnInit {
 	products: Product[];
 	addForm: boolean;
 	closeResult: string;
-	adminLogged: boolean;
 	message: Message;
 
 	// tslint:disable-next-line:max-line-length

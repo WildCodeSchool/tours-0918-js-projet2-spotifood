@@ -1,13 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
 import { GallerieService } from '../common/gallerie.service';
 import message from '../DataMessage/message';
 import { MessagerieService } from '../DataMessage/messagerie.service';
 import { Message } from '../models/messagerie';
-
+import { Product } from '../models/productsuggest'
 
 @Component({
 	selector: 'app-page-contribuer',
@@ -16,14 +15,12 @@ import { Message } from '../models/messagerie';
 })
 export class PageContribuerComponent implements OnInit {
 
-	// produit à créer
-	product: Product = new Product();
-	products: Product[];
+	product: Product[];
 	addForm: boolean;
 	closeResult: string;
 	message: Message;
 
-	// tslint:disable-next-line:max-line-length
+	
 	constructor(private service: MessagerieService, private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal) { }
 
 	open(content) {
@@ -45,16 +42,9 @@ export class PageContribuerComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		if (this.route.snapshot.paramMap.get('id')) {
-			const id = this.route.snapshot.paramMap.get('id');			
-			this.addForm = false;
-		} else {
-			this.addForm = true;
-			this.product = new Product();
-			this.product.nutrients = new Nutrients();
-		}
+		
 		this.message = new Message();
-		this.products = this.formService.get();
+	
 	}
 
 	send() {

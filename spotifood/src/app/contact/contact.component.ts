@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import message from '../DataMessage/message';
-import { MessagerieService } from '../DataMessage/messagerie.service';
+import message from '../common/message';
+import { MessagerieService } from '../common/messagerie.service';
 import { Message } from '../models/messagerie';
 
 

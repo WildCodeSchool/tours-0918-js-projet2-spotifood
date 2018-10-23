@@ -16,39 +16,22 @@ export class ProduitAdminComponent implements OnInit {
   closeResult: string;
   adminLogged: boolean;
 
-  constructor(private serviceAdmin: GallerieService, private modalService: NgbModal, private loggingService: LoggingService) {
-    const product = new Product();
-  }
-
-
-  open(content, id) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result
-    .then(result => {
-      this.delete(id);
-    }).catch(reason => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
-
-  }
-
-
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
-  }
-
+  constructor(private serviceAdmin: GallerieService, private modalService: NgbModal, private loggingService: LoggingService) {}
 
   ngOnInit() {
     this.products = this.serviceAdmin.get();
     this.adminLogged = this.loggingService.getLogStatus();
   }
 
-
+  //open a modal, so as to ask the admin to confirm whether he wants to delete the product.
+  open(content, id) {
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result
+    .then(result => {
+      this.delete(id);
+    })
+  }
+  
+  //remove the product with the given id from the database.
   delete(id) {
     this.serviceAdmin.delete(id);
   }

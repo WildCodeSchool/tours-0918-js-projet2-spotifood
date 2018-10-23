@@ -16,7 +16,7 @@ export class MessagerieAdminComponent implements OnInit {
   ngOnInit() {
     this.message = this.servce.get();
   }
-
+  // Method for supression message.
   delete(messagerie: Message) {
     this.servce.delete(messagerie);
   }

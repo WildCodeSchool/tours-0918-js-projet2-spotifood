@@ -68,23 +68,23 @@ export class ListProduitComponent implements OnInit, OnChanges {
     this.products = this.productService.dispProduct(this.productName);
   }
   //  -->
-
+  // Filter by categorie.
   getProductByCategorie(categorie) {
     this.tabTri = this.productService.getProduitByCategorie(categorie);
   }
-
+// Filter by brand.
   getProductByMarque(marque: string) {
     this.tabTri = this.productService.getProductByMarque(marque);
   }
-
+// Filter by allergen.
   getProductByAllergene(allergene) {
     this.tabTri = this.productService.getProductByAllergene(allergene);
   }
-
+// Filter by package.
   getProductByPackaging(packaging) {
     this.tabTri = this.productService.getProductByPackaging(packaging);
   }
-
+// Filter by nutriscore.
   getProductByScore(score) {
     this.tabTri = this.productService.getProductByScore(score);
   }
@@ -103,14 +103,14 @@ export class ListProduitComponent implements OnInit, OnChanges {
   changeSelectedPackaging(packaging) {
     this.selectedPackaging = this.productService.changeSelectedPackaging(packaging);
   }
-
+// Reinitialisation des champs.
   reinitialiser() {
     this.selectedCategorie = 'Catégories';
     this.selectedMarque = 'Marques';
     this.selectedAllergene = 'Allergenes';
     this.selectedPackaging = 'Conditionnement';
   }
-
+// Filtre.
   showFilter() {
     this.filterDisplayed = !this.filterDisplayed;
   }

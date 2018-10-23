@@ -22,7 +22,7 @@ export class FormAdminEditComponent implements OnInit {
 
   // tslint:disable-next-line:max-line-length
   constructor(private formService: ProductService, private route: ActivatedRoute, private modalService: NgbModal, private loggingService: LoggingService) { }
-
+// Confirmation d'ajout d'un produit.
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -30,7 +30,7 @@ export class FormAdminEditComponent implements OnInit {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
-
+// Confirmation de modification de produit.
   openmodif(contentmodif) {
     this.modalService.open(contentmodif, {ariaLabelledBy: 'modal2'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
@@ -51,6 +51,7 @@ export class FormAdminEditComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Recuperation de l'ID dans l'URL.
     if (this.route.snapshot.paramMap.get('id')) {
       const id = this.route.snapshot.paramMap.get('id');
       this.getProduct(id);
@@ -67,17 +68,20 @@ export class FormAdminEditComponent implements OnInit {
   }
 
   add() {
+    // Methode d'ajout de produit.
     this.formService.add(this.product);
     this.product = new Product();
     this.product.nutrients = new Nutrients();
   }
 
   update() {
+    // Methode mise à jours de produit.
     this.formService.update(this.product);
 
   }
 
   getProduct(id): void {
+    // Recuperation de l'id d'un produit.
     this.product = this.formService.getProduct(id);
   }
 

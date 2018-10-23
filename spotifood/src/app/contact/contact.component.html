@@ -6,15 +6,15 @@
   <form class="form-group">
 
     <form class="form-element form-input">
-      <input class="form-element-field" [(ngModel)]="message.name" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="name" required/>
+      <input class="form-element-field" [(ngModel)]="message.name" name="name" placeholder="Please fill in your full email" type="name" required/>
       <div class="form-element-bar"></div>
-      <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Nom</label>
+      <label class="form-element-label" for="name">Nom</label>
     </form>
 
     <form class="form-element form-input">
-        <input  list="requete" class="form-element-field" [(ngModel)]="message.objet" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="name" required/>
+        <input  list="requete" class="form-element-field" [(ngModel)]="message.objet" name="objet" placeholder="Please fill in your full email" type="name" required/>
         <div class="form-element-bar"></div>
-        <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Objet</label>
+        <label class="form-element-label" for="objet">Objet</label>
         <datalist id="requete">
           <option>Signaler un produit</option>
           <option>Professionnel</option>
@@ -24,15 +24,15 @@
       </form>
 
       <form class="form-element form-input">
-          <input class="form-element-field" [(ngModel)]="message.email" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="email" required/>
+          <input class="form-element-field" [(ngModel)]="message.email" name="email" placeholder="Please fill in your full email" type="email" required/>
           <div class="form-element-bar"></div>
-          <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Email</label>
+          <label class="form-element-label" for="email">Email</label>
         </form>
 
         <form class="form-element form-input">
-            <input class="form-element-field"[(ngModel)]="message.message" [ngModelOptions]="{standalone: true}" placeholder="Please fill in your full email" type="message" required/>
+            <input class="form-element-field"[(ngModel)]="message.message" name="message" placeholder="Please fill in your full email" type="message" required/>
             <div class="form-element-bar"></div>
-            <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Message</label>
+            <label class="form-element-label" for="message">Message</label>
             <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>
           </form>
         </form>

@@ -30,7 +30,7 @@ export class LoginadminComponent implements OnInit {
     this.champ = '';
     this.champOk = 'uneadressemail@gmail.com';
   }
-
+  // Method for verification input on the login page.
   verify(content) {
     if (this.champ !== this.champOk) {
       this.modalService.open(content).result

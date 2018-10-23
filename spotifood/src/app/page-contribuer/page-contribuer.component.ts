@@ -15,12 +15,13 @@ import { Product } from '../models/productsuggest'
 })
 export class PageContribuerComponent implements OnInit {
 
+	
 	product: Product[];
 	addForm: boolean;
 	closeResult: string;
 	message: Message;
 
-	
+	// tslint:disable-next-line:max-line-length
 	constructor(private service: MessagerieService, private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal) { }
 
 	open(content) {
@@ -44,7 +45,7 @@ export class PageContribuerComponent implements OnInit {
 	ngOnInit() {
 		
 		this.message = new Message();
-	
+		
 	}
 
 	send() {

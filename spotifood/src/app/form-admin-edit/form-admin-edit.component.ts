@@ -3,7 +3,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Product } from '../models/product';
 import { Nutrients } from '../models/nutriments';
-import { GallerieService } from '../common/gallerie.service';
+import { ProductService } from '../common/product.service';
 import { LoggingService } from '../common/logging.service';
 
 @Component({
@@ -21,7 +21,7 @@ export class FormAdminEditComponent implements OnInit {
   adminLogged: boolean;
 
   // tslint:disable-next-line:max-line-length
-  constructor(private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal, private loggingService: LoggingService) { }
+  constructor(private formService: ProductService, private route: ActivatedRoute, private modalService: NgbModal, private loggingService: LoggingService) { }
 
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {

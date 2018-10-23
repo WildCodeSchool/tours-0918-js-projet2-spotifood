@@ -7,7 +7,7 @@ import { Nutrients } from '../models/nutriments';
 @Injectable({
   providedIn: 'root'
 })
-export class GallerieService {
+export class ProductService {
 
   products: Product[]; // tableau de produits
   categories: any[];
@@ -56,15 +56,18 @@ export class GallerieService {
     }
   }
 
-
+  // save product(s) to localStorage
   saveToLocalStorage(product) {
     const data = JSON.stringify(product);
     localStorage.setItem('products', data);
   }
+
+  // get products
   get(): Product[] {
     return this.products;
   }
 
+  // create a unique identifier for the product, and store the product into the localStorage
   add(element) {
     element.id = Date.now();
 
@@ -80,6 +83,7 @@ export class GallerieService {
     this.saveToLocalStorage(this.products);
   }
 
+  // capitalise data inputs (for consistency)
   capitalize(str) {
     return str.split(',').map(w => {
       w = w.trim();
@@ -88,17 +92,20 @@ export class GallerieService {
     }).join(',');
   }
 
+  // after an admin changed the information on a product, save the changes to localStorage
   update(element) {
     const index = this.products.indexOf(element);
     this.products[index] = element;
     this.saveToLocalStorage(this.products);
   }
 
+  // find the product associated with a given id
   getProduct(id: string) {
     // tslint:disable-next-line:triple-equals
     return this.products.find(product => product.id == id);
   }
 
+  // delete the product associated with a given id
   delete(id): void {
     const produit = this.products.find(product => product.id === id);
     const index = this.products.indexOf(produit);
@@ -106,6 +113,7 @@ export class GallerieService {
     this.saveToLocalStorage(this.products);
   }
 
+  // get all products associated with a given category
   getProduitByCategorie(categorie): Product[] {
     const arrayTri = this.products.filter((product) => {
       if (product.categories && product.categories.includes(categorie)) {
@@ -114,10 +122,14 @@ export class GallerieService {
     });
       return arrayTri;
   }
+
+  // get all products associated with a given brand
   getProductByMarque(marque: string): Product[] {
     const arrayTri = this.products.filter((product) => product.brands === marque);
     return arrayTri;
   }
+
+  // get all products containing a given allergen
   getProductByAllergene(allergene: string) {
     const arrayTri = this.products.filter((product) => {
       if (product.allergens && product.allergens.includes(allergene)) {
@@ -127,6 +139,7 @@ export class GallerieService {
     return arrayTri;
   }
 
+  // get all products associated with a given packaging
   getProductByPackaging(packaging: string) {
     const arrayTri = this.products.filter((product) => {
       if (product.packaging && product.packaging.includes(packaging)) {
@@ -135,11 +148,14 @@ export class GallerieService {
     });
     return arrayTri;
   }
+
+  // get all products associated with a given nutritional value
   getProductByScore(score: string) {
     const arrayTri = this.products.filter((product) => product.nutriscore === score);
     return arrayTri;
   }
 
+  // create a list of all existing categories (returns multidimensional array)
   getCategories(): string[] {
     this.categories = this.products.map((product) => {
         const categorie: string [] = product.categories;
@@ -149,32 +165,39 @@ export class GallerieService {
 
   }
 
+  // list all categories in a single array (returns a single array)
   tableauCategorie(categories) {
     categories = categories.join(',');
     categories = categories.split(',');
     return categories;
   }
 
+  // remove duplicates
   categorieUnique(categoriesTotal) {
     return categoriesTotal.sort().filter((item, pos, ary) => {
     return !pos || item !== ary[pos - 1];
   });
 }
 
+  // change selected category
   changeSelectedCategorie(newSelecetedCategorie: string) {
     this.selectedCategorie = newSelecetedCategorie;
     return this.selectedCategorie;
   }
 
+  // change selected brand
   changeSelectedMarque(marque: string) {
     this.selectedMarque = marque;
     return this.selectedMarque;
   }
 
+  // change selected allergen
   changeSelectedAllergene(allergene: string) {
     this.selectedAllergene = allergene;
     return this.selectedAllergene;
   }
+
+  // change selected packaging
   changeSelectedPackaging(packaging: string) {
     this.selectedPackaging = packaging;
     return this.selectedPackaging;
@@ -182,9 +205,7 @@ export class GallerieService {
 
 
 
-  /**
-   * for the navbar's search field
-   */
+  // display the product the user searched for
   dispProduct(name): Product[] {
     const arrayTri = this.products.filter((product) => {
       if (product.name && product.name.includes(name)) {

@@ -19,6 +19,7 @@ export class ContactComponent implements OnInit {
     this.message = new Message();
   }
 
+  // save the message to the localStorage
   send() {
     this.service.add(this.message);
     this.message = new Message();

@@ -12,8 +12,8 @@ import {
   Product
 } from '../models/product'; // class produit
 import {
-  GallerieService
-} from '../common/gallerie.service';
+  ProductService
+} from '../common/product.service';
 import products from '../common/products';
 import * as _ from 'lodash';
 
@@ -47,15 +47,15 @@ export class ListProduitComponent implements OnInit, OnChanges {
 
   // A service to open modal windows.
   // service pour gerer la gallerie des produits
-  constructor(private service: NgbModal, private gallerieService: GallerieService) {}
+  constructor(private service: NgbModal, private productService: ProductService) {}
   openMedia(content) {
     this.service.open(content);
   }
   ngOnInit() {
-        this.products = this.gallerieService.get();
-        this.categories = this.gallerieService.getCategories();
-        this.categorieTotal = this.gallerieService.tableauCategorie(this.categories);
-        this.categorieTotal = this.gallerieService.categorieUnique(this.categorieTotal);
+        this.products = this.productService.get();
+        this.categories = this.productService.getCategories();
+        this.categorieTotal = this.productService.tableauCategorie(this.categories);
+        this.categorieTotal = this.productService.categorieUnique(this.categorieTotal);
         this.filterDisplayed = false;
     }
 
@@ -65,43 +65,43 @@ export class ListProduitComponent implements OnInit, OnChanges {
   }
 
   displayProduct() {
-    this.products = this.gallerieService.dispProduct(this.productName);
+    this.products = this.productService.dispProduct(this.productName);
   }
   //  -->
 
   getProductByCategorie(categorie) {
-    this.tabTri = this.gallerieService.getProduitByCategorie(categorie);
+    this.tabTri = this.productService.getProduitByCategorie(categorie);
   }
 
   getProductByMarque(marque: string) {
-    this.tabTri = this.gallerieService.getProductByMarque(marque);
+    this.tabTri = this.productService.getProductByMarque(marque);
   }
 
   getProductByAllergene(allergene) {
-    this.tabTri = this.gallerieService.getProductByAllergene(allergene);
+    this.tabTri = this.productService.getProductByAllergene(allergene);
   }
 
   getProductByPackaging(packaging) {
-    this.tabTri = this.gallerieService.getProductByPackaging(packaging);
+    this.tabTri = this.productService.getProductByPackaging(packaging);
   }
 
   getProductByScore(score) {
-    this.tabTri = this.gallerieService.getProductByScore(score);
+    this.tabTri = this.productService.getProductByScore(score);
   }
 
   changeSelectedCategorie(selectedCategorie: string) {
-    this.selectedCategorie = this.gallerieService.changeSelectedCategorie(selectedCategorie);
+    this.selectedCategorie = this.productService.changeSelectedCategorie(selectedCategorie);
   }
 
   changeSelectedMarque(marque: string) {
-    this.selectedMarque = this.gallerieService.changeSelectedMarque(marque);
+    this.selectedMarque = this.productService.changeSelectedMarque(marque);
 
   }
   changeSelectedAllergene(allergene: string) {
-    this.selectedAllergene = this.gallerieService.changeSelectedAllergene(allergene);
+    this.selectedAllergene = this.productService.changeSelectedAllergene(allergene);
   }
   changeSelectedPackaging(packaging) {
-    this.selectedPackaging = this.gallerieService.changeSelectedPackaging(packaging);
+    this.selectedPackaging = this.productService.changeSelectedPackaging(packaging);
   }
 
   reinitialiser() {

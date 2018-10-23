@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { GallerieService } from '../common/gallerie.service';
+import { ProductService } from '../common/product.service';
 import { Product } from '../models/product';
 
 @Component({
@@ -15,11 +15,7 @@ export class CarrouselComponent implements OnInit {
   @Output()
   productDisplay = new EventEmitter();
 
-  constructor(private service: GallerieService) {}
-
-  show() {
-    this.visible = !this.visible;
-  }
+  constructor(private service: ProductService) {}
 
   ngOnInit() {
     this.visible = true;
@@ -27,7 +23,13 @@ export class CarrouselComponent implements OnInit {
     this.topProducts = [this.products[17], this.products[7], this.products[13]];
   }
 
+  // show or hide carrousel
+  show() {
+    this.visible = !this.visible;
+  }
 
+  // when the button is clicked, the product's name is sent to the parent component.
+  // (The parent will then send this name to the product gallery)
   displayProduct(productName) {
     this.productDisplay.emit(productName);
   }

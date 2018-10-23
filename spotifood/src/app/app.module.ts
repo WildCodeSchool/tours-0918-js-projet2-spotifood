@@ -20,7 +20,6 @@ import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
-import { AdministrateurComponent } from './administrateur/administrateur.component';
 import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 import { ComparateurComponent } from './comparateur/comparateur.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
@@ -40,7 +39,6 @@ import { ContactComponent } from './contact/contact.component';
     ProduitsComponent,
     FormAdminEditComponent,
     ProduitAdminComponent,
-    AdministrateurComponent,
     ComparateurProduitComponent,
     ComparateurComponent,
     LoginadminComponent,

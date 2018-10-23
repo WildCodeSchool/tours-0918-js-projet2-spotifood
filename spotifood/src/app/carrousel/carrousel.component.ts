@@ -1,7 +1,6 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { ProductService } from '../common/product.service';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-carrousel',
@@ -10,28 +9,29 @@ import {
 })
 export class CarrouselComponent implements OnInit {
   visible: boolean;
-  products: {
-    'name': string;
-    'id': string;
-  } [];
+  products: Product[];
+  topProducts: Product[];
 
-  constructor() {}
+  @Output()
+  productDisplay = new EventEmitter();
 
+  constructor(private service: ProductService) {}
+
+  ngOnInit() {
+    this.visible = true;
+    this.products = this.service.get();
+    this.topProducts = [this.products[17], this.products[7], this.products[13]];
+  }
+
+  // show or hide carrousel
   show() {
     this.visible = !this.visible;
   }
 
-  ngOnInit() {
-    this.visible = true;
-    this.products = [{
-      'name': 'Spaghettoni n.7',
-      'id': '807/680/815/0072/front_fr.15',
-    }, {
-      'name': 'Oats',
-      'id': '359/762/000/0017/front_fr.16',
-    }, {
-      'name': 'Ricoré original',
-        'id': '761/303/265/5495/front_fr.111',
-    }];
+  // when the button is clicked, the product's name is sent to the parent component.
+  // (The parent will then send this name to the product gallery)
+  displayProduct(productName) {
+    this.productDisplay.emit(productName);
   }
+
 }

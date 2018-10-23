@@ -25,11 +25,19 @@
 }
 
 [class*=col-] {
-  height: 200px;
+  height: 230px;
+}
+
+img {
+  max-height: 200px;
+  max-width: 85%;
+  width: auto;
+  height: auto;
 }
 
 .caption {
-  font-size: 3rem;
+  padding-top: 1rem;
+  font-size: 2.5rem;
 }
 
 .btn-dark {

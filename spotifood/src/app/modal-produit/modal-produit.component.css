@@ -3,3 +3,21 @@
   color: green;
 
 }
+
+table{
+  width: 100%;
+}
+
+td{
+  width: 20%;
+}
+
+.indice{
+    padding-left: 70px;
+    padding: 3%;
+    text-align: left;
+}
+
+span{
+ color: #ff471a;
+}

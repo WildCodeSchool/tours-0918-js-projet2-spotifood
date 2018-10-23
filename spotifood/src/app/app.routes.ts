@@ -3,9 +3,10 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
-import { AdministrateurComponent } from './administrateur/administrateur.component';
 import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
+import { ContactComponent } from './contact/contact.component';
 
 const ROUTES: Route[] = [
   {
@@ -24,12 +25,16 @@ const ROUTES: Route[] = [
     redirectTo: '/accueil',
     pathMatch: 'full' },
   {
-    path: 'add',
+    path: 'admin/add',
     component: FormAdminEditComponent
   },
   {
-    path: 'edit/:id',
+    path: 'admin/edit/:id',
     component: FormAdminEditComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: 'admin',
@@ -38,6 +43,10 @@ const ROUTES: Route[] = [
   {
     path: 'admin/produits',
     component: ProduitAdminComponent
+  },
+  {
+    path: 'admin/messagerie',
+    component: MessagerieAdminComponent
   }
 ];
 

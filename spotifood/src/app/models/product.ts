@@ -1,7 +1,7 @@
 import { Nutrients } from './nutriments';
 
 export class Product {
-  id: string;
+  id: string | number;
   name: string;
   quantity: string;
   brands: string;

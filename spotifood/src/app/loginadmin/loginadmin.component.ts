@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
+import { LoggingService } from '../common/logging.service';
 
 @Component({
   selector: 'app-loginadmin',
@@ -12,7 +13,7 @@ export class LoginadminComponent implements OnInit {
   champOk: string;
   closeResult: string;
 
-  constructor(private modalService: NgbModal, private router: Router) { }
+  constructor(private modalService: NgbModal, private router: Router, private loggingService: LoggingService) { }
 
 
   private getDismissReason(reason: any): string {
@@ -29,14 +30,9 @@ export class LoginadminComponent implements OnInit {
     this.champ = '';
     this.champOk = 'uneadressemail@gmail.com';
   }
-
+  // Method for verification input on the login page.
   verify(content) {
     if (this.champ !== this.champOk) {
-      // this.modalService.open(content).result.then((result) => {
-      //   this.closeResult = `Closed with: ${result}`;
-      // }, (reason) => {
-      //   this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-      // });
       this.modalService.open(content).result
       .then(result => {
         this.closeResult = `Closed with: ${result}`;
@@ -46,8 +42,9 @@ export class LoginadminComponent implements OnInit {
       });
       console.log(false);
     } else {
-        this.router.navigate(['admin/produits']);
-        console.log(true);
+      this.router.navigate(['admin/produits']);
+      console.log(true);
+      this.loggingService.logAdmin();
     }
 
   }

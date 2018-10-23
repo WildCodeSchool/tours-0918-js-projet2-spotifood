@@ -16,14 +16,23 @@
   }
 }
 
-img {
-  height: 190px;
-  width: 150px;
+.card-img-top {
+  max-height: 170px;
+  max-width: 85%;
+  width: auto;
+  height: auto;
+}
+
+.product-images {
+  height: 180px;
 }
 
 .icons {
   position: absolute;
   bottom: 1rem;
+  left: 0;
+  right: 0;
+  height: 45px;
 }
 
 .pen,
@@ -34,7 +43,15 @@ img {
 }
 
 .card {
-  min-width: 150px;
-  max-width: 240px;
+  min-width: 220px;
+  max-width: 220px;
   height: 360px;
+}
+
+/**
+if admin is not logged
+*/
+
+.ifNotLogged {
+  margin-top: 140px;
 }

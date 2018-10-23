@@ -14,18 +14,18 @@ import { AppComponent } from './app.component';
 import { ListProduitComponent } from './list-produit/list-produit.component';
 import { ModalProduitComponent } from './modal-produit/modal-produit.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ROUTES } from './app.routes';
 import { ProduitsComponent } from './produits/produits.component';
 import { FormAdminEditComponent } from './form-admin-edit/form-admin-edit.component';
 import { ProduitAdminComponent } from './produit-admin/produit-admin.component';
-import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
-import { AdministrateurComponent } from './administrateur/administrateur.component';
 import { ComparateurProduitComponent } from './comparateur-produit/comparateur-produit.component';
 import { ComparateurComponent } from './comparateur/comparateur.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import { AutofocusDirective } from './autofocus.directive';
+import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -35,16 +35,16 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     ListProduitComponent,
     ModalProduitComponent,
     CarrouselComponent,
-    SidenavComponent,
     FooterComponent,
     ProduitsComponent,
     FormAdminEditComponent,
     ProduitAdminComponent,
-    NavbarAdminComponent,
-    AdministrateurComponent,
     ComparateurProduitComponent,
     ComparateurComponent,
     LoginadminComponent,
+    AutofocusDirective,
+    MessagerieAdminComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

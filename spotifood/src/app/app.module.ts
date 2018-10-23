@@ -26,6 +26,7 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { AutofocusDirective } from './autofocus.directive';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
+import { DevModifCarComponent } from './dev-modif-car/dev-modif-car.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ContactComponent } from './contact/contact.component';
     AutofocusDirective,
     MessagerieAdminComponent,
     ContactComponent,
+    DevModifCarComponent,
   ],
   imports: [
     BrowserModule,

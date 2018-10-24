@@ -15,9 +15,18 @@ button {
 /**
 *for very small screens
 */
+@media screen and (max-width: 768px) {
+  button {
+    transform: translateX(44vw) translateY(80%);
+  }
+}
+
 @media screen and (max-width: 500px) {
   [class*='col-'] {
     padding-right: 4px;
     padding-left: 4px;
+  }
+  button {
+    transform: translateX(40vw) translateY(80%);
   }
 }

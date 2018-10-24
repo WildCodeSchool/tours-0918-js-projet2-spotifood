@@ -46,7 +46,7 @@ img{
 
 input[type=text] {
     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-    min-width: 200px;
+    min-width: 160px;
     max-width: 100%;
     width: 33.33333%;
     padding-left: 2rem;

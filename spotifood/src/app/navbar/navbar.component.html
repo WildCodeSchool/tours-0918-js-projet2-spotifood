@@ -43,7 +43,7 @@
     </ul>
 
     <form class="form-inline justify-content-end">
-      <input appAutofocus (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Search" [(ngModel)]="productName" aria-label="Search">
+      <input (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Search" [(ngModel)]="productName" aria-label="Search">
       <datalist id="mylist">
         <option *ngFor="let product of products">{{product.name}}</option>
       </datalist>

@@ -1,51 +1,48 @@
-
-      <form>
-          <input class="fas fa-search form-control awesomplete" list="mylist"  (keypress)="recherche()" [(ngModel)]="searchLeft" type="text" name="search" required placeholder="Search.." #search="ngModel">
-          <datalist id="mylist">
-            <option *ngFor="let product of products"></option>
-          </datalist>
-          <div *ngIf="search.invalid && (search.dirty || search.touched)"
-          class="alert alert-danger">
-          <div *ngIf="search.errors">
-              Enter a valid product, please.
-            </div>
-            <div *ngIf="">
-              Ce champ est incorrecte.
-            </div>
-          </div>
-			</form>
-
-		<div class="card">
-		  <img class="card-img-top offset-2 mx-auto" src={{product.images}}>
-		  <div class="card-body text-center">
-					<h3 class="card-title">{{ product.name }}</h3>
-					<p class="card-text"><strong>Quantité :</strong><br>{{ product.quantity }}</p>
-					<p class="card-text"><strong>Marque :</strong><br>{{ product.brands }}</p>
-					<p class="card-text"><strong>liens :</strong><br></p>
-					<p class="card-text"><strong>Labels, certifications, récompenses:</strong><br> {{product.labels}} </p>
-					<p class="card-text"><strong>Catégories :</strong><br> {{ product.categories }} </p>
-					<p class="card-text"><strong>Conditionnement :</strong><br> {{product.packaging}} </p>
-					<p class="card-text"><strong>Ingrédients :</strong><br> {{ product.ingredients }} </p>
-          <p class="card-text"><strong>Allergènes : </strong><br> {{ product.allergens }} </p>
-          <img class="nutris" src="../../assets/images/nutri-a.png"/>
-          <p class="card-text"><strong>Repères nutritionnels pour 100g : </strong><br></p>
-            <ul>
-              <li>
-                <p>Matières grasses / Lipides: {{product.nutrients.lipids}} </p>
-              </li>
-              <li>
-                <p>Acides gras saturés: {{product.nutrients.saturated}} </p>
-              </li>
-              <li>
-                <p>Sucres: {{product.nutrients.sugars}} </p>
-              </li>
-              <li>
-                <p>sel: {{product.nutrients.salt}} </p>
-              </li>
-            </ul>
-		    <p class="card-text"><small class="text-muted">Last updated 3 hour ago</small></p>
-      </div>
+<form>
+  <div class="search wrapper">
+    <input class="fas fa-search form-control awesomplete" list="mylist" (keypress)="recherche()" [(ngModel)]="searchLeft"
+      type="text" name="search" required placeholder="Recherche.." #search="ngModel">
+  </div>
+  <datalist id="mylist">
+    <option *ngFor="let product of products"></option>
+  </datalist>
+  <div *ngIf="search.invalid && (search.touched || search.dirty)" class="alert alert-danger">
+    <div *ngIf="search.touched">
+      Choisissez un produit
     </div>
+    <div *ngIf="">
+      Ce champ est incorrect.
+    </div>
+  </div>
+</form>
 
-
-
+<div class="card" [ngClass]="{'card-margin': search.untouched || search.valid}" [style.background-color]="side ? '#67ea63' : '#ccc3'">
+  <img class="card-img-top offset-2 mx-auto mt-2" src={{product.images}}>
+  <div class="card-body text-center">
+    <h3 class="card-title">{{ product.name }}</h3>
+    <p class="card-text"><strong>Quantité</strong><br>{{ product.quantity }}</p>
+    <p class="card-text"><strong>Marque</strong><br>{{ product.brands }}</p>
+    <p class="card-text"><strong>Labels, certifications, récompenses</strong><br> {{product.labels}} </p>
+    <p class="card-text"><strong>Catégories</strong><br> {{ product.categories }} </p>
+    <p class="card-text"><strong>Conditionnement</strong><br> {{product.packaging}} </p>
+    <p class="card-text"><strong>Ingrédients</strong><br> {{ product.ingredients }} </p>
+    <p class="card-text"><strong>Allergènes</strong><br> {{ product.allergens }} </p>
+    <img class="nutris" src="../../assets/images/nutri-a.png" />
+    <p class="card-text"><strong>Repères nutritionnels pour 100g</strong><br></p>
+    <ul>
+      <li>
+        <p>Matières grasses / Lipides&nbsp;: {{product.nutrients.lipids}} </p>
+      </li>
+      <li>
+        <p>Acides gras saturés&nbsp;: {{product.nutrients.saturated}} </p>
+      </li>
+      <li>
+        <p>Sucres&nbsp;: {{product.nutrients.sugars}} </p>
+      </li>
+      <li>
+        <p>Sel&nbsp;: {{product.nutrients.salt}} </p>
+      </li>
+    </ul>
+    <p class="card-text"><small class="text-muted">Last updated 3 hour ago</small></p>
+  </div>
+</div>

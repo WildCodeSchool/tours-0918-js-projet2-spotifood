@@ -1,14 +1,17 @@
 <app-navbar></app-navbar>
-<h1 class="text-center">Comparateur de produit</h1>
-<h3 class="text-center">VS</h3>
-<div class="row">
-  <div class="pl-5 col-md-6 col-sm-6 col-lg-6 col-xl-6 col-6 justify-content-between">
-    <app-comparateur></app-comparateur>
-  </div>
-  <div class="pr-5 col-md-6 col-sm-6 col-lg-6 col-xl-6 col-6 justify-content-between">
-    <app-comparateur></app-comparateur>
-  </div>
 
+<h1 class="text-center">Comparateur de produits</h1>
+<button (click)="rechercher = !rechercher" class="btn btn-dark" type="submit">Comparer</button>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <app-comparateur [side]="left" [rechercher]="rechercher"></app-comparateur>
+    </div>
+    <div class="col-6">
+      <app-comparateur [rechercher]="rechercher"></app-comparateur>
+    </div>
+  </div>
 </div>
 
 <app-footer></app-footer>

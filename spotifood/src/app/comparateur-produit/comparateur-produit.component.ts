@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../common/product.service';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-comparateur-produit',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comparateur-produit.component.css']
 })
 export class ComparateurProduitComponent implements OnInit {
-
-  constructor() { }
+  left = 'left';
+  right = 'right';
+  rechercher: any;
+  products: Product[];
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
+    this.products = this.productService.get();
   }
 
 }

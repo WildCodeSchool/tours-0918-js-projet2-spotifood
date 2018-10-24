@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Product } from '../models/product';
-import { Nutrients } from '../models/nutriments';
 import { ProductService } from '../common/product.service';
 
 @Component({
@@ -8,19 +7,19 @@ import { ProductService } from '../common/product.service';
   templateUrl: './comparateur.component.html',
   styleUrls: ['./comparateur.component.css']
 })
-export class ComparateurComponent implements OnInit {
+export class ComparateurComponent implements OnInit, OnChanges {
   searchLeft: any;
-  searchRight: any;
 
   products: Product[];
-  productsRight: any;
 
   product: Product;
-  productDroite: any;
 
   error: string;
 
   constructor(private service: ProductService) { }
+
+  @Input() side: string;
+  @Input() rechercher: any;
 
   ngOnInit() {
     this.products = this.service.get();
@@ -37,6 +36,10 @@ export class ComparateurComponent implements OnInit {
         console.log(true);
       }
     }
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.recherche();
   }
 }
 

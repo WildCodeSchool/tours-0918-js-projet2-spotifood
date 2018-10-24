@@ -33,13 +33,42 @@ export class ComparateurComponent implements OnInit, OnChanges {
     for (let i = 0; i < this.products.length; i++) {
       if (this.products[i].name && this.products[i].name.toLowerCase() === this.searchLeft.toLowerCase()) {
         this.product = this.products[i];
-        console.log(true);
       }
     }
   }
 
   ngOnChanges(changes: SimpleChanges) {
     this.recherche();
+  }
+
+  /**
+   *
+   * @param nutriscore display the image corresponding to the nutritional value of the product
+   */
+  findNutri(nutriscore) {
+    let image = '';
+    console.log(nutriscore);
+    switch (nutriscore) {
+      case 'A':
+      image = '../../assets/images/nutriscore/A.png';
+      break;
+      case 'B':
+        image = '../../assets/images/nutriscore/B.jpg';
+        break;
+      case 'C':
+        image = '../../assets/images/nutriscore/C.png';
+        break;
+      case 'D':
+        image = '../../assets/images/nutriscore/D.jpg';
+        break;
+      case 'E':
+        image = '../../assets/images/nutriscore/E.svg';
+        break;
+      default:
+        image = '../../assets/images/nutriscore/notfound.png';
+        break;
+    }
+    return image;
   }
 }
 

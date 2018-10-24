@@ -16,22 +16,40 @@
   </div>
 </form>
 
-<div class="card" [ngClass]="{'card-margin': search.untouched || search.valid}" [style.background-color]="side ? '#67ea63' : '#ccc3'">
+<div class="card" [ngClass]="{'card-margin': search.untouched || search.valid}" [style.background-color]="side ? '#0c0c50' : '#ccc3'" [style.color]="side ? '#fff' : '#000'">
   <img class="card-img-top offset-2 mx-auto mt-2" src={{product.images}}>
   <div class="card-body text-center">
     <h3 class="card-title">{{ product.name }}</h3>
-    <p class="card-text"><strong>Quantité</strong><br>{{ product.quantity }}</p>
-    <p class="card-text"><strong>Marque</strong><br>{{ product.brands }}</p>
-    <p class="card-text"><strong>Labels, certifications, récompenses</strong><br> {{product.labels}} </p>
-    <p class="card-text"><strong>Catégories</strong><br> {{ product.categories }} </p>
-    <p class="card-text"><strong>Conditionnement</strong><br> {{product.packaging}} </p>
-    <p class="card-text"><strong>Ingrédients</strong><br> {{ product.ingredients }} </p>
-    <p class="card-text"><strong>Allergènes</strong><br> {{ product.allergens }} </p>
-    <img class="nutris" src="../../assets/images/nutri-a.png" />
+    <p class="card-text">
+      <!-- <strong>Quantité</strong><br> -->
+      {{ product.quantity }}</p>
+    <p class="card-text">
+      <!-- <strong>Marque</strong><br> -->
+      {{ product.brands }}</p>
+    <p class="card-text">
+      <!-- <strong>Labels, certifications, récompenses</strong><br> -->
+      {{product.labels.join(', ')}} </p>
+    <!-- <p class="card-text"><strong>Catégories</strong><br> {{ product.categories }} </p> -->
+    <p class="card-text">
+      <!-- <strong>Conditionnement</strong><br> -->
+      {{product.packaging.join(', ')}} </p>
+    <!-- <p class="card-text"><strong>Ingrédients</strong><br> {{ product.ingredients }} </p> -->
+    <p class="card-text allergens">
+      <strong>Allergènes</strong>
+    </p>
+    <div *ngIf="product.allergens; else notShow">
+      <p>{{ product.allergens }}</p>
+    </div>
+    <ng-template #notShow>
+      <p>
+        (non précisé)
+      </p>
+    </ng-template>
+    <img class="nutris" src="{{findNutri(this.product.nutriscore)}}" />
     <p class="card-text"><strong>Repères nutritionnels pour 100g</strong><br></p>
     <ul>
       <li>
-        <p>Matières grasses / Lipides&nbsp;: {{product.nutrients.lipids}} </p>
+        <p>Matières grasses&nbsp;: {{product.nutrients.lipids}} </p>
       </li>
       <li>
         <p>Acides gras saturés&nbsp;: {{product.nutrients.saturated}} </p>

@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid row col-12">
+  <ul *ngFor="let product of products" class="col-4">
+    <li>{{ product.name }} <input type="checkbox" name="check" id="checked" (change)="checkProduct(product,product.checked)" [(ngModel)]="checked"></li>
+  </ul>
+  <button type="submit" class="btn btn-success text-center" (click)="change()">Ajouter</button>
+</div>

@@ -7,7 +7,7 @@ import { ComparateurProduitComponent } from './comparateur-produit/comparateur-p
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
-import { DevModifCarComponent } from './dev-modif-car/dev-modif-car.component';
+import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
 
 const ROUTES: Route[] = [
   {
@@ -50,8 +50,8 @@ const ROUTES: Route[] = [
     component: MessagerieAdminComponent
   },
   {
-    path: 'admin/dev-modif-car',
-    component: DevModifCarComponent
+    path: 'admin/change-carrousel',
+    component: ChangeCarrouselComponent
   },
 ];
 

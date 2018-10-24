@@ -26,7 +26,7 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { AutofocusDirective } from './autofocus.directive';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
-import { DevModifCarComponent } from './dev-modif-car/dev-modif-car.component';
+import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,7 @@ import { DevModifCarComponent } from './dev-modif-car/dev-modif-car.component';
     AutofocusDirective,
     MessagerieAdminComponent,
     ContactComponent,
-    DevModifCarComponent,
+    ChangeCarrouselComponent,
   ],
   imports: [
     BrowserModule,

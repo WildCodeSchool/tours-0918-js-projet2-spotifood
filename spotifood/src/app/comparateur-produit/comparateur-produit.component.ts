@@ -8,14 +8,42 @@ import { Product } from '../models/product';
   styleUrls: ['./comparateur-produit.component.css']
 })
 export class ComparateurProduitComponent implements OnInit {
-  left = 'left';
-  right = 'right';
-  rechercher: any;
+  searchLeft: string;
+  searchRight: string;
   products: Product[];
-  constructor(private productService: ProductService) { }
+  productLeft: Product;
+  productRight: Product;
+  errorL: boolean;
+  errorR: boolean;
+  side = 'left';
+
+  constructor(private service: ProductService) { }
 
   ngOnInit() {
-    this.products = this.productService.get();
+    this.products = this.service.get();
+    this.searchLeft = this.products[0].name;
+    this.productLeft = this.products[0];
+    this.searchRight = this.products[1].name;
+    this.productRight = this.products[1];
+    this.errorL = false;
+    this.errorR = false;
   }
 
+  // get the product the user searched for
+  recherche() {
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].name && this.products[i].name.toLowerCase() === this.searchLeft.toLowerCase()) {
+        this.productLeft = this.products[i];
+        this.errorL = false;
+      } else {
+        this.errorL = true;
+      }
+      if (this.products[i].name && this.products[i].name.toLowerCase() === this.searchRight.toLowerCase()) {
+        this.productRight = this.products[i];
+        this.errorR = true;
+      } else {
+        this.errorR = true;
+      }
+    }
+  }
 }

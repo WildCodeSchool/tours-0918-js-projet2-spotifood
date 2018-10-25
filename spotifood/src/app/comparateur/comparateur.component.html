@@ -1,44 +1,22 @@
-<form>
-  <div class="search wrapper">
-    <input class="fas fa-search form-control awesomplete" list="mylist" (keypress)="recherche()" [(ngModel)]="searchLeft"
-      type="text" name="search" required placeholder="Recherche.." #search="ngModel">
-  </div>
-  <datalist id="mylist">
-    <option *ngFor="let product of products"></option>
-  </datalist>
-  <div *ngIf="search.invalid && (search.touched || search.dirty)" class="alert alert-danger">
-    <div *ngIf="search.touched">
-      Choisissez un produit
-    </div>
-    <div *ngIf="">
-      Ce champ est incorrect.
-    </div>
-  </div>
-</form>
-
-<div class="card" [ngClass]="{'card-margin': search.untouched || search.valid}" [style.background-color]="side ? '#0c0c50' : '#ccc3'" [style.color]="side ? '#fff' : '#000'">
+<div class="card" [style.background-color]="side ? '#0c0c50' : '#ccc3'" [style.color]="side ? '#fff' : '#000'">
   <img class="card-img-top offset-2 mx-auto mt-2" src={{product.images}}>
   <div class="card-body text-center">
     <h3 class="card-title">{{ product.name }}</h3>
     <p class="card-text">
-      <!-- <strong>Quantité</strong><br> -->
-      {{ product.quantity }}</p>
-    <p class="card-text">
-      <!-- <strong>Marque</strong><br> -->
+      <strong>Marque</strong><br>
       {{ product.brands }}</p>
     <p class="card-text">
-      <!-- <strong>Labels, certifications, récompenses</strong><br> -->
+      <strong>Labels, certifications, récompenses</strong><br>
       {{product.labels.join(', ')}} </p>
-    <!-- <p class="card-text"><strong>Catégories</strong><br> {{ product.categories }} </p> -->
     <p class="card-text">
-      <!-- <strong>Conditionnement</strong><br> -->
+      <strong>Conditionnement</strong><br>
       {{product.packaging.join(', ')}} </p>
-    <!-- <p class="card-text"><strong>Ingrédients</strong><br> {{ product.ingredients }} </p> -->
+    <p class="card-text d-none d-lg-block"><strong>Ingrédients</strong><br> {{ product.ingredients }} </p>
     <p class="card-text allergens">
       <strong>Allergènes</strong>
     </p>
     <div *ngIf="product.allergens; else notShow">
-      <p>{{ product.allergens }}</p>
+      <p>{{ product.allergens.join(', ') }}</p>
     </div>
     <ng-template #notShow>
       <p>

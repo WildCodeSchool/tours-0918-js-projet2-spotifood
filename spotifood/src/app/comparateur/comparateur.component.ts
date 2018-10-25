@@ -9,23 +9,18 @@ import { ProductService } from '../common/product.service';
 })
 export class ComparateurComponent implements OnInit, OnChanges {
   searchLeft: any;
-
-  products: Product[];
-
   product: Product;
-
+  products: Product[];
   error: string;
 
   constructor(private service: ProductService) { }
 
+  @Input() productToDisplay: Product;
   @Input() side: string;
-  @Input() rechercher: any;
 
   ngOnInit() {
     this.products = this.service.get();
-    this.searchLeft = '';
-    this.product = this.products[9];
-    this.error = 'Ce champ est requis.' ;
+    this.product = this.productToDisplay;
   }
 
   // get the product the user searched for
@@ -38,7 +33,7 @@ export class ComparateurComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.recherche();
+    this.product = this.productToDisplay;
   }
 
   /**

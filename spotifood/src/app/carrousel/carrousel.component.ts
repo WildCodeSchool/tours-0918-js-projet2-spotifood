@@ -1,8 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { ProductService } from '../common/product.service';
 import { Product } from '../models/product';
-import { CarrouselServiceService } from '../common/carrousel-service.service';
 import { ModelCarrousel } from '../models/carrousel';
+import { CarrouselServiceService } from '../common/carrousel-service.service';
 
 @Component({
   selector: 'app-carrousel',
@@ -18,7 +17,7 @@ export class CarrouselComponent implements OnInit {
   @Output()
   productDisplay = new EventEmitter();
 
-  constructor(private service: ProductService) {}
+  constructor(private service: CarrouselServiceService) {}
 
   ngOnInit() {
     this.carrousel = this.service.get();

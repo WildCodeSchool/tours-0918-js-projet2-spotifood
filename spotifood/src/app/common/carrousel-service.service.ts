@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import carrousel from './carrousel';
 import { ModelCarrousel } from '../models/carrousel';
+import { Product } from '../models/product';
+
 
 @Injectable({
   providedIn: 'root'
@@ -53,7 +55,7 @@ export class CarrouselServiceService {
   }
 
   remove(add: ModelCarrousel) {
-    const index = this.changeCarrousel.findIndex(x => x.id = ModelCarrousel);
+    const index = this.changeCarrousel.findIndex(x => x.id = add.id);
     this.changeCarrousel.splice(index, 1);
     this.saveToLocalStorage(this.changeCarrousel);
   }

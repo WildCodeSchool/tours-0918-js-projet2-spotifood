@@ -12,31 +12,24 @@ import { ModelCarrousel } from '../models/carrousel';
 export class ChangeCarrouselComponent implements OnInit {
 
   products: Product[];
-  checked: boolean;
+  isChecked: boolean;
 
   constructor(private service: CarrouselServiceService, private Productservice: ProductService) {
-    this.isChecked = true;
+    this.isChecked = false;
    }
 
   ngOnInit() {
     this.service.get();
     this.products = this.Productservice.get();
-    console.log(this.checked);
-
-  }
-
-
-  change() {
-    // if (this.products.isChecked === false) {
-    //   this.service.add(this.products.isChecked);
-    //   console.log(this.isChecked);
-    // }
   }
 
   checkProduct(produit: Product, isChecked: boolean) {
     const changeCarrousel = new ModelCarrousel();
-    this.service.add(changeCarrousel);
-    console.log(produit);
+    this.service.add(produit);
+    this.isChecked = isChecked;
   }
 
+  delete(produit: Product) {
+      this.service.remove(produit);
+  }
 }

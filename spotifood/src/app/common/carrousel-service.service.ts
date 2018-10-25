@@ -16,7 +16,17 @@ export class CarrouselServiceService {
         const change = new ModelCarrousel();
 
         change.name = x['name'];
-        change.photo = x['photo'];
+        change.id = x['id'];
+        change.allergens = x['allergens'];
+        change.images = x['images'];
+        change.ingredients = x['ingredients'];
+        change.quantity = x['quantity'];
+        change.packaging = x['packaging'];
+        change.nutriscore = x['nutriscore'];
+        change.brands = x['brands'];
+        change.categories = x['categories'];
+        change.labels = x['labels'];
+
 
         return change;
       });
@@ -43,7 +53,9 @@ export class CarrouselServiceService {
   }
 
   remove(add: ModelCarrousel) {
-
+    const index = this.changeCarrousel.findIndex(x => x.id = ModelCarrousel);
+    this.changeCarrousel.splice(index, 1);
+    this.saveToLocalStorage(this.changeCarrousel);
   }
 
 }

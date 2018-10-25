@@ -1,17 +1,70 @@
-/******************css global ************************/
-.products{
+.products {
   transform: translateY(-30px);
 }
+/**************************css Galerie***********************/
+img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.images {
+  min-width: 150px;
+  max-height: 250px;
+}
+.container{
+  transform: translateY(-1000px);
+  max-width: 1200px !important;
+  margin-right: 0rem;
+}
+.card a {
+  font-size: 1rem;
+  margin: 3rem;
+
+}
+.card  {
+ height : 95%;
+ max-width: 100% !important;
+
+}
+  @media only screen and (min-width: 1340px) {
+   .container{
+    margin-right: 6rem;
+   }
+
+}
+@media only screen and (max-width: 767px){
+  .images {
+    min-width: 100px;
+    max-height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    max-height: 100%;
+    max-width: 80%;
+  }
+}
+
 /************************ css sidenav************ */
 .sidebar {
-  height: 40rem;
-  width: 220px;
+  height: 70rem;
+  width: 230px;
   position: sticky;
   z-index: 1;
-  top: 89px;
+  top: 100px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
 }
 
 legend {
@@ -20,13 +73,6 @@ legend {
 
 .navbar-nav {
   height: 70vh;
-}
-
-.sidebar {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #818181;
-  display: block;
 }
 
 /* Survol souris changement de couleur */
@@ -42,11 +88,15 @@ a {
 }
 
 #boutonfiltre {
+  position: fixed;
+  width: 8em;
+  height: 2rem;
   border: none;
-  padding: 6px 5 6px 5;
+  top: 32px;
+  padding: 10px 20 10px 20;
   border-radius: 8px;
   font: bold 13px Arial;
-  color: #fff;
+  background-color: #059e05;
 }
 
 .trans {
@@ -55,7 +105,7 @@ a {
 }
 
 .hidden {
-  transform: translateX(-225px);
+  transform: translateX(-335px);
   transition: transform 0.6s ease-in-out;
 }
 
@@ -66,7 +116,7 @@ a {
 }
 
 .btnStartPos {
-  transform: translateX(2px);
+  transform: translateX(-15px);
   transition: transform 0.6s ease-in-out;
 }
 
@@ -145,52 +195,4 @@ select {
 
 div.navbar-nav {
   max-height: 300px;
-}
-
-
-/****************************** css list produit********************* */
-@media only screen and (max-width: 767px) {
-  .center{
-    display: block;
-     margin-left: auto;
-     margin-right: auto;
-  }
-}
-
-img{
-  max-height: 170px;
-  max-width: 85%;
-  width: auto;
-  height: auto;
-  padding : 20px;
-}
-
-.images {
-  min-width: 200px;
-}
-.listProduits {
-  transform: translateY(-540px);
-}
-.pagine{
-  transform: translateY(-100px);
-}
-@media only screen and (max-width: 991px) {
-.listProduits {
-  transform: translateY(-530px);
-}
-  .pagine {
-    transform: translateY(20px);
-  }
-
-}
-.card-body{
-  padding: 10px;
-}
-.card{
-  min-width: 25rem;
-   margin-left: 60px !important;
-
-}
-.card a{
-  font-size: 1rem;
 }

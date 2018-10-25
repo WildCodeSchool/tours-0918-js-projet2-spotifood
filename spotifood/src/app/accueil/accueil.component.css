@@ -6,17 +6,3 @@
   -webkit-background-size: cover;
   background-size: cover;
 }
-
-h1,
-p {
-  font-family: 'Cookie', cursive;
-}
-
-p {
-  font-size: 2rem;
-}
-
-button {
-  border-radius: 12px;
-  font-size: 0.9rem;
-}

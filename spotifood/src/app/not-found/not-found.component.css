@@ -1,0 +1,51 @@
+div {
+  background-image: url('../../assets/images/planet.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  Width: 100vw;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 580px) {
+.us {
+  top: 50%;
+  left: 25%;
+  color: aquamarine;
+}
+}
+
+.you {
+  top: 10%;
+  right: 30%;
+  font-style: italic;
+  color: greenyellow;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: aquamarine;
+  bottom: 10%;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 580px) {
+  .us {
+    left: 15%;
+    font-size: 3rem;
+    top: 40%;
+    color: aquamarine;
+  }
+}

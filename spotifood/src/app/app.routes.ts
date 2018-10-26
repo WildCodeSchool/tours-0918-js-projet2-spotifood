@@ -7,6 +7,7 @@ import { ComparateurProduitComponent } from './comparateur-produit/comparateur-p
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const ROUTES: Route[] = [
   {
@@ -47,7 +48,15 @@ const ROUTES: Route[] = [
   {
     path: 'admin/messagerie',
     component: MessagerieAdminComponent
-  }
+  },
+  {
+    path: '404',
+    component: NotFoundComponent
+  },
+
+  {
+    path: '**',
+    redirectTo: '404' }
 ];
 
 export { ROUTES };

@@ -33,10 +33,10 @@ export class MessagerieService {
         send.ingredients = x ['ingredients'];
         send.allergenes = x ['allergenes'];
         send.nutriscore = x ['nutriscore'];
-        send.lipids = x ['.lipids'];
-        send.saturated = x ['.saturated'];
-        send.sugars = x ['.sugars'];
-        send.salt = x ['.salt'];
+        send.lipids = x ['lipids'];
+        send.saturated = x ['saturated'];
+        send.sugars = x ['sugars'];
+        send.salt = x ['salt'];
         send.images = x ['images'];
         
         return send;

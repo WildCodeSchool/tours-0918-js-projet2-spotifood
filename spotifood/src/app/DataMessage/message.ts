@@ -16,10 +16,10 @@ const product = [{
 	'product.ingredients': '',
 	'product.allergenes': '',
 	'product.nutriscore': '',
-	'product.nutrients.lipids': '',
-	'product.nutrients.saturated': '',
-	'product.nutrients.sugars': '',
-	'product.nutrients.salt': '',
+	'product.lipids': '',
+	'product.saturated': '',
+	'product.sugars': '',
+	'product.salt': '',
 	'product.images': '',
 
 }];

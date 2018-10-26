@@ -5,7 +5,7 @@
   background-repeat: repeat;
   background-size: cover;
   padding-bottom: 5%;
-  height: 100vh;
+  background-attachment: fixed;
 }
 
 .trash{

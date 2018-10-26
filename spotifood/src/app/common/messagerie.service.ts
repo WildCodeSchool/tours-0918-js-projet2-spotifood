@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Message } from '../models/messagerie';
-import product from '../DataMessage/message';
+import product from './message';
 import message from './message';
 
 
@@ -38,7 +38,7 @@ export class MessagerieService {
         send.sugars = x ['sugars'];
         send.salt = x ['salt'];
         send.images = x ['images'];
-        
+
         return send;
 
 

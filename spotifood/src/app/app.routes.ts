@@ -9,6 +9,7 @@ import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.co
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
+import { PageContribuerComponent } from './page-contribuer/page-contribuer.component';
 
 const ROUTES: Route[] = [
   {
@@ -51,6 +52,14 @@ const ROUTES: Route[] = [
     component: MessagerieAdminComponent
   },
   {
+    path: 'admin/change-carrousel',
+    component: ChangeCarrouselComponent
+  },
+  {
+    path: 'contribuer',
+    component: PageContribuerComponent
+  },
+  {
     path: '404',
     component: NotFoundComponent
   },
@@ -58,10 +67,6 @@ const ROUTES: Route[] = [
     path: '**',
     redirectTo: '404'
    },
-   {
-    path: 'admin/change-carrousel',
-    component: ChangeCarrouselComponent
-  },
 ];
 
 export { ROUTES };

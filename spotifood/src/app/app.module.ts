@@ -28,6 +28,8 @@ import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.co
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
+import { PageContribuerComponent } from './page-contribuer/page-contribuer.component';
+
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.co
     ContactComponent,
     NotFoundComponent,
     ChangeCarrouselComponent,
+    PageContribuerComponent
   ],
   imports: [
     BrowserModule,

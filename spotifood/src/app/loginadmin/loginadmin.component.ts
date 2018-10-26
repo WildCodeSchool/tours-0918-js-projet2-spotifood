@@ -28,7 +28,7 @@ export class LoginadminComponent implements OnInit {
 
   ngOnInit() {
     this.champ = '';
-    this.champOk = 'uneadressemail@gmail.com';
+    this.champOk = 'a@gmail.com';
   }
   // Method for verification input on the login page.
   verify(content) {

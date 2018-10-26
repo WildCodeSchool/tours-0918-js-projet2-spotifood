@@ -14,7 +14,7 @@ h3 {
 }
 
 .card-img-top {
-  height: 190px;
+  max-height: 190px;
   width: auto;
 }
 
@@ -64,4 +64,53 @@ ul {
   .card-body {
     padding: 0.2rem;
   }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+/**
+*search fields
+*/
+.fas {
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=text] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  min-width: 160px;
+  max-width: 100%;
+  width: 33.33333%;
+  padding-left: 2rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  -webkit-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 400 !important;
+}
+
+input[type=text]:focus {
+  width: 70%;
+}
+
+.search {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 70ch;
+  padding-right: 10px;
+  margin: 12px auto 0 auto;
+}
+
+.search-fields {
+  height: 100px;
 }

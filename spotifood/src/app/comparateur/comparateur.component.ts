@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../models/product';
 import { ProductService } from '../common/product.service';
 
@@ -7,33 +7,37 @@ import { ProductService } from '../common/product.service';
   templateUrl: './comparateur.component.html',
   styleUrls: ['./comparateur.component.css']
 })
-export class ComparateurComponent implements OnInit, OnChanges {
-  searchLeft: any;
-  product: Product;
+export class ComparateurComponent implements OnInit {
+  searchField: string;
   products: Product[];
-  error: string;
+  product: Product;
+  error: boolean;
+
+  @Input()
+  side: string;
 
   constructor(private service: ProductService) { }
 
-  @Input() productToDisplay: Product;
-  @Input() side: string;
-
   ngOnInit() {
     this.products = this.service.get();
-    this.product = this.productToDisplay;
+    this.searchField = this.products[0].name;
+    this.product = this.products[0];
+    this.error = false;
   }
 
-  // get the product the user searched for
+  /**
+   * get the product the user searched for
+   */
   recherche() {
     for (let i = 0; i < this.products.length; i++) {
-      if (this.products[i].name && this.products[i].name.toLowerCase() === this.searchLeft.toLowerCase()) {
+      if (this.products[i].name && this.products[i].name.toLowerCase() === this.searchField.toLowerCase()) {
         this.product = this.products[i];
+        this.error = false;
+        break;
+      } else {
+        this.error = true;
       }
     }
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    this.product = this.productToDisplay;
   }
 
   /**
@@ -42,7 +46,6 @@ export class ComparateurComponent implements OnInit, OnChanges {
    */
   findNutri(nutriscore) {
     let image = '';
-    console.log(nutriscore);
     switch (nutriscore) {
       case 'A':
       image = '../../assets/images/nutriscore/A.png';

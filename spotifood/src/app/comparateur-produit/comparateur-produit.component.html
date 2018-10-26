@@ -2,44 +2,13 @@
 
 <h1 class="text-center">Comparateur de produits</h1>
 
-<div class="search-fields container">
-
-  <div class="forms row">
-    <form class="col-6" #formLeft="ngForm">
-      <div class="search wrapper">
-        <input class="fas fa-search form-control awesomplete" onfocus="this.value=''" list="mylist" (keypress)="recherche()" [(ngModel)]="searchLeft" type="text" name="searchL" required placeholder="Recherche.." #searchL="ngModel" (change)="recherche()">
-        <div *ngIf="errorL" class="alert alert-danger mt-2 text-center col-6">
-            Ce produit n'existe pas
-        </div>
-      </div>
-    </form>
-    <!-- <div class="d-flex justify-content-center align-bottom col-2">
-      <button (click)="recherche()" class="btn btn-dark text-center" type="submit">{{ (innerWidth < 500) ? '<&nbsp;>' : 'Comparer' }}</button>
-    </div> -->
-    <form class="col-6" #formRight="ngForm">
-      <div class="search wrapper">
-        <input class="fas fa-search form-control awesomplete" onfocus="this.value=''" list="mylist" (keypress)="recherche()" [(ngModel)]="searchRight" type="text" name="searchRight" required placeholder="Recherche.." #searchR="ngModel" (change)="recherche()">
-        <div *ngIf="errorR" class="alert alert-danger mt-2 text-center col-6">
-            Ce produit n'existe pas
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <datalist id=" mylist">
-    <option *ngFor="let product of products"></option>
-  </datalist>
-
-</div>
-
-
-<div class="container">
+<div class="container pt-5">
   <div class="row">
     <div class="col-6">
-      <app-comparateur [productToDisplay]="productLeft" [side]="side"></app-comparateur>
+      <app-comparateur [side]="side"></app-comparateur>
     </div>
     <div class="col-6">
-      <app-comparateur [productToDisplay]="productRight"></app-comparateur>
+      <app-comparateur></app-comparateur>
     </div>
   </div>
 </div>

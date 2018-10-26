@@ -1,3 +1,24 @@
+<div class="search-fields container">
+
+  <div class="forms">
+    <form #f="ngForm">
+      <div class="search wrapper">
+        <div *ngIf="error" class="alert alert-danger my-0 py-0 text-center mx-auto">
+            Ce produit n'existe pas
+        </div>
+        <input class="fas fa-search form-control awesomplete" onfocus="this.value=''" list="mylist" (keypress)="recherche()" [(ngModel)]="searchField" type="text" name="searchField" required placeholder="Recherche.." #search="ngModel"
+          (ngModelChange)="recherche()">
+      </div>
+    </form>
+  </div>
+
+  <datalist id=" mylist">
+    <option *ngFor="let product of products"></option>
+  </datalist>
+
+</div>
+
+
 <div class="card" [style.background-color]="side ? '#0c0c50' : '#ccc3'" [style.color]="side ? '#fff' : '#000'">
   <img class="card-img-top offset-2 mx-auto mt-2" src={{product.images}}>
   <div class="card-body text-center">
@@ -7,7 +28,7 @@
       {{ product.brands }}</p>
     <p class="card-text">
       <strong>Labels, certifications, récompenses</strong><br>
-      {{product.labels.join(', ')}} </p>
+      {{ product.labels }} </p>
     <p class="card-text">
       <strong>Conditionnement</strong><br>
       {{product.packaging.join(', ')}} </p>
@@ -16,7 +37,7 @@
       <strong>Allergènes</strong>
     </p>
     <div *ngIf="product.allergens; else notShow">
-      <p>{{ product.allergens.join(', ') }}</p>
+      <p>{{ product.allergens.length > 1 ? product.allergens.join(', ') : product.allergens }}</p>
     </div>
     <ng-template #notShow>
       <p>

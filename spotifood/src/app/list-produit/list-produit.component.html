@@ -1,3 +1,4 @@
+<h1 class="mt-5 text-center">Produits</h1>
 <div class="products">
 <!-- Debut sidenav -->
 <nav class="sidebar bg-light d-none d-xl-block pl-2" id="nav1">
@@ -5,28 +6,28 @@
   <div class="navbar-nav">
     <div class="row">
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedCategorie}}</button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedCategorie}}</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
             <button class="dropdown-item" *ngFor="let categorie of categorieTotal" (click)="getProductByCategorie(categorie)"
               (click)="changeSelectedCategorie(categorie)">{{categorie}}</button>
           </div>
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedMarque}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedMarque}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let marque of marques" (click)="changeSelectedMarque(marque)" (click)="getProductByMarque(marque)">{{marque}}</button>
           </div>
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedAllergene}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedAllergene}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let allergene of allergenes" (click)="changeSelectedAllergene(allergene)"
               (click)="getProductByAllergene(allergene)">{{allergene}}</button>
@@ -34,9 +35,9 @@
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedPackaging}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedPackaging}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let package of packaging" (click)="changeSelectedPackaging(package)"
               (click)="getProductByPackaging(package)">{{package}}</button>
@@ -46,31 +47,31 @@
 
       <form class="my-5 m-2">
         <fieldset>
-          <legend>Nutri-Score</legend>
+          <legend class="text-center">Nutri-Score</legend>
 
-          <div class="m-2">
-            <label class="containerRadio">
+          <div class="m-2 radio-wrapper text-center">
+            <label class="container-radio">
               <input type="radio" name="drone" value="A" (click)="getProductByScore('A')" />
               <span class="checkmark"></span>
               A &nbsp;
             </label>
 
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="B" (click)="getProductByScore('B')" />
               <span class="checkmark"></span>
               B &nbsp;
             </label>
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="C" (click)="getProductByScore('C')" />
               <span class="checkmark"></span>
               C &nbsp;
             </label>
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="D" (click)="getProductByScore('D')" />
               <span class="checkmark"></span>
               D &nbsp;
             </label>
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="E" (click)="getProductByScore('E')" />
               <span class="checkmark"></span>
               E &nbsp;
@@ -86,15 +87,19 @@
 <!-- Fin sidenav -->
 
 <!-- sidnav responsive -->
+<button class="text-white" type="button" (click)="showFilter()" [hidden]="filterDisplayed == true" id="boutonfiltre" class="d-xl-none btnStartPos" [ngClass]="{'transBtn': filterDisplayed}">⟩
+  Filtre</button>
 <nav class="sidebar bg-light pl-2 d-xl-none hidden" id="nav1" [ngClass]="{'trans': filterDisplayed}">
-
-  <a class="navbar-brand" href="#">Filtrer</a>
+<button class="text-white" type="button" (click)="showFilter()" id="boutonfiltre2" class="d-xl-none btnStartPos"
+[ngClass]="{'transBtn': filterDisplayed}">&larr; Filtre</button>
+<br />
+  <!-- <a class="navbar-brand" href="#">Filtrer</a> -->
   <div class="navbar-nav">
     <div class="row">
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedCategorie}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedCategorie}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let categorie of categorieTotal" (click)="getProductByCategorie(categorie)"
               (click)="changeSelectedCategorie(categorie)">{{categorie}}</button>
@@ -102,18 +107,18 @@
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedMarque}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedMarque}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let marque of marques" (click)="changeSelectedMarque(marque)" (click)="getProductByMarque(marque)">{{marque}}</button>
           </div>
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedAllergene}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedAllergene}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let allergene of allergenes" (click)="changeSelectedAllergene(allergene)"
               (click)="getProductByAllergene(allergene)">{{allergene}}</button>
@@ -121,9 +126,9 @@
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-secondary" id="dropdownBasic1" ngbDropdownToggle>{{selectedPackaging}}</button>
+          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedPackaging}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let package of packaging" (click)="changeSelectedPackaging(package)"
               (click)="getProductByPackaging(package)">{{package}}</button>
@@ -133,31 +138,31 @@
 
       <form class="my-5 m-2">
         <fieldset>
-          <legend>Nutri-Score</legend>
+          <legend class="text-center">Nutri-Score</legend>
 
-          <div class="m-2">
-            <label class="containerRadio">
+          <div class="m-2 px-2 d-flex justify-content-center">
+            <label class="container-radio">
               <input type="radio" name="drone" value="A" (click)="getProductByScore('A')" />
               <span class="checkmark"></span>
               A &nbsp;
             </label>
 
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="B" (click)="getProductByScore('B')" />
               <span class="checkmark"></span>
               B &nbsp;
             </label>
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="C" (click)="getProductByScore('C')" />
               <span class="checkmark"></span>
               C &nbsp;
             </label>
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="D" (click)="getProductByScore('D')" />
               <span class="checkmark"></span>
               D &nbsp;
             </label>
-            <label class="containerRadio">
+            <label class="container-radio">
               <input type="radio" name="drone" value="E" (click)="getProductByScore('E')" />
               <span class="checkmark"></span>
               E &nbsp;
@@ -170,8 +175,6 @@
     <button class="mx-4 btn btn-success text-white" (click)="tabTri=''" (click)="reinitialiser()">Réinitialiser</button>
   </div>
 </nav>
-<button type="button" (click)="showFilter()" id="boutonfiltre" class="d-xl-none btnStartPos" [ngClass]="{'transBtn': filterDisplayed}">⟩
-  Filtre</button>
 
 <!-- Fin sidenav responsive -->
 <!-- Galerie Produits -->

@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComparateurProduitComponent implements OnInit {
 
-  constructor() { }
-
+  side = 'left';
   ngOnInit() {
   }
-
 }

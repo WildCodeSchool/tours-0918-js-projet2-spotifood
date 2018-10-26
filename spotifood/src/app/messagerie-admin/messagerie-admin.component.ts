@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessagerieService } from '../DataMessage/messagerie.service';
 import { Message } from '../models/messagerie';
-import { Nutrients } from '../models/nutriments';
 import message from '../DataMessage/message';
 import product from '../DataMessage/message';
 
@@ -14,14 +13,13 @@ import product from '../DataMessage/message';
 export class MessagerieAdminComponent implements OnInit {
 
   message: Message[];
-  nutrients: Nutrients;
+  
 
 
   constructor(private service: MessagerieService) { }
 
   ngOnInit() {
     this.message = this.service.get();
-    this.nutrients = new Nutrients();
   }
 
   delete(messagerie: Message) {

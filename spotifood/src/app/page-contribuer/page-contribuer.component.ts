@@ -32,7 +32,6 @@ export class PageContribuerComponent implements OnInit {
 		});
 	}
 
-
 	ngOnInit() {		
 		this.message = new Message();	
 

@@ -4,15 +4,23 @@
 	<fieldset class="form-fieldset">
 		<legend class="form-legend">Suggérer un produit</legend>
 
-		<div class="form-element form-input form-group">
-			<input name="name" [(ngModel)]="message.Name" [ngModelOptions]="{standalone: true}" #name="ngModel" id="field-name" class="form-element-field" placeholder="Saisissez le nom du produit" type="input" required minlength="5" >
+		<div class="form-element form-input">
+			<input name="prenom" [(ngModel)]="message.prenom" [ngModelOptions]="{standalone: true}" #prenom="ngModel" id="field-prenom" class="form-element-field" placeholder="Saisissez votre nom/prénom" type="input" required>
 			<div class="form-element-bar"></div>
-			<label class="form-element-label" for="field-name">Nom</label>
+			<label class="form-element-label" for="field-prenom">Nom/Prénom</label>
 			<small class="form-element-hint">(champ obligatoire)</small>
-			<small class="form-element-hint text-danger" *ngIf="name.touched && name.invalid"> Ce champ est obligatoire et doit contenir au minimum 5 caractères</small>
+			<small class="form-element-hint text-danger" *ngIf="prenom.touched && prenom.invalid"> Ce champ est obligatoire</small>
 
 		</div>
 
+		<div class="form-element form-input form-group">
+			<input name="Name" [(ngModel)]="message.Name" [ngModelOptions]="{standalone: true}" #Name="ngModel" id="field-Name" class="form-element-field" placeholder="Saisissez le nom du produit" type="input" required minlength="5">
+			<div class="form-element-bar"></div>
+			<label class="form-element-label" for="field-Name">Nom produit</label>
+			<small class="form-element-hint">(champ obligatoire)</small>
+			<small class="form-element-hint text-danger" *ngIf="Name.touched && Name.invalid"> Ce champ est obligatoire et doit contenir au minimum 5 caractères</small>
+
+		</div>
 
 		<div class="form-element form-input">
 			<input name="quantity" #quantity="ngModel" id="field-quantity" class="form-element-field" [(ngModel)]="message.quantity" [ngModelOptions]="{standalone: true}"placeholder="Saisissez un chiffre et une unité" type="input" required >
@@ -35,14 +43,12 @@
 		</div>
 
 		<div class="form-element form-input">
-			<input name="labels" #labels="ngModel" id="field-labels" class="form-element-field" [(ngModel)]="message.labels" [ngModelOptions]="{standalone: true}" placeholder="Séparez plusieurs valeurs par des virgules" type="input" required awesomplete list="listLabels">
+			<input name="labels" #labels="ngModel" id="field-labels" class="form-element-field" [(ngModel)]="message.labels" [ngModelOptions]="{standalone: true}" placeholder="Séparez plusieurs valeurs par des virgules" type="input">
 			<datalist id="listLabels">
 				<option *ngFor="let product of products">{{product.labels}}</option>
 			</datalist>
 			<div class="form-element-bar"></div>
 			<label class="form-element-label" for="field-labels">Labels, certifications, récompenses</label>
-			<small class="form-element-hint">(champ obligatoire&nbsp;; séparez plusieurs valeurs par des virgules)</small>
-			<small class="form-element-hint text-danger" *ngIf="brand.touched && brand.invalid"> Ce champ est obligatoire</small>
 		</div>
 
 		<div class="form-element form-input">
@@ -112,16 +118,15 @@
 			<div class="form-sublegend">Repères nutritionnels pour 100g</div>
 
 			<div class="form-element form-input">
-				<input name="lipids" #lipids="ngModel" id="field-lipids" class="form-element-field" [(ngModel)]="message.nutrients.lipids" [ngModelOptions]="{standalone: true}"placeholder="Valeur en g" type="number" required >
+				<input name="lipids" #lipids="ngModel" id="field-lipids" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
 				<small class="form-element-hint">(champ obligatoire)</small>
-				<small class="form-element-hint text-danger" *ngIf="lipids.touched && lipids.invalid"> Ce champ est
-				obligatoire et ne doit contenir que des chiffres</small>
+				<small class="form-element-hint text-danger" *ngIf="lipids.touched && lipids.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
 			</div>
 
 			<div class="form-element form-input">
-				<input name="saturated" #saturated="ngModel" id="field-saturated" class="form-element-field" [(ngModel)]="message.nutrients.saturated" [ngModelOptions]="{standalone: true}"
+				<input name="saturated" #saturated="ngModel" id="field-saturated" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"
 				placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-saturated">Acides gras saturés</label>
@@ -131,23 +136,21 @@
 			</div>
 
 			<div class="form-element form-input">
-				<input name="sugars" #sugars="ngModel" id="field-sugars" class="form-element-field" [(ngModel)]="message.nutrients.sugars" [ngModelOptions]="{standalone: true}"
+				<input name="sugars" #sugars="ngModel" id="field-sugars" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"
 				placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-sugars">Sucres</label>
 				<small class="form-element-hint">(champ obligatoire)</small>
-				<small class="form-element-hint text-danger" *ngIf="sugars.touched && sugars.invalid"> Ce champ est
-				obligatoire et ne doit contenir que des chiffres</small>
+				<small class="form-element-hint text-danger" *ngIf="sugars.touched && sugars.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
 			</div>
 
 			<div class="form-element form-input">
-				<input name="salt" #salt="ngModel" id="field-salt" class="form-element-field" [(ngModel)]="message.nutrients.salt" [ngModelOptions]="{standalone: true}"
+				<input name="salt" #salt="ngModel" id="field-salt" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"
 				placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-salt">Sel</label>
 				<small class="form-element-hint" >(champ obligatoire)</small>
-				<small class="form-element-hint text-danger" *ngIf="salt.touched && salt.invalid"> Ce champ est obligatoire
-				et ne doit contenir que des chiffres</small>
+				<small class="form-element-hint text-danger" *ngIf="salt.touched && salt.invalid"> Ce champ est obligatoire et ne doit contenir que des chiffres</small>
 			</div>
 		</div>
 

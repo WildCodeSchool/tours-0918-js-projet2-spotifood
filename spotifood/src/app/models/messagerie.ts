@@ -16,5 +16,5 @@ export class Message {
 	nutriscore: string;
 	nutrients: Nutrients;
 	images: string;
+	prenom: string;
 }
-

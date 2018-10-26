@@ -25,6 +25,7 @@ export class MessagerieService {
         send.email = x['email'];
         send.message = x['message'];
         send.Name = x['Name'];
+        send.prenom = x ['prenom'];
         send.quantity = x['quantity'];
         send.brands = x ['brands'];
         send.labels = x ['labels'];

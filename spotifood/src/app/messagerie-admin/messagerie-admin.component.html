@@ -4,25 +4,26 @@
   <h1 class="text-white">Bienvenue sur votre messagerie !</h1>
 
   <div class="row col-12">
-    <div class="card col-9 offset-2" *ngFor="let message of message">
+    <div class="card col-9 offset-2" 
+    *ngFor="let message of message">
       <div class="card-header">
         Nouveau message de {{ message.name }}
       </div>
       <div class="card-body">
-        <h5 class="card-title">{{ message.objet }}{{product.name}}</h5>
-        <p class="card-text">{{ message.message }}{{product.quantity}}</p>
-        <p class="card-text">{{product.brands}}</p>
-        <p class="card-text">{{product.labels}}</p>
-        <p class="card-text">{{product.categories}}</p>
-        <p class="card-text">{{product.packaging}}</p>
-        <p class="card-text">{{product.ingredients}}</p>
-        <p class="card-text">{{product.allergenes}}</p>
-        <p class="card-text">{{product.nutriscore}}</p>
-        <p class="card-text">{{product.nutrients.lipids}}</p>
-        <p class="card-text">{{product.nutrients.saturated}}</p>
-        <p class="card-text">{{product.nutrients.sugars}}</p>
-        <p class="card-text">{{product.nutrients.salt}}</p>
-        <p class="card-text">{{product.images}}</p>
+        <h5 class="card-title">{{ message.objet }}{{message.Name}}</h5>
+        <p class="card-text">{{ message.message }}{{message.quantity}}</p>
+        <p class="card-text">{{message.brands}}</p>
+        <p class="card-text">{{message.labels}}</p>
+        <p class="card-text">{{message.categories}}</p>
+        <p class="card-text">{{message.packaging}}</p>
+        <p class="card-text">{{message.ingredients}}</p>
+        <p class="card-text">{{message.allergenes}}</p>
+        <p class="card-text">{{message.nutriscore}}</p>
+        <p class="card-text">{{message.nutrients.lipids}}</p>
+        <p class="card-text">{{message.nutrients.saturated}}</p>
+        <p class="card-text">{{message.nutrients.sugars}}</p>
+        <p class="card-text">{{message.nutrients.salt}}</p>
+        <p class="card-text">{{message.images}}</p>
 
         <div class="card-footer text-muted">
           {{ message.email }}

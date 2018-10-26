@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import message from './message';
 import { Message } from '../models/messagerie';
-import { Product } from '../models/productsuggest'
+import product from '../DataMessage/message';
+import { Nutrients } from '../models/nutriments';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { Product } from '../models/productsuggest'
 export class MessagerieService {
 
   messages: Message[];
-  products: Product[];
+
 
   constructor() {
     if (!localStorage.Messagerie) {
@@ -22,24 +23,25 @@ export class MessagerieService {
         send.objet = x['objet'];
         send.email = x['email'];
         send.message = x['message'];
+        send.Name = x['Name'];
+        send.quantity = x['quantity'];
+        send.brands = x ['brands'];
+        send.labels = x ['labels'];
+        send.categories = x ['categories'];
+        send.packaging = x ['packaging'];
+        send.ingredients = x ['ingredients'];
+        send.allergenes = x ['allergenes'];
+        send.nutriscore = x ['nutriscore'];
+        send.nutrients.lipids = x ['nutrients.lipids'];
+        send.nutrients.saturated = x ['nutrients.saturated'];
+        send.nutrients.sugars = x ['nutrients.sugars'];
+        send.nutrients.salt = x ['nutrients.salt'];
+        send.images = x ['images'];
         
         return send;
 
-        const sendProduct = new Product();
+   
 
-        sendProduct.quantity = x['quantity'];
-        sendProduct.brands = x ['brands'];
-        sendProduct.labels = x ['labels'];
-        sendProduct.categories = x ['categories'];
-        sendProduct.packaging = x ['packaging'];
-        sendProduct.ingredients = x ['ingredients'];
-        sendProduct.allergenes = x ['allergenes'];
-        sendProduct.nutriscore = x ['nutriscore'];
-        sendProduct.nutrients.lipids = x ['nutrients.lipids'];
-        sendProduct.nutrients.saturated = x ['nutrients.saturated'];
-        sendProduct.nutrients.sugars = x ['nutrients.sugars'];
-        sendProduct.nutrients.salt = x ['nutrients.salt'];
-        sendProduct.images = x ['images'];
   
 
       });

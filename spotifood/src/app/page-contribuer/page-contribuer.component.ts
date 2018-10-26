@@ -4,9 +4,10 @@ import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-
 import { Nutrients } from '../models/nutriments';
 import { GallerieService } from '../common/gallerie.service';
 import message from '../DataMessage/message';
+import product from '../DataMessage/message';
 import { MessagerieService } from '../DataMessage/messagerie.service';
 import { Message } from '../models/messagerie';
-import { Product } from '../models/productsuggest'
+
 
 @Component({
 	selector: 'app-page-contribuer',
@@ -16,36 +17,27 @@ import { Product } from '../models/productsuggest'
 export class PageContribuerComponent implements OnInit {
 
 	
-	product: Product[];
+
 	addForm: boolean;
 	closeResult: string;
 	message: Message;
+	
 
-	// tslint:disable-next-line:max-line-length
-	constructor(private service: MessagerieService, private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal) { }
+
+	constructor(private service: MessagerieService, private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal) {}
 
 	open(content) {
 		this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
 			this.closeResult = `Closed with: ${result}`;
 		}, (reason) => {
-			this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+			this.closeResult = `Dismissed`;
 		});
 	}
 
-	private getDismissReason(reason: any): string {
-		if (reason === ModalDismissReasons.ESC) {
-			return 'by pressing ESC';
-		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-			return 'by clicking on a backdrop';
-		} else {
-			return  `with: ${reason}`;
-		}
-	}
 
-	ngOnInit() {
-		
-		this.message = new Message();
-		
+	ngOnInit() {		
+		this.message = new Message();	
+
 	}
 
 	send() {

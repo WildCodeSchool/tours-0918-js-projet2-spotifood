@@ -19,14 +19,13 @@ export class ChangeCarrouselComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.service.get();
+    // this.service.get();
     this.products = this.Productservice.get();
   }
 
   checkProduct(produit: Product, isChecked: boolean) {
-    const changeCarrousel = new ModelCarrousel();
     this.service.add(produit);
-    this.isChecked = isChecked;
+    this.isChecked = !this.isChecked;
   }
 
   delete(produit: Product) {

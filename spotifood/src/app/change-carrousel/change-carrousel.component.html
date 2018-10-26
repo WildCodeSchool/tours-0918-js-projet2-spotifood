@@ -1,8 +1,13 @@
+<div class="fond">
 <app-navbar></app-navbar>
 
-<div class="container-fluid row col-12">
-  <ul *ngFor="let product of products" class="col-4">
-    <li>{{ product.name }}<input type="checkbox" name="check" id="checked" (change)="checkProduct(product,product.checked)" [(ngModel)]="isChecked" checked></li>
-  </ul>
-  <button class="btn btn-danger" (click)="delete()">Supprimer</button>
+<div class="row col-12">
+  <div class="card col-2" *ngFor="let product of products">
+    <div class="card-body">
+        {{ product.name }}
+        <input type="checkbox" name="check" id="checked" (change)="checkProduct(product,product.checked)" [(ngModel)]="isChecked" checked>
+        <button class="btn btn-danger" (click)="delete(product)">Retirer</button>
+    </div>
+  </div>
+</div>
 </div>

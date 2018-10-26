@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Product } from '../models/product';
 import { ModelCarrousel } from '../models/carrousel';
 import { CarrouselServiceService } from '../common/carrousel-service.service';
+import { LoggingService } from '../common/logging.service';
 
 @Component({
   selector: 'app-carrousel',
@@ -17,10 +18,11 @@ export class CarrouselComponent implements OnInit {
   @Output()
   productDisplay = new EventEmitter();
 
-  constructor(private service: CarrouselServiceService) {}
+  constructor(private service: CarrouselServiceService, public loggingService: LoggingService) {}
 
   ngOnInit() {
     this.carrousel = this.service.get();
+    this.loggingService.getLogStatus();
     this.visible = true;
   }
 

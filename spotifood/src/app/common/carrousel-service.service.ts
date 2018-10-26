@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import carrousel from './carrousel';
 import { ModelCarrousel } from '../models/carrousel';
-import { Product } from '../models/product';
 
 
 @Injectable({
@@ -12,7 +11,7 @@ export class CarrouselServiceService {
   changeCarrousel: ModelCarrousel[];
 
   constructor() {
-    if (!localStorage.ForCarrousel) {
+    if (!localStorage.CarrouselItem) {
       this.changeCarrousel = carrousel.map((x) => {
 
         const change = new ModelCarrousel();
@@ -35,7 +34,7 @@ export class CarrouselServiceService {
       this.saveToLocalStorage(this.changeCarrousel);
 
     } else {
-      const data = JSON.parse(localStorage.ForCarrousel);
+      const data = JSON.parse(localStorage.CarrouselItem);
       this.changeCarrousel = data;
     }
    }
@@ -54,8 +53,8 @@ export class CarrouselServiceService {
     this.saveToLocalStorage(this.changeCarrousel);
   }
 
-  remove(add: ModelCarrousel) {
-    const index = this.changeCarrousel.findIndex(x => x.id = add.id);
+  remove(remove: ModelCarrousel) {
+    const index = this.changeCarrousel.findIndex(x => x.id === remove.id);
     this.changeCarrousel.splice(index, 1);
     this.saveToLocalStorage(this.changeCarrousel);
   }

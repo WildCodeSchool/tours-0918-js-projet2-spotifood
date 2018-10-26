@@ -37,10 +37,13 @@ img {
 
 .caption {
   padding-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .btn-dark {
   width: 225px;
   z-index: 50;
+}
+.btn-success {
+  z-index: 60;
 }

@@ -118,7 +118,7 @@
 			<div class="form-sublegend">Repères nutritionnels pour 100g</div>
 
 			<div class="form-element form-input">
-				<input name="lipids" #lipids="ngModel" id="field-lipids" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"placeholder="Valeur en g" type="number" required >
+				<input name="lipids" #lipids="ngModel" id="field-lipids" class="form-element-field" [(ngModel)]="message.lipids" [ngModelOptions]="{standalone: true}"placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-lipids">Matières grasses / Lipides</label>
 				<small class="form-element-hint">(champ obligatoire)</small>
@@ -126,7 +126,7 @@
 			</div>
 
 			<div class="form-element form-input">
-				<input name="saturated" #saturated="ngModel" id="field-saturated" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"
+				<input name="saturated" #saturated="ngModel" id="field-saturated" class="form-element-field" [(ngModel)]="message.saturated" [ngModelOptions]="{standalone: true}"
 				placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-saturated">Acides gras saturés</label>
@@ -136,7 +136,7 @@
 			</div>
 
 			<div class="form-element form-input">
-				<input name="sugars" #sugars="ngModel" id="field-sugars" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"
+				<input name="sugars" #sugars="ngModel" id="field-sugars" class="form-element-field" [(ngModel)]="message.sugars" [ngModelOptions]="{standalone: true}"
 				placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-sugars">Sucres</label>
@@ -145,7 +145,7 @@
 			</div>
 
 			<div class="form-element form-input">
-				<input name="salt" #salt="ngModel" id="field-salt" class="form-element-field" [(ngModel)]="message.nutrients" [ngModelOptions]="{standalone: true}"
+				<input name="salt" #salt="ngModel" id="field-salt" class="form-element-field" [(ngModel)]="message.salt" [ngModelOptions]="{standalone: true}"
 				placeholder="Valeur en g" type="number" required >
 				<div class="form-element-bar"></div>
 				<label class="form-element-label" for="field-salt">Sel</label>

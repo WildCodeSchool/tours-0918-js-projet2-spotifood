@@ -1,4 +1,3 @@
-import { Nutrients } from './nutriments';
 
 export class Message {
 	name: string;
@@ -14,7 +13,10 @@ export class Message {
 	ingredients: string;
 	allergenes: string;
 	nutriscore: string;
-	nutrients: Nutrients;
+	lipids: number;
+	saturated: number;
+	sugars: number;
+	salt: number;
 	images: string;
 	prenom: string;
 }

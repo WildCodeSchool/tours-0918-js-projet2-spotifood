@@ -21,10 +21,10 @@
       <p *ngIf='message.ingredients' class="card-text"><strong>Ingrédients</strong>  {{message.ingredients}}</p>
       <p *ngIf='message.allergenes' class="card-text"><strong>Allèrgènes:</strong>. {{message.allergenes}}</p>
       <p *ngIf='message.nutriscore' class="card-text"><strong>Nutriscore:</strong>  {{message.nutriscore}}</p>
-      <p *ngIf='message.nutrients' class="card-text"><strong>Matières grasses/Lipides:</strong>  {{message.nutrients}}</p>
-      <p *ngIf='message.nutrients' class="card-text"><strong>Acides gras saturés:</strong>  {{message.nutrients}}</p>
-      <p *ngIf='message.nutrients' class="card-text"><strong>Sucres:</strong>  {{message.nutrients}}</p>
-      <p *ngIf='message.nutrients' class="card-text"><strong>Sel:</strong>  {{message.nutrients}}</p>
+      <p *ngIf='message.lipids' class="card-text"><strong>Matières grasses/Lipides:</strong>  {{message.lipids}} gr</p>
+      <p *ngIf='message.saturated' class="card-text"><strong>Acides gras saturés:</strong>  {{message.saturated}} gr</p>
+      <p *ngIf='message.sugars' class="card-text"><strong>Sucres:</strong>  {{message.sugars}} gr</p>
+      <p *ngIf='message.salt' class="card-text"><strong>Sel:</strong>  {{message.salt}} gr</p>
       <p *ngIf='message.images' class="card-text">{{message.images}}</p>
 
       <div *ngIf='message.email' class="card-footer text-muted">

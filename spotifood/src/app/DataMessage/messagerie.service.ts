@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Message } from '../models/messagerie';
-import { Nutrients } from '../models/nutriments';
 import product from '../DataMessage/message';
 import message from './message';
 
@@ -34,10 +33,10 @@ export class MessagerieService {
         send.ingredients = x ['ingredients'];
         send.allergenes = x ['allergenes'];
         send.nutriscore = x ['nutriscore'];
-        send.nutrients.lipids = x ['nutrients.lipids'];
-        send.nutrients.saturated = x ['nutrients.saturated'];
-        send.nutrients.sugars = x ['nutrients.sugars'];
-        send.nutrients.salt = x ['nutrients.salt'];
+        send.lipids = x ['.lipids'];
+        send.saturated = x ['.saturated'];
+        send.sugars = x ['.sugars'];
+        send.salt = x ['.salt'];
         send.images = x ['images'];
         
         return send;

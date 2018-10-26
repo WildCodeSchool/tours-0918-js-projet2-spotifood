@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MessagerieService } from '../DataMessage/messagerie.service';
 import { Message } from '../models/messagerie';
-import product from '../DataMessage/message';
 import { Nutrients } from '../models/nutriments';
 import message from '../DataMessage/message';
+import product from '../DataMessage/message';
 
 @Component({
   selector: 'app-messagerie-admin',

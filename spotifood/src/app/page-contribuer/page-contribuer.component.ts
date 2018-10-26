@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { NgbActiveModal, NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { Nutrients } from '../models/nutriments';
 import { GallerieService } from '../common/gallerie.service';
 import message from '../DataMessage/message';
@@ -16,12 +16,10 @@ import { Message } from '../models/messagerie';
 })
 export class PageContribuerComponent implements OnInit {
 
-	
 
 	addForm: boolean;
 	closeResult: string;
 	message: Message;
-	
 
 
 	constructor(private service: MessagerieService, private formService: GallerieService, private route: ActivatedRoute, private modalService: NgbModal) {}
@@ -44,5 +42,4 @@ export class PageContribuerComponent implements OnInit {
 		this.service.add(this.message);
 		this.message = new Message();
 	}
-
 }

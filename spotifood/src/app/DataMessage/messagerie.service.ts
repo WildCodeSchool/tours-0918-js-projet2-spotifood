@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import message from './message';
 import { Message } from '../models/messagerie';
-import product from '../DataMessage/message';
 import { Nutrients } from '../models/nutriments';
+import product from '../DataMessage/message';
+import message from './message';
+
 
 @Injectable({
   providedIn: 'root'
@@ -40,9 +41,6 @@ export class MessagerieService {
         
         return send;
 
-   
-
-  
 
       });
       this.saveToLocalStorage(this.messages);
@@ -52,7 +50,7 @@ export class MessagerieService {
       const data = JSON.parse(localStorage.Messagerie);
       this.messages = data;
     }
-   }
+  }
 
 
   saveToLocalStorage(messages) {

@@ -1,6 +1,6 @@
 <div class="carousel-wrapper d-none d-lg-block" *ngIf="visible">
   <ngb-carousel #carousel="ngbCarousel" [showNavigationIndicators]=false>
-    <ng-template d-bock w-100 ngbSlide *ngFor="let product of topProducts">
+    <ng-template d-bock w-100 ngbSlide *ngFor="let product of carrousel">
       <div class="image-replacement"></div>
 
       <div class="container-fluid inner-container">
@@ -22,5 +22,6 @@
   </ngb-carousel>
 </div>
 <div class="d-none d-lg-flex justify-content-end">
+    <button type="button" class="btn btn-success" *ngIf="this.loggingService.getLogStatus()"[routerLink]="['/admin/change-carrousel']" aria-label="Close" routerLinkActive="router-link-active" >Changer le comparateur</button>
   <button class="btn btn-dark btn-sm" (click)="show()">Afficher/Masquer promotions</button>
 </div>

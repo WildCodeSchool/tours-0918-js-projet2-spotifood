@@ -1,0 +1,13 @@
+<div class="fond">
+<app-navbar></app-navbar>
+
+<div class="row col-12">
+  <div class="card col-2" *ngFor="let product of products">
+    <div class="card-body">
+        {{ product.name }}
+        <input type="checkbox" name="check" id="checked" (change)="checkProduct(product,product.checked)" [(ngModel)]="isChecked" checked>
+        <button class="btn btn-danger" (click)="delete(product)">Retirer</button>
+    </div>
+  </div>
+</div>
+</div>

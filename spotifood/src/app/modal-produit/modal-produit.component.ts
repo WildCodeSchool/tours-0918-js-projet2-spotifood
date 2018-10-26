@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { LoggingService } from '../common/logging.service';
 
 @Component({
   selector: 'app-modal-produit',
@@ -12,10 +13,11 @@ export class ModalProduitComponent implements OnInit {
 
  @Input()
  modalInput: any;
-  constructor() { }
+
+ constructor(public loggingService: LoggingService) {
+   }
 
   ngOnInit() {
+    this.loggingService.getLogStatus();
   }
-
-
 }

@@ -1,0 +1,18 @@
+.card{
+  top: 15%;
+  width: 15%;
+  box-shadow: 0 1px 15px 0 rgba(2,2,2,2.2);
+  margin: 0.3%;
+  margin-top: 8%;
+  margin-left: 10%;
+}
+
+li{
+  margin-left: 15%;
+}
+
+.fond{
+  background-image: url('https://i.goopics.net/4kQQL.jpg');
+  background-attachment: fixed;
+}
+

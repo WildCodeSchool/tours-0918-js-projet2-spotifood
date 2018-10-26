@@ -8,6 +8,7 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
 
 const ROUTES: Route[] = [
   {
@@ -53,10 +54,14 @@ const ROUTES: Route[] = [
     path: '404',
     component: NotFoundComponent
   },
-
   {
     path: '**',
-    redirectTo: '404' }
+    redirectTo: '404'
+   },
+   {
+    path: 'admin/change-carrousel',
+    component: ChangeCarrouselComponent
+  },
 ];
 
 export { ROUTES };

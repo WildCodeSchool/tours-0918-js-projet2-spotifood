@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import message from './message';
 import { Message } from '../models/messagerie';
+import product from '../DataMessage/message';
+import message from './message';
+
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +10,7 @@ import { Message } from '../models/messagerie';
 export class MessagerieService {
 
   messages: Message[];
+
 
   constructor() {
     if (!localStorage.Messagerie) {
@@ -20,8 +23,25 @@ export class MessagerieService {
         send.objet = x['objet'];
         send.email = x['email'];
         send.message = x['message'];
-
+        send.Name = x['Name'];
+        send.prenom = x ['prenom'];
+        send.quantity = x['quantity'];
+        send.brands = x ['brands'];
+        send.labels = x ['labels'];
+        send.categories = x ['categories'];
+        send.packaging = x ['packaging'];
+        send.ingredients = x ['ingredients'];
+        send.allergenes = x ['allergenes'];
+        send.nutriscore = x ['nutriscore'];
+        send.lipids = x ['lipids'];
+        send.saturated = x ['saturated'];
+        send.sugars = x ['sugars'];
+        send.salt = x ['salt'];
+        send.images = x ['images'];
+        
         return send;
+
+
       });
       this.saveToLocalStorage(this.messages);
 
@@ -30,7 +50,7 @@ export class MessagerieService {
       const data = JSON.parse(localStorage.Messagerie);
       this.messages = data;
     }
-   }
+  }
 
 
   saveToLocalStorage(messages) {

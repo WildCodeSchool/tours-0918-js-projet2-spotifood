@@ -42,7 +42,7 @@
       </li>
     </ul>
 
-    <form class="form-inline justify-content-end">
+    <form *ngIf="href == '/produits'" class="form-inline justify-content-end">
       <input (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Search" [(ngModel)]="productName" aria-label="Search">
       <datalist id="mylist">
         <option *ngFor="let product of products">{{product.name}}</option>

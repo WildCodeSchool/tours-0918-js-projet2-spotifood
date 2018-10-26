@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   products: Product[];
   adminLogged: boolean;
   userView: boolean;
-
+  href: string;
   productName: string;
 
   @Output()
@@ -25,6 +25,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.products = this.service.get();
     this.adminLogged = this.loggingService.getLogStatus();
+    this.href = this.router.url;
   }
 
   // when user clicks in the search field, go to page /Produits

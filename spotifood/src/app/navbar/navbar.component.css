@@ -16,7 +16,7 @@
     margin-right: auto !important;
   }
 }
-/* 
+/*
 ---> */
 
 .logo {
@@ -95,7 +95,7 @@ input {
   }
 }
 
-/* 
+/*
 ---> */
 
 /**
@@ -127,10 +127,10 @@ input {
   }
 
   i {
-    right: 160px !important;
+    right: 20% !important;
   }
 }
-/* 
+/*
 ---> */
 
 /*
@@ -157,5 +157,5 @@ input {
     box-shadow: 0px 10px 3px 1px rgba(20, 20, 24, 0.2);
   }
 }
-/* 
+/*
 ---> */

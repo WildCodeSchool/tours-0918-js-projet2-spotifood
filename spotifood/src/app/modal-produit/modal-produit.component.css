@@ -8,10 +8,6 @@ table{
   width: 100%;
 }
 
-td{
-  width: 20%;
-}
-
 .indice{
     padding-left: 70px;
     padding: 3%;
@@ -19,5 +15,5 @@ td{
 }
 
 span{
- color: #ff471a;
+  color: #ff471a;
 }

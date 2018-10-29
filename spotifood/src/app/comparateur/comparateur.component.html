@@ -6,16 +6,13 @@
         <div *ngIf="error" class="alert alert-danger my-0 py-0 text-center mx-auto">
             Ce produit n'existe pas
         </div>
-        <input class="fas fa-search form-control awesomplete" onfocus="this.value=''" list="mylist" (keypress)="recherche()" [(ngModel)]="searchField" type="text" name="searchField" required placeholder="Recherche.." #search="ngModel"
-          (ngModelChange)="recherche()">
+        <input class="fas fa-search form-control awesomplete" onfocus="this.value=''" list="mylist" (keypress)="recherche()" [(ngModel)]="searchField" type="text" name="searchField" required placeholder="Recherche.." #search="ngModel" (ngModelChange)="recherche()">
+        <datalist id="mylist">
+          <option *ngFor="let product of products">{{product.name}}</option>
+        </datalist>
       </div>
     </form>
   </div>
-
-  <datalist id=" mylist">
-    <option *ngFor="let product of products"></option>
-  </datalist>
-
 </div>
 
 

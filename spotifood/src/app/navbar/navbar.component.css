@@ -49,6 +49,7 @@ nav {
 
 nav li a {
   padding: 15px 30px;
+  cursor: pointer;
 }
 
 nav li a:hover {

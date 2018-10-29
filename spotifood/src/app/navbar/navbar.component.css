@@ -2,6 +2,11 @@
   margin-left: 30px;
   font-size: 1.5rem;
 }
+
+.brand-text:hover {
+  color: white;
+  transform: scale(1.2);
+}
 /*
 <---smaller font-size so that the logo image doesn't shrink
 */
@@ -49,6 +54,7 @@ nav {
 
 nav li a {
   padding: 15px 30px;
+  cursor: pointer;
 }
 
 nav li a:hover {

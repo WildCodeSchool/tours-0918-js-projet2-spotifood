@@ -28,8 +28,9 @@
 
     <ul class="navbar-nav mx-auto justify-content-center" *ngIf="adminLogged">
       <li class="nav-item active">
-        <a class="nav-link text-white" *ngIf="!userView" (click)="changeView()">Vue utilisateur<span class="sr-only">(current)</span></a>
-        <a class="nav-link text-white" *ngIf="userView" (click)="changeView()">Comparateur<span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" (click)="changeView()">{{ (href == '/produits') ? 'Comparateur' : 'Vue utilisateur' }}<span
+    class="sr-only">(current)</span></a>
+        <!-- <a class="nav-link text-white" *ngIf="userView" (click)="changeView()">Comparateur<span class="sr-only">(current)</span></a> -->
       </li>
       <li class="nav-item active">
         <a class="nav-link text-white" routerLink="/admin/produits">Produits<span class="sr-only">(current)</span></a>

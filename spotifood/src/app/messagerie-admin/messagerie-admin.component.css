@@ -1,6 +1,7 @@
 .container-fluid{
   padding-top: 10%;
   width: auto;
+  min-height: 100vh;
   background: url('https://i.goopics.net/jGajj.jpg');
   background-repeat: repeat;
   background-size: cover;

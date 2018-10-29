@@ -6,13 +6,13 @@
   <form class="form-group">
 
     <form class="form-element form-input">
-      <input class="form-element-field" [(ngModel)]="message.name" name="name" placeholder="Please fill in your full email" type="name" required/>
+      <input class="form-element-field" [(ngModel)]="message.name" name="name" placeholder="Saisissez votre nom" type="name" required/>
       <div class="form-element-bar"></div>
       <label class="form-element-label" for="name">Nom</label>
     </form>
 
     <form class="form-element form-input">
-        <input  list="requete" class="form-element-field" [(ngModel)]="message.objet" name="objet" placeholder="Please fill in your full email" type="name" required/>
+        <input  list="requete" class="form-element-field" [(ngModel)]="message.objet" name="objet" placeholder="Objet de votre demande" type="name" required/>
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="objet">Objet</label>
         <datalist id="requete">
@@ -24,13 +24,13 @@
       </form>
 
       <form class="form-element form-input">
-          <input class="form-element-field" [(ngModel)]="message.email" name="email" placeholder="Please fill in your full email" type="email" required/>
+          <input class="form-element-field" [(ngModel)]="message.email" name="email" placeholder="Saisissez votre e-mail" type="email" required/>
           <div class="form-element-bar"></div>
           <label class="form-element-label" for="email">Email</label>
         </form>
 
         <form class="form-element form-input">
-            <input class="form-element-field"[(ngModel)]="message.message" name="message" placeholder="Please fill in your full email" type="message" required/>
+            <input class="form-element-field"[(ngModel)]="message.message" name="message" placeholder="Saisissez votre message" type="message" required/>
             <div class="form-element-bar"></div>
             <label class="form-element-label" for="message">Message</label>
             <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>

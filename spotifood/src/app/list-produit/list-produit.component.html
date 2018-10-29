@@ -1,14 +1,18 @@
 <h1 class="mt-5 text-center">Produits</h1>
+  <div class="bg-light d-xl-none fixed-top filter2" id="nav1" [ngClass]="{'trans': filterDisplayed}">
+  <button class="text-white" type="button" (click)="showFilter()" id="boutonfiltre2" class="d-xl-none btnStartPos"
+[ngClass]="{'transBtn': filterDisplayed}">&larr; Filtre</button>
+</div>
 <div class="products">
 <!-- Debut sidenav -->
 <nav class="sidebar bg-light d-none d-xl-block pl-2" id="nav1">
-  <a class="navbar-brand" href="#">Filtrer</a>
+  <a class="navbar-brand text-white" href="#">Filtrer</a>
   <div class="navbar-nav">
     <div class="row">
 
       <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedCategorie}}</button>
+          <button class="btn btn-outline-success" ngbDropdownToggle>{{selectedCategorie}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1" >
             <button class="dropdown-item" *ngFor="let categorie of categorieTotal" (click)="getProductByCategorie(categorie)"
               (click)="changeSelectedCategorie(categorie)">{{categorie}}</button>
@@ -18,7 +22,7 @@
 
       <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedMarque}}</button>
+          <button class="btn btn-outline-success" ngbDropdownToggle>{{selectedMarque}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let marque of marques" (click)="changeSelectedMarque(marque)" (click)="getProductByMarque(marque)">{{marque}}</button>
           </div>
@@ -27,7 +31,7 @@
 
       <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedAllergene}}</button>
+          <button class="btn btn-outline-success" ngbDropdownToggle>{{selectedAllergene}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let allergene of allergenes" (click)="changeSelectedAllergene(allergene)"
               (click)="getProductByAllergene(allergene)">{{allergene}}</button>
@@ -37,7 +41,7 @@
 
       <div class="col-12 d-flex justify-content-center">
         <div ngbDropdown class="d-inline-block my-3">
-          <button class="btn btn-outline-success" id="dropdownBasic1" ngbDropdownToggle>{{selectedPackaging}}</button>
+          <button class="btn btn-outline-success" ngbDropdownToggle>{{selectedPackaging}}</button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button class="dropdown-item" *ngFor="let package of packaging" (click)="changeSelectedPackaging(package)"
               (click)="getProductByPackaging(package)">{{package}}</button>
@@ -87,11 +91,7 @@
 <!-- Fin sidenav -->
 
 <!-- sidnav responsive -->
-<button class="text-white" type="button" (click)="showFilter()" [hidden]="filterDisplayed == true" id="boutonfiltre" class="d-xl-none btnStartPos" [ngClass]="{'transBtn': filterDisplayed}">⟩
-  Filtre</button>
 <nav class="sidebar bg-light pl-2 d-xl-none hidden" id="nav1" [ngClass]="{'trans': filterDisplayed}">
-<button class="text-white" type="button" (click)="showFilter()" id="boutonfiltre2" class="d-xl-none btnStartPos"
-[ngClass]="{'transBtn': filterDisplayed}">&larr; Filtre</button>
 <br />
   <!-- <a class="navbar-brand" href="#">Filtrer</a> -->
   <div class="navbar-nav">
@@ -172,7 +172,7 @@
       </form>
     </div>
 
-    <button class="mx-4 btn btn-success text-white" (click)="tabTri=''" (click)="reinitialiser()">Réinitialiser</button>
+    <button class="mx-5 btn btn-success text-white" (click)="tabTri=''" (click)="reinitialiser()">Réinitialiser</button>
   </div>
 </nav>
 

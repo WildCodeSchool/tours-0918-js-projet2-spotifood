@@ -19,7 +19,7 @@ img {
 .container{
   transform: translateY(-1000px);
   max-width: 1200px !important;
-  margin-right: 0rem;
+  margin-right: 0rem !important;
 }
 .card a {
   font-size: 1rem;
@@ -31,9 +31,13 @@ img {
  max-width: 100% !important;
 
 }
-  @media only screen and (min-width: 1340px) {
+  @media only screen and (min-width: 1200px) and (max-width: 1440px) {
    .container{
-    margin-right: 6rem;
+    margin-left: 8rem !important;
+
+   }
+   .row{
+     width: 75% !important;
    }
 
 }

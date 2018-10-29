@@ -16,7 +16,7 @@ export class ChangeCarrouselComponent implements OnInit {
 
   constructor(private service: CarrouselServiceService, private Productservice: ProductService) {
     this.isChecked = false;
-   }
+  }
 
   ngOnInit() {
     // this.service.get();

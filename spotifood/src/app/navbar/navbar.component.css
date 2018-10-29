@@ -5,6 +5,10 @@
 /*
 <---smaller font-size so that the logo image doesn't shrink
 */
+
+.navbar-toggler{
+    background-color: #808080;
+  }
 @media screen and (max-width: 400px) {
   .navbar-brand {
     font-size: 1rem;
@@ -14,7 +18,9 @@
   .navbar-toggler {
     margin-left: auto;
     margin-right: auto !important;
+    
   }
+
 }
 /*
 ---> */

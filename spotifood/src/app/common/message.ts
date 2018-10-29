@@ -1,8 +1,8 @@
 const message = [{
-	'message.name': 'Superman',
-	'message.objet': 'Je veux voler',
-	'message.email': 'superman@avengers.com',
-	'message.message': 'Il me faut des carottes pour voler',
+	'message.name': '' ,
+	'message.objet': '',
+	'message.email': '' ,
+	'message.message': '' ,
 
 }];
 

@@ -14,8 +14,6 @@ export class MessagerieAdminComponent implements OnInit {
 
   message: Message[];
 
-
-
   constructor(private service: MessagerieService) { }
 
   ngOnInit() {

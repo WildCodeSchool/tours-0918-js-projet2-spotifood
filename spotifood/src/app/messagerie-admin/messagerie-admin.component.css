@@ -28,6 +28,9 @@ h1{
   .container-fluid{
     padding-top: 20%;
   }
+  .trash{
+    width:8%;
+  }
 }
 
 @media screen and (max-width: 550px) {

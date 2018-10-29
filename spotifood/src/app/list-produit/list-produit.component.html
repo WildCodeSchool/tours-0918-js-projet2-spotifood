@@ -1,7 +1,7 @@
 <h1 class="mt-5 text-center">Produits</h1>
   <div class="bg-light d-xl-none fixed-top filter2" id="nav1" [ngClass]="{'trans': filterDisplayed}">
   <button class="text-white" type="button" (click)="showFilter()" id="boutonfiltre2" class="d-xl-none btnStartPos"
-[ngClass]="{'transBtn': filterDisplayed}">&larr; Filtre</button>
+[ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10094;' : '&#10095;'}} Filtre</button>
 </div>
 <div class="products">
 <!-- Debut sidenav -->
@@ -49,11 +49,11 @@
         </div>
       </div>
 
-      <form class="my-5 m-2">
+      <form class="my-5 col-12 justify-self-center">
         <fieldset>
           <legend class="text-center">Nutri-Score</legend>
 
-          <div class="m-2 radio-wrapper text-center">
+          <div class="m-auto radio-wrapper text-center">
             <label class="container-radio">
               <input type="radio" name="drone" value="A" (click)="getProductByScore('A')" />
               <span class="checkmark"></span>
@@ -84,7 +84,7 @@
         </fieldset>
       </form>
     </div>
-    <button class="mx-4 btn btn-success text-white" (click)="tabTri=''" (click)="reinitialiser()">Réinitialiser</button>
+    <button class="mx-auto btn btn-success text-white" (click)="tabTri=''" (click)="reinitialiser()">Réinitialiser</button>
   </div>
 
 </nav>

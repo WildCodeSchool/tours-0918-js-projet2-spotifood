@@ -110,6 +110,7 @@ a {
   font: bold 13px Arial;
   background-color: #059e05;
   color: white;
+  cursor: pointer;
 }
 
 .trans {
@@ -125,7 +126,7 @@ a {
 .transBtn {
   z-index: 1000;
   transition: transform 0.9s ease-in-out;
-  transform: translateX(300px);
+  transform: translateX(270px);
 }
 
 .btnStartPos {
@@ -192,16 +193,16 @@ a {
 
 /* Style the indicator (dot/circle) */
 .container-radio .checkmark:after {
-  top: 2px;
-  left: 0;
-  width: 8px;
-  height: 8px;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: white;
 }
 
 .radio-wrapper {
-  width: 180px;
+  width: 200px;
 }
 
 /* select {
@@ -237,3 +238,6 @@ button.text-white {
   color: whitesmoke;
 }
 
+.btn-success {
+  transform: translateY(-50px);
+}

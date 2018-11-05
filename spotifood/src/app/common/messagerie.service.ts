@@ -41,10 +41,10 @@ export class MessagerieService {
 
         return send;
 
-
+         
       });
-      this.saveToLocalStorage(this.messages);
-
+      
+ this.saveToLocalStorage(this.messages);
     } else {
       // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
       const data = JSON.parse(localStorage.Messagerie);

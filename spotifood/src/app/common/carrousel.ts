@@ -9,7 +9,7 @@ const carrousel = [{
   'ingredients': '',
   'allergens': [''],
   'nutriscore': '',
-  'images': 'https://i.goopics.net/KO1Zr.jpg',
+  'images': '../../assets/images/carrouselImage.jpg',
 }];
 
 export default carrousel;

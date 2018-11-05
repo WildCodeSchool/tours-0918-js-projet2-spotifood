@@ -11,13 +11,13 @@ import product from '../common/message';
 })
 
 export class MessagerieAdminComponent implements OnInit {
-
   message: Message[];
 
   constructor(private service: MessagerieService) { }
 
   ngOnInit() {
     this.message = this.service.get();
+    this.message.splice(0, 1);
   }
   // Method for supression message.
   delete(messagerie: Message) {

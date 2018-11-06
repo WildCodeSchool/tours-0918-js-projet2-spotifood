@@ -34,10 +34,9 @@
       </form>
 
       <form class="form-element form-input">
-        <input class="form-element-field" [(ngModel)]="message.message" name="message" placeholder="Saisissez votre message"
-          type="message" required />
+        <textarea class="form-element-field" [(ngModel)]="message.message" name="message" placeholder="Saisissez votre message" type="message" required></textarea>
         <div class="form-element-bar"></div>
-        <label class="form-element-label" for="message">Message</label>
+        <label class="form-element-label" id="labelTextarea" for="message">Message</label>
         <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>
       </form>
     </form>

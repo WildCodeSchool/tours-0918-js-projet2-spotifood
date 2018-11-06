@@ -333,4 +333,8 @@ select.form-element-field {
     margin: 0 auto;
     margin-top: 140px;
   }
+
+  #labelTextarea {
+    left: 37%;
+  }
 }

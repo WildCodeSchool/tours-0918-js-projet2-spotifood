@@ -14,39 +14,11 @@ export class MessagerieService {
 
   constructor() {
     if (!localStorage.Messagerie) {
-      // Initialisation du local storage et du tableau products avec tableau des produits
-      this.messages = message.map((x) => {
-
-        const send = new Message();
-
-        send.name = x['name'];
-        send.objet = x['objet'];
-        send.email = x['email'];
-        send.message = x['message'];
-        send.Name = x['Name'];
-        send.prenom = x ['prenom'];
-        send.quantity = x['quantity'];
-        send.brands = x ['brands'];
-        send.labels = x ['labels'];
-        send.categories = x ['categories'];
-        send.packaging = x ['packaging'];
-        send.ingredients = x ['ingredients'];
-        send.allergenes = x ['allergenes'];
-        send.nutriscore = x ['nutriscore'];
-        send.lipids = x ['lipids'];
-        send.saturated = x ['saturated'];
-        send.sugars = x ['sugars'];
-        send.salt = x ['salt'];
-        send.images = x ['images'];
-
-        return send;
-
-         
-      });
-      
- this.saveToLocalStorage(this.messages);
+      // Initialisation du local storage
+      this.messages = [];
+      this.saveToLocalStorage(this.messages);
     } else {
-      // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
+      // Si le tableau Messagerie existe déjà dans le local storage, enregistrer les données correspondantes dans this.messages
       const data = JSON.parse(localStorage.Messagerie);
       this.messages = data;
     }
@@ -68,7 +40,7 @@ export class MessagerieService {
   }
 
   delete(messagerie: Message) {
-    const index = this.messages.findIndex(message => message.name === messagerie.name);
+    const index = this.messages.findIndex(msg => msg.name === messagerie.name);
     this.messages.splice(index, 1);
     this.saveToLocalStorage(this.messages);
   }

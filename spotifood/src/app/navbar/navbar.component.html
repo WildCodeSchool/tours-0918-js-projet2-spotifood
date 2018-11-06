@@ -38,14 +38,14 @@
       <li class="nav-item active">
         <a class="nav-link text-white" routerLink="/admin/messagerie">Messagerie</a>
       </li>
-    
+
       <li class="nav-item">
         <a class="nav-link text-white" routerLink="/produits" (click)="logOut()">Déconnexion</a>
       </li>
     </ul>
 
     <form *ngIf="href == '/produits'" class="form-inline justify-content-end">
-      <input (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Search" [(ngModel)]="productName" aria-label="Search">
+      <input (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Rechercher" [(ngModel)]="productName" aria-label="Search">
       <datalist id="mylist">
         <option *ngFor="let product of products">{{product.name}}</option>
       </datalist>

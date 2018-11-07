@@ -1,9 +1,21 @@
 <app-navbar></app-navbar>
 
 <div *ngIf="adminLogged">
-  <div class="d-flex justify-content-center ajouter">
-    <button routerLink="/admin/add" type="button" class="btn border-dark btn-success">Ajouter un produit</button>
+    <form class="form-inline justify-content-center">
+      <input name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Rechercher" [(ngModel)]="productNameAdmin" aria-label="Search">
+      <datalist id="mylist">
+        <option *ngFor="let product of products">{{product.name}}</option>
+      </datalist>
+      <i role="submit" class="fas fa-search" (click)="recherche()"></i>
+    </form>
+
+  <div class="d-flex justify-content-center reset">
+    <button type="button" class="btn btn-primary" (click)="resetList()">Voir tous les produits</button>
   </div>
+  <div class="d-flex justify-content-center ajouter">
+    <button routerLink="/admin/add" type="button" class="btn btn-success">Ajouter un produit</button>
+  </div>
+
 
   <div class="container-fluid produit">
     <div class="row d-flex justify-content-center no-gutters">

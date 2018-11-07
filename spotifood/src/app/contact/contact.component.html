@@ -39,6 +39,7 @@
         <label class="form-element-label" id="labelTextarea" for="message">Message</label>
         <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>
       </form>
+      <div *ngIf="sent" class="text-center">Votre message a bien été envoyé.</div>
     </form>
   </div>
 </div>

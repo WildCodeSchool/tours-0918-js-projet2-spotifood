@@ -23,12 +23,15 @@ export class ChangeCarrouselComponent implements OnInit {
     this.products = this.Productservice.get();
   }
 
-  checkProduct(produit: Product, isChecked: boolean) {
+  checkProduct(produit: Product) {
+    produit.isSelected = true;
     this.service.add(produit);
-    this.isChecked = !this.isChecked;
+    this.Productservice.update(produit);
   }
 
   delete(produit: Product) {
       this.service.remove(produit);
+      produit.isSelected = false;
+      this.Productservice.update(produit);
   }
 }

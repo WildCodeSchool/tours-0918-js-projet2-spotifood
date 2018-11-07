@@ -30,3 +30,10 @@ li{
   bottom: 14px;
   right: 14px;
 }
+
+.btn-success{
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  
+}

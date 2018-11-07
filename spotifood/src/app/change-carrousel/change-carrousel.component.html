@@ -6,10 +6,10 @@
       <div class="card col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-between" *ngFor="let product of products">
         <div class="card-body">
           {{ product.name }}
-          <input type="checkbox" name="check" id="checked" (change)="checkProduct(product, product.checked)"
-            [(ngModel)]="isChecked" checked>
-          <br />
-          <button class="btn btn-danger" (click)="delete(product)">Retirer</button>
+          <div *ngIf="product.isSelected" class="text-danger far fa-check-circle"></div>
+          <br/>
+          <button type="submit" class="btn btn-small btn-success" name="check" id="checked" [disabled]="product.isSelected === true" (click)="checkProduct(product)">Ajouter</button>
+          <button class="btn btn-danger" [disabled]="product.isSelected === false" (click)="delete(product)">Retirer</button>
         </div>
       </div>
     </div>

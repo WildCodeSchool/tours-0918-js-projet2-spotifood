@@ -7,6 +7,7 @@ import message from '../common/message';
 import product from '../common/message';
 import { MessagerieService } from '../common/messagerie.service';
 import { Message } from '../models/messagerie';
+import { Product } from '../models/product';
 
 
 @Component({
@@ -19,7 +20,8 @@ export class PageContribuerComponent implements OnInit {
 
 	addForm: boolean;
 	closeResult: string;
-	message: Message;
+  message: Message;
+  products: Product[];
 
 
 	// tslint:disable-next-line:max-line-length
@@ -34,8 +36,8 @@ export class PageContribuerComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		this.message = new Message();
-
+    this.message = new Message();
+    this.products = this.formService.get();
 	}
 
 	send() {

@@ -17,10 +17,11 @@ img {
   max-height: 250px;
 }
 .container{
-  transform: translateY(-500px);
+  transform: translateY(-650px);
   max-width: 1200px !important;
-  margin-right: 0rem !important;
+  margin-right: 15rem !important;
 }
+
 .card a {
   font-size: 1rem;
   margin: 3rem;
@@ -57,7 +58,14 @@ img {
     max-height: 100%;
     max-width: 80%;
   }
+  .container{
+    transform: translateY(-500px);
+  }
+  h1{
+    margin-left: 0;
+  }
 }
+
 
 /************************ css sidenav************ */
 .sidebar {
@@ -240,4 +248,8 @@ button.text-white {
 
 .btn-success {
   transform: translateY(-50px);
+}
+
+h1{
+  margin-left: 12%;
 }

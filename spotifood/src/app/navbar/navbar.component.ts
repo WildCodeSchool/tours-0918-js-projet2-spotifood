@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   userView: boolean;
   href: string;
   productName: string;
+  isCollapsed: Boolean = false;
 
   @Output()
   productDisplay = new EventEmitter();

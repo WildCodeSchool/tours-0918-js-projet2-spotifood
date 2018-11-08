@@ -26,6 +26,10 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { AutofocusDirective } from './autofocus.directive';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
+import { PageContribuerComponent } from './page-contribuer/page-contribuer.component';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +49,9 @@ import { ContactComponent } from './contact/contact.component';
     AutofocusDirective,
     MessagerieAdminComponent,
     ContactComponent,
+    NotFoundComponent,
+    ChangeCarrouselComponent,
+    PageContribuerComponent
   ],
   imports: [
     BrowserModule,

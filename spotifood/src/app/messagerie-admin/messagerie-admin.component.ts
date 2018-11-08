@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { MessagerieService } from '../common/messagerie.service';
 import { Message } from '../models/messagerie';
+import message from '../common/message';
+import product from '../common/message';
 
 @Component({
   selector: 'app-messagerie-admin',
   templateUrl: './messagerie-admin.component.html',
   styleUrls: ['./messagerie-admin.component.css']
 })
-export class MessagerieAdminComponent implements OnInit {
 
+export class MessagerieAdminComponent implements OnInit {
   message: Message[];
 
-  constructor(private servce: MessagerieService) { }
+  constructor(private service: MessagerieService) { }
 
   ngOnInit() {
-    this.message = this.servce.get();
+    this.message = this.service.get();
   }
   // Method for supression message.
   delete(messagerie: Message) {
-    this.servce.delete(messagerie);
+    this.service.delete(messagerie);
   }
-
 }

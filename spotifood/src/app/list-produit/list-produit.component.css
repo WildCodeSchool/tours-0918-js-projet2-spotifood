@@ -1,17 +1,88 @@
-/******************css global ************************/
-.products{
+.products {
   transform: translateY(-30px);
 }
+/**************************css Galerie***********************/
+img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.images {
+  min-width: 150px;
+  max-height: 250px;
+}
+.container{
+  transform: translateY(-650px);
+  max-width: 1200px !important;
+  margin-right: 15rem !important;
+}
+
+.card a {
+  font-size: 1rem;
+  margin: 3rem;
+
+}
+.card  {
+ height : 95%;
+ max-width: 100% !important;
+
+}
+  @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+   .container{
+    margin-left: 8rem !important;
+
+   }
+   .row{
+     width: 75% !important;
+   }
+
+   .sidebar{
+     background-color: #0e0d0d99!important;
+   }
+
+}
+@media only screen and (max-width: 767px){
+  .images {
+    min-width: 100px;
+    max-height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    max-height: 100%;
+    max-width: 80%;
+  }
+  .container{
+    transform: translateY(-500px);
+  }
+  h1{
+    margin-left: 0;
+  }
+}
+
+
 /************************ css sidenav************ */
 .sidebar {
-  height: 40rem;
-  width: 220px;
+  height: 80vh;
+  width: 270px;
   position: sticky;
   z-index: 1;
-  top: 89px;
+  top: 150px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0e0d0d9e!important;
+  display: block;
+  overflow-y: scroll;
 }
 
 legend {
@@ -20,13 +91,6 @@ legend {
 
 .navbar-nav {
   height: 70vh;
-}
-
-.sidebar {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #818181;
-  display: block;
 }
 
 /* Survol souris changement de couleur */
@@ -41,12 +105,20 @@ a {
   color: #059e05;
 }
 
-#boutonfiltre {
+#boutonfiltre2 {
+  /* transform: translateX(40px) !important; */
+  /* position: sticky; */
+  transition: transform 0.9s ease-in-out;
+  position: fixed;
+  width: 8em;
+  height: 2rem;
   border: none;
-  padding: 6px 5 6px 5;
+  top: 22%;
   border-radius: 8px;
   font: bold 13px Arial;
-  color: #fff;
+  background-color: #059e05;
+  color: white;
+  cursor: pointer;
 }
 
 .trans {
@@ -55,24 +127,24 @@ a {
 }
 
 .hidden {
-  transform: translateX(-225px);
-  transition: transform 0.6s ease-in-out;
+  transform: translateX(-335px);
+  transition: transform 0.9s ease-in-out;
 }
 
 .transBtn {
   z-index: 1000;
-  transform: translateX(60px) !important;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transform: translateX(270px);
 }
 
 .btnStartPos {
-  transform: translateX(2px);
+  transform: translateX();
   transition: transform 0.6s ease-in-out;
 }
 
 
 /* Customize the label (the container) */
-.containerRadio {
+.container-radio {
   display: inline-block;
   position: relative;
   padding-left: 35px;
@@ -86,7 +158,7 @@ a {
 }
 
 /* Hide the browser's default radio button */
-.containerRadio input {
+.container-radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -97,8 +169,8 @@ a {
 /* Create a custom radio button */
 .checkmark {
   position: absolute;
-  top: 6px;
-  left: 0;
+  top: 2px;
+  left: 7px;
   height: 20px;
   width: 20px;
   background-color: #eee;
@@ -106,12 +178,12 @@ a {
 }
 
 /* On mouse-over, add a grey background color */
-.containerRadio:hover input~.checkmark {
+.container-radio:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.containerRadio input:checked~.checkmark {
+.container-radio input:checked~.checkmark {
   background-color: #28a745;
 }
 
@@ -123,24 +195,28 @@ a {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.containerRadio input:checked~.checkmark:after {
+.container-radio input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.containerRadio .checkmark:after {
-  top: 6px;
-  left: 6px;
-  width: 8px;
-  height: 8px;
+.container-radio .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: white;
 }
 
-select {
+.radio-wrapper {
+  width: 200px;
+}
+
+/* select {
   background-color: #28a745;
   border-color: #28a745
-}
+} */
 
 
 div.navbar-nav {
@@ -148,49 +224,32 @@ div.navbar-nav {
 }
 
 
-/****************************** css list produit********************* */
-@media only screen and (max-width: 767px) {
-  .center{
-    display: block;
-     margin-left: auto;
-     margin-right: auto;
-  }
+button {
+  padding: 3px;
+  width: 170px;
+  word-wrap: break-word;
+  white-space: normal;
+  border-color: #6c757d;
 }
 
-img{
-  max-height: 170px;
-  max-width: 85%;
-  width: auto;
-  height: auto;
-  padding : 20px;
+
+.filter2{
+  top: 20%
 }
 
-.images {
-  min-width: 200px;
-}
-.listProduits {
-  transform: translateY(-540px);
-}
-.pagine{
-  transform: translateY(-100px);
-}
-@media only screen and (max-width: 991px) {
-.listProduits {
-  transform: translateY(-530px);
-}
-  .pagine {
-    transform: translateY(20px);
-  }
 
+button.text-white {
+  height: 20%;
 }
-.card-body{
-  padding: 10px;
-}
-.card{
-  min-width: 25rem;
-   margin-left: 60px !important;
 
+.btn-outline-success{
+  color: whitesmoke;
 }
-.card a{
-  font-size: 1rem;
+
+.btn-success {
+  transform: translateY(-50px);
+}
+
+h1{
+  margin-left: 12%;
 }

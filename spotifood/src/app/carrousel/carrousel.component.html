@@ -1,6 +1,6 @@
 <div class="carousel-wrapper d-none d-lg-block" *ngIf="visible">
   <ngb-carousel #carousel="ngbCarousel" [showNavigationIndicators]=false>
-    <ng-template d-bock w-100 ngbSlide *ngFor="let product of topProducts">
+    <ng-template d-bock w-100 ngbSlide *ngFor="let product of carrousel">
       <div class="image-replacement"></div>
 
       <div class="container-fluid inner-container">
@@ -12,7 +12,7 @@
 
           <div class="col-6 pt-4 pl-5">
             <div class="caption">{{product.name}}</div>
-            <button class="mt-4 btn btn-light" (click)="displayProduct(product.name)">Détail produit</button>
+            <button *ngIf="product.id != '0'" class="mt-4 btn btn-light" (click)="displayProduct(product.name)">Détail produit</button>
           </div>
 
         </div>
@@ -22,5 +22,6 @@
   </ngb-carousel>
 </div>
 <div class="d-none d-lg-flex justify-content-end">
-  <button class="btn btn-dark btn-sm" (click)="show()">Afficher/Masquer promotions</button>
+    <button type="button" class="btn btn-success" *ngIf="this.loggingService.getLogStatus()"[routerLink]="['/admin/change-carrousel']" aria-label="Close" routerLinkActive="router-link-active" >Modifier la bannière</button>
+  <button class="btn btn-dark btn-sm" (click)="show()">Afficher/Masquer la bannière</button>
 </div>

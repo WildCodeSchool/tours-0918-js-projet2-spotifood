@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { ProductService } from '../common/product.service';
 import { Product } from '../models/product';
+import { ModelCarrousel } from '../models/carrousel';
+import { CarrouselServiceService } from '../common/carrousel-service.service';
+import { LoggingService } from '../common/logging.service';
 
 @Component({
   selector: 'app-carrousel',
@@ -11,16 +13,17 @@ export class CarrouselComponent implements OnInit {
   visible: boolean;
   products: Product[];
   topProducts: Product[];
+  carrousel: ModelCarrousel[];
 
   @Output()
   productDisplay = new EventEmitter();
 
-  constructor(private service: ProductService) {}
+  constructor(private service: CarrouselServiceService, public loggingService: LoggingService) {}
 
   ngOnInit() {
+    this.carrousel = this.service.get();
+    this.loggingService.getLogStatus();
     this.visible = true;
-    this.products = this.service.get();
-    this.topProducts = [this.products[17], this.products[7], this.products[13]];
   }
 
   // show or hide carrousel

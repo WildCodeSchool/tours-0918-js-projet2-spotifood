@@ -14,8 +14,9 @@ export class NavbarComponent implements OnInit {
   products: Product[];
   adminLogged: boolean;
   userView: boolean;
-
+  href: string;
   productName: string;
+  isCollapsed: Boolean = false;
 
   @Output()
   productDisplay = new EventEmitter();
@@ -25,6 +26,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.products = this.service.get();
     this.adminLogged = this.loggingService.getLogStatus();
+    this.href = this.router.url;
+    this.userView = false;
   }
 
   // when user clicks in the search field, go to page /Produits
@@ -40,6 +43,9 @@ export class NavbarComponent implements OnInit {
   // admin logout
   logOut() {
     this.loggingService.logOut();
+
+    this.router.navigateByUrl('/RefrshComponent', { skipLocationChange: true }).then(() =>
+    this.router.navigate(['/produits']));
   }
 
   // when the admin is on the page "produits", "Comparateur" is displayed in the navbar

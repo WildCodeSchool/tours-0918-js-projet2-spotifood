@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import message from './message';
 import { Message } from '../models/messagerie';
+import product from './message';
+import message from './message';
+
 
 @Injectable({
   providedIn: 'root'
@@ -9,28 +11,18 @@ export class MessagerieService {
 
   messages: Message[];
 
+
   constructor() {
     if (!localStorage.Messagerie) {
-      // Initialisation du local storage et du tableau products avec tableau des produits
-      this.messages = message.map((x) => {
-
-        const send = new Message();
-
-        send.name = x['name'];
-        send.objet = x['objet'];
-        send.email = x['email'];
-        send.message = x['message'];
-
-        return send;
-      });
+      // Initialisation du local storage
+      this.messages = [];
       this.saveToLocalStorage(this.messages);
-
     } else {
-      // Si le tableau Products existe déjà dans le local storage, enregistrer les données correspondantes dans this.products
+      // Si le tableau Messagerie existe déjà dans le local storage, enregistrer les données correspondantes dans this.messages
       const data = JSON.parse(localStorage.Messagerie);
       this.messages = data;
     }
-   }
+  }
 
 
   saveToLocalStorage(messages) {
@@ -48,7 +40,7 @@ export class MessagerieService {
   }
 
   delete(messagerie: Message) {
-    const index = this.messages.findIndex(message => message.name === messagerie.name);
+    const index = this.messages.findIndex(msg => msg.name === messagerie.name);
     this.messages.splice(index, 1);
     this.saveToLocalStorage(this.messages);
   }

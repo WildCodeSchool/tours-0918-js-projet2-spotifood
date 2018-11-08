@@ -1,10 +1,28 @@
-div {
-  margin-top: 20px;
+.container {
+  margin-top: 45px !important;
 }
- h1{
-  margin-top: 15%;
-  text-decoration: underline;
- }
- h3{
-   transform: translateY(240%);
- }
+h1{
+  margin-top: 140px;
+}
+button {
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  border-radius: 70px;
+  /* transform: translateY(-82%); */
+  z-index: 100;
+  padding: 0.4rem;
+  height: 2.2rem;
+  line-height: 1;
+}
+
+/**
+*for very small screens
+*/
+
+@media screen and (max-width: 500px) {
+  [class*='col-'] {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+

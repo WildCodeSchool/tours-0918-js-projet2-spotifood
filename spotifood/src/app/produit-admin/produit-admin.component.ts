@@ -15,6 +15,8 @@ export class ProduitAdminComponent implements OnInit {
   page = 1;
   closeResult: string;
   adminLogged: boolean;
+  productNameAdmin: string;
+  error: boolean;
 
   constructor(private serviceAdmin: ProductService, private modalService: NgbModal, private loggingService: LoggingService) {}
 
@@ -34,5 +36,23 @@ export class ProduitAdminComponent implements OnInit {
   // remove the product with the given id from the database.
   delete(id) {
     this.serviceAdmin.delete(id);
+  }
+
+  recherche() {
+    for (let i = 0; i < this.products.length; i++) {
+      if (this.products[i].name && this.products[i].name.toLowerCase() === this.productNameAdmin.toLowerCase()) {
+       console.log(this.products);
+       console.log(this.products[i]);
+       this.products = [this.products[i]];
+        this.error = false;
+        break;
+      } else {
+        this.error = true;
+      }
+    }
+  }
+
+  resetList() {
+    this.products = this.serviceAdmin.get();
   }
 }

@@ -1,18 +1,21 @@
 <app-navbar></app-navbar>
-<div class="container-fluid text-center">
+<div class="container-fluid">
 
-  <h1>Nous contacter</h1>
+  <div class="wrapper">
+    <h1>Nous contacter</h1>
 
-  <form class="form-group">
+    <form class="form-group">
 
-    <form class="form-element form-input">
-      <input class="form-element-field" [(ngModel)]="message.name" name="name" placeholder="Please fill in your full email" type="name" required/>
-      <div class="form-element-bar"></div>
-      <label class="form-element-label" for="name">Nom</label>
-    </form>
+      <form class="form-element form-input">
+        <input class="form-element-field" [(ngModel)]="message.name" name="name" placeholder="Saisissez votre nom" type="name"
+          required />
+        <div class="form-element-bar"></div>
+        <label class="form-element-label" for="name">Nom</label>
+      </form>
 
-    <form class="form-element form-input">
-        <input  list="requete" class="form-element-field" [(ngModel)]="message.objet" name="objet" placeholder="Please fill in your full email" type="name" required/>
+      <form class="form-element form-input">
+        <input list="requete" class="form-element-field" [(ngModel)]="message.objet" name="objet" placeholder="Objet de votre demande"
+          type="name" required />
         <div class="form-element-bar"></div>
         <label class="form-element-label" for="objet">Objet</label>
         <datalist id="requete">
@@ -24,18 +27,21 @@
       </form>
 
       <form class="form-element form-input">
-          <input class="form-element-field" [(ngModel)]="message.email" name="email" placeholder="Please fill in your full email" type="email" required/>
-          <div class="form-element-bar"></div>
-          <label class="form-element-label" for="email">Email</label>
-        </form>
+        <input class="form-element-field" [(ngModel)]="message.email" name="email" placeholder="Saisissez votre e-mail"
+          type="email" required />
+        <div class="form-element-bar"></div>
+        <label class="form-element-label" for="email">Email</label>
+      </form>
 
-        <form class="form-element form-input">
-            <input class="form-element-field"[(ngModel)]="message.message" name="message" placeholder="Please fill in your full email" type="message" required/>
-            <div class="form-element-bar"></div>
-            <label class="form-element-label" for="message">Message</label>
-            <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>
-          </form>
-        </form>
-      </div>
+      <form class="form-element form-input">
+        <textarea class="form-element-field" [(ngModel)]="message.message" name="message" placeholder="Saisissez votre message" type="message" required></textarea>
+        <div class="form-element-bar"></div>
+        <label class="form-element-label" id="labelTextarea" for="message">Message</label>
+        <button class="btn btn-success" (click)="send()" type="submit">Envoyer</button>
+      </form>
+      <div *ngIf="sent" class="text-center">Votre message a bien été envoyé.</div>
+    </form>
+  </div>
+</div>
 
-      <app-footer></app-footer>
+<app-footer></app-footer>

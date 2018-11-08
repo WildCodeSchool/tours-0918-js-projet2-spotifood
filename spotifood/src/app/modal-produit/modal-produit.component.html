@@ -2,7 +2,7 @@
     <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">{{productModal.name}}</h4>
-            <button type="button" class="close"  (click)="modalInput.dismiss()" aria-label="Close">
+            <button type="button" class="Fermer"  (click)="modalInput.dismiss()" aria-label="Fermer">
               <span aria-hidden="true">&times;</span>
             </button>
         </div>
@@ -19,20 +19,20 @@
             </tr>
             <tr>
               <td><strong>Conditionnement :</strong></td>
-              <td class="indice"> {{ productModal.packaging}}</td>
+              <td class="indice"> {{ productModal.packaging.join(', ')}}</td>
             </tr>
             <tr>
               <td><strong>Catégories :</strong></td>
-              <td class="indice"> {{ productModal.categories}}</td>
+              <td class="indice"> {{ productModal.categories.join(', ')}}</td>
             </tr>
             <tr>
               <td><strong>Labels, certifications, récompenses :</strong></td>
-              <td class="indice"> {{productModal.labels}}</td>
+              <td class="indice"> {{productModal.labels.join(', ')}}</td>
             </tr>
             </table>
           <h5>Ingrédients</h5>
               <p>Liste des ingrédients : {{productModal.ingredients}}</p>
-              <p>produits provoquant des allergies ou intolérances :<span> {{productModal.allergens}} </span></p>
+              <p>Produits provoquant des allergies ou intolérances :<span> {{productModal.allergens}} </span></p>
           <h5>Informations nutritionnelles</h5>
           <table>
             <td>
@@ -59,7 +59,7 @@
             </table>
         </div>
         <div class="modal-footer">
-              <button type="button" class="btn btn-info" routerLink="/contact" routerLinkActive="active" >Signaler</button>
-              <button type="button" class="btn btn-danger" (click)="modalInput.close()">Close</button>
+              <button type="button" class="btn btn-info" routerLink="/contact" routerLinkActive="active" (click)="modalInput.close()">Signaler</button>
+              <button type="button" class="btn btn-danger" (click)="modalInput.close()">Fermer</button>
         </div>
     </div>

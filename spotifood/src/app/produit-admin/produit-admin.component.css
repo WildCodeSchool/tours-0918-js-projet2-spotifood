@@ -4,8 +4,51 @@
   position: relative;
 }
 
+/*** debut **/
+.form-inline {
+  position: relative;
+}
+
+i {
+  cursor: pointer;
+  position: absolute;
+  right: 35%;
+  top: 153px;
+}
+
+input[type=search] {
+  margin-top: 140px;
+  min-width: 160px;
+  width: 33.33333%;
+  padding-left: 2rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  -webkit-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 400 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/*** fin */
+
+.reset {
+  margin-top: 25px;
+}
+
 .ajouter {
-  margin-top: 125px;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 767px) {

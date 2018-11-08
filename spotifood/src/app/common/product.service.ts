@@ -35,6 +35,7 @@ export class ProductService {
         product.allergens = x.allergenes;
         product.nutriscore = x.nutriscore;
         product.images = x.image;
+        product.isSelected = false;
 
         product.nutrients = new Nutrients();
 

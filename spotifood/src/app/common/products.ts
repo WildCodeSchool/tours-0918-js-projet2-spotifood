@@ -5,7 +5,6 @@ const products = [{
 	'quantity': '1kg',
 	'packaging': [
 	'Carton',
-	'Surgelé'
 	],
 	'categories': [
 	'Plats préparés',

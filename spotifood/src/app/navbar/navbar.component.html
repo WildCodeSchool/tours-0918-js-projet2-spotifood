@@ -2,7 +2,7 @@
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
 <a routerLink="/accueil" class="navbar-brand d-flex w-auto mr-auto">
-    <img class="logo" src="https://i.goopics.net/xj12p.png">
+    <img class="logo" src="../../assets/images/logo-spotifood.png">
     <span class="navbar-brand brand-text">SpotiFood</span>
 </a>
 
@@ -19,7 +19,7 @@
         <a class="nav-link text-white" routerLink="/comparateur">Comparateur</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Contribuer</a>
+        <a class="nav-link text-white" routerLink="/contribuer">Contribuer</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" routerLink="/contact">Contact</a>
@@ -28,8 +28,9 @@
 
     <ul class="navbar-nav mx-auto justify-content-center" *ngIf="adminLogged">
       <li class="nav-item active">
-        <a class="nav-link text-white" *ngIf="!userView" (click)="changeView()">Vue utilisateur<span class="sr-only">(current)</span></a>
-        <a class="nav-link text-white" *ngIf="userView" (click)="changeView()">Comparateur<span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" (click)="changeView()">{{ (href == '/produits') ? 'Comparateur' : 'Vue utilisateur' }}<span
+    class="sr-only">(current)</span></a>
+        <!-- <a class="nav-link text-white" *ngIf="userView" (click)="changeView()">Comparateur<span class="sr-only">(current)</span></a> -->
       </li>
       <li class="nav-item active">
         <a class="nav-link text-white" routerLink="/admin/produits">Produits<span class="sr-only">(current)</span></a>
@@ -37,13 +38,14 @@
       <li class="nav-item active">
         <a class="nav-link text-white" routerLink="/admin/messagerie">Messagerie</a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link text-white" routerLink="/produits" (click)="logOut()">Déconnexion</a>
       </li>
     </ul>
 
-    <form class="form-inline justify-content-end">
-      <input appAutofocus (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Search" [(ngModel)]="productName" aria-label="Search">
+    <form *ngIf="href == '/produits'" class="form-inline justify-content-end">
+      <input (click)="goToProducts()" name="productName" class="fas fa-search form-control awesomplete" list="mylist" type="search" placeholder="Rechercher" [(ngModel)]="productName" aria-label="Search">
       <datalist id="mylist">
         <option *ngFor="let product of products">{{product.name}}</option>
       </datalist>

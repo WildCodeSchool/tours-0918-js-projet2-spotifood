@@ -12,17 +12,20 @@ import { Message } from '../models/messagerie';
 export class ContactComponent implements OnInit {
 
   message: Message;
+  sent: boolean;
 
   constructor(private service: MessagerieService) { }
 
   ngOnInit() {
     this.message = new Message();
+    this.sent = false;
   }
 
   // save the message to the localStorage
   send() {
     this.service.add(this.message);
     this.message = new Message();
+    this.sent = true;
   }
 
 

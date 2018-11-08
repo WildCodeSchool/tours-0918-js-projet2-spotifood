@@ -1,20 +1,37 @@
 <app-navbar></app-navbar>
+<div class="body">
+  <div class='container-fluid'>
+    <h1 class="text-white">Bienvenue sur votre messagerie !</h1>
 
-<div class='container-fluid'>
-  <h1 class="text-white">Bienvenue sur votre messagerie !</h1>
-
-  <div class="row col-12">
-    <div class="card col-9 offset-2" *ngFor="let message of message">
-      <div class="card-header">
-        Nouveau message de {{ message.name }}
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">{{ message.objet }}</h5>
-        <p class="card-text">{{ message.message }}</p>
-        <div class="card-footer text-muted">
-          {{ message.email }}
+    <div class="row col-12" *ngIf='message'>
+      <div class="card col-9 offset-2" *ngFor="let message of message">
+        <div class="card-header">
+          Nouveau message de {{message.prenom}} {{message.name}}
         </div>
-        <img class="trash" (click)="delete(message)" src="../../assets/images/trash.png" role="button">
+        <div class="card-body">
+          <h5 class="card-title">{{ message.objet }}</h5>
+          <p class="card-text">{{ message.message }}</p>
+          <p *ngIf='message.Name' class="card-text"><strong>Nom produit:</strong> {{message.Name}}</p>
+          <p *ngIf='message.quantity'><strong>Quantité:</strong> {{message.quantity}}</p>
+          <p *ngIf='message.brands' class="card-text"><strong>Marque:</strong> {{message.brands}}</p>
+          <p *ngIf='message.labels' class="card-text"><strong>Labels:</strong> {{message.labels}}</p>
+          <p *ngIf='message.categories' class="card-text"><strong>Catégories:</strong>. {{message.categories}}</p>
+          <p *ngIf='message.packaging' class="card-text"><strong>Conditionement:</strong> {{message.packaging}}</p>
+          <p *ngIf='message.ingredients' class="card-text"><strong>Ingrédients</strong> {{message.ingredients}}</p>
+          <p *ngIf='message.allergenes' class="card-text"><strong>Allergènes:</strong>. {{message.allergenes}}</p>
+          <p *ngIf='message.nutriscore' class="card-text"><strong>Nutriscore:</strong> {{message.nutriscore}}</p>
+          <p *ngIf='message.lipids' class="card-text"><strong>Matières grasses/Lipides:</strong> {{message.lipids}} gr</p>
+          <p *ngIf='message.saturated' class="card-text"><strong>Acides gras saturés:</strong> {{message.saturated}} gr</p>
+          <p *ngIf='message.sugars' class="card-text"><strong>Sucres:</strong> {{message.sugars}} gr</p>
+          <p *ngIf='message.salt' class="card-text"><strong>Sel:</strong> {{message.salt}} gr</p>
+          <p *ngIf='message.images' class="card-text">{{message.images}}</p>
+
+          <div *ngIf='message.email' class="card-footer text-muted">
+            {{message.email }}
+          </div>
+          <img class="trash" (click)="delete(message)" src="../../assets/images/trash.png" role="button">
+        </div>
       </div>
     </div>
   </div>
+</div>

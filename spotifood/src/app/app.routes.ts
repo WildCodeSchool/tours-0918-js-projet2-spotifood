@@ -7,6 +7,9 @@ import { ComparateurProduitComponent } from './comparateur-produit/comparateur-p
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { MessagerieAdminComponent } from './messagerie-admin/messagerie-admin.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ChangeCarrouselComponent } from './change-carrousel/change-carrousel.component';
+import { PageContribuerComponent } from './page-contribuer/page-contribuer.component';
 
 const ROUTES: Route[] = [
   {
@@ -47,7 +50,23 @@ const ROUTES: Route[] = [
   {
     path: 'admin/messagerie',
     component: MessagerieAdminComponent
-  }
+  },
+  {
+    path: 'admin/change-carrousel',
+    component: ChangeCarrouselComponent
+  },
+  {
+    path: 'contribuer',
+    component: PageContribuerComponent
+  },
+  {
+    path: '404',
+    component: NotFoundComponent
+  },
+  {
+    path: '**',
+    redirectTo: '404'
+   },
 ];
 
 export { ROUTES };

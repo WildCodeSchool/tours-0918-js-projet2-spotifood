@@ -13,4 +13,5 @@ export class Product {
   nutriscore: string;
   nutrients: Nutrients;
   images: string;
+  isSelected: boolean;
 }
